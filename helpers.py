@@ -191,7 +191,7 @@ def avg_num_nonzero_entries(features):
 def build_pipeline(num_features, classifier):
 
     normalize_features = True
-    dim_reduce_fraction = 0.1
+    dim_reduce_fraction = 0.005 # originally 0.1
 
     # setup normalizers if needed
     normalizers = []

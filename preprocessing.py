@@ -9,10 +9,13 @@ import pickle
 import os
 from Bio import SeqIO
 import random
+import sys
 
 # Read the metadata file.
+input_folder = sys.argv[1]
 
-with open('data/metadata_lanl_whole.json','rb') as f:
+
+with open('data/'+input_folder+'.json','rb') as f:
   metadata = json.load(f)
 
 # Create a Hash Table with the ID as keys and the labels as values,
@@ -31,12 +34,13 @@ min_length = 0
 max_lenght = 1e6
 
 
-for filename in os.listdir('data/lanl_whole'):
+for filename in os.listdir('data/'+input_folder):
 
-    ID = filename.split('.')[0]
+    # ID = filename.split('.')[0]
+    ID = filename[:-6]
 
     # Read the file:
-    filename = os.path.join('data/lanl_whole', filename)
+    filename = os.path.join('data/'+input_folder, filename)
     fasta_files = SeqIO.parse(filename, "fasta")
     for file in fasta_files:
         seq = str(file.seq)
@@ -54,7 +58,7 @@ index = random.randint(0,len(data))
 print(data[index])
 
 # Save the dataset.
-
-filename = 'data.p'
+dest_folder = "p_files/"
+filename = dest_folder+input_folder+'.p'
 with open(filename, 'wb') as f:
     pickle.dump(data, f)
