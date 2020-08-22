@@ -108,7 +108,7 @@ with open('train.p', 'wb') as f:
 with open('test.p', 'wb') as f:
     pickle.dump(test, f)
 
-k = 5  # Select the value of k that you want to use.
+k = 9  # Select the value of k that you want to use.
 
 
 unique_labels = list(set(map(lambda x: x[0], train)))
@@ -222,6 +222,7 @@ def testing(test_data, k, pipeline):
 
     y_pred = pipeline.predict(test_features)
     cm = confusion_matrix(y, y_pred)
+    print(cm)
     #plot_confusion_matrix(cm[:100][:100], test_labels[:100])
 
     return accuracy_score(y, y_pred)
