@@ -269,13 +269,13 @@ def cgr_gen(probs,k):
   
   return mat
 
-def get_misclassified_entries(pred, true):
+def get_misclassified_entries(true, pred):
     ret = {}
-    for p, t in zip(pred, true):
-        if p == t:
+    for t, p in zip(true, pred):
+        if t == p:
             continue
-        if not (p, t) in ret:
-            ret[(p,t)] = 1
+        if not (t,p) in ret:
+            ret[(t,p)] = 1
         else:
-            ret[(p,t)] += 1
+            ret[(t,p)] += 1
     return ret
