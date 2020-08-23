@@ -281,7 +281,10 @@ def get_misclassified_entries(true, pred):
         if not (t,p) in ret:
             print("enter this")
             ret[(t,p)] = 1
+            print(ret)
         else:
             print("increment")
             ret[(t,p)] += 1
+            print(ret)
+    print(ret)
     return ret
