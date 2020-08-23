@@ -9,7 +9,7 @@ from Bio import SeqIO
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import normalize
 from sklearn.metrics import confusion_matrix
-from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix
+from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries
 import sys
 
 input_folder = sys.argv[1]
@@ -28,7 +28,7 @@ unique_labels = list(set(map(lambda x: x[0], data)))
 
 #get some stats about training and testing dataset
 diTrain = getStats(data)
-plotDict(diTrain, 'train.png',"Order_Barcode")
+# plotDict(diTrain, 'train.png',"Order_Barcode")
 
 # Create Labels for Classes
 diLabels = {}
@@ -87,7 +87,7 @@ for label in overrepresented_classes:
 
 # get some stats about the training dataset
 diTrain = getStats(data)
-plotDict(diTrain, 'virus-families.png','Virus Families')
+# plotDict(diTrain, 'virus-families.png','Virus Families')
 print(diTrain)
 
 
@@ -115,7 +115,7 @@ unique_labels = list(set(map(lambda x: x[0], train)))
 
 #get some stats about training and testing dataset
 diTrain = getStats(train)
-plotDict(diTrain, 'train.png',"Virus Families")
+# plotDict(diTrain, 'train.png',"Virus Families")
 
 # Create Labels for Classes
 diLabels = {}
@@ -174,7 +174,7 @@ test_features = normalize(x, norm = 'l2', axis = 1)
 
 #get some stats about the testing dataset
 diTrain = getStats(test)
-plotDict(diTrain, 'test.png','Virus Families')
+# plotDict(diTrain, 'test.png','Virus Families')
 print(diTrain)
 
 
@@ -223,6 +223,7 @@ def testing(test_data, k, pipeline):
     y_pred = pipeline.predict(test_features)
     cm = confusion_matrix(y, y_pred)
     print(cm)
+    print(get_misclassified_entries(y, y_pred))
     #plot_confusion_matrix(cm[:100][:100], test_labels[:100])
 
     return accuracy_score(y, y_pred)

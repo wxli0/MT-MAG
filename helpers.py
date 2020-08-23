@@ -191,7 +191,7 @@ def avg_num_nonzero_entries(features):
 def build_pipeline(num_features, classifier):
 
     normalize_features = True
-    dim_reduce_fraction = 0.001 # originally 0.1
+    dim_reduce_fraction = 0.005 # originally 0.1
 
     # setup normalizers if needed
     normalizers = []
@@ -268,3 +268,14 @@ def cgr_gen(probs,k):
     mat[y][x] = probs[i]
   
   return mat
+
+def get_misclassified_entries(pred, true):
+    ret = {}
+    for p, t in zip(pred, true):
+        if p == t:
+            continue
+        if not (p, t) in ret:
+            ret[(p,t)] = 1
+        else:
+            ret[(p,t)] += 1
+    return ret
