@@ -289,4 +289,4 @@ def print_misclassified_entries(cm):
             if i == j:
                 continue
             if cm[i,j] !=0:
-                print("("+i+","+j+")"+":"+cm[i,j])
+                print("("+str(i)+","+str(j)+")"+":"+str(cm[i,j]))
