@@ -1,2 +1,8 @@
 data/
 p_files/
+__pycache__/helpers.cpython-37.pyc
+test.p
+train.p
+test.png
+train.png
+virus-families.png
