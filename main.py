@@ -222,6 +222,8 @@ def testing(test_data, k, pipeline):
 
     y_pred = pipeline.predict(test_features)
     cm = confusion_matrix(y, y_pred)
+    print(cm)
+    print("printing misclassified entries")
     print_misclassified_entries(cm)
     # print(get_misclassified_entries(y, y_pred))
     #plot_confusion_matrix(cm[:100][:100], test_labels[:100])
