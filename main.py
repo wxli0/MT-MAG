@@ -9,7 +9,7 @@ from Bio import SeqIO
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import normalize
 from sklearn.metrics import confusion_matrix
-from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries
+from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries, print_misclassified_entries
 import sys
 
 input_folder = sys.argv[1]
@@ -222,8 +222,8 @@ def testing(test_data, k, pipeline):
 
     y_pred = pipeline.predict(test_features)
     cm = confusion_matrix(y, y_pred)
-    print(cm)
-    print(get_misclassified_entries(y, y_pred))
+    print_misclassified_entries(cm)
+    # print(get_misclassified_entries(y, y_pred))
     #plot_confusion_matrix(cm[:100][:100], test_labels[:100])
 
     return accuracy_score(y, y_pred)

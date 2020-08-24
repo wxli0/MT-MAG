@@ -281,3 +281,12 @@ def get_misclassified_entries(true, pred):
             ret[(t,p)] += 1
             print(ret)
     return ret
+
+def print_misclassified_entries(cm):
+    size = cm.shape[0]
+    for i in range(size):
+        for j in range(size):
+            if i == j:
+                continue
+            if cm[i,j] !=0:
+                print("("+i+","+j+")"+":"cm[i,j])
