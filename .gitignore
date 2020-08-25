@@ -1,6 +1,6 @@
 data/
 p_files/
-__pycache__/helpers.cpython-37.pyc
+__pycache__/
 test.p
 train.p
 test.png
