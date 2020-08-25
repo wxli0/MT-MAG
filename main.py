@@ -206,7 +206,7 @@ def training(train_data, k, classifier):
     return pipeline
 
 
-def testing(test_data, k, pipeline):
+def testing(test_data, k, pipeline, print_entries = False):
     n_test = len(test_data)
 
     test_features = []
@@ -223,9 +223,10 @@ def testing(test_data, k, pipeline):
 
     y_pred = pipeline.predict(test_features)
     cm = confusion_matrix(y, y_pred)
-    print(cm)
-    print("printing misclassified entries")
-    print_misclassified_entries(cm)
+    if print_entries:
+        print(cm)
+        print("printing misclassified entries")
+        print_misclassified_entries(cm)
     # print(get_misclassified_entries(y, y_pred))
     #plot_confusion_matrix(cm[:100][:100], test_labels[:100])
 
@@ -252,9 +253,12 @@ for i in range(fold):
     index = index + step
 
     for classifier in classifiers:
+        print_entries = False
+        if classifier == "linear-svm": # linear-svm seems to do better than other classifiers
+            print_entries = True
         print(classifier)
         pipeline = training(train, k, classifier)
-        accuracies[classifier].append(testing(test, k, pipeline))
+        accuracies[classifier].append(testing(test, k, pipeline, print_entries))
         print(accuracies)
     print('**************************************************')
 
@@ -262,5 +266,6 @@ print(accuracies)
 for classifier in classifiers:
     print('accuracy of ' + classifier + ': ' + str(statistics.mean(accuracies[classifier])))
 
+print("********************misclassified entries summary*****************")
 print(entries_count)
 
