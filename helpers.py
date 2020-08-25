@@ -282,6 +282,8 @@ def get_misclassified_entries(true, pred):
             print(ret)
     return ret
 
+entries_count = {}
+
 def print_misclassified_entries(cm):
     size = cm.shape[0]
     for i in range(size):
@@ -290,3 +292,7 @@ def print_misclassified_entries(cm):
                 continue
             if cm[i,j] !=0:
                 print("("+str(i)+","+str(j)+")"+":"+str(cm[i,j]))
+                if (i,j) not in entries_count:
+                    entries_count[(i,j)] = cm[i,j]
+                else:
+                    entries_count[(i,j)].append(cm[i,j])

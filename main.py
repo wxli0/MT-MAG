@@ -11,6 +11,7 @@ from sklearn.preprocessing import normalize
 from sklearn.metrics import confusion_matrix
 from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries, print_misclassified_entries
 import sys
+from helpers import entries_count
 
 input_folder = sys.argv[1]
 
@@ -237,13 +238,14 @@ classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
 
 accuracies = {}
 index = 0
-step = int(len(data) / 10)
+fold = 10
+step = int(len(data) / fold)
 random.shuffle(data)
 
 for classifier in classifiers:
     accuracies[classifier] = []
 
-for i in range(10):
+for i in range(fold):
     print(i)
     train = data[:index] + data[index + step:]
     test = data[index:index + step]
@@ -260,5 +262,5 @@ print(accuracies)
 for classifier in classifiers:
     print('accuracy of ' + classifier + ': ' + str(statistics.mean(accuracies[classifier])))
 
-
+print(entries_count)
 
