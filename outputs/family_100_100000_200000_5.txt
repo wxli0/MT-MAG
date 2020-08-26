@@ -1,0 +1,53 @@
+459
+-----------some stats: ------------
+total num of classes:  5
+total num of samples:  459
+max genome length:  201296
+occurences: 
+f__Actinomycetaceae =>      129
+f__Micrococcaceae =>      108
+f__Bifidobacteriaceae =>       95
+f__Dermatophilaceae =>       66
+f__Cellulomonadaceae =>       61
+-----------------------------------
+{'f__Actinomycetaceae': 1, 'f__Micrococcaceae': 2, 'f__Bifidobacteriaceae': 3, 'f__Dermatophilaceae': 4, 'f__Cellulomonadaceae': 5}
+-----------some stats: ------------
+total num of classes:  5
+total num of samples:  459
+max genome length:  201296
+occurences: 
+f__Actinomycetaceae =>      129
+f__Micrococcaceae =>      108
+f__Bifidobacteriaceae =>       95
+f__Dermatophilaceae =>       66
+f__Cellulomonadaceae =>       61
+-----------------------------------
+{'f__Actinomycetaceae': 129, 'f__Micrococcaceae': 108, 'f__Bifidobacteriaceae': 95, 'f__Dermatophilaceae': 66, 'f__Cellulomonadaceae': 61}
+-----------some stats: ------------
+total num of classes:  5
+total num of samples:  321
+max genome length:  200627
+occurences: 
+f__Actinomycetaceae =>       82
+f__Micrococcaceae =>       78
+f__Bifidobacteriaceae =>       68
+f__Dermatophilaceae =>       48
+f__Cellulomonadaceae =>       45
+-----------------------------------
+{'f__Actinomycetaceae': 1, 'f__Micrococcaceae': 2, 'f__Bifidobacteriaceae': 3, 'f__Dermatophilaceae': 4, 'f__Cellulomonadaceae': 5}
+(321, 262144)
+-----------some stats: ------------
+total num of classes:  5
+total num of samples:  138
+max genome length:  201296
+occurences: 
+f__Actinomycetaceae =>       47
+f__Micrococcaceae =>       30
+f__Bifidobacteriaceae =>       27
+f__Dermatophilaceae =>       18
+f__Cellulomonadaceae =>       16
+-----------------------------------
+{'f__Actinomycetaceae': 47, 'f__Micrococcaceae': 30, 'f__Bifidobacteriaceae': 27, 'f__Dermatophilaceae': 18, 'f__Cellulomonadaceae': 16}
+0.7246376811594203
+0
+linear-svm
