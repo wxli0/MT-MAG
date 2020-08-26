@@ -293,6 +293,6 @@ def print_misclassified_entries(cm):
             if cm[i,j] !=0:
                 print("("+str(i)+","+str(j)+")"+":"+str(cm[i,j]))
                 if (i,j) not in entries_count:
-                    entries_count[(i,j)] = cm[i,j]
+                    entries_count[(i,j)] = [cm[i,j]]
                 else:
                     entries_count[(i,j)].append(cm[i,j])
