@@ -13,18 +13,21 @@ from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusi
 import sys
 from helpers import entries_count
 
-input_folder = sys.argv[1]
+train_folder = sys.argv[1]
+test_folder = sys.argv[2]
 
 dest_folder = "p_files/"
 
-filename = dest_folder+input_folder+'.p'
+train_filename = dest_folder+train_folder+'.p'
+test_filename = dest_folder+test_folder+'.p'
 
-with open(filename, 'rb') as f:
-    data = pickle.load(f)
+with open(train_filename, 'rb') as f:
+    train = pickle.load(f)
 
+with open(test_filename, 'rb') as f:
+    test = pickle.load(f)
 
 def training(train_data, k, classifier):
-    n_train = len(train_data)
     train_features = []
     train_labels = []
 
@@ -47,8 +50,6 @@ def training(train_data, k, classifier):
 
 
 def testing(test_data, k, pipeline, print_entries = False):
-    n_test = len(test_data)
-
     test_features = []
     test_labels = []
 
@@ -73,39 +74,16 @@ def testing(test_data, k, pipeline, print_entries = False):
     return accuracy_score(y, y_pred)
 
 
+print('************ classify new sequences ************************')
 
-k = 9
+k = 7
 classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
 
-accuracies = {}
-index = 0
-fold = 10
-step = int(len(data) / fold)
-random.shuffle(data)
 
 for classifier in classifiers:
-    accuracies[classifier] = []
+    pipeline = training(train, k, classifier)
+    acc = testing(test, k, pipeline)
+    print(classifier+":", acc)
 
-for i in range(fold):
-    print(i)
-    train = data[:index] + data[index + step:]
-    test = data[index:index + step]
-    index = index + step
 
-    for classifier in classifiers:
-        print_entries = False
-        if classifier == "linear-svm": # linear-svm seems to do better than other classifiers
-            print_entries = True
-        print(classifier)
-        pipeline = training(train, k, classifier)
-        accuracies[classifier].append(testing(test, k, pipeline, print_entries))
-        print(accuracies)
-    print('**************************************************')
-
-print(accuracies)
-for classifier in classifiers:
-    print('accuracy of ' + classifier + ': ' + str(statistics.mean(accuracies[classifier])))
-
-print("********************misclassified entries summary*****************")
-print(entries_count)
 
