@@ -63,6 +63,8 @@ def testing(test_data, k, pipeline, print_entries = False):
     test_features = normalize(x, norm='l2', axis=1)
 
     y_pred = pipeline.predict(test_features)
+    print("y is:", y)
+    print("y_pred is:", y_pred)
     cm = confusion_matrix(y, y_pred)
     if print_entries:
         print(cm)
