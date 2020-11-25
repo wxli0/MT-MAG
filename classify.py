@@ -72,6 +72,7 @@ def testing(test_data, k, pipeline, print_entries = False):
         print(cm)
         print("printing misclassified entries")
         print_misclassified_entries(cm)
+    print("f(X) is:", pipeline.decision_function(test_features))
     # print(get_misclassified_entries(y, y_pred))
     #plot_confusion_matrix(cm[:100][:100], test_labels[:100])
 
@@ -81,7 +82,8 @@ def testing(test_data, k, pipeline, print_entries = False):
 print('************ classify new sequences ************************')
 
 k = 7
-classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
+# classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
+classifiers = ['linear-svm']
 
 
 for classifier in classifiers:
