@@ -13,6 +13,8 @@ from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusi
 import sys
 from helpers import entries_count
 
+#e.g. python3 classify.py o__Bacteroidales_exclude_g__C941 g__C941_wrapper
+
 train_folder = sys.argv[1]
 test_folder = sys.argv[2]
 
