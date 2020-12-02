@@ -4,6 +4,7 @@ import random
 import pickle
 import statistics
 import numpy as np
+import xlsxwriter
 
 from Bio import SeqIO
 from sklearn.metrics import accuracy_score
@@ -72,9 +73,16 @@ def testing(test_data, k, pipeline, print_entries = False):
         print(cm)
         print("printing misclassified entries")
         print_misclassified_entries(cm)
+    f_x = [pipeline.decision_function(test_features)]
+
     print("f(X) is:", pipeline.decision_function(test_features))
-    # print(get_misclassified_entries(y, y_pred))
-    #plot_confusion_matrix(cm[:100][:100], test_labels[:100])
+    workbook = xlsxwriter.Workbook(train_folder+'.xlsx')
+    worksheet = workbook.add_worksheet(test_folder+'-SH')
+    row = 1
+    for col, data in enumerate(f_x):
+        worksheet.write_column(row, col, data)
+
+    workbook.close()
 
     return accuracy_score(y, y_pred)
 
