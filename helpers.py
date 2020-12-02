@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from scipy.spatial import distance
 import random
 from sklearn import svm
+from sklearn.svm import LinearSVC
 from sklearn import discriminant_analysis
 from sklearn import neighbors
 from sklearn.metrics import accuracy_score
@@ -204,7 +205,7 @@ def build_pipeline(num_features, classifier):
 
     # Classifier
     if classifier == 'linear-svm':
-        normalizers.append(('classifier',svm.SVC(kernel='linear')))
+        normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-5)))
     if classifier == 'poly-svm':
         normalizers.append(('classifier',svm.SVC(kernel='poly', degree=2)))
     if classifier == 'rbf-svm':
