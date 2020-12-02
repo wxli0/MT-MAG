@@ -76,7 +76,7 @@ def testing(test_data, k, pipeline, print_entries = False):
     f_x = [pipeline.decision_function(test_features)]
 
     print("f(X) is:", pipeline.decision_function(test_features))
-    workbook = xlsxwriter.Workbook(train_folder+'.xlsx')
+    workbook = xlsxwriter.Workbook('outputs/'+train_folder+'.xlsx')
     worksheet = workbook.add_worksheet(test_folder+'-SH')
     row = 1
     for col, data in enumerate(f_x):
