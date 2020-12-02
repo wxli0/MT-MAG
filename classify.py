@@ -39,10 +39,11 @@ def training(train_data, k, classifier):
         train_labels.append(train_data[i][0])
 
     x = np.asarray(train_features).astype('float32')
-    x = normalize(x, norm='l2', axis=1)
+    # x = normalize(x, norm='l2', axis=1)
     y = np.asarray(train_labels)
 
-    features = normalize(x, norm='l2', axis=1)
+    # features = normalize(x, norm='l2', axis=1)
+    features = np.fft.fft(x)
     subtypes = np.asarray(train_labels)
 
     # Run the classification Pipeline for this subset.
@@ -63,7 +64,8 @@ def testing(test_data, k, pipeline, print_entries = False):
     x = np.asarray(test_features).astype('float32')
     y = np.asarray(test_labels)
 
-    test_features = normalize(x, norm='l2', axis=1)
+    # test_features = normalize(x, norm='l2', axis=1)
+    test_features = np.fft.fft(x)
 
     y_pred = pipeline.predict(test_features)
     print("y is:", y)
