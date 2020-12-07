@@ -80,7 +80,7 @@ def testing(test_data, k, pipeline, print_entries = False):
         print_misclassified_entries(cm)
 
     f_x = pipeline.decision_function(test_features)
-    df = pd.DataFrame(f_x, columns=sort(list(set(pipeline.classes_))))
+    df = pd.DataFrame(f_x, columns=list(set(pipeline.classes_)).sort())
     print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
