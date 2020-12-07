@@ -84,7 +84,7 @@ def testing(test_data, k, pipeline, print_entries = False):
     print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     writer = pd.ExcelWriter(path, engine = 'xlsxwriter')
-    df.to_excel(writer, sheet_name = test_features+'SH', index=False)
+    df.to_excel(writer, sheet_name = test_folder+'SH', index=False)
     writer.save()
     writer.close()
 
