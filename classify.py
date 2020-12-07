@@ -5,6 +5,7 @@ import pickle
 import statistics
 import numpy as np
 import xlsxwriter
+import openpyxl
 
 from Bio import SeqIO
 from sklearn.metrics import accuracy_score
@@ -76,16 +77,21 @@ def testing(test_data, k, pipeline, print_entries = False):
         print(cm)
         print("printing misclassified entries")
         print_misclassified_entries(cm)
-    f_x = [pipeline.decision_function(test_features)]
+    f_x = pipeline.decision_function(test_features)
 
-    print("f(X) is:", pipeline.decision_function(test_features))
-    # workbook = xlsxwriter.Workbook('outputs/fft-'+train_folder+'-'+test_folder+'.xlsx')
-    # worksheet = workbook.add_worksheet(test_folder+'-SH')
-    # row = 1
-    # for col, data in enumerate(f_x):
-    #     worksheet.write_column(row, col, data)
+    wb=openpyxl.load_workbook('outputs/fft-'+train_folder+'.xlsx')
+    wb.create_sheet(test_folder+'-SH')
+    print("f(X) is:", f_x)
 
-    # workbook.close()
+    for wb_index in range(len(wb.sheetnames)):
+        if wb.sheetnames[wb_index] == test_folder+'-SH':
+            break
+    wb.active = wb_index
+
+    # append class
+    wb.append(set(pipeline.classes_))
+    for row in f_x:
+        wb.append(row)
 
     return accuracy_score(y, y_pred)
 
