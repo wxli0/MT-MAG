@@ -83,7 +83,7 @@ def testing(test_data, k, pipeline, print_entries = False):
         wb=openpyxl.load_workbook('outputs/fft-'+train_folder+'.xlsx')
     except:
         wb = openpyxl.Workbook('outputs/fft-'+train_folder+'.xlsx')
-        
+
     wb.create_sheet(test_folder+'-SH')
     print("f(X) is:", f_x)
 
@@ -91,11 +91,12 @@ def testing(test_data, k, pipeline, print_entries = False):
         if wb.sheetnames[wb_index] == test_folder+'-SH':
             break
     wb.active = wb_index
+    active_sheet = wb.active
 
     # append class
-    wb.append(set(pipeline.classes_))
+    active_sheet.append(set(pipeline.classes_))
     for row in f_x:
-        wb.append(row)
+        active_sheet.append(row)
 
     return accuracy_score(y, y_pred)
 
