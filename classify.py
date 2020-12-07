@@ -6,6 +6,7 @@ import statistics
 import numpy as np
 import xlsxwriter
 import openpyxl
+import pandas as pd
 
 from Bio import SeqIO
 from sklearn.metrics import accuracy_score
@@ -77,28 +78,14 @@ def testing(test_data, k, pipeline, print_entries = False):
         print(cm)
         print("printing misclassified entries")
         print_misclassified_entries(cm)
+
     f_x = pipeline.decision_function(test_features)
-
-    try:
-        wb=openpyxl.load_workbook('outputs/fft-'+train_folder+'.xlsx')
-    except:
-        wb = openpyxl.Workbook('outputs/fft-'+train_folder+'.xlsx')
-
-    wb.create_sheet(test_folder+'-SH')
-    print("f(X) is:", f_x)
-
-    for wb_index in range(len(wb.sheetnames)):
-        if wb.sheetnames[wb_index] == test_folder+'-SH':
-            break
-    wb.active = wb_index
-    active_sheet = wb.active
-
-    # append class
-    active_sheet.append(list(set(pipeline.classes_)))
-    for row in f_x:
-        print(row)
-        print("list is:", list(row))
-        active_sheet.append(list(row))
+    df = pd.DataFrame(f_x, columns=list(set(pipeline.classes_)))
+    path = 'outputs/fft-'+train_folder+'.xlsx'
+    writer = pd.ExcelWriter(path, engine = 'xlsxwriter')
+    df.to_excel(writer, sheet_name = test_features+'SH')
+    writer.save()
+    writer.close()
 
     return accuracy_score(y, y_pred)
 
