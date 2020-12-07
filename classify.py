@@ -52,7 +52,6 @@ def training(train_data, k, classifier):
     # Run the classification Pipeline for this subset.
     pipeline = build_pipeline(4 ** k, classifier)
     pipeline.fit(features, subtypes)
-    pipeline.labels = list(set(subtypes))
 
     return pipeline
 
@@ -81,7 +80,7 @@ def testing(test_data, k, pipeline, print_entries = False):
         print_misclassified_entries(cm)
 
     f_x = pipeline.decision_function(test_features)
-    df = pd.DataFrame(f_x, columns=pipeline.labels)
+    df = pd.DataFrame(f_x, columns=sort(list(set(pipeline.classes_))))
     print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
