@@ -94,7 +94,7 @@ def testing(test_data, k, pipeline, print_entries = False):
     active_sheet = wb.active
 
     # append class
-    active_sheet.append(set(pipeline.classes_))
+    active_sheet.append(list(set(pipeline.classes_)))
     for row in f_x:
         active_sheet.append(row)
 
