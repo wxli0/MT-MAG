@@ -81,6 +81,7 @@ def testing(test_data, k, pipeline, print_entries = False):
 
     f_x = pipeline.decision_function(test_features)
     df = pd.DataFrame(f_x, columns=list(set(pipeline.classes_)))
+    print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     writer = pd.ExcelWriter(path, engine = 'xlsxwriter')
     df.to_excel(writer, sheet_name = test_features+'SH')
