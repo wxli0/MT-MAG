@@ -96,7 +96,9 @@ def testing(test_data, k, pipeline, print_entries = False):
     # append class
     active_sheet.append(list(set(pipeline.classes_)))
     for row in f_x:
-        active_sheet.append(row)
+        print(row)
+        print("list is:", list(row))
+        active_sheet.append(list(row))
 
     return accuracy_score(y, y_pred)
 
