@@ -79,7 +79,11 @@ def testing(test_data, k, pipeline, print_entries = False):
         print_misclassified_entries(cm)
     f_x = pipeline.decision_function(test_features)
 
-    wb=openpyxl.load_workbook('outputs/fft-'+train_folder+'.xlsx')
+    try:
+        wb=openpyxl.load_workbook('outputs/fft-'+train_folder+'.xlsx')
+    except:
+        wb = openpyxl.Workbook('outputs/fft-'+train_folder+'.xlsx')
+        
     wb.create_sheet(test_folder+'-SH')
     print("f(X) is:", f_x)
 
