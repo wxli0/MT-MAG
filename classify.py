@@ -83,7 +83,7 @@ def testing(test_data, k, pipeline, print_entries = False):
     df = pd.DataFrame(f_x, columns=list(set(pipeline.classes_)))
     print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
-    with pd.ExcelWriter(path, mode='a') as writer:  
+    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
         df.to_excel(writer, sheet_name = test_folder+'-SH', index=False)
     writer.save()
     writer.close()
