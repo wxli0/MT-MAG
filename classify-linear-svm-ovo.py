@@ -31,6 +31,7 @@ def testing_lsvm_ovo(test_data, k, pipeline, print_entries = False):
     for i in range(len(labels)):
         for j in range(i+1, len(labels)):
             pair_labels.append(labels[i]+'-'+labels[j])
+    print("pair_labels is:", pair_labels)
 
     df = pd.DataFrame(f_x, columns=pair_labels)
     df['prediction'] = y_pred
