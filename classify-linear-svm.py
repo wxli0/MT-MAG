@@ -44,13 +44,15 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
+    sheet_name = test_folder+'-'+pipeline.prefix
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix, index=True)
+        sheet_name = test_folder+'-'+pipeline.prefix
+        df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
     writer.save()
     writer.close()
 
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_c.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix+'-c', index=True)
+        df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
     writer.save()
     writer.close()
 
