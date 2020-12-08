@@ -50,7 +50,7 @@ for filename in os.listdir('data/'+input_folder):
         # Get the label from the hash table:
         label = d[ID]
         # Add the sequence to the dataset:
-        data.append((label, seq))
+        data.append((label, seq, ID))
 
 print(len(data))
 #print a random sample:

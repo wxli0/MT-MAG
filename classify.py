@@ -60,11 +60,12 @@ def training(train_data, k, classifier):
 def testing(test_data, k, pipeline, print_entries = False):
     test_features = []
     test_labels = []
+    test_ids = []
 
     for i in range(len(test_data)):
         test_features.append(kmer_count(test_data[i][1], k))
         test_labels.append(test_data[i][0])
-        print("print test_data[i]:", test_data[i])
+        test_ids.append(test_data[i][2])
 
     x = np.asarray(test_features).astype('float32')
     y = np.asarray(test_labels)
@@ -86,13 +87,14 @@ def testing(test_data, k, pipeline, print_entries = False):
     labels.sort()
     df = pd.DataFrame(f_x, columns=labels)
     df['prediction'] = y_pred
+    df.index = test_ids
     print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = test_folder+'-SH', index=False)
+        df.to_excel(writer, sheet_name = test_folder+'-SH', index=True)
     writer.save()
     writer.close()
 
