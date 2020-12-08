@@ -34,6 +34,12 @@ with open(train_filename, 'rb') as f:
 with open(test_filename, 'rb') as f:
     test = pickle.load(f)
 
+
+def f_to_c(theta):
+    def hinge(x):
+        max(0, x)
+    return -2*hinge(1+theta)/(-2*hinge(1+theta)-2*hinge(1-theta))
+
 def training(train_data, k, classifier):
     train_features = []
     train_labels = []
@@ -83,18 +89,23 @@ def testing(test_data, k, pipeline, print_entries = False):
         print_misclassified_entries(cm)
 
     f_x = pipeline.decision_function(test_features)
+    f_x_c = np.vectorize(f_to_c)(f_x)
     labels = list(set(pipeline.classes_))
     labels.sort()
     df = pd.DataFrame(f_x, columns=labels)
     df['prediction'] = y_pred
     df.index = test_ids
-    print(df)
+    df_c = pd.DataFrame(f_x_c, columns=labels)
+    df_c['prediction'] = y_pred
+    df_c.index = test_ids
+    print(df_c)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df.to_excel(writer, sheet_name = test_folder+'-SH', index=True)
+        df_c.to_excel(writer, sheet_name = test_folder+'-SH-c', index=True)
     writer.save()
     writer.close()
 
