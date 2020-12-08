@@ -64,6 +64,7 @@ def testing(test_data, k, pipeline, print_entries = False):
     for i in range(len(test_data)):
         test_features.append(kmer_count(test_data[i][1], k))
         test_labels.append(test_data[i][0])
+        print("print test_data[i]:", test_data[i])
 
     x = np.asarray(test_features).astype('float32')
     y = np.asarray(test_labels)
