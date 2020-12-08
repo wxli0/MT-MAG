@@ -35,7 +35,7 @@ def testing_lda(test_data, k, pipeline):
     if os.path.isfile(path):
         m = 'a'
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix+'p', index=True)
+        df.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix+'-p', index=True)
     writer.save()
     writer.close()
 
