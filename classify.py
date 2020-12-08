@@ -7,6 +7,7 @@ import numpy as np
 import xlsxwriter
 import openpyxl
 import pandas as pd
+import os.path
 
 from Bio import SeqIO
 from sklearn.metrics import accuracy_score
@@ -85,7 +86,10 @@ def testing(test_data, k, pipeline, print_entries = False):
     df = pd.DataFrame(f_x, columns=labels)
     print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
-    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+    m = 'w'
+    if os.path.isfile(path):
+        m = 'a'
+    with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df.to_excel(writer, sheet_name = test_folder+'-SH', index=False)
     writer.save()
     writer.close()
