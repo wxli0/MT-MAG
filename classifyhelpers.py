@@ -46,6 +46,8 @@ def training(train_data, k, classifier):
     pipeline.fit(features, subtypes)
     if classifier == 'linear-svm':
         pipeline.prefix = 'LSVM'
+    if classifier == 'linear-svm-ovo':
+        pipeline.prefix = 'LSVM-ovo'
     elif classifier == 'lda':
         pipeline.prefix = 'LDA'
     elif classifier == 'quadratic-svm':
