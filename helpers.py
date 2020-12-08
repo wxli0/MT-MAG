@@ -211,7 +211,7 @@ def build_pipeline(num_features, classifier):
         normalizers.append(('classifier',svm.SVC(kernel='poly', degree=2)))
     if classifier == 'rbf-svm':
         normalizers.append(('classifier',svm.SVC(kernel='rbf')))
-    if classifier == 'LinearDiscriminant':
+    if classifier == 'lda':
         normalizers.append(('classifier',discriminant_analysis.LinearDiscriminantAnalysis()))
     if classifier == 'KNN':
         normalizers.append(('classifier',neighbors.KNeighborsClassifier()))

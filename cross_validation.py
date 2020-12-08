@@ -74,7 +74,7 @@ def testing(test_data, k, pipeline, print_entries = False):
 
 
 k = 9
-classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
+classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'lda', 'KNN']
 
 accuracies = {}
 index = 0

@@ -59,7 +59,7 @@ def training(train_data, k, classifier):
     pipeline.fit(features, subtypes)
     if classifier == 'linear-svm':
         pipeline.prefix = 'LS'
-    elif classifier == 'LinearDiscriminant':
+    elif classifier == 'lda':
         pipeline.prefix = 'LDA'
 
     return pipeline
@@ -122,7 +122,7 @@ def testing(test_data, k, pipeline, print_entries = False):
 # print('************ classify new sequences ************************')
 
 # k = 7
-# # classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
+# # classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'lda', 'KNN']
 # classifiers = ['linear-svm']
 
 

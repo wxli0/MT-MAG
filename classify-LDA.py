@@ -3,8 +3,8 @@ from classify import *
 print('************ classify new sequences ************************')
 
 k = 7
-# classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
-classifiers = ['LinearDiscriminant']
+# classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'lda', 'KNN']
+classifiers = ['lda']
 
 
 for classifier in classifiers:
