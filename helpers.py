@@ -18,8 +18,7 @@ from sklearn.utils.multiclass import unique_labels
 import json
 
 #extract classess from a list of tuples class-genome
-
-# np.random.seed(42)
+np.random.seed(42)
 
 def getClasses(li):
     classes = set()
