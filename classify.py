@@ -36,9 +36,7 @@ with open(test_filename, 'rb') as f:
 
 
 def f_to_c(theta):
-    def hinge(x):
-        max(0, x)
-    return -2*hinge(1+theta)/(-2*hinge(1+theta)-2*hinge(1-theta))
+    return -2*max(0, 1+theta)/(-2*max(0, 1+theta)-2*max(0, 1-theta))
 
 def training(train_data, k, classifier):
     train_features = []
@@ -89,7 +87,8 @@ def testing(test_data, k, pipeline, print_entries = False):
         print_misclassified_entries(cm)
 
     f_x = pipeline.decision_function(test_features)
-    f_x_c = np.vectorize(f_to_c)(f_x)
+    f_to_c_vec = np.vectorize(f_to_c)
+    f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
     labels.sort()
     df = pd.DataFrame(f_x, columns=labels)
