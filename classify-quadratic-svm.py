@@ -20,23 +20,37 @@ from classifyhelpers import testing, training, read_pfiles
 
 #e.g. python3 classify.py o__Bacteroidales_exclude_g__C941 g__C941_wrapper
 
-def testing_lda(test_data, k, pipeline):
+def f_to_c(theta):
+    return -2*max(0, 1+theta)/(-2*max(0, 1+theta)-2*max(0, 1-theta))
+
+
+
+def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
-    probs = pipeline.predict_proba(test_features)
+    f_x = pipeline.decision_function(test_features)
+    f_to_c_vec = np.vectorize(f_to_c)
+    f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
     labels.sort()
-    df = pd.DataFrame(probs, columns=labels)
+    df = pd.DataFrame(f_x, columns=labels)
     df['prediction'] = y_pred
     df.index = test_ids
-    print(df)
-
+    df_c = pd.DataFrame(f_x_c, columns=labels)
+    df_c['prediction'] = y_pred
+    df_c.index = test_ids
+    print(df_c)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix+'-p', index=True)
+        df.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix, index=True)
+    writer.save()
+    writer.close()
+
+    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+        df_c.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix+'-c', index=True)
     writer.save()
     writer.close()
 
@@ -56,8 +70,8 @@ test_filename = dest_folder+test_folder+'.p'
 train, test = read_pfiles(train_filename, test_filename)
 
 k = 7
-classifier = 'lda'
+classifier = 'quadratic-svm'
 pipeline = training(train, k, classifier)
-acc = testing_lda(test, k, pipeline)
+acc = testing_lsvm(test, k, pipeline)
 print(classifier+":", acc)
 

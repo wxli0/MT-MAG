@@ -45,9 +45,11 @@ def training(train_data, k, classifier):
     pipeline = build_pipeline(4 ** k, classifier)
     pipeline.fit(features, subtypes)
     if classifier == 'linear-svm':
-        pipeline.prefix = 'LS'
+        pipeline.prefix = 'LSVM'
     elif classifier == 'lda':
         pipeline.prefix = 'LDA'
+    elif classifier == 'quadratic-svm':
+        pipeline.prefix = 'QSVM'
 
     return pipeline
 
