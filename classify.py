@@ -85,6 +85,7 @@ def testing(test_data, k, pipeline, print_entries = False):
     labels = list(set(pipeline.classes_))
     labels.sort()
     df = pd.DataFrame(f_x, columns=labels)
+    df['prediction'] = y_pred
     print(df)
     path = 'outputs/fft-'+train_folder+'.xlsx'
     m = 'w'
