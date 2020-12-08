@@ -70,7 +70,7 @@ test_filename = dest_folder+test_folder+'.p'
 train, test = read_pfiles(train_filename, test_filename)
 
 k = 7
-classifiers = 'linear-svm'
+classifier = 'linear-svm'
 pipeline = training(train, k, classifier)
 acc = testing_lsvm(test, k, pipeline)
 print(classifier+":", acc)
