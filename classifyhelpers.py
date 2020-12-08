@@ -3,6 +3,7 @@ import numpy as np
 from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries, print_misclassified_entries
 import sys
 from helpers import entries_count
+import pickle
 
 def testing(test_data, k, pipeline):
     test_features = []
