@@ -205,7 +205,7 @@ def build_pipeline(num_features, classifier):
 
     # Classifier
     if classifier == 'linear-svm':
-        normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-4, multi_class='ovr', max_iter=50000)))
+        normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-4, multi_class='ovr', max_iter=200000)))
     if classifier == 'poly-svm':
         normalizers.append(('classifier',svm.SVC(kernel='poly', degree=2)))
     if classifier == 'rbf-svm':
