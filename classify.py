@@ -104,6 +104,10 @@ def testing(test_data, k, pipeline, print_entries = False):
         m = 'a'
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df.to_excel(writer, sheet_name = test_folder+'-SH', index=True)
+    writer.save()
+    writer.close()
+
+    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
         df_c.to_excel(writer, sheet_name = test_folder+'-SH-c', index=True)
     writer.save()
     writer.close()
