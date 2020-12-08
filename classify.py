@@ -57,6 +57,10 @@ def training(train_data, k, classifier):
     # Run the classification Pipeline for this subset.
     pipeline = build_pipeline(4 ** k, classifier)
     pipeline.fit(features, subtypes)
+    if classifier == 'linear-svm':
+        pipeline.prefix = 'LS'
+    elif classifier == 'LinearDiscriminant':
+        pipeline.prefix = 'LDA'
 
     return pipeline
 
@@ -103,29 +107,29 @@ def testing(test_data, k, pipeline, print_entries = False):
     if os.path.isfile(path):
         m = 'a'
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = test_folder+'-SH', index=True)
+        df.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix, index=True)
     writer.save()
     writer.close()
 
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_c.to_excel(writer, sheet_name = test_folder+'-SH-c', index=True)
+        df_c.to_excel(writer, sheet_name = test_folder+'-'+pipeline.prefix+'-c', index=True)
     writer.save()
     writer.close()
 
     return accuracy_score(y, y_pred)
 
 
-print('************ classify new sequences ************************')
+# print('************ classify new sequences ************************')
 
-k = 7
-# classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
-classifiers = ['linear-svm']
+# k = 7
+# # classifiers = ['linear-svm', 'poly-svm', 'rbf-svm', 'LinearDiscriminant', 'KNN']
+# classifiers = ['linear-svm']
 
 
-for classifier in classifiers:
-    pipeline = training(train, k, classifier)
-    acc = testing(test, k, pipeline)
-    print(classifier+":", acc)
+# for classifier in classifiers:
+#     pipeline = training(train, k, classifier)
+#     acc = testing(test, k, pipeline)
+#     print(classifier+":", acc)
 
 
 
