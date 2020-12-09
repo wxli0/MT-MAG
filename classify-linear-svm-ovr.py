@@ -33,6 +33,9 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
     labels.sort()
+    if len(labels) == 2:
+        labels_copy = labels
+        labels = [labels_copy[0]+'-'+labels_copy[1]]
     df = pd.DataFrame(f_x, columns=labels)
     df['prediction'] = y_pred
     df.index = test_ids
