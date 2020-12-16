@@ -70,8 +70,7 @@ def training_autograd(train_data, k):
     y_unique.sort()
     y_classes_num = len(y_unique)
     print("y_unique after is:", y_unique)
-    y_train = torch.as_tensor(y_train)
-    print("y_train after is:", y_train)
+
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
     outputDim = 1       # takes variable 'y'
