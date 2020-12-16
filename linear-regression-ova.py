@@ -76,6 +76,7 @@ def training_autograd(train_data, k):
     outputDim = 1       # takes variable 'y'
     learningRate = 0.0000001 
     epochs = 1000
+    batch_size = 64
 
     def OVA_loss(outputs, labels):
         loss = 0
@@ -102,34 +103,40 @@ def training_autograd(train_data, k):
         optimizers.append(torch.optim.SGD(m.parameters(), lr=learningRate))
 
     for epoch in range(epochs):
-        # Converting inputs and labels to Variable
-        if torch.cuda.is_available():
-            inputs = Variable(torch.from_numpy(x_train).cuda())
-            labels = Variable(torch.from_numpy(y_train).cuda())
-        else:
-            inputs = Variable(torch.from_numpy(x_train))
-            labels = Variable(torch.from_numpy(y_train))
 
-        # Clear gradient buffers because we don't want any gradient from previous epoch to carry forward, dont want to cummulate gradients
-        for o in optimizers:
-            o.zero_grad()
+        permutation = torch.randperm(x_train.size()[0])
+        for i in range(0,x_train.size()[0], batch_size):
+            indices = permutation[i:i+batch_size]
+            batch_x, batch_y = x_train[indices], y_train[indices]
 
-        # get output from the model, given the inputs
-        outputs = []
-        for m in models:
-            outputs.append(m(inputs.float()))
+            # Converting inputs and labels to Variable
+            if torch.cuda.is_available():
+                inputs = Variable(torch.from_numpy(batch_x).cuda())
+                labels = Variable(torch.from_numpy(batch_y).cuda())
+            else:
+                inputs = Variable(torch.from_numpy(batch_x))
+                labels = Variable(torch.from_numpy(batch_y))
 
-        # get loss for the predicted output
-        loss = OVA_loss(outputs, labels)
-        print(loss)
-        # get gradients w.r.t to parameters
-        loss.backward()
+            # Clear gradient buffers because we don't want any gradient from previous epoch to carry forward, dont want to cummulate gradients
+            for o in optimizers:
+                o.zero_grad()
 
-        # update parameters
-        for o in optimizers:
-            o.step()
+            # get output from the model, given the inputs
+            outputs = []
+            for m in models:
+                outputs.append(m(inputs.float()))
 
-        print('epoch {}, loss {}'.format(epoch, loss.item()))
+            # get loss for the predicted output
+            loss = OVA_loss(outputs, labels)
+            print(loss)
+            # get gradients w.r.t to parameters
+            loss.backward()
+
+            # update parameters
+            for o in optimizers:
+                o.step()
+
+            print('epoch {}, loss {}'.format(epoch, loss.item()))
 
 
 print('************ classify new sequences ************************')
