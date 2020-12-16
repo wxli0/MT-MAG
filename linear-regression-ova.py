@@ -74,9 +74,9 @@ def training_autograd(train_data, k):
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
     outputDim = 1       # takes variable 'y'
-    learningRate = 1e-9
+    learningRate = 1e-20
     epochs = 1000
-    batch_size = 64
+    batch_size = 128
 
     def OVA_loss(outputs, labels):
         loss = 0
