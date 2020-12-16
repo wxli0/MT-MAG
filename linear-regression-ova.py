@@ -83,10 +83,10 @@ def training_autograd(train_data, k):
         for i in range(len(labels)):
             for j in range(y_classes_num):
                 if y_unique[j] == labels[i]:
-                    print("enter equal:", outputs[j][i])
+                    # print("enter equal:", outputs[j][i])
                     loss += ls(outputs[j][i])
                 else:
-                    print("enter inequal:", outputs[j][i])
+                    # print("enter inequal:", outputs[j][i])
                     loss += ls(-outputs[j][i])
         return loss
     
