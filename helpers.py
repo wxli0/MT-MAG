@@ -16,11 +16,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import confusion_matrix
 from sklearn.utils.multiclass import unique_labels
 import json
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.multiclass import OneVsOneClassifier
 
 #extract classess from a list of tuples class-genome
-np.random.seed(42)
 
 def getClasses(li):
     classes = set()
@@ -208,15 +205,12 @@ def build_pipeline(num_features, classifier):
 
     # Classifier
     if classifier == 'linear-svm':
-        normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-7, multi_class='ovr', dual = False, max_iter=1000000)))
-    if classifier == 'linear-svm-ovo':
-        normalizers.append(('classifier', OneVsOneClassifier(LinearSVC(random_state=0))))
-    if classifier == 'quadratic-svm':
-        normalizers.append(('poly_features', PolynomialFeatures(degree=2)))
-        normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-7, multi_class='ovr', dual = False, max_iter=10000)))
+        normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-5)))
+    if classifier == 'poly-svm':
+        normalizers.append(('classifier',svm.SVC(kernel='poly', degree=2)))
     if classifier == 'rbf-svm':
         normalizers.append(('classifier',svm.SVC(kernel='rbf')))
-    if classifier == 'lda':
+    if classifier == 'LinearDiscriminant':
         normalizers.append(('classifier',discriminant_analysis.LinearDiscriminantAnalysis()))
     if classifier == 'KNN':
         normalizers.append(('classifier',neighbors.KNeighborsClassifier()))
