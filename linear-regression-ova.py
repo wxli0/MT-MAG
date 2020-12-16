@@ -104,8 +104,8 @@ def training_autograd(train_data, k):
 
     for epoch in range(epochs):
 
-        permutation = torch.randperm(x_train.size()[0])
-        for i in range(0,x_train.size()[0], batch_size):
+        permutation = torch.randperm(x_train.shape[0])
+        for i in range(0,x_train.shape[0], batch_size):
             indices = permutation[i:i+batch_size]
             batch_x, batch_y = x_train[indices], y_train[indices]
 
