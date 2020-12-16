@@ -18,6 +18,7 @@ from sklearn.metrics import confusion_matrix
 from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries, print_misclassified_entries
 import sys
 from helpers import entries_count
+from sklearn import preprocessing
 from classifyhelpers import testing, training, read_pfiles
 
 
@@ -57,9 +58,20 @@ def training_autograd(train_data, k):
     # features = normalize(x, norm='l2', axis=1)
     x_train = np.abs(np.fft.fft(x))
     y_train = np.asarray(train_labels)
+    print("y_train before:", y_train)
     y_unique = np.unique(y_train)
     y_unique.sort()
     y_classes_num = len(y_unique)
+
+    print("y_unique is:", y_unique)
+    le = preprocessing.LabelEncoder()
+    y_train = le.fit_transform(y_train)
+    y_unique = np.unique(y_train)
+    y_unique.sort()
+    y_classes_num = len(y_unique)
+    print("y_unique after is:", y_unique)
+    y_train = torch.as_tensor(y_train)
+    print("y_train after is:", y_train)
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
     outputDim = 1       # takes variable 'y'
