@@ -115,7 +115,7 @@ def training_autograd(train_data, k):
         # get output from the model, given the inputs
         outputs = []
         for m in models:
-            outputs.append(m(inputs))
+            outputs.append(m(inputs).float())
 
         # get loss for the predicted output
         loss = OVA_loss(outputs, labels)
