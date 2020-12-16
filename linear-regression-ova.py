@@ -74,7 +74,7 @@ def training_autograd(train_data, k):
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
     outputDim = 1       # takes variable 'y'
-    learningRate = 0.00001 
+    learningRate = 0.0000001 
     epochs = 1000
 
     def OVA_loss(outputs, labels):
@@ -82,8 +82,10 @@ def training_autograd(train_data, k):
         for i in range(len(labels)):
             for j in range(y_classes_num):
                 if y_unique[j] == labels[i]:
+                    print("enter equal:", outputs[j][i])
                     loss += ls(outputs[j][i])
                 else:
+                    print("enter inequal:", outputs[j][i])
                     loss += ls(-outputs[j][i])
         return loss
 
