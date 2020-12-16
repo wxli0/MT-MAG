@@ -20,7 +20,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.multiclass import OneVsOneClassifier
 
 #extract classess from a list of tuples class-genome
-# np.random.seed(42)
+np.random.seed(42)
 
 def getClasses(li):
     classes = set()
