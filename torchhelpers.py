@@ -1,22 +1,6 @@
-import numpy as np
-import matplotlib.pyplot as plt 
-
-# create dummy data for training
-x_values = [i for i in range(11)]
-x_train = np.array(x_values, dtype=np.float32)
-x_train = x_train.reshape(-1, 1)
-
-# y_values = [2*i + 1 for i in x_values]
-# y_train = np.array(y_values, dtype=np.float32)
-y_train = np.array([0,0,0,0,0,1,1,1,1,1,1], dtype=np.float32)
-y_unique = np.unique(y_train)
-y_classes_num = len(y_unique)
-
-print(x_train.shape)
-print(y_train.shape)
-
 import torch
 from torch.autograd import Variable
+
 class linearRegression(torch.nn.Module):
     def __init__(self, inputSize, outputSize):
         super(linearRegression, self).__init__()
@@ -54,6 +38,7 @@ if torch.cuda.is_available():
     for m in models:
         m.cuda()
 
+criterion = torch.nn.MSELoss() 
 
 optimizers = []
 for m in models:
@@ -88,16 +73,3 @@ for epoch in range(epochs):
         o.step()
 
     print('epoch {}, loss {}'.format(epoch, loss.item()))
-
-# with torch.no_grad(): # we don't need gradients in the testing phase
-#     if torch.cuda.is_available():
-#         predicted = model(Variable(torch.from_numpy(x_train).cuda())).cpu().data.numpy()
-#     else:
-#         predicted = model(Variable(torch.from_numpy(x_train))).data.numpy()
-#     print(predicted)
-
-# plt.clf()
-# plt.plot(x_train, y_train, 'go', label='True data', alpha=0.5)
-# plt.plot(x_train, predicted, '--', label='Predictions', alpha=0.5)
-# plt.legend(loc='best')
-# plt.show()
