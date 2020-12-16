@@ -74,9 +74,9 @@ def training_autograd(train_data, k):
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
     outputDim = 1       # takes variable 'y'
-    learningRate = 1e-20
+    learningRate = 1e-9
     epochs = 1000
-    batch_size = 128
+    batch_size = 1000
 
     def OVA_loss(outputs, labels):
         loss = 0
@@ -131,6 +131,10 @@ def training_autograd(train_data, k):
             print(loss)
             # get gradients w.r.t to parameters
             loss.backward()
+
+            # clip gradients
+            for m in models:
+                torch.nn.utils.clip_grad_norm_(m.parameters(), 1)
 
             # update parameters
             for o in optimizers:
