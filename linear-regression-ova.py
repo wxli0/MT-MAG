@@ -58,6 +58,7 @@ def training_autograd(train_data, k):
     x_train = np.abs(np.fft.fft(x))
     y_train = np.asarray(train_labels)
     y_unique = np.unique(y_train).sort()
+    print(y_unique)
     y_classes_num = len(y_unique)
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
