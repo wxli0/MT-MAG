@@ -46,7 +46,7 @@ def testing_lsvm_ovo(test_data, k, pipeline, print_entries = False):
         m = 'a'
     test_folder_short = test_folder
     if test_folder.endswith('wrapper'):
-        test_folder_short = test_folder_short[:-7]
+        test_folder_short = test_folder_short[:-8]
     sheet_name = test_folder_short+'-'+pipeline.prefix
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
