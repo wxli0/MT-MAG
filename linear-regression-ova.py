@@ -74,9 +74,9 @@ def training_autograd(train_data, k):
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
     outputDim = 1       # takes variable 'y'
-    learningRate = 1e-9
+    learningRate = 1e-4
     epochs = 1000
-    batch_size = 1000
+    batch_size = y_train.shape[0]
 
     def OVA_loss(outputs, labels):
         loss = 0
@@ -89,6 +89,10 @@ def training_autograd(train_data, k):
                     print("enter inequal:", outputs[j][i])
                     loss += ls(-outputs[j][i])
         return loss
+    
+    def dummy_loss(outputs, labels):
+        identity = np.ones([outputs.shape[0], outputs.shape[1]])
+        return np.sum(np.square(np.substract(identity, outputs)))
 
     models = []
     for i in range(y_classes_num):
