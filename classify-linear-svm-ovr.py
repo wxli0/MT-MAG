@@ -13,9 +13,9 @@ from Bio import SeqIO
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import normalize
 from sklearn.metrics import confusion_matrix
-from helpers import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries, print_misclassified_entries
+from helpers_new import getStats, plotDict, kmer_count, build_pipeline, plot_confusion_matrix, get_misclassified_entries, print_misclassified_entries
 import sys
-from helpers import entries_count
+from helpers_new import entries_count
 from classifyhelpers import testing, training, read_pfiles
 
 #e.g. python3 classify.py o__Bacteroidales_exclude_g__C941 g__C941_wrapper
