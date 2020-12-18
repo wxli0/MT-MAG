@@ -74,7 +74,7 @@ def training_autograd(train_data, k):
 
     inputDim = x_train.shape[1]        # takes variable 'x' 
     outputDim = 1       # takes variable 'y'
-    learningRate = 1e-4
+    learningRate = 0.01
     epochs = 1000
     batch_size = y_train.shape[0]
 
