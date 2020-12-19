@@ -18,7 +18,6 @@ from sklearn.utils.multiclass import unique_labels
 import json
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.multiclass import OneVsOneClassifier
-from sklearn.calibration import CalibratedClassifierCV
 
 #extract classess from a list of tuples class-genome
 np.random.seed(42)
@@ -209,7 +208,7 @@ def build_pipeline(num_features, classifier):
 
     # Classifier
     if classifier == 'linear-svm':
-        normalizers.append(('classifier',CalibratedClassifierCV(LinearSVC(random_state=0, tol=1e-7, multi_class='ovr', dual = False, max_iter=1000000))))
+        normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-7, multi_class='ovr', dual = False, max_iter=1000000)))
     if classifier == 'linear-svm-ovo':
         normalizers.append(('classifier', OneVsOneClassifier(LinearSVC(random_state=0))))
     if classifier == 'quadratic-svm':

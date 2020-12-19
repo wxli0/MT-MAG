@@ -18,6 +18,7 @@ import sys
 from helpers_new import entries_count
 from classifyhelpers import testing, training, read_pfiles
 from sklearn.calibration import CalibratedClassifierCV
+from scipy.special import softmax
 
 #e.g. python3 classify.py o__Bacteroidales_exclude_g__C941 g__C941_wrapper
 
@@ -30,7 +31,7 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
-    posterior = pipeline.predict_prob(test_features)
+    f_post = softmax(f_x, axis=0)
     f_to_c_vec = np.vectorize(f_to_c)
     f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
@@ -39,8 +40,8 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
         labels_copy = labels
         labels = [labels_copy[0]+'-'+labels_copy[1]]
     df = pd.DataFrame(f_x, columns=labels)
+    df_post = pd.DataFrame(f_post, columns=labels)
     df['prediction'] = y_pred
-    df['posterior'] = posterior
     df.index = test_ids
     df_c = pd.DataFrame(f_x_c, columns=labels)
     df_c['prediction'] = y_pred
@@ -59,6 +60,11 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
 
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
         df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
+    writer.save()
+    writer.close()
+
+    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-l', index=True)
     writer.save()
     writer.close()
 
