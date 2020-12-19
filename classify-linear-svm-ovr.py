@@ -41,6 +41,7 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
         labels = [labels_copy[0]+'-'+labels_copy[1]]
     df = pd.DataFrame(f_x, columns=labels)
     df_post = pd.DataFrame(f_post, columns=labels)
+    df_post.index = test_ids
     df_post['prediction'] = y_pred
     df['prediction'] = y_pred
     df.index = test_ids
@@ -54,7 +55,7 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
-        
+
     test_folder_short = test_folder
     if test_folder.endswith('wrapper'):
         test_folder_short = test_folder_short[:-8]
