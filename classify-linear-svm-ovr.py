@@ -31,7 +31,7 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
-    f_post = softmax(f_x, axis=0)
+    f_post = softmax(f_x, axis=1)
     f_to_c_vec = np.vectorize(f_to_c)
     f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
@@ -41,23 +41,26 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
         labels = [labels_copy[0]+'-'+labels_copy[1]]
     df = pd.DataFrame(f_x, columns=labels)
     df_post = pd.DataFrame(f_post, columns=labels)
+    df_post['prediction'] = y_pred
     df['prediction'] = y_pred
     df.index = test_ids
     df_c = pd.DataFrame(f_x_c, columns=labels)
     df_c['prediction'] = y_pred
     df_c.index = test_ids
-    print(df_c)
+    # print(df_c)
+    print(df_post)
+
     path = 'outputs/fft-'+train_folder+'.xlsx'
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
-    sheet_name = test_folder+'-'+pipeline.prefix
+    if test_folder.endswith('wrapper'):
+        test_folder_short = test_folder_short[:-8]
+    sheet_name = test_folder_short+'-'+pipeline.prefix
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        sheet_name = test_folder+'-'+pipeline.prefix
         df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
     writer.save()
     writer.close()
-
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
         df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
     writer.save()
