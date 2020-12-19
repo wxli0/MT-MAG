@@ -31,7 +31,8 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
-    f_post = pipeline.predict_proba(test_features)
+    f_post = softmax(f_x, axis=1)
+    # f_post = pipeline.predict_proba(test_features)
     f_to_c_vec = np.vectorize(f_to_c)
     f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
