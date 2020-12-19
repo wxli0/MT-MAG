@@ -209,7 +209,7 @@ def build_pipeline(num_features, classifier):
     # Classifier
     if classifier == 'linear-svm':
         # normalizers.append(('classifier',LinearSVC(random_state=0, tol=1e-7, multi_class='ovr', dual = False, max_iter=1000000)))
-        normalizers.append(('classifier',svm.SVC(kernel='linear', tol=1e-7, probability=True, decision_function_shape ='ovr', dual = False, max_iter=1000000)))
+        normalizers.append(('classifier',svm.SVC(kernel='linear', tol=1e-7, probability=True, decision_function_shape ='ovr', max_iter=1000000)))
     if classifier == 'linear-svm-ovo':
         normalizers.append(('classifier', OneVsOneClassifier(LinearSVC(random_state=0))))
     if classifier == 'quadratic-svm':
