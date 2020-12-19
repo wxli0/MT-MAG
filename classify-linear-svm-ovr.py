@@ -54,6 +54,8 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
+        
+    test_folder_short = test_folder
     if test_folder.endswith('wrapper'):
         test_folder_short = test_folder_short[:-8]
     sheet_name = test_folder_short+'-'+pipeline.prefix
