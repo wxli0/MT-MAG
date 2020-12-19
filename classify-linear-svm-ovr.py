@@ -17,6 +17,7 @@ from helpers_new import getStats, plotDict, kmer_count, build_pipeline, plot_con
 import sys
 from helpers_new import entries_count
 from classifyhelpers import testing, training, read_pfiles
+from sklearn.calibration import CalibratedClassifierCV
 
 #e.g. python3 classify.py o__Bacteroidales_exclude_g__C941 g__C941_wrapper
 
@@ -29,7 +30,8 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
-    posterior = pipeline.predict_prob(test_features)
+    clf = CalibratedClassifierCV(pipeline) 
+    posterior = clf.predict_prob(test_features)
     f_to_c_vec = np.vectorize(f_to_c)
     f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
