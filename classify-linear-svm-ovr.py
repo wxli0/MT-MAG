@@ -61,16 +61,16 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
         test_folder_short = test_folder_short[:-8]
     sheet_name = test_folder_short+'-'+pipeline.prefix
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = sheet_name[:31]+'H', index=True)
+        df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
     writer.save()
     writer.close()
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-H-c', index=True)
+        df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
     writer.save()
     writer.close()
 
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-H-l', index=True)
+        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-l', index=True)
     writer.save()
     writer.close()
 
