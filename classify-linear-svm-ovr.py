@@ -28,13 +28,14 @@ def f_to_c(theta):
 
 
 def custom_softmax(f_x):
+    alpha = 1.2
     ret = np.zeros(f_x.shape)
     for j in range(f_x.shape[0]):
         r = f_x[j]
         print("r is:", r)
         nor_r = np.zeros(f_x.shape[1])
         for i in range(len(r)):
-            nor_r[i] = 2*exp(r[i])
+            nor_r[i] = alpha*exp(r[i])
             if r[i] < 0:
                 nor_r[i] = exp(r[i])
             nor_r /= np.sum(nor_r)
@@ -58,14 +59,17 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
         labels_copy = labels
         labels = [labels_copy[0]+'-'+labels_copy[1]]
     df = pd.DataFrame(f_x, columns=labels)
+    df['prediction'] = y_pred
+    df.index = test_ids
+
     df_post = pd.DataFrame(f_post, columns=labels)
     df_post.index = test_ids
     df_post['prediction'] = y_pred
+
     df_post1 = pd.DataFrame(f_post1, columns=labels)
     df_post1.index = test_ids
     df_post1['prediction'] = y_pred
-    df['prediction'] = y_pred
-    df.index = test_ids
+    
     df_c = pd.DataFrame(f_x_c, columns=labels)
     df_c['prediction'] = y_pred
     df_c.index = test_ids
