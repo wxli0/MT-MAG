@@ -19,6 +19,7 @@ from helpers_new import entries_count
 from classifyhelpers import testing, training, read_pfiles
 from sklearn.calibration import CalibratedClassifierCV
 from scipy.special import softmax
+from math import exp
 
 #e.g. python3 classify.py o__Bacteroidales_exclude_g__C941 g__C941_wrapper
 
@@ -26,13 +27,29 @@ def f_to_c(theta):
     return -2*max(0, 1+theta)/(-2*max(0, 1+theta)-2*max(0, 1-theta))
 
 
+def custom_softmax(f_x):
+    ret = np.zeros(f_x.shape)
+    for j in f_x.shape[0]:
+        r = f_x[j]
+        print("r is:", r)
+        nor_r = np.zeros(f_x.shape[1])
+        for i in range(len(r)):
+            nor_r[i] = 2*exp(r[i])
+            if r[i] < 0:
+                nor_r[i] = exp(r[i])
+            nor_r /= np.sum(nor_r)
+        print("nor_r is:", nor_r)
+        ret[j] = nor_r
+    return ret
+
 
 def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
-    f_post = softmax(f_x, axis=1)
+    # f_post = softmax(f_x, axis=1)
     # f_post = pipeline.predict_proba(test_features)
+    f_post = custom_softmax(f_x)
     f_to_c_vec = np.vectorize(f_to_c)
     f_x_c = f_to_c_vec(f_x)
     labels = list(set(pipeline.classes_))
@@ -61,17 +78,17 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     if test_folder.endswith('wrapper'):
         test_folder_short = test_folder_short[:-8]
     sheet_name = test_folder_short+'-'+pipeline.prefix
-    with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
-    writer.save()
-    writer.close()
-    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
-    writer.save()
-    writer.close()
+    # with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
+    #     df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
+    # writer.save()
+    # writer.close()
+    # with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+    #     df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
+    # writer.save()
+    # writer.close()
 
-    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-l', index=True)
+    with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
+        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
     writer.save()
     writer.close()
 
