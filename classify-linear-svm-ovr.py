@@ -29,7 +29,7 @@ def f_to_c(theta):
 
 def custom_softmax(f_x):
     ret = np.zeros(f_x.shape)
-    for j in f_x.shape[0]:
+    for j in range(f_x.shape[0]):
         r = f_x[j]
         print("r is:", r)
         nor_r = np.zeros(f_x.shape[1])
