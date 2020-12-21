@@ -70,6 +70,7 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     df_post1 = pd.DataFrame(f_post1, columns=labels)
     df_post1.index = test_ids
     df_post1['prediction'] = y_pred
+    df_post1['max'] = np.max(f_post1, axis=0)
     
     df_c = pd.DataFrame(f_x_c, columns=labels)
     df_c['prediction'] = y_pred
