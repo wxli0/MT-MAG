@@ -87,16 +87,18 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     if test_folder.endswith('wrapper'):
         test_folder_short = test_folder_short[:-8]
     sheet_name = test_folder_short+'-'+pipeline.prefix
-    # with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-    #     df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
-    # writer.save()
-    # writer.close()
+
+    with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
+        df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
+    writer.save()
+    writer.close()
+    
     # with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
     #     df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
     # writer.save()
     # writer.close()
 
-    with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
+    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
         df_post1.to_excel(writer, sheet_name = sheet_name[:29]+'-l', index=True)
     writer.save()
     writer.close()
@@ -105,9 +107,6 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     #     df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
     # writer.save()
     # writer.close()
-
-
-
 
     return accuracy_score(y, y_pred)
 
