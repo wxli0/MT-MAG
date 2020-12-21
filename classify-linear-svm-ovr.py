@@ -100,10 +100,10 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     writer.save()
     writer.close()
 
-    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
-    writer.save()
-    writer.close()
+    # with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+    #     df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
+    # writer.save()
+    # writer.close()
 
 
 
