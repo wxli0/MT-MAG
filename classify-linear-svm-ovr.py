@@ -75,7 +75,10 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     df_c = pd.DataFrame(f_x_c, columns=labels)
     df_c['prediction'] = y_pred
     df_c.index = test_ids
-    # print(df_c)
+    print("using softmax")
+    print(df_post1)
+
+    print("using custom softmax")
     print(df_post)
 
     path = 'outputs/fft-'+train_folder+'.xlsx'
@@ -103,10 +106,10 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     writer.save()
     writer.close()
 
-    # with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-    #     df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
-    # writer.save()
-    # writer.close()
+    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
+    writer.save()
+    writer.close()
 
     return accuracy_score(y, y_pred)
 
