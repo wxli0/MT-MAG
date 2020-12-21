@@ -27,27 +27,9 @@ def f_to_c(theta):
     return -2*max(0, 1+theta)/(-2*max(0, 1+theta)-2*max(0, 1-theta))
 
 
-def custom_softmax(f_x):
-    alpha = 1.2
-    ret = np.zeros(f_x.shape)
-    for j in range(f_x.shape[0]):
-        r = f_x[j]
-        # print("r is:", r)
-        nor_r = np.zeros(f_x.shape[1])
-        for i in range(len(r)):
-            nor_r[i] = alpha*exp(r[i])
-            if r[i] < 0:
-                nor_r[i] = exp(r[i])
-            nor_r /= np.sum(nor_r)
-        # print("nor_r is:", nor_r)
-        ret[j] = nor_r
-    return ret
-
-
 def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
-    f_x = pipeline.decision_function(test_features)
     f_post = pipeline.predict_proba(test_features)
     labels = list(set(pipeline.classes_))
     labels.sort()
@@ -55,14 +37,9 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
         labels_copy = labels
         labels = [labels_copy[0]+'-'+labels_copy[1]]
 
-    df = pd.DataFrame(f_x, columns=labels)
-    df['prediction'] = y_pred
-    df.index = test_ids
-
     df_post = pd.DataFrame(f_post, columns=labels)
     df_post.index = test_ids
     df_post['prediction'] = y_pred
-
 
     path = 'outputs/fft-'+train_folder+'.xlsx'
     m = 'w'
@@ -73,18 +50,11 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     if test_folder.endswith('wrapper'):
         test_folder_short = test_folder_short[:-8]
     sheet_name = test_folder_short+'-'+pipeline.prefix
-    with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
-        df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
-    writer.save()
-    writer.close()
 
-    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+    with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
     writer.save()
     writer.close()
-
-
-
 
     return accuracy_score(y, y_pred)
 
