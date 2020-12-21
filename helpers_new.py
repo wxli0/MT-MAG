@@ -6,6 +6,7 @@ from scipy.spatial import distance
 import random
 from sklearn import svm
 from sklearn.svm import LinearSVC
+from sklearn.ensemble import RandomForestClassifier
 from sklearn import discriminant_analysis
 from sklearn import neighbors
 from sklearn.metrics import accuracy_score
@@ -221,6 +222,8 @@ def build_pipeline(num_features, classifier):
         normalizers.append(('classifier',discriminant_analysis.LinearDiscriminantAnalysis()))
     if classifier == 'KNN':
         normalizers.append(('classifier',neighbors.KNeighborsClassifier()))
+    if classifier == 'rf':
+        normalizers.append(('classifier',RandomForestClassifier(random_state=0)))
     
 
     return Pipeline(normalizers)

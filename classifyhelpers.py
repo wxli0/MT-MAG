@@ -54,6 +54,8 @@ def training(train_data, k, classifier):
         pipeline.prefix = 'QSVM'
     elif classifier == 'rbf-svm':
         pipeline.prefix = 'RSVM'
+    elif classifier == 'rf':
+        pipeline.prefix = 'RF'
 
     return pipeline
 
