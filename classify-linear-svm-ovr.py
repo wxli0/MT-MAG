@@ -48,11 +48,7 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
-    f_post1 = softmax(f_x, axis=1)
-    # f_post = pipeline.predict_proba(test_features)
-    f_post = custom_softmax(f_x)
-    f_to_c_vec = np.vectorize(f_to_c)
-    f_x_c = f_to_c_vec(f_x)
+
     labels = list(set(pipeline.classes_))
     labels.sort()
     if len(labels) == 2:
@@ -62,25 +58,6 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     df = pd.DataFrame(f_x, columns=labels)
     df['prediction'] = y_pred
     df.index = test_ids
-
-    df_post = pd.DataFrame(f_post, columns=labels)
-    df_post.index = test_ids
-    df_post['max'] = np.max(f_post, axis=1)
-    df_post['prediction'] = y_pred
-
-    df_post1 = pd.DataFrame(f_post1, columns=labels)
-    df_post1.index = test_ids
-    df_post1['max'] = np.max(f_post1, axis=1)
-    df_post1['prediction'] = y_pred
-    
-    df_c = pd.DataFrame(f_x_c, columns=labels)
-    df_c['prediction'] = y_pred
-    df_c.index = test_ids
-    print("using softmax")
-    print(df_post1)
-
-    print("using custom softmax")
-    print(df_post)
 
     path = 'outputs/fft-'+train_folder+'.xlsx'
     m = 'w'
@@ -94,21 +71,6 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
 
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
-    writer.save()
-    writer.close()
-    
-    # with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-    #     df_c.to_excel(writer, sheet_name = sheet_name[:29]+'-c', index=True)
-    # writer.save()
-    # writer.close()
-
-    # with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-    #     df_post1.to_excel(writer, sheet_name = sheet_name[:29]+'-l', index=True)
-    # writer.save()
-    # writer.close()
-
-    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
     writer.save()
     writer.close()
 
