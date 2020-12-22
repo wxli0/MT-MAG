@@ -10,10 +10,10 @@ import openpyxl
 
 file_path = sys.argv[1]
 sheet = sys.argv[2]
-alpha = 0.93
+alpha = 0.90
 
 df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
-df['rejection'] = df.apply(lambda row: 'reject' if row['max'] < alpha else row['prediction'], axis=1)
+df['rejection-'+str(alpha)] = df.apply(lambda row: 'reject' if row['max'] < alpha else row['prediction'], axis=1)
 
 wb = openpyxl.load_workbook(file_path)
 del wb[sheet]
