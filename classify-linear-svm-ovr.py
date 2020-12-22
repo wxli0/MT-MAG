@@ -28,7 +28,7 @@ def f_to_c(theta):
 
 
 def custom_softmax(f_x):
-    alpha = 1.2
+    alpha = 1.4
     ret = np.zeros(f_x.shape)
     for j in range(f_x.shape[0]):
         r = f_x[j]
@@ -102,10 +102,10 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
     # writer.save()
     # writer.close()
 
-    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
-        df_post1.to_excel(writer, sheet_name = sheet_name[:29]+'-l', index=True)
-    writer.save()
-    writer.close()
+    # with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+    #     df_post1.to_excel(writer, sheet_name = sheet_name[:29]+'-l', index=True)
+    # writer.save()
+    # writer.close()
 
     with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
         df_post.to_excel(writer, sheet_name = sheet_name[:29]+'-cl', index=True)
