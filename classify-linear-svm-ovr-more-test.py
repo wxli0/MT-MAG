@@ -80,8 +80,6 @@ def testing_lsvm(test_data, k, pipeline, print_entries = False):
 
 print('************ classify new sequences ************************')
 np.set_printoptions(suppress=True)
-train_folder = sys.argv[1]
-test_folder = sys.argv[2]
 
 
 train, tests = read_pfiles_more_test(sys.argv[1])
