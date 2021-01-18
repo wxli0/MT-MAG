@@ -45,7 +45,7 @@ def custom_softmax(f_x):
     return ret
 
 
-def testing_lsvm(test_data, k, pipeline, print_entries = False):
+def testing_lsvm(test_data, k, pipeline, train_folder, test_folder, print_entries = False):
     test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
@@ -84,13 +84,18 @@ np.set_printoptions(suppress=True)
 
 train, tests = read_pfiles_more_test(sys.argv[1])
 
+json_input = json.load(open(sys.argv[1]))
+train_folder = json_input['train_folder']
+test_folders = json_input['test_folders']
+
 k = 7
 classifier = 'linear-svm'
 print("training")
 pipeline = training(train, k, classifier)
 print("training done")
-for test in tests:
-    print("testing")
-    acc = testing_lsvm(test, k, pipeline)
+
+for test, test_folder in zip(tests, test_folders):
+    print("testing", test_folders)
+    acc = testing_lsvm(test, k, pipeline, train_folder, test_folder)
     print(classifier+":", acc)
 
