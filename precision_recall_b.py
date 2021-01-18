@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# python3 precision_recall_b.py outputs/fft-o__Oscillospirales.xlsx
 
 alphas = np.arange(0, 1.02, 0.02).tolist()
 file_name = sys.argv[1]
@@ -26,14 +27,17 @@ for alpha in alphas:
             correct += predicted.count(sheet[:-2])
     p = correct/(reads-unassigned)
     r = correct/reads
+    precision.append(p)
+    recall.append(r)
     print("alpha =", alpha, "precision:", p, "recall:", r)
 
 
-plt.xticks(alphas)
+
+plt.xticks(alphas[::5],  rotation='vertical')
 plt.xlabel("threshould")
 plt.ylabel("precision/recall")
-plt.plot(alphas, precision, 'o-', label="Precision")
-plt.plot(alphas, recall, 'o-', label="Recall")
+plt.plot(alphas, precision, 'o-', label="Precision", markersize=5)
+plt.plot(alphas, recall, 'o-', label="Recall", markersize=5)
 plt.legend()
 plt.savefig(file_name[:-5]+'-pr.png')
 plt.show()

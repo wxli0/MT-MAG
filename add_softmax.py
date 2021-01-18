@@ -5,18 +5,17 @@ import openpyxl
 import numpy as np
 from math import exp
 
-# alpha: changed manually
 # argv[1]: file_name
 # argv[2]: sheet_name
 # e.g.
 
 file_path = sys.argv[1]
 sheet = sys.argv[2]
-alpha = 1
 
 
 
 def custom_softmax(f_x):
+    alpha = 1
     ret = np.zeros(f_x.shape)
     for j in range(f_x.shape[0]):
         r = f_x[j]
@@ -46,11 +45,12 @@ df_softmax.index = df.index
 df_softmax['prediction'] = pred
 print(df_softmax)
 
+wb = openpyxl.load_workbook(file_path)
+del wb[sheet]
+wb.save(file_path)
 
 with pd.ExcelWriter(file_path, engine="openpyxl", mode='a') as writer:  
-    if len(sheet) > 29:
-        sheet = sheet[:23]+'-LSVM'
-    df_softmax.to_excel(writer, sheet_name = sheet+'-'+str(alpha), index=True)
+    df_softmax.to_excel(writer, sheet_name = sheet, index=True)
 writer.save()
 writer.close()
 

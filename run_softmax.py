@@ -1,11 +1,11 @@
 import os
+import sys
+import pandas as pd
 
-files = ["f__F082_eval-LSVM", "f__Lachnospiracea-LSVM", "f__Marinifilaceae_eval-LSVM",
-    "f__Muribaculaceae_eval-LSVM", "f__Paludibacteraceae_eval-LSVM", "f__Porphyromonadaceae_eval-LSVM",
-    "f__Prolixibacteraceae_eval-LSVM", "f__PUMT01_eval-LSVM", "f__Rikenellaceae_eval-LSVM",
-    "f__Tannerellaceae_eval-LSVM", "f__UBA7960_eval-LSVM", "f__UBA932_eval-LSVM",
-    "f__VadinHA17_eval-LSVM", "f__WCHB1-69_eval-LSVM"]
+file_name = sys.argv[1]
+xls = pd.ExcelFile(file_name)
+for sheet in xls.sheet_names:
+    if sheet.endswith('-b'):
+        os.system("python3 add_softmax.py "+file_name+" "+sheet)
+        print(sheet + " done")
 
-for file in files:
-    os.system("python3 add_softmax.py outputs/fft-o__Bacteroidales.xlsx "+file)
-    print(file + " done")
