@@ -23,11 +23,9 @@ for alpha in alphas:
             predicted = df['rejection-'+str(alpha)].tolist()
             reads += len(predicted)
             unassigned += predicted.count('reject')
-            correct += predicted.count(sheet[:-7])
+            correct += predicted.count(sheet[:-2])
     p = correct/(reads-unassigned)
     r = correct/reads
-    precision.append(p)
-    recall.append(r)
     print("alpha =", alpha, "precision:", p, "recall:", r)
 
 

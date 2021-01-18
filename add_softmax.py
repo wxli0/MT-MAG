@@ -12,7 +12,7 @@ from math import exp
 
 file_path = sys.argv[1]
 sheet = sys.argv[2]
-alpha = 30
+alpha = 1
 
 
 
@@ -48,6 +48,8 @@ print(df_softmax)
 
 
 with pd.ExcelWriter(file_path, engine="openpyxl", mode='a') as writer:  
+    if len(sheet) > 29:
+        sheet = sheet[:23]+'-LSVM'
     df_softmax.to_excel(writer, sheet_name = sheet+'-'+str(alpha), index=True)
 writer.save()
 writer.close()
