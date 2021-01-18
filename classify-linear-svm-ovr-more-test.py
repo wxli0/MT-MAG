@@ -86,8 +86,11 @@ train, tests = read_pfiles_more_test(sys.argv[1])
 
 k = 7
 classifier = 'linear-svm'
+print("training")
 pipeline = training(train, k, classifier)
+print("training done")
 for test in tests:
+    print("testing")
     acc = testing_lsvm(test, k, pipeline)
     print(classifier+":", acc)
 
