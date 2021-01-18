@@ -4,6 +4,7 @@ from helpers_new import getStats, plotDict, kmer_count, build_pipeline, plot_con
 import sys
 from helpers_new import entries_count
 import pickle
+import json
 
 def testing(test_data, k, pipeline):
     test_features = []
@@ -65,3 +66,17 @@ def read_pfiles(train_filename, test_filename):
     with open(test_filename, 'rb') as f:
         test = pickle.load(f)
     return train, test
+
+def read_pfiles_more_test(json_file):
+    dest_folder = "p_files/"
+    json_input = json.load(open(json_file))
+    train_folder = json_input['train_folder']
+    test_folders = json_input['test_folders']
+    tests = []
+    with open(dest_folder+train_folder+'.p', 'rb') as f:
+        train = pickle.load(f)
+    for test_filename in test_folders:
+        with open(dest_folder+test_filename+'.p', 'rb') as f:
+            test = pickle.load(f)
+        tests.append(test)
+    return train, tests
