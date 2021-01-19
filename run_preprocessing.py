@@ -1,9 +1,10 @@
 import os
+import sys
 
-files = ["o__Acetivibrionales_eval_wrapper",  "o__Lachnospirales_eval_wrapper",        "o__Saccharofermentanales_eval_wrapper",
-        "o__Clostridiales_eval_wrapper",     "o__Oscillospirales_eval_wrapper",       "o__TANB77_eval_wrapper",
-        "o__Eubacteriales_eval_wrapper",     "o__Peptostreptococcales_eval_wrapper",  "o__Tissierellales_eval_wrapper"]
+dir = sys.argv[1]
+files = os.listdir(os.path.join('~/MLDSP/samples', dir))
 
 for file in files:
+    file = file+"_wrapper"
     os.system("python3 preprocessing.py "+file)
     print(file + "done")
