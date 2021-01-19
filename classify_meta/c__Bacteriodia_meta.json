@@ -1,5 +1,5 @@
 {
-    "train_folder": "c__Bacteriodia",
+    "train_folder": "c__Bacteroidia",
     "test_folders": ["o__Bacteroidales_eval_wrapper", "o__Chitinophagales_eval_wrapper", "o__Cytophagales_eval_wrapper", "o__Flavobacteriales_eval_wrapper", "o__Sphingobacteriales_eval_wrapper"]
 }
 
