@@ -1,0 +1,8 @@
+{
+    "train_folder": "p__Firmicutes_A",
+    "test_folders": ["c__Clostridia_A_eval_wrapper",  "c__Clostridia_eval_wrapper",  "c__Thermoanaerobacteria_eval_wrapper"]
+}
+
+
+
+
