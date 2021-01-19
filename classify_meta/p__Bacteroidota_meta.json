@@ -1,0 +1,9 @@
+{
+    "train_folder": "p__Bacteroidota",
+    "test_folders": ["c__Bacteroidia_eval_wrapper",  "c__Ignavibacteria_eval_wrapper",  "c__UBA10030_eval_wrapper",
+        "c__Chlorobia_eval_wrapper",    "c__Rhodothermia_eval_wrapper"]
+}
+
+
+
+
