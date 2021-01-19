@@ -1,0 +1,204 @@
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.0 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.02 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.04 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.06 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.08 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.1 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.12 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.14 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.16 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.18 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.2 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.22 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.24 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.26 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.28 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.3 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.32 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.34 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.36 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.38 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.4 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.42 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.44 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.46 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.48 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.5 precision: 0.9693486590038314 recall: 0.9693486590038314 weighted: 0.9693486590038314
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.52 precision: 0.9692898272552783 recall: 0.9674329501915708 weighted: 0.9683613887234246
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.54 precision: 0.9692307692307692 recall: 0.9655172413793104 weighted: 0.9673740053050398
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.56 precision: 0.9691714836223507 recall: 0.9636015325670498 weighted: 0.9663865080947003
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.58 precision: 0.971042471042471 recall: 0.9636015325670498 weighted: 0.9673220018047604
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.6 precision: 0.9748062015503876 recall: 0.9636015325670498 weighted: 0.9692038670587186
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.62 precision: 0.9766990291262136 recall: 0.9636015325670498 weighted: 0.9701502808466318
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.64 precision: 0.9766990291262136 recall: 0.9636015325670498 weighted: 0.9701502808466318
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.66 precision: 0.9766990291262136 recall: 0.9636015325670498 weighted: 0.9701502808466318
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.68 precision: 0.9766081871345029 recall: 0.9597701149425287 weighted: 0.9681891510385159
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.7000000000000001 precision: 0.9766081871345029 recall: 0.9597701149425287 weighted: 0.9681891510385159
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.72 precision: 0.9765166340508806 recall: 0.9559386973180076 weighted: 0.9662276656844442
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.74 precision: 0.9765166340508806 recall: 0.9559386973180076 weighted: 0.9662276656844442
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.76 precision: 0.9764243614931237 recall: 0.9521072796934866 weighted: 0.9642658205933052
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.78 precision: 0.9801192842942346 recall: 0.9444444444444444 weighted: 0.9622818643693395
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.8 precision: 0.9819639278557114 recall: 0.9386973180076629 weighted: 0.9603306229316871
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.8200000000000001 precision: 0.9839034205231388 recall: 0.9367816091954023 weighted: 0.9603425148592706
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.84 precision: 0.9838709677419355 recall: 0.9348659003831418 weighted: 0.9593684340625386
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.86 precision: 0.9838383838383838 recall: 0.9329501915708812 weighted: 0.9583942877046325
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.88 precision: 0.9857142857142858 recall: 0.9252873563218391 weighted: 0.9555008210180624
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.9 precision: 0.9876796714579056 recall: 0.921455938697318 weighted: 0.9545678050776119
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.92 precision: 0.9876288659793815 recall: 0.9176245210727969 weighted: 0.9526266935260892
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.9400000000000001 precision: 0.9896049896049897 recall: 0.9118773946360154 weighted: 0.9507411921205025
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.96 precision: 0.9957537154989384 recall: 0.8984674329501916 weighted: 0.947110574224565
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 0.98 precision: 0.9977728285077951 recall: 0.8582375478927203 weighted: 0.9280051882002578
+processing c__Clostridia_A-b
+processing c__Clostridia-b
+processing c__Thermoanaerobacteria-b
+alpha = 1.0 precision: 1 recall: 0.0 weighted: 0.5

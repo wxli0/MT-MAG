@@ -1,0 +1,306 @@
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.0 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.02 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.04 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.06 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.08 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.1 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.12 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.14 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.16 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.18 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.2 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.22 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.24 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.26 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.28 precision: 0.9734395750332006 recall: 0.9734395750332006 weighted: 0.9734395750332006
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.3 precision: 0.9732977303070761 recall: 0.9681274900398407 weighted: 0.9707126101734584
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.32 precision: 0.9745308310991957 recall: 0.9654714475431607 weighted: 0.9700011393211783
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.34 precision: 0.9757738896366084 recall: 0.9628154050464808 weighted: 0.9692946473415446
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.36 precision: 0.9796195652173914 recall: 0.9575033200531209 weighted: 0.9685614426352561
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.38 precision: 0.9821917808219178 recall: 0.952191235059761 weighted: 0.9671915079408394
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.4 precision: 0.9813753581661891 recall: 0.9096945551128818 weighted: 0.9455349566395355
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.42 precision: 0.717391304347826 recall: 0.043824701195219126 weighted: 0.38060800277152257
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.44 precision: 0.717391304347826 recall: 0.043824701195219126 weighted: 0.38060800277152257
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.46 precision: 0.7333333333333333 recall: 0.043824701195219126 weighted: 0.3885790172642762
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.48 precision: 0.7333333333333333 recall: 0.043824701195219126 weighted: 0.3885790172642762
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.5 precision: 0.7333333333333333 recall: 0.043824701195219126 weighted: 0.3885790172642762
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.52 precision: 0.7333333333333333 recall: 0.043824701195219126 weighted: 0.3885790172642762
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.54 precision: 0.75 recall: 0.043824701195219126 weighted: 0.39691235059760954
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.56 precision: 0.75 recall: 0.043824701195219126 weighted: 0.39691235059760954
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.58 precision: 0.7674418604651163 recall: 0.043824701195219126 weighted: 0.4056332808301677
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.6 precision: 0.7674418604651163 recall: 0.043824701195219126 weighted: 0.4056332808301677
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.62 precision: 0.7674418604651163 recall: 0.043824701195219126 weighted: 0.4056332808301677
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.64 precision: 0.7674418604651163 recall: 0.043824701195219126 weighted: 0.4056332808301677
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.66 precision: 0.7674418604651163 recall: 0.043824701195219126 weighted: 0.4056332808301677
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.68 precision: 0.7619047619047619 recall: 0.04249667994687915 weighted: 0.4022007209258205
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.7000000000000001 precision: 0.7619047619047619 recall: 0.04249667994687915 weighted: 0.4022007209258205
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.72 precision: 0.7619047619047619 recall: 0.04249667994687915 weighted: 0.4022007209258205
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.74 precision: 0.7804878048780488 recall: 0.04249667994687915 weighted: 0.41149224241246396
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.76 precision: 0.8 recall: 0.04249667994687915 weighted: 0.4212483399734396
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.78 precision: 0.8205128205128205 recall: 0.04249667994687915 weighted: 0.4315047502298498
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.8 precision: 0.8157894736842105 recall: 0.041168658698539175 weighted: 0.4284790661913748
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.8200000000000001 precision: 0.8378378378378378 recall: 0.041168658698539175 weighted: 0.4395032482681885
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.84 precision: 0.8285714285714286 recall: 0.03851261620185923 weighted: 0.4335420223866439
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.86 precision: 0.8285714285714286 recall: 0.03851261620185923 weighted: 0.4335420223866439
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.88 precision: 0.8235294117647058 recall: 0.03718459495351926 weighted: 0.43035700335911253
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.9 precision: 0.8484848484848485 recall: 0.03718459495351926 weighted: 0.44283472171918387
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.92 precision: 0.84375 recall: 0.035856573705179286 weighted: 0.4398032868525896
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.9400000000000001 precision: 0.84375 recall: 0.035856573705179286 weighted: 0.4398032868525896
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.96 precision: 0.84375 recall: 0.035856573705179286 weighted: 0.4398032868525896
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 0.98 precision: 0.8571428571428571 recall: 0.03187250996015936 weighted: 0.4445076835515082
+processing c__Ignavibacteria-b
+processing c__UBA10030-b
+processing c__Chlorobia-b
+processing c__Rhodothermia-b
+processing c__Bacteroidia-b
+alpha = 1.0 precision: 1 recall: 0.0 weighted: 0.5
