@@ -1,0 +1,306 @@
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.0 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.02 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.04 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.06 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.08 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.1 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.12 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.14 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.16 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.18 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.2 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.22 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.24 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.26 precision: 0.9544303797468354 recall: 0.9544303797468354 weighted: 0.9544303797468354
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.28 precision: 0.9549138804457954 recall: 0.9544303797468354 weighted: 0.9546721300963155
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.3 precision: 0.9553526128868595 recall: 0.9534177215189873 weighted: 0.9543851672029233
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.32 precision: 0.9553072625698324 recall: 0.9524050632911393 weighted: 0.9538561629304858
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.34 precision: 0.9562785968479919 recall: 0.9524050632911393 weighted: 0.9543418300695656
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.36 precision: 0.9572301425661914 recall: 0.9518987341772152 weighted: 0.9545644383717033
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.38 precision: 0.9576530612244898 recall: 0.950379746835443 weighted: 0.9540164040299663
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.4 precision: 0.9586312563840653 recall: 0.950379746835443 weighted: 0.9545055016097541
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.42 precision: 0.9590373783922171 recall: 0.9483544303797469 weighted: 0.9536959043859821
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.44 precision: 0.9629439011837365 recall: 0.9473417721518987 weighted: 0.9551428366678176
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.46 precision: 0.9643410852713178 recall: 0.9448101265822785 weighted: 0.9545756059267981
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.48 precision: 0.9667532467532467 recall: 0.9422784810126582 weighted: 0.9545158638829525
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.5 precision: 0.9681794470526864 recall: 0.9397468354430379 weighted: 0.9539631412478622
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.52 precision: 0.9701570680628272 recall: 0.9382278481012658 weighted: 0.9541924580820464
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.54 precision: 0.9715938979484482 recall: 0.9351898734177215 weighted: 0.9533918856830849
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.56 precision: 0.9720464135021097 recall: 0.9331645569620253 weighted: 0.9526054852320676
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.58 precision: 0.9750663129973475 recall: 0.9306329113924051 weighted: 0.9528496121948763
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.6 precision: 0.9775880469583778 recall: 0.9275949367088607 weighted: 0.9525914918336192
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.62 precision: 0.9796137339055794 recall: 0.9245569620253165 weighted: 0.9520853479654479
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.64 precision: 0.9806243272335845 recall: 0.9225316455696203 weighted: 0.9515779864016024
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.66 precision: 0.9821621621621621 recall: 0.92 weighted: 0.951081081081081
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.68 precision: 0.9826558265582656 recall: 0.9179746835443038 weighted: 0.9503152550512847
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.7000000000000001 precision: 0.9826275787187839 recall: 0.9164556962025316 weighted: 0.9495416374606578
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.72 precision: 0.9830878341516639 recall: 0.9124050632911392 weighted: 0.9477464487214016
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.74 precision: 0.9840484048404841 recall: 0.9058227848101266 weighted: 0.9449355948253053
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.76 precision: 0.9850746268656716 recall: 0.9022784810126582 weighted: 0.9436765539391649
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.78 precision: 0.9877437325905293 recall: 0.8977215189873418 weighted: 0.9427326257889355
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.8 precision: 0.9893438025799215 recall: 0.8931645569620253 weighted: 0.9412541797709735
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.8200000000000001 precision: 0.9898074745186863 recall: 0.8850632911392405 weighted: 0.9374353828289634
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.84 precision: 0.9903244166192373 recall: 0.8810126582278481 weighted: 0.9356685374235427
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.86 precision: 0.9913644214162349 recall: 0.8718987341772152 weighted: 0.931631577796725
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.88 precision: 0.9912841371295759 recall: 0.8637974683544304 weighted: 0.9275408027420031
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.9 precision: 0.9917888563049854 recall: 0.8562025316455696 weighted: 0.9239956939752775
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.92 precision: 0.993479549496147 recall: 0.8486075949367089 weighted: 0.921043572216428
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.9400000000000001 precision: 0.9951367781155015 recall: 0.8288607594936709 weighted: 0.9119987688045862
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.96 precision: 0.9968652037617555 recall: 0.8050632911392405 weighted: 0.900964247450498
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 0.98 precision: 0.9993315508021391 recall: 0.7569620253164557 weighted: 0.8781467880592975
+processing p__Actinobacteriota-b
+processing p__Bacteroidota-b
+processing p__Chloroflexota-b
+processing p__Cyanobacteria-b
+processing p__Desulfobacterota-b
+alpha = 1.0 precision: 1 recall: 0.0 weighted: 0.5
