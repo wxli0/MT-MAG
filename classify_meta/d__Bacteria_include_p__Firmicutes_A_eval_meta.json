@@ -1,0 +1,8 @@
+{
+    "train_folder": "d__Bacteria_include_p__Firmicutes_A",
+    "test_folders": ["p__Chloroflexota_eval_wrapper",  "p__Cyanobacteria_eval_wrapper",  "p__Desulfobacterota_eval_wrapper",  "p__Firmicutes_A_eval_wrapper"]
+}
+
+
+
+
