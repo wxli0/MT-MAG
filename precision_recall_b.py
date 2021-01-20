@@ -30,7 +30,8 @@ for alpha in alphas:
     if (reads-unassigned) != 0:
         p = correct/(reads-unassigned)
     r = correct/reads
-    w = 0.5*p+0.5*r
+    p_weight = 0.5
+    w = p_weight*p+(1-p_weight)*r
     precision.append(p)
     recall.append(r)
     weighted.append(w)
