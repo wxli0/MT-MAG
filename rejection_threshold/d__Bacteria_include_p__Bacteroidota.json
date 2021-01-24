@@ -1,7 +1,7 @@
 {
-    "p__Actinobacteriota": 0.92,
-    "p__Bacteroidota": 0.9,
-    "p__Chloroflexota": 0.9,
-    "p__Cyanobacteria":0.9,
-    "p__Desulfobacterota": 0.94
+    "p__Actinobacteriota": 0.98,
+    "p__Bacteroidota": 0.98,
+    "p__Chloroflexota": 0.86,
+    "p__Cyanobacteria":0.98,
+    "p__Desulfobacterota": 0.98
 }
