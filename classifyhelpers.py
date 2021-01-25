@@ -60,12 +60,28 @@ def training(train_data, k, classifier):
 
     return pipeline
 
+
+def p_files_to_normal(train_data, k):
+    train_features = []
+    train_labels = []
+
+    for i in range(len(train_data)):
+        train_features.append(kmer_count(train_data[i][1], k))
+        train_labels.append(train_data[i][0])
+
+    x = np.asarray(train_features).astype('float32')
+    features = np.abs(np.fft.fft(x))
+    subtypes = np.asarray(train_labels)
+    return features, subtypes
+
+
 def read_pfiles(train_filename, test_filename):
     with open(train_filename, 'rb') as f:
         train = pickle.load(f)
     with open(test_filename, 'rb') as f:
         test = pickle.load(f)
     return train, test
+
 
 def read_pfiles_more_test(json_file):
     dest_folder = "p_files/"

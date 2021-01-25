@@ -14,6 +14,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import colors
 import math
+import sys
+from classifyhelpers import *
 
 np.random.seed(2020)
 
@@ -63,60 +65,23 @@ loss_name_cost = 'hinge'
 rej_cost = 0.25
 
 """# Prepare data"""
+train_folder = sys.argv[1]
+test_folder = sys.argv[2]
 
-# generate multivariate Gaussian sample by the Cholesky decomposition
-# https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Drawing_values_from_the_distribution
-dim_features = 2
-num_classes = 3
+dest_folder = "p_files/"
 
-mean = np.array([[-2, -2],
-                 [1, 2],
-                 [2, -2]])  # [num_classes, dim_features]
-std = np.array([[1, 1],
-                [1, 1],
-                [1, 1]])  # [num_classes, dim_features]
-corr = np.array([0, -.2, .4])  # [num_classes]
+train_filename = dest_folder+train_folder+'.p'
+test_filename = dest_folder+test_folder+'.p'
 
-# calculate the covariance matrix
-cov = np.zeros((num_classes, dim_features, dim_features))
-for i in range(num_classes):
-    cov[i] = np.diag(std[i]) @ np.array([[1, corr[i]], [corr[i], 1]]) @ np.diag(std[i])
+train, test = read_pfiles(train_filename, test_filename)
 
-num_clean_train = 800
+k = 7
+x, y = p_files_to_normal(train, k)
+x_test, y_test = p_files_to_normal(test, k)
 
-y = np.random.choice(num_classes, size=num_clean_train)
-x = mean[y] + (np.linalg.cholesky(cov)[y] @ np.random.randn(num_clean_train, dim_features, 1)).squeeze()
-print(x.shape)
-print(y.shape)
+num_classes = len(np.unique(y))
+dim_features = x.shape[1]
 
-num_clean_test = 800
-y_test = np.random.choice(num_classes, size=num_clean_test)
-x_test = mean[y_test] + (np.linalg.cholesky(cov)[y_test] @ np.random.randn(num_clean_test, dim_features, 1)).squeeze()
-print(y_test.shape)
-print(x_test.shape)
-
-# add an extra noisy cluster
-mean_cluster = np.array([-4, 6])  # [dim_features]
-num_extra_train = 200
-num_extra_test = 200
-
-x_cluster_train = mean_cluster + np.random.randn(num_extra_train, dim_features)
-y_cluster_train = np.random.choice([0, 1], size=num_extra_train)
-x = np.append(x, x_cluster_train, axis=0)
-y = np.append(y, y_cluster_train, axis=0)
-
-x_cluster_test = mean_cluster + np.random.randn(num_extra_test, dim_features)
-y_cluster_test = np.random.choice([0, 1], size=num_extra_test)
-x_test = np.append(x_test, x_cluster_test, axis=0)
-y_test = np.append(y_test, y_cluster_test, axis=0)
-
-print(x.shape)
-print(y.shape)
-print(y)
-
-print(x_test.shape)
-print(y_test.shape)
-print(y_test)
 
 
 """# Prepare model"""
