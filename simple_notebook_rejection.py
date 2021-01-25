@@ -165,7 +165,7 @@ loss_func = one_vs_all_loss(losses[loss_name_ova])
 
 # training
 print("start training")
-train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
+train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 100000)
 
 """## Test"""
 
