@@ -75,6 +75,12 @@ def p_files_to_normal(train_data, k):
     return features, subtypes
 
 
+def update_y_values(y, dict):
+    for i in range(len(y)):
+        y[i] = y_dict[y[i]]
+    return y
+
+
 def read_pfiles(train_filename, test_filename):
     with open(train_filename, 'rb') as f:
         train = pickle.load(f)
