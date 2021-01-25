@@ -77,6 +77,7 @@ def p_files_to_normal(train_data, k):
 
 def update_y_values(y, dict):
     for i in range(len(y)):
+        print("y[i] is:", y[i])
         y[i] = dict[y[i]]
     return y
 
