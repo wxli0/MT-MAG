@@ -84,10 +84,10 @@ for i in range(len(y_unique)):
     y_dict[y_unique[i]] = i
 print("y_dict is:", y_dict)
 
-y = update_y_values(y_dict, y)
+y = update_y_values(y, y_dict)
 
 x_test, y_test = p_files_to_normal(test, k)
-y_test = update_y_values(y_dict, y_test)
+y_test = update_y_values(y_test, y_dict)
 
 
 num_classes = len(np.unique(y))
