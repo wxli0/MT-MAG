@@ -108,6 +108,7 @@ from tqdm import trange
 
 x_tensor = torch.tensor(x).float()
 y_tensor = torch.tensor(y).long()
+print(y)
 x_tensor_test = torch.tensor(x_test).float()
 y_tensor_test = torch.tensor(y_test).long()
 
