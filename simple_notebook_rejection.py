@@ -107,8 +107,9 @@ from tqdm import trange
 """### Convert data to tensor"""
 
 x_tensor = torch.tensor(x).float()
+print("y is", y)
+
 y_tensor = torch.tensor(y).long()
-print(y)
 x_tensor_test = torch.tensor(x_test).float()
 y_tensor_test = torch.tensor(y_test).long()
 
