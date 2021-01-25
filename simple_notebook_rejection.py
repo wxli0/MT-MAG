@@ -150,7 +150,12 @@ def one_vs_all_loss(loss_func):
         out_n = out.masked_select(mask[y] == 0)  # [batch_size * (num_classes - 1)]
         
         l_p = loss_func(out_p)  # [batch_size]
+        print("out_p is:", out_p)
+        print("l_p is:", l_p)
+
         l_n = loss_func(-out_n)  # [batch_size * (num_classes - 1)]
+        print("-out_n is:", -out_n)
+        print("l_n is:", l_n)
         
         # sum -> batch average
         return (l_p.sum() + l_n.sum()) / batch_size
