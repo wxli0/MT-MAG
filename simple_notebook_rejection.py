@@ -134,6 +134,7 @@ def train(model, optimizer, loss_func, x, y, iterations):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+        print("iteration:", i, "loss:", loss)
 
 """---
 
