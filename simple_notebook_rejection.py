@@ -118,38 +118,6 @@ print(x_test.shape)
 print(y_test.shape)
 print(y_test)
 
-# canvas
-margin = 2
-x_min = x.min(0) - margin 
-x_max = x.max(0) + margin
-
-print(x_min)
-print(x_max)
-
-# meshgrid for evaluation
-n_mesh = 500
-x_mesh = np.stack(np.meshgrid(np.linspace(x_min[0], x_max[0], n_mesh),
-                              np.linspace(x_min[1], x_max[1], n_mesh)), -1)
-
-x_plot = n_mesh * (x - x_min) / (x_max - x_min)
-print(x.shape)
-print(x_mesh)
-print(x_mesh.shape)
-
-# colors
-color_list = ['xkcd:red', 'xkcd:green', 'xkcd:blue']
-rgb_list = np.array([list(colors.to_rgb(c)) for c in color_list])
-cmap = colors.ListedColormap(rgb_list)
-
-def scatter(ax, x):
-    # global: y, cmap
-    ax.scatter(*x.T, 
-               s=150,
-               c=y, cmap=cmap,
-               edgecolors='k', linewidth=1)
-
-fig, ax = plt.subplots(figsize=(10, 10))
-scatter(ax, x)
 
 """# Prepare model"""
 
@@ -163,7 +131,6 @@ from tqdm import trange
 
 x_tensor = torch.tensor(x).float()
 y_tensor = torch.tensor(y).long()
-x_mesh_tensor = torch.tensor(x_mesh).float()
 x_tensor_test = torch.tensor(x_test).float()
 y_tensor_test = torch.tensor(y_test).long()
 
@@ -186,30 +153,6 @@ def train(model, optimizer, loss_func, x, y, iterations):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-
-def evaluate_mesh(model):
-    # global: x_mesh_tensor, n_mesh, dim_features, num_classes
-    with torch.no_grad():
-        x_mesh_flatten = x_mesh_tensor.reshape(n_mesh * n_mesh, dim_features)
-        out_mesh_flatten = model(x_mesh_flatten)
-        out_mesh = out_mesh_flatten.reshape(n_mesh, n_mesh, num_classes)
-    return out_mesh
-
-def test(model):
-    # global: x_mesh_tensor, n_mesh, dim_features, num_classes
-    with torch.no_grad():
-        out_test = model_ova(x_tensor_test)
-        out_mesh = out_mesh_flatten.reshape(n_mesh, n_mesh, num_classes)
-    return out_mesh
-
-def contour(ax, data, boundary, color):
-    # fill
-    ax.contourf(data, levels=[boundary, 1e10],
-                colors=color, alpha=0.2,
-                zorder=1)
-    # contour
-    ax.contour(data, levels=[boundary],
-               colors=color, linewidths=5)
 
 """---
 
@@ -241,22 +184,6 @@ loss_func = cost_sensitive_loss(losses[loss_name_cost], rej_cost=rej_cost)
 
 # training
 train(model_cost, optimizer, loss_func, x_tensor, y_tensor, 1000)
-
-"""## Visualize"""
-
-# evaluation
-out_mesh = evaluate_mesh(model_cost)
-
-# plot
-fig, ax = plt.subplots(figsize=(10, 10))
-ax.set_title(f'Cost-sensitive:{loss_name_cost}', fontsize=20)
-ax.set_xticks([])
-ax.set_yticks([])
-
-for i in range(num_classes):
-    # contour at 0 (sign)
-    contour(ax, data=out_mesh[..., i], boundary=0., color=color_list[i])
-scatter(ax, x_plot)
 
 """## Test"""
 
@@ -312,23 +239,6 @@ loss_func = one_vs_all_loss(losses[loss_name_ova])
 # training
 train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
-"""## Visualize"""
-
-# evaluation
-out_mesh = evaluate_mesh(model_ova)
-p_y_x = torch.sigmoid(out_mesh)
-
-# plot
-fig, ax = plt.subplots(figsize=(10, 10))
-ax.set_title(f'One-vs-all:{loss_name_ova}', fontsize=20)
-ax.set_xticks([])
-ax.set_yticks([])
-
-for i in range(num_classes):
-    # contour at 1 - c
-    contour(ax, data=p_y_x[..., i], boundary=1 - rej_cost, color=color_list[i])
-scatter(ax, x_plot)
-
 """## Test"""
 
 def conf_reject(threshold: float):
@@ -368,23 +278,6 @@ loss_func = F.cross_entropy
 
 # training
 train(model_ce, optimizer, loss_func, x_tensor, y_tensor, 1000)
-
-"""## Visualize"""
-
-# evaluation
-out_mesh = evaluate_mesh(model_ce)
-p_y_x = torch.softmax(out_mesh, dim=2)
-
-# plot
-fig, ax = plt.subplots(figsize=(10, 10))
-ax.set_title('Softmax cross-entropy', fontsize=20)
-ax.set_xticks([])
-ax.set_yticks([])
-
-for i in range(num_classes):
-    # contour at 1 - c
-    contour(ax, data=p_y_x[..., i], boundary=1 - rej_cost, color=color_list[i])
-scatter(ax, x_plot)
 
 """## Test"""
 
