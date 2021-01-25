@@ -157,6 +157,7 @@ optimizer = optim.AdamW(model_ova.parameters())
 loss_func = one_vs_all_loss(losses[loss_name_ova])
 
 # training
+print("start training")
 train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
 """## Test"""
@@ -167,6 +168,7 @@ def conf_reject(threshold: float):
 
     return reject
 
+print("start testing")
 out_test = model_ova(x_tensor_test)
 rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
 result = torch.zeros_like(y_tensor_test)
@@ -183,5 +185,3 @@ zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
 print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
 print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
 print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
-
-"""---
