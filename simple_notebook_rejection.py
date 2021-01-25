@@ -82,11 +82,13 @@ y_dict = {}
 y_unique = np.unique(y)
 for i in range(len(y_unique)):
     y_dict[y_unique[i]] = i
+print("y_dict is:", y_dict)
 
 y = update_y_values(y_dict, y)
-y_test = update_y_values(y_dict, y_test)
 
 x_test, y_test = p_files_to_normal(test, k)
+y_test = update_y_values(y_dict, y_test)
+
 
 num_classes = len(np.unique(y))
 dim_features = x.shape[1]
