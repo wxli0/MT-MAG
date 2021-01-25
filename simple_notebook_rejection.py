@@ -177,6 +177,7 @@ def conf_reject(threshold: float):
 
 print("start testing")
 out_test = model_ova(x_tensor_test)
+print("predicted is:", out_test)
 rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
 result = torch.zeros_like(y_tensor_test)
 result[rejected] = -1
