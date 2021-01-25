@@ -82,6 +82,7 @@ y_dict = {}
 y_unique = np.unique(y)
 for i in range(len(y_unique)):
     y_dict[y_unique[i]] = i
+    y_dict[y_unique[i]+'_eval'] = i
 print("y_dict is:", y_dict)
 
 y = update_y_values(y, y_dict)
