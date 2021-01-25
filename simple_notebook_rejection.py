@@ -121,60 +121,6 @@ def train(model, optimizer, loss_func, x, y, iterations):
 
 """---
 
-# Cost-sensitive approach: https://arxiv.org/abs/2010.11748
-"""
-
-def cost_sensitive_loss(loss_func, rej_cost):
-    def loss(out, y):
-        batch_size, num_classes = out.shape
-        mask = torch.eye(num_classes, num_classes).long()
-        
-        out_p = out.masked_select(mask[y] == 1)  # [batch_size]
-        out_n = out.masked_select(mask[y] == 0)  # [batch_size * (num_classes - 1)]
-        
-        l_p = loss_func(out_p)  # [batch_size]
-        l_n = loss_func(-out_n)  # [batch_size * (num_classes - 1)]
-        
-        # sum -> weighted average -> batch average
-        return (rej_cost * l_p.sum() + (1 - rej_cost) * l_n.sum()) / batch_size
-        
-    return loss
-
-"""## Train """
-
-# setup
-model_cost = get_mlp()
-optimizer = optim.AdamW(model_cost.parameters())
-loss_func = cost_sensitive_loss(losses[loss_name_cost], rej_cost=rej_cost)
-
-# training
-train(model_cost, optimizer, loss_func, x_tensor, y_tensor, 1000)
-
-"""## Test"""
-
-def cs_reject(t):
-    top1, top2 = t.topk(2, dim=1)[0].T
-    return (top1 < 0) | (top2 > 0)
-
-out_test = model_cost(x_tensor_test)
-rejected = cs_reject(out_test)
-result = torch.zeros_like(y_tensor_test)
-result[rejected] = -1
-result[~rejected & (y_tensor_test == out_test.argmax(1))] = 1
-
-num_data = len(result)
-num_rejected = (result == -1).sum().item()
-num_wrong = (result == 0).sum().item()
-num_correct = (result == 1).sum().item()
-num_selected = num_wrong + num_correct
-zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
-
-print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
-print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
-print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
-
-"""---
-
 # One-vs-all loss (confidence-based approach): https://arxiv.org/abs/1901.10655
 """
 
@@ -230,38 +176,3 @@ print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % 
 print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
 
 """---
-
-# Softmax cross-entropy loss (confidence-based approach): https://arxiv.org/abs/1901.10655
-
-## Train
-"""
-
-# setup
-model_ce = get_mlp()
-optimizer = optim.AdamW(model_ce.parameters())
-loss_func = F.cross_entropy
-
-# training
-train(model_ce, optimizer, loss_func, x_tensor, y_tensor, 1000)
-
-"""## Test"""
-
-out_test = model_ova(x_tensor_test)
-# use conf_reject in the test part of one-vs-all
-rejected = conf_reject(1-rej_cost)(out_test)
-result = torch.zeros_like(y_tensor_test)
-result[rejected] = -1
-result[~rejected & (y_tensor_test == out_test.argmax(1))] = 1
-
-num_data = len(result)
-num_rejected = (result == -1).sum().item()
-num_wrong = (result == 0).sum().item()
-num_correct = (result == 1).sum().item()
-num_selected = num_wrong + num_correct
-zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
-
-print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
-print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
-print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
-
-"""---"""
