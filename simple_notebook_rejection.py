@@ -77,6 +77,8 @@ train, test = read_pfiles(train_filename, test_filename)
 
 k = 7
 x, y = p_files_to_normal(train, k)
+print("x shape is:", x.shape)
+print("y shape is:", y.shape)
 
 y_dict = {}
 y_unique = np.unique(y)
