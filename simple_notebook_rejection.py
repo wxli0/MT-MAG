@@ -137,12 +137,13 @@ def train(model, optimizer, loss_func, x, y, iterations):
         # clip gradients
         clipping_value = 1 
         torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
+        print("***** iteration:", iteration, "******")
         print("print gradients:")
         for p in model.parameters():
             if p.grad is not None:
                 print(p.grad.data)
         optimizer.step()
-        print("iteration:", i, "loss:", loss.item())
+        print("loss:", loss.item())
 
 """---
 
