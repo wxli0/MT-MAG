@@ -140,7 +140,7 @@ def train(model, optimizer, loss_func, x, y, iterations):
         print("print gradients:")
         for p in model.parameters():
             if p.grad is not None:
-            print(p.grad.data)
+                print(p.grad.data)
         optimizer.step()
         print("iteration:", i, "loss:", loss.item())
 
