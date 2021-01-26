@@ -5,8 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# e.g. python3 run_rejection.py outputs/fft-o__Bacteroidales.xlsx 0.84
-
+# e.g. python3 run_rejection_f.py outputs/fft-p__Bacteroidota.xlsx rejection_threshold/p__Bacteroidota.json 
 file_name = sys.argv[1]
 thresholds = sys.argv[2]
 
