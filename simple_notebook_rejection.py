@@ -133,6 +133,9 @@ def train(model, optimizer, loss_func, x, y, iterations):
         # backward
         optimizer.zero_grad()
         loss.backward()
+        # clip gradients
+        clipping_value = 1 
+        torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
         optimizer.step()
         print("iteration:", i, "loss:", loss)
 
