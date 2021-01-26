@@ -138,7 +138,7 @@ def train(model, optimizer, loss_func, x, y, iterations):
         clipping_value = 1 
         torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
         optimizer.step()
-        print("iteration:", i, "loss:", loss)
+        print("iteration:", i, "loss:", loss.item(), "gradients:", loss.weight.grad)
 
 """---
 
@@ -175,7 +175,7 @@ loss_func = one_vs_all_loss(losses[loss_name_ova])
 
 # training
 print("start training")
-train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 100000)
+train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
 """## Test"""
 
