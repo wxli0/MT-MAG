@@ -121,8 +121,8 @@ def get_mlp():
     model = nn.Sequential(
         nn.Linear(dim_features, 64),
         nn.ReLU(inplace=True),
-        nn.Linear(64, num_classes),
-        nn.Softmax()
+        nn.Linear(64, num_classes)
+        # nn.Softmax()
     )
     return model
 
@@ -134,9 +134,9 @@ def train(model, optimizer, loss_func, x, y, iterations):
         # backward
         optimizer.zero_grad()
         loss.backward()
-        # # clip gradients
-        # clipping_value = 1 
-        # torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
+        # clip gradients
+        clipping_value = 1 
+        torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
         print("***** iteration:", iteration, "******")
         print("print gradients:")
         for p in model.parameters():
