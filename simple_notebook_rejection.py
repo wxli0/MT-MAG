@@ -121,7 +121,7 @@ def get_mlp():
     model = nn.Sequential(
         nn.Linear(dim_features, 64),
         nn.ReLU(inplace=True),
-        nn.Linear(64, num_classes),
+        # nn.Linear(64, num_classes),
         nn.Softmax(num_classes)
     )
     return model
