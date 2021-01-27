@@ -116,7 +116,7 @@ x_tensor_test = torch.tensor(x_test).float()
 y_tensor_test = torch.tensor(y_test).long()
 
 """### Model"""
-max_len = 36
+max_len = 16
 x_tensor =  torch.reshape(x_tensor, [-1, max_len, 4])
 x_tensor_test =  torch.reshape(x_tensor_test, [-1, max_len, 4])
 
