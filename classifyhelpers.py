@@ -70,8 +70,11 @@ def p_files_to_normal(train_data, k):
         train_labels.append(train_data[i][0])
 
     x = np.asarray(train_features).astype('float32')
+    print("x shape is:", x.shape)
     features = np.abs(np.fft.fft(x))
+    print("features shape is:", features.shape)
     subtypes = np.asarray(train_labels)
+    print("subtypes shape is:", subtypes.shape)
     return features, subtypes
 
 
