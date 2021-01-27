@@ -123,9 +123,9 @@ x_tensor_test =  torch.reshape(x_tensor_test, [-1, max_len, 4])
 
 def get_mlp():
     model = nn.Sequential(
-        nn.Conv1d(in_channels=16, out_channels=16, kernel_size=16),
+        nn.Conv1d(in_channels=16, out_channels=16, kernel_size=4),
         nn.ReLU(),
-        nn.MaxPool1d(kernel_size=16),
+        nn.MaxPool1d(kernel_size=4),
         nn.LSTM(input_size=1024, hidden_size=16, bidirectional=True),
         nn.Tanh(),
         nn.Flatten(),
