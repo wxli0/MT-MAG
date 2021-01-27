@@ -116,12 +116,23 @@ x_tensor_test = torch.tensor(x_test).float()
 y_tensor_test = torch.tensor(y_test).long()
 
 """### Model"""
+max_len = 100
+x_tensor =  torch.reshape(x_tensor, -1, max_len, 4)
+x_tensor_test =  torch.reshape(x_tensor_test, -1, max_len, 4)
+
 
 def get_mlp():
     model = nn.Sequential(
-        nn.Linear(dim_features, 64),
-        nn.ReLU(inplace=True),
-        nn.Linear(64, num_classes)
+        nn.Conv1d(in_channels=-1, out_channels=30, kernel_size=30)
+        nn.ReLU()
+        nn.MaxPool1d(kernel_size=30)
+        nn.LSTM(input_size=1024, hidden_size=300, bidirectional=True)
+        nn.Tanh()
+        nn.Flatten()
+        # nn.Linear()
+        nn.Linear(in_features=1024, out_features=512)
+        nn.ReLU()
+        nn.Linear(in_features=512, out_features=dim_features)
     )
     return model
 
