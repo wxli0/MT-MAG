@@ -109,7 +109,7 @@ from tqdm import trange
 """### Convert data to tensor"""
 
 x_tensor = torch.tensor(x).float()
-print("y is", y)
+# print("y is", y)
 
 y_tensor = torch.tensor(y).long()
 x_tensor_test = torch.tensor(x_test).float()
@@ -117,8 +117,8 @@ y_tensor_test = torch.tensor(y_test).long()
 
 """### Model"""
 max_len = 100
-x_tensor =  torch.reshape(x_tensor, -1, max_len, 4)
-x_tensor_test =  torch.reshape(x_tensor_test, -1, max_len, 4)
+x_tensor =  torch.reshape(x_tensor, [-1, max_len, 4])
+x_tensor_test =  torch.reshape(x_tensor_test, [-1, max_len, 4])
 
 
 def get_mlp():
