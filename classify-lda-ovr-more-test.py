@@ -88,6 +88,6 @@ print("training done")
 
 for test, test_folder in zip(tests, test_folders):
     print("testing", test_folder)
-    acc = testing_lsvm(test, k, pipeline, train_folder, test_folder)
+    acc = testing_lda(test, k, pipeline, train_folder, test_folder)
     print(classifier+":", acc)
 
