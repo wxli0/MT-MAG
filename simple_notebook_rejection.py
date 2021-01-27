@@ -125,8 +125,8 @@ def get_mlp():
     model = nn.Sequential(
         nn.Conv1d(in_channels=16, out_channels=16, kernel_size=16),
         nn.ReLU(),
-        nn.MaxPool1d(kernel_size=30),
-        nn.LSTM(input_size=1024, hidden_size=300, bidirectional=True),
+        nn.MaxPool1d(kernel_size=16),
+        nn.LSTM(input_size=1024, hidden_size=16, bidirectional=True),
         nn.Tanh(),
         nn.Flatten(),
         # nn.Linear()
