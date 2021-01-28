@@ -53,9 +53,8 @@ plt.plot(alphas, recall, 'o-', label="Recall", markersize=2)
 plt.plot(alphas, weighted, 'o-', label="Weighted", markersize=2)
 plt.axhline(y=0.7, color='r', linestyle='-')
 plt.legend()
-if os.path.isdir(file_name[:-5]+'-pr/'):
-    os.mkdir(file_name[:-5]+'-pr/')
-plt.savefig(file_name[:-5]+'-pr/'+file_name[:-5]+'-'+taxon+'-pr.png')
+
+plt.savefig(file_name[:-5]+'-'+taxon+'-pr.png')
 # plt.show()
 
 
