@@ -18,18 +18,18 @@ for alpha in alphas:
     reads = 0
     correct = 0
     unassigned = 0
-
     for sheet in xls.sheet_names:
-        df = pd.read_excel(file_name, sheet_name=sheet)
-        df = df.loc[df['prediction'] == taxon]
-        if df.shape[0] == 0:
-            continue
-        df['rejection-'+str(alpha)] = df.apply(lambda row: 'reject' if row['max'] < alpha else row['prediction'], axis=1)
-        predicted = df['rejection-'+str(alpha)].tolist()
-        reads += df.shape[0]
-        unassigned += predicted.count('reject')
-        if sheet.startswith(taxon):
-            correct += predicted.count(taxon)
+        if sheet.endswith('-b-p'):
+            df = pd.read_excel(file_name, sheet_name=sheet)
+            df = df.loc[df['prediction'] == taxon]
+            if df.shape[0] == 0:
+                continue
+            df['rejection-'+str(alpha)] = df.apply(lambda row: 'reject' if row['max'] < alpha else row['prediction'], axis=1)
+            predicted = df['rejection-'+str(alpha)].tolist()
+            reads += df.shape[0]
+            unassigned += predicted.count('reject')
+            if sheet.startswith(taxon):
+                correct += predicted.count(taxon)
             
     p = 1
     if (reads-unassigned) != 0:
