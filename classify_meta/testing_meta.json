@@ -1,0 +1,8 @@
+{
+    "train_folder": "p__Firmicutes_A",
+    "test_folders": ["g__Prevotella_wrapper", "g__RC9_wrapper", "g__C941_wrapper", "f__Lachnospiraceae", "g__Ruminococcus_E"]
+}
+
+
+
+
