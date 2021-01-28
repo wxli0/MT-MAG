@@ -66,10 +66,14 @@ def testing_lsvm(test_data, k, pipeline, train_folder, test_folder, print_entrie
         m = 'a'
 
     test_folder_short = test_folder
-    if test_folder.endswith('wrapper'):
-        test_folder_short = test_folder_short[:7]
-        test_folder_short.split('/')[-1]
-    sheet_name = test_folder_short+'-b'
+    if test_folder.endswith('_eval_wrapper'):
+        test_folder_short = test_folder_short[:-12]
+        test_folder_short.split('/')[1]
+        sheet_name = test_folder_short+'-b'
+    if test_folder.endswith('_test_wrapper'):
+        test_folder_short = test_folder_short[:-12]
+        test_folder_short.split('/')[1]
+        sheet_name = test_folder_short+'-t'
 
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
