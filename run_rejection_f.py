@@ -12,7 +12,7 @@ thresholds = sys.argv[2]
 
 xls = pd.ExcelFile(file_name)
 for sheet in xls.sheet_names:
-    if sheet.endswith('-t'):
+    if sheet.endswith('-p'):
         os.system("python3 add_rejection_f.py  "+ file_name+" " +sheet + " " +thresholds)
         print(sheet + " done")
 
