@@ -6,7 +6,7 @@ import os
 
 # python3 precision_recall_b.py outputs/fft-o__Oscillospirales.xlsx
 
-alphas = np.arange(0, 1.01, 0.01).tolist()
+alphas = np.arange(0, 1.01, 0.001).tolist()
 file_name = sys.argv[1]
 taxon = sys.argv[2]
 
