@@ -52,7 +52,7 @@ plt.plot(alphas, recall, 'o-', label="Recall", markersize=2)
 plt.plot(alphas, weighted, 'o-', label="Weighted", markersize=2)
 plt.axhline(y=0.7, color='r', linestyle='-')
 plt.legend()
-plt.savefig(file_name[:-5]+'-'+taxon+'-b-pr.png')
+plt.savefig(file_name[:-5]+'-'+taxon+'-b-p-pr.png')
 # plt.show()
 
 
