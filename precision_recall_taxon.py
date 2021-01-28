@@ -6,7 +6,7 @@ import os
 
 # python3 precision_recall_b.py outputs/fft-o__Oscillospirales.xlsx
 
-gap = 0.001
+gap = 0.01
 alphas = np.arange(0, 1+gap, gap).tolist()
 file_name = sys.argv[1]
 taxon = sys.argv[2]
