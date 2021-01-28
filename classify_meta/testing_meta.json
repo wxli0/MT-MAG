@@ -1,5 +1,5 @@
 {
-    "train_folder": "p__Bacteroidota",
+    "train_folder": "p__Firmicutes_A",
     "test_folders": ["rumen/g__Prevotella_test_wrapper", "rumen/g__RC9_test_wrapper", "rumen/g__C941_test_wrapper", "rumen/f__Lachnospiraceae_test_wrapper", "rumen/g__Ruminococcus_E_test_wrapper"]
 }
 
