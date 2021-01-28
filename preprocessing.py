@@ -55,7 +55,7 @@ for filename in os.listdir('data/'+input_folder):
 print(len(data))
 #print a random sample:
 index = random.randint(0,len(data))
-print(data[index])
+# print(data[index])
 
 # Save the dataset.
 dest_folder = "p_files/"
