@@ -1,6 +1,6 @@
 {
-    "train_folder": "c__Bacteroidia",
-    "test_folders": ["o__Bacteroidales_eval_wrapper", "o__Chitinophagales_eval_wrapper", "o__Cytophagales_eval_wrapper", "o__Flavobacteriales_eval_wrapper", "o__Sphingobacteriales_eval_wrapper"]
+    "train_folder": "c__Bacteroidia_train",
+    "test_folders": ["c__Bacteroidia_eval/o__Bacteroidales_eval_wrapper", "c__Bacteroidia_eval/o__Chitinophagales_eval_wrapper", "c__Bacteroidia_eval/o__Cytophagales_eval_wrapper", "c__Bacteroidia_eval/o__Flavobacteriales_eval_wrapper", "c__Bacteroidia_eval/o__Sphingobacteriales_eval_wrapper"]
 }
 
 
