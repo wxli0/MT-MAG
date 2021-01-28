@@ -116,10 +116,10 @@ x_tensor_test = torch.tensor(x_test).float()
 y_tensor_test = torch.tensor(y_test).long()
 
 """### Model"""
-max_len = 16
-x_tensor =  torch.reshape(x_tensor, [-1, max_len, 4])
-print("x_tensor_shape is:", x_tensor.shape)
-x_tensor_test =  torch.reshape(x_tensor_test, [-1, max_len, 4])
+# max_len = 16
+# x_tensor =  torch.reshape(x_tensor, [-1, max_len, 4])
+# print("x_tensor_shape is:", x_tensor.shape)
+# x_tensor_test =  torch.reshape(x_tensor_test, [-1, max_len, 4])
 
 
 def get_mlp():
