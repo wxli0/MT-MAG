@@ -1,6 +1,6 @@
 {
     "train_folder": "p__Firmicutes_A",
-    "test_folders": ["g__Prevotella_wrapper", "g__RC9_wrapper", "g__C941_wrapper", "f__Lachnospiraceae", "g__Ruminococcus_E"]
+    "test_folders": ["g__Prevotella_test_wrapper", "g__RC9_test_wrapper", "g__C941_test_wrapper", "f__Lachnospiraceae_test_wrapper", "g__Ruminococcus_E_test_wrapper"]
 }
 
 
