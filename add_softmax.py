@@ -47,7 +47,7 @@ print(df_softmax)
 
 
 with pd.ExcelWriter(file_path, engine="openpyxl", mode='a') as writer:  
-    df_softmax.to_excel(writer, sheet_name = sheet+'p', index=True)
+    df_softmax.to_excel(writer, sheet_name = sheet+'-p', index=True)
 writer.save()
 writer.close()
 

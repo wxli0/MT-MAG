@@ -19,7 +19,7 @@ for alpha in alphas:
     correct = 0
     unassigned = 0
     for sheet in xls.sheet_names:
-        if sheet.endswith('-b-p'):
+        if sheet.endswith('-p'):
             df = pd.read_excel(file_name, sheet_name=sheet)
             df = df.loc[df['prediction'] == taxon]
             if df.shape[0] == 0:
@@ -52,7 +52,7 @@ plt.plot(alphas, recall, 'o-', label="Recall", markersize=2)
 plt.plot(alphas, weighted, 'o-', label="Weighted", markersize=2)
 plt.axhline(y=0.7, color='r', linestyle='-')
 plt.legend()
-plt.savefig(file_name[:-5]+'-'+taxon+'-b-p-pr.png')
+plt.savefig(file_name[:-5]+'-pr/'+file_name[:-5]+'-'+taxon+'-pr.png')
 # plt.show()
 
 

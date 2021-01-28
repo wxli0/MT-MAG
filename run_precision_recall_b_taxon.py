@@ -11,7 +11,7 @@ file_name = sys.argv[1]
 
 xls = pd.ExcelFile(file_name)
 for sheet in xls.sheet_names:
-    if sheet.endswith('-b-p'):
+    if sheet.endswith('-p'):
         # os.system("python3 precision_recall_taxon.py " + file_name+ " " +  sheet[:-4])
 
         os.system("python3 precision_recall_taxon.py " + file_name+ " " +  sheet[:-4] + " > " + file_name[:-5]+'-'+sheet+'-log.txt')
