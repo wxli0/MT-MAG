@@ -60,7 +60,7 @@ def testing_lsvm(test_data, k, pipeline, train_folder, test_folder, print_entrie
     df['prediction'] = y_pred
     df.index = test_ids
 
-    path = 'outputs/fft-'+train_folder+'.xlsx'
+    path = 'outputs/'+train_folder+'.xlsx'
     m = 'w'
     if os.path.isfile(path):
         m = 'a'
