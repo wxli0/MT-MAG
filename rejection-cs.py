@@ -155,7 +155,7 @@ def update_y_test_values(y_test, dict):
         if i_short.endswith('_test'):
             i_short = i_short[:-5]
         print("after i_short is:", i_short)
-        y_test_new = trans_dict[i_short]
+        y_test_new.append(trans_dict[i_short])
     print("trans_dict is:", trans_dict)
     print("after trans, y_test is:", y_test_new)
     return update_y_values(y_test_new, dict)
