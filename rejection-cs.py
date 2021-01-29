@@ -68,72 +68,6 @@ loss_name_ova = 'logistic'
 loss_name_cost = 'hinge'
 rej_cost = 0.25
 
-# """# Prepare data"""
-# train_folder = sys.argv[1]
-# test_folder = sys.argv[2]
-
-# dest_folder = "p_files/"
-
-# train_filename = dest_folder+train_folder+'.p'
-# test_filename = dest_folder+test_folder+'.p'
-
-# train, test = read_pfiles(train_filename, test_filename)
-
-# def update_y_test_values(y_test, dict):
-#     # transform y to values in label_dict
-#     print("initially y_test is:", y_test)
-#     trans_dict = {}
-#     if train_folder.startswith('c'):
-#         trans_dict = json.load(open('label_dict/class_dict.json'))
-#     elif train_folder.startswith('d'):
-#         trans_dict = json.load(open('label_dict/domain_dict.json'))
-#     if train_folder.startswith('o'):
-#         trans_dict = json.load(open('label_dict/order_dict.json'))
-#     if train_folder.startswith('p'):
-#         trans_dict = json.load(open('label_dict/phylum_dict.json'))
-#     for i in range(len(y_test)):
-#         i_short = y_test[i]
-#         if y_test[i].endswith('_test'):
-#             i_short = i_short[:-5]
-#         y_test[i] = trans_dict[i_short]
-#     print("trans_dict is:", trans_dict)
-#     print("after trans, y_test is:", y_test)
-#     return update_y_values(y_test, dict)
-
-
-# k = 7
-# x, y = p_files_to_normal(train, k)
-# print("x shape is:", x.shape)
-# print("y shape is:", y.shape)
-
-# y_dict = {}
-# y_unique = np.unique(y)
-# for i in range(len(y_unique)):
-#     y_dict[y_unique[i]] = i
-#     y_dict[y_unique[i]+'_eval'] = i
-#     y_dict[y_unique[i]+'_test'] = i
-# print("y_dict is:", y_dict)
-
-# y = update_y_values(y, y_dict)
-
-# x_test, y_test = p_files_to_normal(test, k)
-# y_test = update_y_test_values(y_test, y_dict)
-
-# scaler = StandardScaler(with_mean=False)
-# svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
-# x = scaler.fit_transform(x)
-# x = svd.fit_transform(x)
-
-# x_test = scaler.transform(x_test)
-# x_test = svd.transform(x_test)
-
-# num_classes = len(np.unique(y))
-# dim_features = x.shape[1]
-# print("x.shape is:", x.shape, "y.len is:", len(y))
-# print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
-
-
-
 """# Prepare model"""
 
 import torch
@@ -225,6 +159,7 @@ def update_y_test_values(y_test, dict):
 
 train, tests = read_pfiles_more_test(sys.argv[1])
 test_folders = json.load(open(sys.argv[1]))['test_folders']
+train_folder = json.load(open(sys.argv[1]))['train_folder']
 
 
 k = 7
