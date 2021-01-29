@@ -151,13 +151,9 @@ def update_y_test_values(y_test, dict):
     y_test_new = []
     for i in range(len(y_test)):
         i_short = y_test[i]
-        print("i_short is:", i_short)
         if i_short.endswith('_test'):
             i_short = i_short[:-5]
-        print("after i_short is:", i_short)
         y_test_new.append(trans_dict[i_short])
-    print("trans_dict is:", trans_dict)
-    print("after trans, y_test is:", y_test_new)
     return update_y_values(y_test_new, dict)
 
 train, tests = read_pfiles_more_test(sys.argv[1])
@@ -204,7 +200,7 @@ optimizer = optim.AdamW(model_cost.parameters())
 loss_func = cost_sensitive_loss(losses[loss_name_cost], rej_cost=rej_cost)
 
 # training
-train_model(model_cost, optimizer, loss_func, x_tensor, y_tensor, 10)
+train_model(model_cost, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
 """## Test"""
 
