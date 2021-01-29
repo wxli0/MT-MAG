@@ -17,6 +17,7 @@ import math
 import sys
 from classifyhelpers import *
 from sklearn.decomposition import TruncatedSVD
+from sklearn.preprocessing import StandardScaler
 
 np.random.seed(2020)
 
@@ -94,14 +95,22 @@ y = update_y_values(y, y_dict)
 x_test, y_test = p_files_to_normal(test, k)
 y_test = update_y_values(y_test, y_dict)
 
+scaler = StandardScaler(with_mean=False)
 svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
+x = scaler.fit_transform(x)
 x = svd.fit_transform(x)
+
+x_test = scaler.transform(x_test)
 x_test = svd.transform(x_test)
 
 num_classes = len(np.unique(y))
 dim_features = x.shape[1]
 print("x.shape is:", x.shape, "y.len is:", len(y))
 print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
+print("================ printing x================")
+print(x)
+print("================ printing y ===============")
+print(y)
 
 
 
