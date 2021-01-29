@@ -148,16 +148,17 @@ def update_y_test_values(y_test, dict):
         trans_dict = json.load(open('label_dict/order_dict.json'))
     if train_folder.startswith('p'):
         trans_dict = json.load(open('label_dict/phylum_dict.json'))
+    y_test_new = []
     for i in range(len(y_test)):
         i_short = y_test[i]
         print("i_short is:", i_short)
         if i_short.endswith('_test'):
             i_short = i_short[:-5]
         print("after i_short is:", i_short)
-        y_test[i] = trans_dict[i_short]
+        y_test_new = trans_dict[i_short]
     print("trans_dict is:", trans_dict)
-    print("after trans, y_test is:", y_test)
-    return update_y_values(y_test, dict)
+    print("after trans, y_test is:", y_test_new)
+    return update_y_values(y_test_new, dict)
 
 train, tests = read_pfiles_more_test(sys.argv[1])
 test_folders = json.load(open(sys.argv[1]))['test_folders']
