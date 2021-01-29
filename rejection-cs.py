@@ -105,10 +105,10 @@ def train_model(model, optimizer, loss_func, x, y, iterations):
         clipping_value = 1 
         torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
         print("***** iteration:", iteration, "******")
-        print("print gradients:")
-        for p in model.parameters():
-            if p.grad is not None:
-                print(p.grad.data)
+        # print("print gradients:")
+        # for p in model.parameters():
+        #     if p.grad is not None:
+        #         print(p.grad.data)
         optimizer.step()
         print("loss:", loss.item())
 
@@ -150,8 +150,10 @@ def update_y_test_values(y_test, dict):
         trans_dict = json.load(open('label_dict/phylum_dict.json'))
     for i in range(len(y_test)):
         i_short = y_test[i]
-        if y_test[i].endswith('_test'):
+        print("i_short is:", i_short)
+        if i_short.endswith('_test'):
             i_short = i_short[:-5]
+        print("after i_short is:", i_short)
         y_test[i] = trans_dict[i_short]
     print("trans_dict is:", trans_dict)
     print("after trans, y_test is:", y_test)
