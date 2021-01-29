@@ -84,13 +84,13 @@ def update_y_test_values(y_test, dict):
     print("initially y_test is:", y_test)
     trans_dict = {}
     if train_folder.startswith('c'):
-        trans_dict = json.load('label_dict/class_dict.json')
+        trans_dict = json.load(open('label_dict/class_dict.json'))
     elif train_folder.startswith('d'):
-        trans_dict = json.load('label_dict/domain_dict.json')
+        trans_dict = json.load(open('label_dict/domain_dict.json'))
     if train_folder.startswith('o'):
-        trans_dict = json.load('label_dict/order_dict.json')
+        trans_dict = json.load(open('label_dict/order_dict.json'))
     if train_folder.startswith('p'):
-        trans_dict = json.load('label_dict/phylum_dict.json')
+        trans_dict = json.load(open('label_dict/phylum_dict.json'))
     for i in y_test:
         y_test[i] = trans_dict[y_test[i]]
     print("trans_dict is:", trans_dict)
