@@ -68,73 +68,69 @@ loss_name_ova = 'logistic'
 loss_name_cost = 'hinge'
 rej_cost = 0.25
 
-"""# Prepare data"""
-train_folder = sys.argv[1]
-test_folder = sys.argv[2]
+# """# Prepare data"""
+# train_folder = sys.argv[1]
+# test_folder = sys.argv[2]
 
-dest_folder = "p_files/"
+# dest_folder = "p_files/"
 
-train_filename = dest_folder+train_folder+'.p'
-test_filename = dest_folder+test_folder+'.p'
+# train_filename = dest_folder+train_folder+'.p'
+# test_filename = dest_folder+test_folder+'.p'
 
-train, test = read_pfiles(train_filename, test_filename)
+# train, test = read_pfiles(train_filename, test_filename)
 
-def update_y_test_values(y_test, dict):
-    # transform y to values in label_dict
-    print("initially y_test is:", y_test)
-    trans_dict = {}
-    if train_folder.startswith('c'):
-        trans_dict = json.load(open('label_dict/class_dict.json'))
-    elif train_folder.startswith('d'):
-        trans_dict = json.load(open('label_dict/domain_dict.json'))
-    if train_folder.startswith('o'):
-        trans_dict = json.load(open('label_dict/order_dict.json'))
-    if train_folder.startswith('p'):
-        trans_dict = json.load(open('label_dict/phylum_dict.json'))
-    for i in range(len(y_test)):
-        i_short = y_test[i]
-        if y_test[i].endswith('_test'):
-            i_short = i_short[:-5]
-        y_test[i] = trans_dict[i_short]
-    print("trans_dict is:", trans_dict)
-    print("after trans, y_test is:", y_test)
-    return update_y_values(y_test, dict)
+# def update_y_test_values(y_test, dict):
+#     # transform y to values in label_dict
+#     print("initially y_test is:", y_test)
+#     trans_dict = {}
+#     if train_folder.startswith('c'):
+#         trans_dict = json.load(open('label_dict/class_dict.json'))
+#     elif train_folder.startswith('d'):
+#         trans_dict = json.load(open('label_dict/domain_dict.json'))
+#     if train_folder.startswith('o'):
+#         trans_dict = json.load(open('label_dict/order_dict.json'))
+#     if train_folder.startswith('p'):
+#         trans_dict = json.load(open('label_dict/phylum_dict.json'))
+#     for i in range(len(y_test)):
+#         i_short = y_test[i]
+#         if y_test[i].endswith('_test'):
+#             i_short = i_short[:-5]
+#         y_test[i] = trans_dict[i_short]
+#     print("trans_dict is:", trans_dict)
+#     print("after trans, y_test is:", y_test)
+#     return update_y_values(y_test, dict)
 
 
-k = 7
-x, y = p_files_to_normal(train, k)
-print("x shape is:", x.shape)
-print("y shape is:", y.shape)
+# k = 7
+# x, y = p_files_to_normal(train, k)
+# print("x shape is:", x.shape)
+# print("y shape is:", y.shape)
 
-y_dict = {}
-y_unique = np.unique(y)
-for i in range(len(y_unique)):
-    y_dict[y_unique[i]] = i
-    y_dict[y_unique[i]+'_eval'] = i
-    y_dict[y_unique[i]+'_test'] = i
-print("y_dict is:", y_dict)
+# y_dict = {}
+# y_unique = np.unique(y)
+# for i in range(len(y_unique)):
+#     y_dict[y_unique[i]] = i
+#     y_dict[y_unique[i]+'_eval'] = i
+#     y_dict[y_unique[i]+'_test'] = i
+# print("y_dict is:", y_dict)
 
-y = update_y_values(y, y_dict)
+# y = update_y_values(y, y_dict)
 
-x_test, y_test = p_files_to_normal(test, k)
-y_test = update_y_test_values(y_test, y_dict)
+# x_test, y_test = p_files_to_normal(test, k)
+# y_test = update_y_test_values(y_test, y_dict)
 
-scaler = StandardScaler(with_mean=False)
-svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
-x = scaler.fit_transform(x)
-x = svd.fit_transform(x)
+# scaler = StandardScaler(with_mean=False)
+# svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
+# x = scaler.fit_transform(x)
+# x = svd.fit_transform(x)
 
-x_test = scaler.transform(x_test)
-x_test = svd.transform(x_test)
+# x_test = scaler.transform(x_test)
+# x_test = svd.transform(x_test)
 
-num_classes = len(np.unique(y))
-dim_features = x.shape[1]
-print("x.shape is:", x.shape, "y.len is:", len(y))
-print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
-print("================ printing x================")
-print(x)
-print("================ printing y ===============")
-print(y)
+# num_classes = len(np.unique(y))
+# dim_features = x.shape[1]
+# print("x.shape is:", x.shape, "y.len is:", len(y))
+# print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
 
 
 
@@ -146,21 +142,15 @@ import torch.nn.functional as F
 
 from tqdm import trange
 
-"""### Convert data to tensor"""
 
-x_tensor = torch.tensor(x).float()
-# print("y is", y)
-
-y_tensor = torch.tensor(y).long()
-x_tensor_test = torch.tensor(x_test).float()
-y_tensor_test = torch.tensor(y_test).long()
 
 """### Model"""
 # max_len = 16
 # x_tensor =  torch.reshape(x_tensor, [-1, max_len, 4])
 # print("x_tensor_shape is:", x_tensor.shape)
 # x_tensor_test =  torch.reshape(x_tensor_test, [-1, max_len, 4])
-
+x_tensor = torch.tensor(x).float()
+y_tensor = torch.tensor(y).long()
 
 def get_mlp():
     model = nn.Sequential(
@@ -213,6 +203,60 @@ def cost_sensitive_loss(loss_func, rej_cost):
         
     return loss
 
+"""# Prepare data"""
+def update_y_test_values(y_test, dict):
+    # transform y to values in label_dict
+    print("initially y_test is:", y_test)
+    trans_dict = {}
+    if train_folder.startswith('c'):
+        trans_dict = json.load(open('label_dict/class_dict.json'))
+    elif train_folder.startswith('d'):
+        trans_dict = json.load(open('label_dict/domain_dict.json'))
+    if train_folder.startswith('o'):
+        trans_dict = json.load(open('label_dict/order_dict.json'))
+    if train_folder.startswith('p'):
+        trans_dict = json.load(open('label_dict/phylum_dict.json'))
+    for i in range(len(y_test)):
+        i_short = y_test[i]
+        if y_test[i].endswith('_test'):
+            i_short = i_short[:-5]
+        y_test[i] = trans_dict[i_short]
+    print("trans_dict is:", trans_dict)
+    print("after trans, y_test is:", y_test)
+    return update_y_values(y_test, dict)
+
+train, tests = read_pfiles_more_test(sys.argv[1])
+test_folders = json.load(open(sys.argv[1]))['test_folders']
+
+
+k = 7
+x, y = p_files_to_normal(train, k)
+print("x shape is:", x.shape)
+print("y shape is:", y.shape)
+
+y_dict = {}
+y_unique = np.unique(y)
+for i in range(len(y_unique)):
+    y_dict[y_unique[i]] = i
+    y_dict[y_unique[i]+'_eval'] = i
+    y_dict[y_unique[i]+'_test'] = i
+print("y_dict is:", y_dict)
+
+y = update_y_values(y, y_dict)
+
+
+
+scaler = StandardScaler(with_mean=False)
+svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
+x = scaler.fit_transform(x)
+x = svd.fit_transform(x)
+
+
+
+num_classes = len(np.unique(y))
+dim_features = x.shape[1]
+print("x.shape is:", x.shape, "y.len is:", len(y))
+
 """## Train """
 
 # setup
@@ -221,7 +265,7 @@ optimizer = optim.AdamW(model_cost.parameters())
 loss_func = cost_sensitive_loss(losses[loss_name_cost], rej_cost=rej_cost)
 
 # training
-train(model_cost, optimizer, loss_func, x_tensor, y_tensor, 1000)
+train(model_cost, optimizer, loss_func, x_tensor, y_tensor, 10)
 
 """## Test"""
 
@@ -229,20 +273,37 @@ def cs_reject(t):
     top1, top2 = t.topk(2, dim=1)[0].T
     return (top1 < 0) | (top2 > 0)
 
-out_test = model_cost(x_tensor_test)
-rejected = cs_reject(out_test)
-result = torch.zeros_like(y_tensor_test)
-result[rejected] = -1
-result[~rejected & (y_tensor_test == out_test.argmax(1))] = 1
+for i in range(len(tests)):
+    test = tests[i]
+    print("======== testing", test_folders[i], "=========")
+    x_test, y_test = p_files_to_normal(test, k)
+    y_test = update_y_test_values(y_test, y_dict)
+    x_test = scaler.transform(x_test)
+    x_test = svd.transform(x_test)
+    print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
 
-num_data = len(result)
-num_rejected = (result == -1).sum().item()
-num_wrong = (result == 0).sum().item()
-num_correct = (result == 1).sum().item()
-num_selected = num_wrong + num_correct
-zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
+    """### Convert data to tensor"""
 
-print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
-print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
-print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
+    x_tensor_test = torch.tensor(x_test).float()
+    y_tensor_test = torch.tensor(y_test).long()
+
+    out_test = model_cost(x_tensor_test)
+    rejected = cs_reject(out_test)
+    result = torch.zeros_like(y_tensor_test)
+    result[rejected] = -1
+    result[~rejected & (y_tensor_test == out_test.argmax(1))] = 1
+
+    num_data = len(result)
+    num_rejected = (result == -1).sum().item()
+    num_wrong = (result == 0).sum().item()
+    num_correct = (result == 1).sum().item()
+    num_selected = num_wrong + num_correct
+    zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
+
+    print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
+    if num_selected == 0:
+        print("Accuracy of non-rejected data: NA" )
+    else:
+        print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
+    print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
 
