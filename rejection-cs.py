@@ -149,8 +149,6 @@ from tqdm import trange
 # x_tensor =  torch.reshape(x_tensor, [-1, max_len, 4])
 # print("x_tensor_shape is:", x_tensor.shape)
 # x_tensor_test =  torch.reshape(x_tensor_test, [-1, max_len, 4])
-x_tensor = torch.tensor(x).float()
-y_tensor = torch.tensor(y).long()
 
 def get_mlp():
     model = nn.Sequential(
@@ -256,6 +254,9 @@ x = svd.fit_transform(x)
 num_classes = len(np.unique(y))
 dim_features = x.shape[1]
 print("x.shape is:", x.shape, "y.len is:", len(y))
+
+x_tensor = torch.tensor(x).float()
+y_tensor = torch.tensor(y).long()
 
 """## Train """
 
