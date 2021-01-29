@@ -138,7 +138,6 @@ def cost_sensitive_loss(loss_func, rej_cost):
 """# Prepare data"""
 def update_y_test_values(y_test, dict):
     # transform y to values in label_dict
-    print("initially y_test is:", y_test)
     trans_dict = {}
     if train_folder.startswith('c'):
         trans_dict = json.load(open('label_dict/class_dict.json'))
