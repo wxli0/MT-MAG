@@ -6,25 +6,25 @@ y shape is: (563,)
 y_dict is: {'f__Acutalibacteraceae': 0, 'f__Acutalibacteraceae_eval': 0, 'f__Acutalibacteraceae_test': 0, 'f__Oscillospiraceae': 1, 'f__Oscillospiraceae_eval': 1, 'f__Oscillospiraceae_test': 1, 'f__Ruminococcaceae': 2, 'f__Ruminococcaceae_eval': 2, 'f__Ruminococcaceae_test': 2}
 x.shape is: (563, 5) y.len is: 563
 ***** iteration: 0 ******
-loss: 79.54772186279297
+loss: 60.944923400878906
 ***** iteration: 1 ******
-loss: 69.93185424804688
+loss: 48.9824104309082
 ***** iteration: 2 ******
-loss: 60.5982666015625
+loss: 37.03401184082031
 ***** iteration: 3 ******
-loss: 56.57973098754883
+loss: 25.098806381225586
 ***** iteration: 4 ******
-loss: 55.290916442871094
+loss: 13.181286811828613
 ***** iteration: 5 ******
-loss: 53.617897033691406
+loss: 3.6550185680389404
 ***** iteration: 6 ******
-loss: 51.631927490234375
+loss: 4.668761253356934
 ***** iteration: 7 ******
-loss: 49.41551971435547
+loss: 5.466507434844971
 ***** iteration: 8 ******
-loss: 47.02278137207031
+loss: 5.691460132598877
 ***** iteration: 9 ******
-loss: 44.49114227294922
+loss: 5.97181510925293
 ======== testing rumen/g__Prevotella_test_wrapper =========
 x shape is: (127, 16384)
 features shape is: (127, 16384)
@@ -316,42 +316,11 @@ after i_short is: g__Prevotella
 i_short is: g__Prevotella
 after i_short is: g__Prevotella
 trans_dict is: {'g__Prevotella': 'f__Bacteroidaceae', 'g__C941': 'f__Muribaculaceae', 'g__RC9': 'f__UBA932', 'f__Lachnospiraceae': 'f__Lachnospiraceae', 'g__Ruminococcus_E': 'f__Acutalibacteraceae'}
-after trans, y_test is: ['f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida'
- 'f__Bacteroida' 'f__Bacteroida' 'f__Bacteroida']
+after trans, y_test is: ['f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae', 'f__Bacteroidaceae']
 x_test.shape is: (127, 5) y_test.len is: 127
-Number of rejected data: 100.00% (127/127)
-Accuracy of non-rejected data: NA
-Test empirical 0-1-c risk: 0.250000
+Number of rejected data: 1.57% (2/127)
+Accuracy of non-rejected data: 0.00 % (0/125)
+Test empirical 0-1-c risk: 0.988189
 ======== testing rumen/g__RC9_test_wrapper =========
 x shape is: (52, 16384)
 features shape is: (52, 16384)
@@ -468,17 +437,11 @@ after i_short is: g__RC9
 i_short is: g__RC9
 after i_short is: g__RC9
 trans_dict is: {'g__Prevotella': 'f__Bacteroidaceae', 'g__C941': 'f__Muribaculaceae', 'g__RC9': 'f__UBA932', 'f__Lachnospiraceae': 'f__Lachnospiraceae', 'g__Ruminococcus_E': 'f__Acutalibacteraceae'}
-after trans, y_test is: ['f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA'
- 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA'
- 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA'
- 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA'
- 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA'
- 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA'
- 'f__UBA' 'f__UBA' 'f__UBA' 'f__UBA']
+after trans, y_test is: ['f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932', 'f__UBA932']
 x_test.shape is: (52, 5) y_test.len is: 52
-Number of rejected data: 100.00% (52/52)
-Accuracy of non-rejected data: NA
-Test empirical 0-1-c risk: 0.250000
+Number of rejected data: 23.08% (12/52)
+Accuracy of non-rejected data: 0.00 % (0/40)
+Test empirical 0-1-c risk: 0.826923
 ======== testing rumen/g__C941_test_wrapper =========
 x shape is: (35, 16384)
 features shape is: (35, 16384)
@@ -563,19 +526,11 @@ after i_short is: g__C941
 i_short is: g__C941_test
 after i_short is: g__C941
 trans_dict is: {'g__Prevotella': 'f__Bacteroidaceae', 'g__C941': 'f__Muribaculaceae', 'g__RC9': 'f__UBA932', 'f__Lachnospiraceae': 'f__Lachnospiraceae', 'g__Ruminococcus_E': 'f__Acutalibacteraceae'}
-after trans, y_test is: ['f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul' 'f__Muribacul'
- 'f__Muribacul' 'f__Muribacul' 'f__Muribacul']
+after trans, y_test is: ['f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae', 'f__Muribaculaceae']
 x_test.shape is: (35, 5) y_test.len is: 35
-Number of rejected data: 100.00% (35/35)
-Accuracy of non-rejected data: NA
-Test empirical 0-1-c risk: 0.250000
+Number of rejected data: 2.86% (1/35)
+Accuracy of non-rejected data: 0.00 % (0/34)
+Test empirical 0-1-c risk: 0.978571
 ======== testing rumen/f__Lachnospiraceae_test_wrapper =========
 x shape is: (131, 16384)
 features shape is: (131, 16384)
@@ -909,54 +864,11 @@ after i_short is: f__Lachnospiraceae
 i_short is: f__Lachnospiraceae_test
 after i_short is: f__Lachnospiraceae
 trans_dict is: {'g__Prevotella': 'f__Bacteroidaceae', 'g__C941': 'f__Muribaculaceae', 'g__RC9': 'f__UBA932', 'f__Lachnospiraceae': 'f__Lachnospiraceae', 'g__Ruminococcus_E': 'f__Acutalibacteraceae'}
-after trans, y_test is: ['f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae' 'f__Lachnospiraceae'
- 'f__Lachnospiraceae' 'f__Lachnospiraceae']
+after trans, y_test is: ['f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae', 'f__Lachnospiraceae']
 x_test.shape is: (131, 5) y_test.len is: 131
-Number of rejected data: 100.00% (131/131)
-Accuracy of non-rejected data: NA
-Test empirical 0-1-c risk: 0.250000
+Number of rejected data: 4.58% (6/131)
+Accuracy of non-rejected data: 0.00 % (0/125)
+Test empirical 0-1-c risk: 0.965649
 ======== testing rumen/g__Ruminococcus_E_test_wrapper =========
 x shape is: (58, 16384)
 features shape is: (58, 16384)
@@ -1107,27 +1019,8 @@ after i_short is: g__Ruminococcus_E
 i_short is: g__Ruminococcus_E_test
 after i_short is: g__Ruminococcus_E
 trans_dict is: {'g__Prevotella': 'f__Bacteroidaceae', 'g__C941': 'f__Muribaculaceae', 'g__RC9': 'f__UBA932', 'f__Lachnospiraceae': 'f__Lachnospiraceae', 'g__Ruminococcus_E': 'f__Acutalibacteraceae'}
-after trans, y_test is: ['f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae' 'f__Acutalibacteraceae' 'f__Acutalibacteraceae'
- 'f__Acutalibacteraceae']
+after trans, y_test is: ['f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae', 'f__Acutalibacteraceae']
 x_test.shape is: (58, 5) y_test.len is: 58
-Number of rejected data: 100.00% (58/58)
-Accuracy of non-rejected data: NA
-Test empirical 0-1-c risk: 0.250000
+Number of rejected data: 0.00% (0/58)
+Accuracy of non-rejected data: 0.00 % (0/58)
+Test empirical 0-1-c risk: 1.000000
