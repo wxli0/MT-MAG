@@ -68,11 +68,11 @@ def testing_lsvm(test_data, k, pipeline, train_folder, test_folder, print_entrie
     test_folder_short = test_folder
     if test_folder.endswith('_eval_wrapper'):
         test_folder_short = test_folder_short[:-13]
-        test_folder_short = test_folder_short.split('/')[1]
+        test_folder_short = test_folder_short.split('/')[-1]
         sheet_name = test_folder_short+'-b'
     if test_folder.endswith('_test_wrapper'):
         test_folder_short = test_folder_short[:-13]
-        test_folder_short = test_folder_short.split('/')[1]
+        test_folder_short = test_folder_short.split('/')[-1]
         sheet_name = test_folder_short+'-t'
 
     print("sheet_name is:", sheet_name)
