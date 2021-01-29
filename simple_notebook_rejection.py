@@ -100,8 +100,8 @@ x_test = svd.transform(x_test)
 
 num_classes = len(np.unique(y))
 dim_features = x.shape[1]
-print("x.shape is:", x.shape, "y.shape is:", y.shape)
-print("x_test.shape is:", x_test.shape, "y_test.shape is:", y_test.shape)
+print("x.shape is:", x.shape, "y.len is:", len(y))
+print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
 
 
 
