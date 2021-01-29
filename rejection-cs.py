@@ -159,7 +159,7 @@ def get_mlp():
     return model
 
 
-def train(model, optimizer, loss_func, x, y, iterations):
+def train_model(model, optimizer, loss_func, x, y, iterations):
     for iteration in trange(iterations):
         # forward
         out = model(x)  # [batch_size, num_classes]
@@ -266,7 +266,7 @@ optimizer = optim.AdamW(model_cost.parameters())
 loss_func = cost_sensitive_loss(losses[loss_name_cost], rej_cost=rej_cost)
 
 # training
-train(model_cost, optimizer, loss_func, x_tensor, y_tensor, 10)
+train_model(model_cost, optimizer, loss_func, x_tensor, y_tensor, 10)
 
 """## Test"""
 
