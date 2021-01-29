@@ -58,6 +58,8 @@ links = {
     "tangent": lambda p: math.tan(p - 0.5),
 }
 
+
+
 """# Arguments"""
 
 # loss for the one-vs-all (ova) approach
@@ -77,6 +79,24 @@ test_filename = dest_folder+test_folder+'.p'
 
 train, test = read_pfiles(train_filename, test_filename)
 
+def update_y_test_values(y_test, dict):
+    # transform y to values in label_dict
+    print("initially y_test is:", y_test)
+    trans_dict = {}
+    if train_folder.startswith('c'):
+        trans_dict = json.load('label_dict/class_dict.json')
+    elif train_folder.startswith('d'):
+        trans_dict = json.load('label_dict/domain_dict.json')
+    if train_folder.startswith('o'):
+        trans_dict = json.load('label_dict/order_dict.json')
+    if train_folder.startswith('p'):
+        trans_dict = json.load('label_dict/phylum_dict.json')
+    for i in y_test:
+        y_test[i] = trans_dict[y_test[i]]
+    print("trans_dict is:", trans_dict)
+    print("after trans, y_test is:", y_test)
+    return update_y_values(y_test, dict)
+
 
 k = 7
 x, y = p_files_to_normal(train, k)
@@ -88,12 +108,13 @@ y_unique = np.unique(y)
 for i in range(len(y_unique)):
     y_dict[y_unique[i]] = i
     y_dict[y_unique[i]+'_eval'] = i
+    y_dict[y_unique[i]+'_test'] = i
 print("y_dict is:", y_dict)
 
 y = update_y_values(y, y_dict)
 
 x_test, y_test = p_files_to_normal(test, k)
-y_test = update_y_values(y_test, y_dict)
+y_test = update_y_test_values(y_test, y_dict)
 
 scaler = StandardScaler(with_mean=False)
 svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)

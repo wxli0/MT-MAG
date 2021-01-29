@@ -80,9 +80,13 @@ def p_files_to_normal(train_data, k):
 
 def update_y_values(y, dict):
     for i in range(len(y)):
-        y[i] = dict[y[i]]
+        if y[i] in dict:
+            y[i] = dict[y[i]]
+        else:
+            y[i] = 100 # should be rejected, not in dict
     y = [int(i) for i in y] 
     return y
+
 
 
 def read_pfiles(train_filename, test_filename):
