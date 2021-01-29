@@ -16,6 +16,7 @@ from matplotlib import colors
 import math
 import sys
 from classifyhelpers import *
+from sklearn.decomposition import TruncatedSVD
 
 np.random.seed(2020)
 
@@ -75,6 +76,7 @@ test_filename = dest_folder+test_folder+'.p'
 
 train, test = read_pfiles(train_filename, test_filename)
 
+
 k = 7
 x, y = p_files_to_normal(train, k)
 print("x shape is:", x.shape)
@@ -92,9 +94,14 @@ y = update_y_values(y, y_dict)
 x_test, y_test = p_files_to_normal(test, k)
 y_test = update_y_values(y_test, y_dict)
 
+svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
+x = svd.fit_transform(x)
+x_test = svd.transform(x_test)
 
 num_classes = len(np.unique(y))
 dim_features = x.shape[1]
+print("x.shape is:", x.shape, "y.shape is:", y.shape)
+print("x_test.shape is:", x_test.shape, "y_test.shape is:", y_test.shape)
 
 
 
@@ -124,9 +131,9 @@ y_tensor_test = torch.tensor(y_test).long()
 
 def get_mlp():
     model = nn.Sequential(
-        nn.Linear(dim_features, dim_features*4),
+        nn.Linear(dim_features, 64),
         nn.ReLU(inplace=True),
-        nn.Linear(dim_features*4, num_classes),
+        nn.Linear(64, num_classes),
     )
     return model
 
