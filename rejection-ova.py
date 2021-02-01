@@ -201,6 +201,7 @@ train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
 def conf_reject(threshold: float):
     def reject(t):
+        print("t is:", t)
         return t.max(dim=1)[0] < threshold
 
     return reject
