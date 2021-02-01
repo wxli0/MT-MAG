@@ -61,7 +61,7 @@ links = {
 """# Arguments"""
 
 # loss for the one-vs-all (ova) approach
-loss_name_ova = 'hinge'
+loss_name_ova = 'square'
 # loss for the cost-sensitive approach
 loss_name_cost = 'hinge'
 rej_cost = 0.25
@@ -99,14 +99,14 @@ def train_model(model, optimizer, loss_func, x, y, iterations):
         # backward
         optimizer.zero_grad()
         loss.backward()
-        # clip gradients
-        clipping_value = 1 
-        torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
+        # # clip gradients
+        # clipping_value = 1 
+        # torch.nn.utils.clip_grad_norm(model.parameters(), clipping_value)
         print("***** iteration:", iteration, "******")
-        print("print gradients:")
-        for p in model.parameters():
-            if p.grad is not None:
-                print(p.grad.data)
+        # print("print gradients:")
+        # for p in model.parameters():
+        #     if p.grad is not None:
+        #         print(p.grad.data)
         optimizer.step()
         print("loss:", loss.item())
 
