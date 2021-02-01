@@ -222,8 +222,8 @@ for i in range(len(tests)):
     y_tensor_test = torch.tensor(y_test).long()
 
     out_test = model_cost(x_tensor_test)
-    print("out_test predictions are:")
-    print(out_test.argmax(1))
+    print("out_test is:")
+    print(out_test)
     rejected = cs_reject(out_test)
     result = torch.zeros_like(y_tensor_test)
     result[rejected] = -1
