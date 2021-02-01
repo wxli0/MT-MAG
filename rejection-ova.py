@@ -91,7 +91,7 @@ def get_mlp():
     )
     return model
 
-def train(model, optimizer, loss_func, x, y, iterations):
+def train_model(model, optimizer, loss_func, x, y, iterations):
     for iteration in trange(iterations):
         # forward
         out = model(x)  # [batch_size, num_classes]
@@ -195,7 +195,7 @@ loss_func = one_vs_all_loss(losses[loss_name_ova])
 
 # training
 print("start training")
-train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
+train_model(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
 """## Test"""
 
