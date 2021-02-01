@@ -201,7 +201,6 @@ train(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
 def conf_reject(threshold: float):
     def reject(t):
-        print("t is:", t)
         return t.max(dim=1)[0] < threshold
 
     return reject
@@ -222,6 +221,7 @@ for i in range(len(tests)):
 
     out_test = model_ova(x_tensor_test)
     print("out_test is:", out_test)
+    print("threshold is:", -links[loss_name_ova](rej_cost))
     rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
     result = torch.zeros_like(y_tensor_test)
     result[rejected] = -1
