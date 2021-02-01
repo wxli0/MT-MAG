@@ -199,7 +199,7 @@ optimizer = optim.AdamW(model_cost.parameters())
 loss_func = cost_sensitive_loss(losses[loss_name_cost], rej_cost=rej_cost)
 
 # training
-train_model(model_cost, optimizer, loss_func, x_tensor, y_tensor, 1000)
+train_model(model_cost, optimizer, loss_func, x_tensor, y_tensor, 3000)
 
 """## Test"""
 
