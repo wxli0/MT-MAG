@@ -64,7 +64,7 @@ links = {
 loss_name_ova = 'square'
 # loss for the cost-sensitive approach
 loss_name_cost = 'hinge'
-rej_cost = sys.argv[2]
+rej_cost = float(sys.argv[2])
 
 # e.g.  python3 rejection-ova.py classify_meta/p__Bacteroidota_test.json 0.05
 
