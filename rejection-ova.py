@@ -236,5 +236,8 @@ for i in range(len(tests)):
     zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
 
     print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
-    print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
+    if num_selected == 0:
+        print("Accuracy of non-rejected data: NA" )
+    else:
+        print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
     print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
