@@ -152,9 +152,9 @@ def update_y_test_values(y_test, dict):
         i_short = y_test[i]
         if i_short.endswith('_test'):
             i_short = i_short[:-5]
+            y_test_new.append(trans_dict[i_short])
         if i_short.endswith('_eval'):
-            i_short = i_short[:-5]
-        y_test_new.append(trans_dict[i_short])
+            y_test_new.append(i_short[:-5])
     return update_y_values(y_test_new, dict)
 
 train, tests = read_pfiles_more_test(sys.argv[1])
