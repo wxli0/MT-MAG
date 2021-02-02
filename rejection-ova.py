@@ -195,7 +195,7 @@ loss_func = one_vs_all_loss(losses[loss_name_ova])
 
 # training
 print("start training")
-train_model(model_ova, optimizer, loss_func, x_tensor, y_tensor, 3000)
+train_model(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
 
 """## Test"""
 
@@ -205,6 +205,7 @@ def conf_reject(threshold: float):
 
     return reject
 
+print("length of tests is:", len(tests))
 for i in range(len(tests)):
     test = tests[i]
     print("======== testing", test_folders[i], "=========")
