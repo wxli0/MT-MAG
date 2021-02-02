@@ -64,7 +64,7 @@ links = {
 loss_name_ova = 'square'
 # loss for the cost-sensitive approach
 loss_name_cost = 'hinge'
-rej_cost = 0.4
+rej_cost = 0.275
 
 
 """# Prepare model"""
