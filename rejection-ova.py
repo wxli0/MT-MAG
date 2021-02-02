@@ -178,8 +178,8 @@ print("y_dict is:", y_dict)
 y = update_y_values(y, y_dict)
 scaler = StandardScaler(with_mean=False)
 svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
-x = scaler.fit_transform(x)
-x = svd.fit_transform(x)
+# x = scaler.fit_transform(x)
+# x = svd.fit_transform(x)
 
 num_classes = len(np.unique(y))
 dim_features = x.shape[1]
@@ -213,8 +213,8 @@ for i in range(len(tests)):
     print("======== testing", test_folders[i], "=========")
     x_test, y_test = p_files_to_normal(test, k)
     y_test = update_y_test_values(y_test, y_dict)
-    x_test = scaler.transform(x_test)
-    x_test = svd.transform(x_test)
+    # x_test = scaler.transform(x_test)
+    # x_test = svd.transform(x_test)
     print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
 
     """### Convert data to tensor"""
