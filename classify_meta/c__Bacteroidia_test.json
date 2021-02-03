@@ -1,6 +1,6 @@
 {
     "train_folder": "c__Bacteroidia",
-    "test_folders": ["rumen/g__Prevotella_test_wrapper", "rumen/g__RC9_test_wrapper", "rumen/g__C941_test_wrapper", "rumen/f__Lachnospiraceae_test_wrapper", "rumen/g__Ruminococcus_E_test_wrapper"]
+    "test_folders": ["rumen/f__Atopobiaceae_test_wrapper", "rumen/f__Bacteroidaceae_test_wrapper"]
 }
 
 
