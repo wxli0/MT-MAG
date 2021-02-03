@@ -32,7 +32,7 @@ print(pred_id_dict)
 for file in os.listdir(input_folder):
     id = file[:-6]
     prediction = df.loc[id]['rejection-f']
-    dest = os.path.join(output_folder, prediction)
+    dest = os.path.join(output_folder, prediction, file)
     src = os.path.join(input_folder, file)
     if not os.path.isdir(dest):
         os.mkdir(dest)
