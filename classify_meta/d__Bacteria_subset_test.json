@@ -1,10 +1,6 @@
 {
     "train_folder": "d__Bacteria_subset",
-    "test_folders": ["cow_rumen_phylum/p__Actinobacteriota_test_wrapper", 
-        "cow_rumen_phylum/p__Bacteroidota_test_wrapper", 
-        "cow_rumen_phylum/p__Firmicutes_A_test_wrapper", 
-        "cow_rumen_phylum/p__Firmicutes_C_test_wrapper", 
-        "cow_rumen_phylum/p__Firmicutes_test_wrapper"]
+    "test_folders": ["cow_rumen_phylum/p__Actinobacteriota_test_wrapper"]
 }
 
 
