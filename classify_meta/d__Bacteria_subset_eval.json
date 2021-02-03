@@ -1,5 +1,5 @@
 {
-    "train_folder": "d__Bacteria_subset",
+    "train_folder": "d__Bacteria_subset_train",
     "test_folders": ["d__Bacteria_subset_eval/p__Actinobacteriota_eval_wrapper", 
         "d__Bacteria_subset_eval/p__Bacteroidota_eval_wrapper", 
         "d__Bacteria_subset_eval/p__Firmicutes_A_eval_wrapper", 
