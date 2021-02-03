@@ -1,0 +1,6 @@
+{
+    "input_folder": "rumen_mags/domain_level",
+    "output_folder": "rumen_mags/phylum_level",
+    "file_path": "d__Bacteria_subset.xlsx",
+    "sheet": "total-t-p"
+}
