@@ -30,11 +30,12 @@ for index, row in df.iterrows():
 print(pred_id_dict)
 
 for file in os.listdir(input_folder):
-    id = file[:-6]
-    prediction = df.loc[id]['rejection-f']
-    dest_folder = os.path.join(output_folder, prediction)
-    src = os.path.join(input_folder, file)
-    if not os.path.isdir(dest_folder):
-        os.mkdir(dest_folder)
-    copyfile(src, os.path.join(dest_folder, file))
+    if file.endswith('.fasta'):
+        id = file[:-6]
+        prediction = df.loc[id]['rejection-f']
+        dest_folder = os.path.join(output_folder, prediction)
+        src = os.path.join(input_folder, file)
+        if not os.path.isdir(dest_folder):
+            os.mkdir(dest_folder)
+        copyfile(src, os.path.join(dest_folder, file))
 
