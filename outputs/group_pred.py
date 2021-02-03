@@ -3,6 +3,7 @@ import pandas as pd
 import json
 import os
 from shutil import copyfile
+import platform
 
 input_dict = json.load(open(sys.argv[1]))
 file_path = input_dict['file_path']
