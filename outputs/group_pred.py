@@ -36,5 +36,5 @@ for file in os.listdir(input_folder):
     src = os.path.join(input_folder, file)
     if not os.path.isdir(dest):
         os.mkdir(dest)
-    copyfile(src, os.path.join(dest_folder, file)
+    copyfile(src, os.path.join(dest_folder, file))
 
