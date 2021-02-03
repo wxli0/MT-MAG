@@ -34,7 +34,7 @@ for file in os.listdir(input_folder):
     prediction = df.loc[id]['rejection-f']
     dest_folder = os.path.join(output_folder, prediction)
     src = os.path.join(input_folder, file)
-    if not os.path.isdir(dest):
-        os.mkdir(dest)
+    if not os.path.isdir(dest_folder):
+        os.mkdir(dest_folder)
     copyfile(src, os.path.join(dest_folder, file))
 
