@@ -1,6 +1,6 @@
 {
     "train_folder": "o__Bacteroidales",
-    "test_folders": ["rumen_mags/o__Bacteroidota_pred_test_wrapper"]
+    "test_folders": ["rumen_mags/o__Bacteroidales_pred_test_wrapper"]
 
 }
 
