@@ -1,6 +1,6 @@
 {
     "train_folder": "c__Clostridia",
-    "test_folders": ["rumen/f__Atopobiaceae_test_wrapper", "rumen/f__Bacteroidaceae_test_wrapper"]
+    "test_folders": ["rumen_mags/c__Clostridia_pred_test_wrapper"]
 }
 
 
