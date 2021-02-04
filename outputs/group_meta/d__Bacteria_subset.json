@@ -1,6 +1,6 @@
 {
-    "input_folder": "rumen_mags/domain_level",
-    "output_folder": "rumen_mags/phylum_level",
+    "input_folder": "rumen_mags/domain_level/d__Bacteria_subset",
+    "output_folder": "rumen_mags/phylum_level/d__Bacteria_assumed",
     "file_path": "d__Bacteria_subset.xlsx",
     "sheet": "d__Bacteria_assume_pred-t-p"
 }
