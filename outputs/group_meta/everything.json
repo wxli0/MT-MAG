@@ -1,0 +1,6 @@
+{
+    "input_folder": "rumen_mags/everything_level",
+    "output_folder": "rumen_mags/domain_level",
+    "file_path": "everything.xlsx",
+    "sheet": "everything-t-p"
+}

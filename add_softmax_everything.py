@@ -27,8 +27,8 @@ b_probs = []
 mag_ids = []
 for index, row in df.iterrows():
     x = row['d__Archaea-d__Bacteria']
-    a_probs.append(1/(1+exp(-x)))
-    b_probs.append( 1-1/(1+exp(-x)))
+    a_probs.append(1-1/(1+exp(-x)))
+    b_probs.append( 1/(1+exp(-x)))
     mag_ids.append(index)
 
 df_probs = pd.DataFrame()
