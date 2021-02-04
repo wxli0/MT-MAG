@@ -24,7 +24,7 @@ def testing(test_data, k, pipeline):
 
     y_pred = pipeline.predict(test_features)
     y_prob = pipeline.predict_proba(test_features)
-    return test_features, y_pred, y_prob, test_ids, y
+    return test_features, y_pred, test_ids, y
 
 
 def training(train_data, k, classifier):
