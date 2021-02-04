@@ -1,6 +1,6 @@
 {
-    "train_folder": "p__Firmicutes_A",
-    "test_folders": ["rumen_mags/p__Firmicutes_A_pred_test_wrapper"]
+    "train_folder": "p__Firmicutes",
+    "test_folders": ["rumen_mags/p__Firmicutes_pred_test_wrapper"]
 }
 
 
