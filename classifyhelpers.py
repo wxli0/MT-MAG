@@ -23,7 +23,8 @@ def testing(test_data, k, pipeline):
     test_features = np.abs(np.fft.fft(x))
 
     y_pred = pipeline.predict(test_features)
-    return test_features, y_pred, test_ids, y
+    y_prob = pipeline.predict_proba(test_features)
+    return test_features, y_pred, y_prob, test_ids, y
 
 
 def training(train_data, k, classifier):

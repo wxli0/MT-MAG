@@ -46,7 +46,7 @@ def custom_softmax(f_x):
 
 
 def testing_lsvm(test_data, k, pipeline, train_folder, test_folder, print_entries = False):
-    test_features, y_pred, test_ids, y = testing(test_data, k, pipeline)
+    test_features, y_pred, y_prob, test_ids, y = testing(test_data, k, pipeline)
 
     f_x = pipeline.decision_function(test_features)
 
@@ -59,6 +59,10 @@ def testing_lsvm(test_data, k, pipeline, train_folder, test_folder, print_entrie
     df = pd.DataFrame(f_x, columns=labels)
     df['prediction'] = y_pred
     df.index = test_ids
+    
+    df_prob = pd.DataFrame(y_prob, columns=labels)
+    df_prob['prediction'] = y_pred
+    df_prob.index = test_ids
 
     path = 'outputs/'+train_folder+'.xlsx'
     m = 'w'
@@ -78,6 +82,11 @@ def testing_lsvm(test_data, k, pipeline, train_folder, test_folder, print_entrie
     print("sheet_name is:", sheet_name)
     with pd.ExcelWriter(path, engine="openpyxl", mode=m) as writer:  
         df.to_excel(writer, sheet_name = sheet_name[:31], index=True)
+    writer.save()
+    writer.close()
+
+    with pd.ExcelWriter(path, engine="openpyxl", mode='a') as writer:  
+        df_prob.to_excel(writer, sheet_name = sheet_name+'-p', index=True)
     writer.save()
     writer.close()
 
