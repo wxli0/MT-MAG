@@ -1,0 +1,11 @@
+{
+    "train_folder": "p__Actinobacteriota_train",
+    "test_folders": ["p__Actinobacteriota_eval/c__Acidimicrobiia_eval_wrapper",  
+        "p__Actinobacteriota_eval/c__Actinomycetia_eval_wrapper",
+        "p__Actinobacteriota_eval/c__Coriobacteriia_eval_wrapper",
+        "p__Actinobacteriota_eval/c__Thermoleophilia_eval_wrapper"]
+}
+
+
+
+
