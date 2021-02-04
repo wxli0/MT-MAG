@@ -1,0 +1,6 @@
+{
+    "input_folder": "rumen_mags/phylum_level/d__Bacteria_assumed/p__Firmicutes_A",
+    "output_folder": "rumen_mags/class_level/p__Firmicutes_A",
+    "file_path": "p__Firmicutes_A.xlsx",
+    "sheet": "p__Firmicutes_A_pred-t-p"
+}
