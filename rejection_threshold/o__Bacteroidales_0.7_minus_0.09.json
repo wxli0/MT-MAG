@@ -1,11 +1,13 @@
 {
-    "f__Bacteroidaceae": 0.9,
-    "f__Dysgonomonadaceae": 0.24,
-    "f__Muribaculaceae": 0.84,
-    "f__P3": 0.5,
-    "f__Paludibacteraceae": 0.5,
-    "f__Rikenellaceae": 0.81,
-    "f__Tannerellaceae": 0.42,
-    "f__UBA932": 0.84,
-    "f__UBA7960": 0.86
+    "f__Bacteroidaceae": 0.85,
+    "f__Dysgonomonadaceae": 0.43,
+    "f__F082": 0.59,
+    "f__Muribaculaceae": 0.89,
+    "f__P3": 0.6,
+    "f__Paludibacteraceae": 0.89,
+    "f__Rikenellaceae": 0.82,
+    "f__Tannerellaceae": 0.7,
+    "f__UBA932": 0.76,
+    "f__UBA7960": 0.65,
+    "f__WCHB1-69": 0.31
 }
