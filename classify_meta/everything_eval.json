@@ -1,0 +1,6 @@
+{
+    "train_folder": "everything_train",
+    "test_folders": ["everything_eval/d__Archaea_eval_wrapper", 
+        "everything_eval/d__Bacteria_eval_wrapper"]
+}
+
