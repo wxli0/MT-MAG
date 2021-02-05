@@ -1,0 +1,6 @@
+{
+    "input_folder": "rumen_mags/phylum_level/d__Bacteria_assumed/p__Actinobacteriota",
+    "output_folder": "rumen_mags/class_level/p__Actinobacteriota",
+    "file_path": "p__Actinobacteriota.xlsx",
+    "sheet": "p__Actinobacteriota_pred-t-p"
+}
