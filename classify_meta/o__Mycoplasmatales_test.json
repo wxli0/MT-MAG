@@ -1,0 +1,9 @@
+{
+    "train_folder": "o__Mycoplasmatales",
+    "test_folders": ["rumen_mags/o__Mycoplasmatales_pred_test_wrapper"]
+
+}
+
+
+
+
