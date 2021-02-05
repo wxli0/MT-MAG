@@ -7,7 +7,7 @@ from math import exp
 
 # argv[1]: file_name
 # argv[2]: sheet_name
-# e.g. 
+# e.g. python3 add_softmax_2_cluster.py outputs/p__Firmicutes.xlsx p__Firmicutes_pred-t c__Alicyclobacillia c__Bacilli
 file_path = sys.argv[1]
 sheet = sys.argv[2]
 c1 = sys.argv[3]
