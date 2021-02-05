@@ -1,0 +1,9 @@
+{
+    "train_folder": "o__Bacillales",
+    "test_folders": ["rumen_mags/o__Bacillales_pred_test_wrapper"]
+
+}
+
+
+
+
