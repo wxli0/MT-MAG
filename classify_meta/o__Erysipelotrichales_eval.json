@@ -1,0 +1,15 @@
+{
+    "train_folder": "o__Erysipelotrichales_train",
+    "test_folders": [
+        "o__Bacillales_eval/f__Anoxybacillaceae_eval_wrapper",
+        "o__Bacillales_eval/f__Bacillaceae_G_eval_wrapper",
+        "o__Bacillales_eval/f__Bacillaceae_eval_wrapper",
+        "o__Bacillales_eval/f__Amphibacillaceae_eval_wrapper", 
+        "o__Bacillales_eval/f__Bacillaceae_A_eval_wrapper",
+        "o__Bacillales_eval/f__Planococcaceae_eval_wrapper"
+    ]
+}
+
+
+
+

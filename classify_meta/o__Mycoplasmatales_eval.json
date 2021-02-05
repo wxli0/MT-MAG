@@ -1,0 +1,12 @@
+{
+    "train_folder": "oo__Mycoplasmatales_train",
+    "test_folders": [
+        "o__Mycoplasmatales_eval/f__Metamycoplasmataceae_eval_wrapper",
+        "o__Mycoplasmatales_eval//f__Mycoplasmoidaceae_eval_wrapper",
+        "o__Mycoplasmatales_eval//f__Mycoplasmataceae_eval_wrapper"
+    ]
+}
+
+
+
+
