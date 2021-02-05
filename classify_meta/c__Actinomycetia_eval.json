@@ -1,0 +1,16 @@
+{
+    "train_folder": "c__Actinomycetia_train",
+    "test_folders": 
+    [
+        "c__Actinomycetia_eval/o__Propionibacteriales_eval_wrapper",
+        "c__Actinomycetia_eval/o__Streptosporangiales_eval_wrapper",
+        "c__Actinomycetia_eval/o__Actinomycetales_eval_wrapper",
+        "c__Actinomycetia_eval/o__Streptomycetales_eval_wrapper",
+        "c__Actinomycetia_eval/o__Nanopelagicales_eval_wrapper",
+        "c__Actinomycetia_eval/o__Mycobacteriales_eval_wrapper"
+    ]
+}
+
+
+
+
