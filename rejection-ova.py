@@ -231,7 +231,8 @@ for i in range(len(tests)):
     # y_tensor_test = torch.tensor(y_test).long()
 
     out_test = model_ova(x_tensor_test)
-    df = pd.DataFrame(out_test, index=y_unique)
+    df = pd.DataFrame(out_test)
+    df.columns = y_unique
     df = df.set_index(test_ids)
     df['rejection'] = rejected
     print("df is:", df)
