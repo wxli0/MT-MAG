@@ -231,12 +231,12 @@ for i in range(len(tests)):
     # y_tensor_test = torch.tensor(y_test).long()
 
     out_test = model_ova(x_tensor_test)
+    rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
     out_test = out_test.detach().numpy()
     df = pd.DataFrame(out_test)
     df.columns = y_unique
     df['ID'] = test_ids
     df = df.set_index('ID')
-    rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
     df['rejection'] = rejected
     print("df is:", df)
     df.to_csv('outputs/ova/'+train_folder+'-'+test_folders[i].split('/')[-1]+'-'+str(rej_cost)+'.csv')
