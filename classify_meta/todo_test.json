@@ -1,5 +1,5 @@
 {
-    "train_folder": "p__Firmicutes_A",
+    "train_folder": "c__Clostridia_A",
     "test_folders": ["rumen_mags/todo_wrapper"]
 }
 
