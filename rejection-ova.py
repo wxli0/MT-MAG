@@ -231,6 +231,7 @@ for i in range(len(tests)):
     # y_tensor_test = torch.tensor(y_test).long()
 
     out_test = model_ova(x_tensor_test)
+    out_test = np.array(out_test, dtype=float)
     df = pd.DataFrame(out_test)
     df.columns = y_unique
     df['ID'] = test_ids
