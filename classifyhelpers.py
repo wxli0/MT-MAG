@@ -64,10 +64,12 @@ def training(train_data, k, classifier):
 def p_files_to_normal(train_data, k):
     train_features = []
     train_labels = []
+    ids = []
 
     for i in range(len(train_data)):
         train_features.append(kmer_count(train_data[i][1], k))
         train_labels.append(train_data[i][0])
+        ids.append(train_data[i][2])
 
     x = np.asarray(train_features).astype('float32')
     print("x shape is:", x.shape)
@@ -75,7 +77,7 @@ def p_files_to_normal(train_data, k):
     print("features shape is:", features.shape)
     subtypes = np.asarray(train_labels)
     print("subtypes shape is:", subtypes.shape)
-    return features, subtypes
+    return features, subtypes, ids
 
 
 def update_y_values(y, dict):

@@ -18,6 +18,7 @@ import sys
 from classifyhelpers import *
 from sklearn.decomposition import TruncatedSVD
 from sklearn.preprocessing import StandardScaler
+import pandas as pd 
 
 np.random.seed(2020)
 
@@ -166,19 +167,22 @@ test_folders = json.load(open(sys.argv[1]))['test_folders']
 train_folder = json.load(open(sys.argv[1]))['train_folder']
 
 k = 7
-x, y = p_files_to_normal(train, k)
+x, y, _ = p_files_to_normal(train, k)
 print("x shape is:", x.shape)
 print("y shape is:", y.shape)
 
-y_dict = {}
+y_to_int_dict = {}
+int_to_y_dict = {}
 y_unique = np.unique(y)
 for i in range(len(y_unique)):
-    y_dict[y_unique[i]] = i
-    y_dict[y_unique[i]+'_eval'] = i
-    y_dict[y_unique[i]+'_test'] = i
-print("y_dict is:", y_dict)
+    y_to_int_dict[y_unique[i]] = i
+    y_to_int_dict[y_unique[i]+'_eval'] = i
+    y_to_int_dict[y_unique[i]+'_test'] = i
+    int_to_y_dict[i] = y_unique[i]
+print("y_to_int_dict is:", y_to_int_dict)
+print("int_to_y dict is:", int_to_y_dict)
 
-y = update_y_values(y, y_dict)
+y = update_y_values(y, y_to_int_dict)
 scaler = StandardScaler(with_mean=False)
 # svd = TruncatedSVD(n_components=5, n_iter=7, random_state=42)
 x = scaler.fit_transform(x)
@@ -211,11 +215,12 @@ def conf_reject(threshold: float):
     return reject
 
 print("length of tests is:", len(tests))
+print("threshold is:", -links[loss_name_ova](rej_cost))
 for i in range(len(tests)):
     test = tests[i]
     print("======== testing", test_folders[i], "=========")
-    x_test, y_test = p_files_to_normal(test, k)
-    # y_test = update_y_test_values(y_test, y_dict)
+    x_test, y_test, test_ids = p_files_to_normal(test, k)
+    # y_test = update_y_test_values(y_test, y_to_int_dict)
     x_test = scaler.transform(x_test) # always do scaler transform for test dataset
     # x_test = svd.transform(x_test)
     print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
@@ -226,11 +231,12 @@ for i in range(len(tests)):
     # y_tensor_test = torch.tensor(y_test).long()
 
     out_test = model_ova(x_tensor_test)
-    print("out_test is:", out_test)
-    print("threshold is:", -links[loss_name_ova](rej_cost))
+    df = pd.DataFrame(out_test, index=y_unique)
+    df = df.set_index(test_ids)
+    df['rejection'] = rejected
+    print("df is:", df)
     rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
-    print("rejected is:", rejected)
-    print("out_test is:", out_test)
+    # print("rejected is:", rejected)
     # result = torch.zeros_like(y_tensor_test)
     # result[rejected] = -1
     # result[~rejected & (y_tensor_test == out_test.argmax(1))] = 1
