@@ -200,7 +200,7 @@ loss_func = one_vs_all_loss(losses[loss_name_ova])
 
 # training
 print("start training")
-train_model(model_ova, optimizer, loss_func, x_tensor, y_tensor, 1000)
+train_model(model_ova, optimizer, loss_func, x_tensor, y_tensor, 10)
 
 """## Test"""
 
@@ -215,7 +215,7 @@ for i in range(len(tests)):
     test = tests[i]
     print("======== testing", test_folders[i], "=========")
     x_test, y_test = p_files_to_normal(test, k)
-    y_test = update_y_test_values(y_test, y_dict)
+    # y_test = update_y_test_values(y_test, y_dict)
     x_test = scaler.transform(x_test) # always do scaler transform for test dataset
     # x_test = svd.transform(x_test)
     print("x_test.shape is:", x_test.shape, "y_test.len is:", len(y_test))
@@ -223,26 +223,28 @@ for i in range(len(tests)):
     """### Convert data to tensor"""
 
     x_tensor_test = torch.tensor(x_test).float()
-    y_tensor_test = torch.tensor(y_test).long()
+    # y_tensor_test = torch.tensor(y_test).long()
 
     out_test = model_ova(x_tensor_test)
     print("out_test is:", out_test)
     print("threshold is:", -links[loss_name_ova](rej_cost))
     rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
-    result = torch.zeros_like(y_tensor_test)
-    result[rejected] = -1
-    result[~rejected & (y_tensor_test == out_test.argmax(1))] = 1
+    print("rejected is:", rejected)
+    print("out_test is:", out_test)
+    # result = torch.zeros_like(y_tensor_test)
+    # result[rejected] = -1
+    # result[~rejected & (y_tensor_test == out_test.argmax(1))] = 1
 
-    num_data = len(result)
-    num_rejected = (result == -1).sum().item()
-    num_wrong = (result == 0).sum().item()
-    num_correct = (result == 1).sum().item()
-    num_selected = num_wrong + num_correct
-    zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
+    # num_data = len(result)
+    # num_rejected = (result == -1).sum().item()
+    # num_wrong = (result == 0).sum().item()
+    # num_correct = (result == 1).sum().item()
+    # num_selected = num_wrong + num_correct
+    # zero_one_c = (num_wrong + rej_cost * num_rejected) / num_data
 
-    print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
-    if num_selected == 0:
-        print("Accuracy of non-rejected data: NA" )
-    else:
-        print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
-    print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
+    # print(f"Number of rejected data: {num_rejected / num_data * 100:.2f}% ({num_rejected}/{num_data})")
+    # if num_selected == 0:
+    #     print("Accuracy of non-rejected data: NA" )
+    # else:
+    #     print(f"Accuracy of non-rejected data: {num_correct / num_selected * 100:.2f} % ({num_correct}/{num_selected})")
+    # print(f"Test empirical 0-1-c risk: {zero_one_c:.6f}")
