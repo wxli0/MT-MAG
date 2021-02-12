@@ -238,7 +238,7 @@ for i in range(len(tests)):
     print("df is:", df)
     rejected = conf_reject(-links[loss_name_ova](rej_cost))(out_test)
     df['rejection'] = rejected
-    df.to_csv('outputs/ova/'+train_folder+'-'+test_folders.split('/')[-1]+'.csv')
+    df.to_csv('outputs/ova/'+train_folder+'-'+test_folder.split('/')[-1]+'.csv')
     # print("rejected is:", rejected)
     # result = torch.zeros_like(y_tensor_test)
     # result[rejected] = -1
