@@ -1,7 +1,7 @@
 import os
 import sys
 
-# e.g. python3 run_train_eval_preprocessing,py everything
+# e.g. python3 run_train_eval_preprocessing.py everything
 dir = sys.argv[1]
 files = os.listdir(os.path.join("data", dir))
 
