@@ -5,6 +5,7 @@ import os
 from shutil import copyfile
 import platform
 
+# e.g. python3 group_pred.py c__Bacilli.json
 input_dict = json.load(open(sys.argv[1]))
 file_path = input_dict['file_path']
 sheet = input_dict['sheet']
