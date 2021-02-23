@@ -204,8 +204,9 @@ def build_pipeline(num_features, classifier):
     normalizers.append(('scaler', StandardScaler(with_mean=False)))
 
     # reduce dimensionality to some fraction of its original
-    normalizers.append(('dim_reducer',TruncatedSVD(n_components=int(
-                        np.ceil(num_features * dim_reduce_fraction)))))
+    if dim_reduce_fraction < 1:
+        normalizers.append(('dim_reducer',TruncatedSVD(n_components=int(
+                            np.ceil(num_features * dim_reduce_fraction)))))
 
     # Classifier
     if classifier == 'linear-svm':
