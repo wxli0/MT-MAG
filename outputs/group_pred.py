@@ -32,7 +32,7 @@ print(pred_id_dict)
 
 for file in os.listdir(input_folder):
     if file.endswith('.fasta'):
-        id = file[:-6]
+        id = file[:-6]+'.fa'
         prediction = df.loc[id]['rejection-f']
         dest_folder = os.path.join(output_folder, prediction)
         src = os.path.join(input_folder, file)
