@@ -634,7 +634,7 @@ RUG632.fa,d__Bacteria,p__Verrucomicrobiota,c__Kiritimatiellae,,,,,,,d__Bacteria;
 RUG633.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UBA1213;s__UBA1213 sp900320925
 RUG634.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__UBA932;g__RC9;s__RC9 sp900321655
 RUG635.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_H;s__
-RUG636.fa,d__Bacteria,p__Planctomycetota,c__UBA1135,,,,,,,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Ottowia;s__Ottowia sp900320815
+RUG636.fa,d__Bacteria,p__Planctomycetota,c__UBA1135 (rejected),,,,,,,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Ottowia;s__Ottowia sp900320815
 RUG637.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Ruminococcus_E;s__Ruminococcus_E sp900317315
 RUG638.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__AC2028;s__AC2028 sp900320825
 RUG639.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae;g__C941;s__C941 sp900318335
