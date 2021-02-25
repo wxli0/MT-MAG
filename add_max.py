@@ -24,6 +24,10 @@ if 'rejection' in df.columns:
     del df['rejection']
 if 'actual' in df.columns:
     del df['actual']
+if 'gtdb-Tk' in df.columns:
+    del df['gtdb-Tk']
+if 'rejection-f' in df.columns:
+    del df['rejection-f']
 
 df_softmax = pd.DataFrame(df.to_numpy(), columns=df.columns)
 df_softmax['max'] = np.max(df_softmax, axis=1)
