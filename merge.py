@@ -1,7 +1,7 @@
 import sys 
 import pandas as pd
 
-MLDSP_prediction = pd.read_csv("outputs/MLDSP-prediction.csv", index_col=0, header=0)
+MLDSP_prediction = pd.read_csv("outputs/MLDSP-prediction-full-path.csv", index_col=0, header=0)
 everything = pd.read_excel("outputs/everything.xlsx", \
     index_col=0, header=0, sheet_name="everything_pred-t-p") 
 

@@ -6,7 +6,7 @@ import openpyxl
 file_path = sys.argv[1]
 file_short = file_path.split('/')[-1]
 sheet = file_short[:-5]+"_pred-t-p"
-MLDSP_pred_path = "outputs/MLDSP-prediction.csv"
+MLDSP_pred_path = "outputs/MLDSP-prediction-full-path.csv"
 
 taxon = ""
 if sheet.startswith('d'):
@@ -23,11 +23,12 @@ MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 # print(MLDSP_df)
 # print(math.isnan(MLDSP_df.loc['RUG518']['family']))
 for index, row in df.iterrows():
-    if not math.isnan(MLDSP_df.loc[index][taxon]):
-        print("index is:", index)
-        print("taxon is:", taxon)
+    print("index is:", index)
+    print("taxon is:", taxon)
+    if not math.isnan(MLDSP_df.loc[index[:-3]][taxon]):
+        print("success")
         raise Exception()
-    MLDSP_df.at[index, taxon] = row['rejection-f']
+    MLDSP_df.at[index[:-3], taxon] = row['rejection-f']
 
 print(MLDSP_df)
 
