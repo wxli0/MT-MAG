@@ -13,6 +13,8 @@ df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
 gtdbtk_pred_list = []
 
 for index, row in df.iterrows():
+    if index.endswith('.fasta'):
+        index = index[:-6]
     gtdbtk_pred = gtdbtk_df.loc[index][taxon]
     gtdbtk_pred_list.append(gtdbtk_pred)
 
