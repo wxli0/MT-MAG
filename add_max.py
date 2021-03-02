@@ -38,9 +38,15 @@ print(df_softmax)
 
 wb = openpyxl.load_workbook(file_path)
 del wb[sheet]
-wb.save(file_path)
+if len(wb.sheetnames) != 0:
+    wb.save(file_path)
 
-with pd.ExcelWriter(file_path, engine="openpyxl", mode='a') as writer:  
+mode='a'
+if len(wb.sheetnames) == 0:
+    mode='w'
+
+print("mode is", mode)
+with pd.ExcelWriter(file_path, engine="openpyxl", mode=mode) as writer:  
     df_softmax.to_excel(writer, sheet_name = sheet, index=True)
 writer.save()
 writer.close()
