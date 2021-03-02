@@ -8,7 +8,9 @@ import platform
 # e.g. python3 group_pred.py c__Bacilli.json
 input_dict = json.load(open(sys.argv[1]))
 file_path = input_dict['file_path']
-sheet = input_dict['sheet']
+sheet = file_path[:-5].split('/')[-1]+'pred-t-p'
+if 'sheet' in input_dict:
+    sheet = input_dict['sheet']
 
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/" # run locally
 if platform.platform()[:5] == 'Linux':
