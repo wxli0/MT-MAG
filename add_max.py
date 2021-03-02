@@ -4,6 +4,7 @@ import pandas as pd
 import openpyxl
 import numpy as np
 from math import exp
+import openpyxl
 
 # argv[1]: file_name
 # argv[2]: sheet_name
@@ -35,6 +36,9 @@ df_softmax.index = df.index
 df_softmax['prediction'] = pred
 print(df_softmax)
 
+wb = openpyxl.load_workbook(file_path)
+del wb[sheet]
+wb.save(file_path)
 
 with pd.ExcelWriter(file_path, engine="openpyxl", mode='a') as writer:  
     df_softmax.to_excel(writer, sheet_name = sheet, index=True)
