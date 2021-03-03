@@ -4,6 +4,7 @@ import json
 import os
 from shutil import copyfile
 import platform
+import shutil
 
 # e.g. python3 group_pred.py order
 taxon = sys.argv[1]
@@ -20,9 +21,11 @@ print(MLDSP_df)
 
 for index, row in  MLDSP_df.iterrows():
     label = row[taxon]
+    print("label is:", label)
     if label != '':
-        if not os.path.isdir(base_path+"rumen_mags/"+label):
-            os.mkdir(base_path+"rumen_mags/"+label)
+        if os.path.isdir(base_path+"rumen_mags/"+label):
+            shutil.rmtree(base_path+"rumen_mags/"+label)
+        os.mkdir(base_path+"rumen_mags/"+label)
         copyfile(base_path+"rumen_mags/all/"+index+"sta", base_path+"rumen_mags/"+label+"/"+index+"sta")
         
 
