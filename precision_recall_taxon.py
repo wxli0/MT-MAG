@@ -72,6 +72,8 @@ BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection_threshold/
 if platform.platform()[:5] == 'Linux':
     BK_path = "/home/w328li/BlindKameris-new/outputs/rejection_threshold/"
 
+print("file name is:", file_name)
+print("split results is:", file_name.split('/'))
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
 if not os.path.isfile(rej_path):
