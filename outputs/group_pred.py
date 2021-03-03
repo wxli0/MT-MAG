@@ -5,6 +5,7 @@ import os
 from shutil import copyfile
 import platform
 import shutil
+import numpy as np
 
 # e.g. python3 group_pred.py order
 taxon = sys.argv[1]
@@ -22,7 +23,8 @@ print(MLDSP_df)
 for index, row in  MLDSP_df.iterrows():
     label = row[taxon]
     print("label is:", label)
-    if label != '':
+    if not np.isnan(label):
+        print("enter")
         if os.path.isdir(base_path+"rumen_mags/"+label):
             shutil.rmtree(base_path+"rumen_mags/"+label)
         os.mkdir(base_path+"rumen_mags/"+label)
