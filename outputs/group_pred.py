@@ -18,9 +18,9 @@ MLDSP_pred_path = BK_path+"outputs/MLDSP-prediction-full-path.csv"
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 print(MLDSP_df)
 
-for index, row in  MLDSP_df:
-    label = row[taxon] != ''
-    if row[taxon] != '':
+for index, row in  MLDSP_df.iterrows():
+    label = row[taxon]
+    if label != '':
         if not os.path.isdir(base_path+"rumen_mags/"+label):
             os.mkdir(base_path+"rumen_mags/"+label)
         copyfile(base_path+"rumen_mags/all/"+index, base_path+"rumen_mags/"+label+"/"+index)
