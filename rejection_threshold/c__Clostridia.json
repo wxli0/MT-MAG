@@ -1,11 +1,11 @@
 {
-    "o__Acetivibrionales": 0.9,
-    "o__Clostridiales": 0.98,
-    "o__Eubacteriales": 0.9,
-    "o__Lachnospirales": 0.94,
-    "o__Oscillospirales": 0.98,
-    "o__Peptostreptococcales": 0.9,
-    "o__Saccharofermentanales": 0.9,
-    "o__TANB77": 0.9,
-    "o__Tissierellales": 0.7
+    "o__Acetivibrionales": 0.52,
+    "o__Clostridiales": 0.44,
+    "o__Eubacteriales": 0,
+    "o__Lachnospirales": 0.35,
+    "o__Oscillospirales": 0,
+    "o__Peptostreptococcales": 0.88,
+    "o__Saccharofermentanales": 0.45,
+    "o__TANB77": 0,
+    "o__Tissierellales": 0.52
 }

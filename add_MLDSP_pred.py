@@ -3,9 +3,12 @@ import pandas as pd
 import math
 import openpyxl
 
+# e.g. 
 file_path = sys.argv[1]
 file_short = file_path.split('/')[-1]
-sheet = sys.argv[2]
+sheet = file_short[:-5]+"_pred-t-p"
+if len(sys.argv) == 3:
+    sheet = sys.argv[2]
 MLDSP_pred_path = "outputs/MLDSP-prediction-full-path.csv"
 
 taxon = ""

@@ -29,9 +29,13 @@ df['rejection-f'] = rejection_f
 
 wb = openpyxl.load_workbook(file_path)
 del wb[sheet]
-wb.save(file_path)
 
-with pd.ExcelWriter(file_path, engine="openpyxl", mode='a') as writer:  
+mode = 'w'
+if len(wb.sheetnames) != 0:
+    wb.save(file_path)
+    mode = 'a'
+
+with pd.ExcelWriter(file_path, engine="openpyxl", mode=mode) as writer:  
     df.to_excel(writer, sheet_name = sheet, index=True)
 writer.save()
 writer.close()
