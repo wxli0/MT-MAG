@@ -23,7 +23,7 @@ print(MLDSP_df)
 for index, row in  MLDSP_df.iterrows():
     label = row[taxon]
     print("label is:", label)
-    if not (type(label) == 'float' and np.isnan(label)):
+    if type(label) == 'float':
         print("enter")
         if os.path.isdir(base_path+"rumen_mags/"+label):
             shutil.rmtree(base_path+"rumen_mags/"+label)
