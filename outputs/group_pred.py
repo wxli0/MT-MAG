@@ -12,7 +12,7 @@ base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/" # run local
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/samples/"
 
-MLDSP_pred_path = "outputs/MLDSP-prediction-full-path.csv"
+MLDSP_pred_path = base_path[:-8]+"outputs/MLDSP-prediction-full-path.csv"
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 print(MLDSP_df)
 
