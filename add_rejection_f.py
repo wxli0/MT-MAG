@@ -20,7 +20,9 @@ rejection_f = []
 for index, row in df.iterrows():
     print("here is:", row['prediction'])
     print("threshold_dict is", threshold_dict)
-    alpha = threshold_dict[row['prediction']]
+    alpha=0
+    if row['prediction'] in threshold_dict:
+        alpha = threshold_dict[row['prediction']]
     if row['max'] < alpha:
         rejection_f.append(row['prediction']+'(reject)')
     else:
