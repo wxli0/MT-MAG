@@ -15,7 +15,7 @@ for i in range(len(classes)-1):
     c = classes[i]
     index = classes.index(c)+1
     print("index is:", index)
-    df = df.replace({'prediction': {index: c.split("-")[-1]}})
+    df = df.replace({'prediction': {index: "-".join(c.split('-')[1:])}})
 
 
 
