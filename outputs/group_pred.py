@@ -25,9 +25,8 @@ for index, row in  MLDSP_df.iterrows():
     print("label is:", label)
     if not str(label) == 'nan':
         print("enter")
-        if os.path.isdir(base_path+"rumen_mags/"+label):
-            shutil.rmtree(base_path+"rumen_mags/"+label)
-        os.mkdir(base_path+"rumen_mags/"+label)
+        if not os.path.isdir(base_path+"rumen_mags/"+label):
+            os.mkdir(base_path+"rumen_mags/"+label)
         copyfile(base_path+"rumen_mags/all/"+index+"sta", base_path+"rumen_mags/"+label+"/"+index+"sta")
         
 
