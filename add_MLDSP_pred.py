@@ -20,6 +20,10 @@ elif sheet.startswith('c'):
     taxon = "order"
 elif sheet.startswith('o'):
     taxon = "family"
+elif sheet.startswith('g'):
+    taxon = "genus"
+elif sheet.startswith('s'):
+    taxon = "species"
 
 df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
