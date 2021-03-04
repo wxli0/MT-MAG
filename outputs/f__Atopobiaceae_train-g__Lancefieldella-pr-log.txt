@@ -90,14 +90,14 @@ alpha = 0.88 precision: 1.0 recall: 1.0 weighted: 1.0
 alpha = 0.89 precision: 1.0 recall: 1.0 weighted: 1.0
 alpha = 0.9 precision: 1.0 recall: 1.0 weighted: 1.0
 alpha = 0.91 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.92 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.93 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.9400000000000001 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.9500000000000001 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.96 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.97 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.98 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 0.99 precision: 1.0 recall: 1.0 weighted: 1.0
-alpha = 1.0 precision: 1.0 recall: 0.23076923076923078 weighted: 0.6153846153846154
+alpha = 0.92 precision: 1.0 recall: 0.9583333333333334 weighted: 0.9791666666666667
+alpha = 0.93 precision: 1.0 recall: 0.875 weighted: 0.9375
+alpha = 0.9400000000000001 precision: 1.0 recall: 0.875 weighted: 0.9375
+alpha = 0.9500000000000001 precision: 1.0 recall: 0.875 weighted: 0.9375
+alpha = 0.96 precision: 1.0 recall: 0.875 weighted: 0.9375
+alpha = 0.97 precision: 1.0 recall: 0.875 weighted: 0.9375
+alpha = 0.98 precision: 1.0 recall: 0.75 weighted: 0.875
+alpha = 0.99 precision: 1.0 recall: 0.6666666666666666 weighted: 0.8333333333333333
+alpha = 1.0 precision: 1.0 recall: 0.3333333333333333 weighted: 0.6666666666666666
 file name is: outputs/f__Atopobiaceae_train.xlsx
 split results is: ['outputs', 'f__Atopobiaceae_train.xlsx']
