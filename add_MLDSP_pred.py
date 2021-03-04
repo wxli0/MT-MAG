@@ -20,9 +20,9 @@ elif sheet.startswith('c'):
     taxon = "order"
 elif sheet.startswith('o'):
     taxon = "family"
-elif sheet.startswith('g'):
+elif sheet.startswith('f'):
     taxon = "genus"
-elif sheet.startswith('s'):
+elif sheet.startswith('g'):
     taxon = "species"
 
 df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
