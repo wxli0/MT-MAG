@@ -25,7 +25,9 @@ weighted = []
 excel_alpha_info = {}
 alpha_num = (1+gap)/gap+1
 
+print("enter 1")
 for sheet in xls.sheet_names:
+    print("sheet is:", sheet)
     if sheet.endswith('-p'):
         df = pd.read_excel(file_name, sheet_name=sheet, index_col=0, header=0)
         sheet_alpha_info = []
@@ -39,6 +41,7 @@ for sheet in xls.sheet_names:
             excel_alpha_info[index] =  true_half
 
 
+print("enter 2")
 print("excel_alpha_info is:", excel_alpha_info)
 thres_alpha = 0
 done = 0
@@ -47,10 +50,8 @@ for alpha in alphas:
     correct = 0
     unassigned = 0
     for sheet in xls.sheet_names:
-        print("sheet_name is")
-        print("enter 0")
+        print("sheet_name is:", sheet)
         if sheet.endswith('-p'):
-            print("enter1")
             df = pd.read_excel(file_name, sheet_name=sheet, index_col=0, header=0)
             df = df.loc[df['prediction'] == taxon]
             if df.shape[0] == 0:
