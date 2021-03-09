@@ -7,6 +7,7 @@ xls = pd.ExcelFile(file_name)
 print(xls.sheet_names)
 for sheet in xls.sheet_names:
     if sheet.endswith('-b-p') or sheet.endswith('-t-p'):
+        print("in run_add_max, sheeet is:", sheet)
         os.system("python3 add_max.py "+file_name+" "+sheet)
         print(sheet + " done")
 
