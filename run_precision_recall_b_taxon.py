@@ -16,6 +16,7 @@ if platform.node() == 'q.vector.local':
 xls = pd.ExcelFile(file_name)
 for sheet in xls.sheet_names:
     if sheet.endswith('-p'):
+        print(BK_path+"precision_recall_taxon.py ")
         print("before python3 "+BK_path+"precision_recall_taxon.py " + BK_path+file_name+ " " +  '"'+sheet[:-4] +'"'+ " > " + BK_path+file_name[:-5]+'-'+sheet[:-4]+'-pr-log.txt')
         # os.system("python3 precision_recall_taxon.py " + file_name+ " " +  sheet[:-4])
 
