@@ -100,6 +100,8 @@ plt.savefig(file_name[:-5]+'-'+taxon+'-pr.png')
 BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection_threshold/"
 if platform.platform()[:5] == 'Linux':
     BK_path = "/home/w328li/BlindKameris-new/rejection_threshold/"
+if platform.node() == 'q.vector.local':
+    BK_path = "/h/wanxinli/BlindKameris-new/rejection_threshold/"
 
 print("file name is:", file_name)
 print("split results is:", file_name.split('/'))
