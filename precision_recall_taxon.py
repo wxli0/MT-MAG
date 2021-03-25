@@ -25,24 +25,18 @@ weighted = []
 excel_alpha_info = {}
 alpha_num = (1+gap)/gap+1
 
-print("enter 1")
 for sheet in xls.sheet_names:
-    print("sheet is:", sheet)
     if sheet.endswith('-p'):
         df = pd.read_excel(file_name, sheet_name=sheet, index_col=0, header=0)
         sheet_alpha_info = []
         for index, row in df.iterrows():
-            print("index adding is:", index)
             round_down_max = math.floor(row['max']*100)/100.0
             pred_num = round_down_max/gap
             true_half = [True]*(int(pred_num))
             true_half.extend([False]*int((alpha_num-pred_num)))
-            print("here:", true_half.extend([False]*int((alpha_num-pred_num))))
             excel_alpha_info[index] =  true_half
 
 
-print("enter 2")
-print("excel_alpha_info is:", excel_alpha_info)
 thres_alpha = 0
 done = 0
 for alpha in alphas:
@@ -50,7 +44,6 @@ for alpha in alphas:
     correct = 0
     unassigned = 0
     for sheet in xls.sheet_names:
-        print("sheet_name is:", sheet)
         if sheet.endswith('-p'):
             df = pd.read_excel(file_name, sheet_name=sheet, index_col=0, header=0)
             df = df.loc[df['prediction'] == taxon]
@@ -58,17 +51,12 @@ for alpha in alphas:
                 continue
             predicted = []
             for index, row in df.iterrows():
-                print("index is:", index)
                 row_alpha_info = excel_alpha_info[index]
-                print("enter2")
-                print("pred is:", row_alpha_info)
                 one_predicted = row['prediction'] if row_alpha_info[int(alpha/gap)] else 'reject'
                 predicted.append(one_predicted)
-                print("one_predicted is:", one_predicted)
             reads += df.shape[0]
             unassigned += predicted.count('reject')
             if sheet.startswith(taxon):
-                print("final predicted is:", predicted)
                 correct += predicted.count(taxon)
     p = 1
     if (reads-unassigned) != 0:
@@ -103,8 +91,6 @@ if platform.platform()[:5] == 'Linux':
 if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
     BK_path = "/h/wanxinli/BlindKameris-new/rejection_threshold/"
 
-print("file name is:", file_name)
-print("split results is:", file_name.split('/'))
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
 if not os.path.isfile(rej_path):
