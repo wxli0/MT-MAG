@@ -11,7 +11,7 @@ import numpy as np
 taxon = sys.argv[1]
 
 BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/"
-base_path = "/mnt/sda/DeepMicrobes/" 
+base_path = "/mnt/sda/DeepMicrobes-data/" 
 if platform.platform()[:5] == 'Linux':
     BK_path = "/home/w328li/BlindKameris-new/"
 
