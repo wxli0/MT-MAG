@@ -77,7 +77,7 @@ for alpha in alphas:
     p_weight = 0.5
     w = p_weight*p+(1-p_weight)*r
     precision.append(p)
-    if not done and p > 0.95:
+    if not done and p > 0.98:
         thres_alpha = alpha
         done = True
     recall.append(r)
