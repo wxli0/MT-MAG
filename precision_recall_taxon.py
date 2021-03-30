@@ -9,6 +9,7 @@ import shutil
 import json 
 import platform
 import math
+import statistics
 
 # python3 precision_recall_b.py outputs/fft-o__Oscillospirales.xlsx
 
@@ -39,6 +40,7 @@ for sheet in xls.sheet_names:
 
 thres_alpha = 0
 done = 0
+probs = []
 for alpha in alphas:
     reads = 0
     correct = 0
@@ -58,6 +60,9 @@ for alpha in alphas:
             unassigned += predicted.count('reject')
             if sheet.startswith(taxon):
                 correct += predicted.count(taxon)
+                for index, row in df.iterrows():
+                    if row['prediction'] == taxon:
+                        probs.append(row['max'])
     p = 1
     if (reads-unassigned) != 0:
         p = correct/(reads-unassigned)
@@ -66,12 +71,12 @@ for alpha in alphas:
     w = p_weight*p+(1-p_weight)*r
     precision.append(p)
     if not done and p > 0.98:
-        thres_alpha = alpha-0.9
+        thres_alpha = alpha
         done = True
     recall.append(r)
     weighted.append(w)
     print("alpha =", alpha, "precision:", p, "recall:", r, "weighted:", w)    
-thres_alpha = max(0.5, thres_alpha) # set lower bound to be 0.5
+thres_alpha = max(statistics.mean(probs)-0.19, thres_alpha-0.09) # set lower bound to min_prob-0.9
 
 plt.xticks(alphas[::5],  rotation='vertical')
 plt.xlabel("threshould")
