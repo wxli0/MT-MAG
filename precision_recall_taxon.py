@@ -66,12 +66,12 @@ for alpha in alphas:
     w = p_weight*p+(1-p_weight)*r
     precision.append(p)
     if not done and p > 0.98:
-        thres_alpha = alpha
+        thres_alpha = alpha-0.9
         done = True
     recall.append(r)
     weighted.append(w)
     print("alpha =", alpha, "precision:", p, "recall:", r, "weighted:", w)    
-
+thres_alpha = max(0.5, thres_alpha) # set lower bound to be 0.5
 
 plt.xticks(alphas[::5],  rotation='vertical')
 plt.xlabel("threshould")
