@@ -3261,7 +3261,7 @@ even_MAG-GUT9684,,p__Firmicutes(reject),,,,,,Firmicutes,Clostridia,Clostridiales
 even_MAG-GUT9688,,p__Firmicutes(reject),,,,,,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus
 even_MAG-GUT9692,,p__Firmicutes(reject),,,,,,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus
 even_MAG-GUT9714,,p__Firmicutes(reject),,,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Unassigned
-even_MAG-GUT9744,,p__Firmicutes,c__Negativicutes,o__Selenomonadales,f__Selenomonadaceae,,,Firmicutes,Clostridia,Clostridiales,Unassigned,Unassigned
+even_MAG-GUT9744,,p__Firmicutes,c__Negativicutes,o__Selenomonadales,f__Selenomonadaceae,g__Selenomonas,,Firmicutes,Clostridia,Clostridiales,Unassigned,Unassigned
 even_MAG-GUT9760,,p__Actinobacteria,c__Coriobacteriia,o__Coriobacteriales,stop (only one child),,,Actinobacteria,Actinobacteria,Coriobacteriales,Coriobacteriaceae,Unassigned
 even_MAG-GUT9766,,p__Firmicutes,c__Clostridia(reject),,,,,Tenericutes,Mollicutes,Erysipelotrichales,Erysipelotrichaceae,Solobacterium
 even_MAG-GUT984,,p__Preteobacteria,c__Epsilonproteobacteria(reject),,,,,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
