@@ -18,8 +18,8 @@ df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
 
 rejection_f = []
 for index, row in df.iterrows():
-    print("here is:", row['prediction'])
-    print("threshold_dict is", threshold_dict)
+    # print("here is:", row['prediction'])
+    # print("threshold_dict is", threshold_dict)
     alpha=0
     if row['prediction'] in threshold_dict:
         alpha = threshold_dict[row['prediction']]
