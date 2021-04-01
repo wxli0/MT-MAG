@@ -2130,7 +2130,7 @@ even_MAG-GUT61735,,p__Proteobacteria,,,,,,Proteobacteria,Betaproteobacteria,Burk
 even_MAG-GUT61749,,p__Verrucomicrobia,,,,,,Verrucomicrobia,Verrucomicrobiae,Verrucomicrobiales,Verrucomicrobiaceae,Akkermansia
 even_MAG-GUT61753,,p__Firmicutes,c__Clostridia,,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT61794,,p__Proteobacteria,,,,,,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella
-even_MAG-GUT61880,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Leuconostocaceae,,,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
+even_MAG-GUT61880,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Leuconostocaceae,"stop (two children, 1 does not have enough training instanecs)",,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
 even_MAG-GUT61918,,p__Firmicutes(reject),,,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Unassigned
 even_MAG-GUT61937,,p__Firmicutes,c__Negativicutes,,,,,Firmicutes,Negativicutes,Selenomonadales,Acidaminococcaceae,Acidaminococcus
 even_MAG-GUT61940,,p__Firmicutes,c__Clostridia,,,,,Firmicutes,Clostridia,Clostridiales,Unassigned,Unassigned
@@ -3264,7 +3264,7 @@ even_MAG-GUT9714,,p__Firmicutes,c__Clostridia,,,,,Firmicutes,Clostridia,Clostrid
 even_MAG-GUT9744,,p__Firmicutes,c__Negativicutes(reject),,,,,Firmicutes,Clostridia,Clostridiales,Unassigned,Unassigned
 even_MAG-GUT9760,,p__Actinobacteria,,,,,,Actinobacteria,Actinobacteria,Coriobacteriales,Coriobacteriaceae,Unassigned
 even_MAG-GUT9766,,p__Tenericutes,,,,,,Tenericutes,Mollicutes,Erysipelotrichales,Erysipelotrichaceae,Solobacterium
-even_MAG-GUT984,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Leuconostocaceae,,,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
+even_MAG-GUT984,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Leuconostocaceae,"stop (two children, 1 does not have enough training instanecs)",,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
 even_MAG-GUT988,,p__Actinobacteria,,,,,,Actinobacteria,Actinobacteria,Actinomycetales,Propionibacteriaceae,Propionibacterium
 even_MAG-GUT9964,,p__Firmicutes,c__Clostridia,,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT9970,,p__Firmicutes,c__Negativicutes,,,,,Firmicutes,Clostridia,Clostridiales,Unassigned,Unassigned
