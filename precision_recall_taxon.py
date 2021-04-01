@@ -76,7 +76,7 @@ for alpha in alphas:
     recall.append(r)
     weighted.append(w)
     print("alpha =", alpha, "precision:", p, "recall:", r, "weighted:", w)    
-thres_alpha = max(statistics.mean(probs)-0.19, thres_alpha-0.09) # set lower bound to min_prob-0.9
+thres_alpha = max(statistics.mean(probs)-0.3, thres_alpha-0.09) # set lower bound to min_prob-0.9
 
 plt.xticks(alphas[::5],  rotation='vertical')
 plt.xlabel("threshould")
