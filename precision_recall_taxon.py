@@ -67,24 +67,20 @@ for alpha in alphas:
     if (reads-unassigned) != 0:
         p = correct/(reads-unassigned)
     r = correct/reads
-    p_weight = 0.5
-    w = p_weight*p+(1-p_weight)*r
     precision.append(p)
-    if not done and p > 0.98:
+    if not done and p > 0.9:
         thres_alpha = alpha
         done = True
     recall.append(r)
-    weighted.append(w)
-    print("alpha =", alpha, "precision:", p, "recall:", r, "weighted:", w)    
-thres_alpha = max(statistics.mean(probs)-0.3, thres_alpha-0.09) # set lower bound to min_prob-0.9
+    print("alpha =", alpha, "precision:", p, "recall:", r)    
+thres_alpha = max(statistics.mean(probs)-0.3, thres_alpha-0.09)
 
 plt.xticks(alphas[::5],  rotation='vertical')
 plt.xlabel("threshould")
 plt.ylabel("precision/recall")
 plt.plot(alphas, precision, 'o-', label="Precision", markersize=2)
 plt.plot(alphas, recall, 'o-', label="Recall", markersize=2)
-plt.plot(alphas, weighted, 'o-', label="Weighted", markersize=2)
-plt.axhline(y=0.7, color='r', linestyle='-')
+plt.axhline(y=0.9, color='r', linestyle='-')
 plt.legend()
 
 plt.savefig(file_name[:-5]+'-'+taxon+'-pr.png')
