@@ -785,7 +785,7 @@ even_MAG-GUT27501,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,A
 even_MAG-GUT2752,,p__Proteobacteria,c__Betaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT2776,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT27781,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
-even_MAG-GUT27783,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT27783,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT2783,,p__Actinobacteria(reject),,,,,,Firmicutes,Clostridia,Clostridiales,Unassigned,Unassigned
 even_MAG-GUT27936,,p__Bacteroidetes,c__Bacteroidia,o__Bacteroidales,f__Porphyromonadaceae,,,Bacteroidetes,Bacteroidia,Bacteroidales,Porphyromonadaceae,Barnesiella
 even_MAG-GUT27968,,p__Bacteroidetes,c__Bacteroidia,o__Bacteroidales,f__Porphyromonadaceae,,,Bacteroidetes,Bacteroidia,Bacteroidales,Porphyromonadaceae,Barnesiella
@@ -830,7 +830,7 @@ even_MAG-GUT29076,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Cl
 even_MAG-GUT29111,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT29134,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT2914,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
-even_MAG-GUT29175,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT29175,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT29189,,p__Firmicutes,c__Negativicutes,stop (only 1 child),,,,Firmicutes,Negativicutes,Selenomonadales,Acidaminococcaceae,Acidaminococcus
 even_MAG-GUT29214,,p__Firmicutes,c__Negativicutes,stop (only 1 child),,,,Firmicutes,Negativicutes,Selenomonadales,Acidaminococcaceae,Acidaminococcus
 even_MAG-GUT29221,,p__Firmicutes,c__Negativicutes,stop (only 1 child),,,,Firmicutes,Negativicutes,Selenomonadales,Acidaminococcaceae,Acidaminococcus
@@ -1269,7 +1269,7 @@ even_MAG-GUT42163,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Cl
 even_MAG-GUT42174,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT422,,p__Actinobacteria,c__Actinobacteria,o__Bifidobacteriales,,,,Actinobacteria,Actinobacteria,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium
 even_MAG-GUT42210,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
-even_MAG-GUT42294,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT42294,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT423,,p__Actinobacteria,c__Actinobacteria,o__Bifidobacteriales,,,,Actinobacteria,Actinobacteria,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium
 even_MAG-GUT42317,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT42358,,p__Firmicutes,c__Negativicutes,stop (only 1 child),,,,Firmicutes,Negativicutes,Selenomonadales,Veillonellaceae,Dialister
@@ -1398,7 +1398,7 @@ even_MAG-GUT44748,,p__Proteobacteria,c__Betaproteobacteria(reject),,,,,Proteobac
 even_MAG-GUT44774,,p__Bacteroidetes,c__Bacteroidia,o__Bacteroidales,f__Porphyromonadaceae,,,Bacteroidetes,Bacteroidia,Bacteroidales,Porphyromonadaceae,Barnesiella
 even_MAG-GUT44840,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Unassigned
 even_MAG-GUT44851,,p__Firmicutes,c__Negativicutes,stop (only 1 child),,,,Firmicutes,Negativicutes,Selenomonadales,Veillonellaceae,Veillonella
-even_MAG-GUT44855,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT44855,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT449,,p__Actinobacteria,c__Actinobacteria,o__Bifidobacteriales,,,,Actinobacteria,Actinobacteria,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium
 even_MAG-GUT44900,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT44944,,p__Bacteroidetes,c__Bacteroidia,o__Bacteroidales,f__Porphyromonadaceae,,,Bacteroidetes,Bacteroidia,Bacteroidales,Porphyromonadaceae,Barnesiella
@@ -2233,7 +2233,7 @@ even_MAG-GUT6612,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clo
 even_MAG-GUT6615,,p__Proteobacteria,c__Betaproteobacteria,,,,,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella
 even_MAG-GUT66152,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Tenericutes,Unassigned,Unassigned,Unassigned,Unassigned
 even_MAG-GUT66161,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Tenericutes,Unassigned,Unassigned,Unassigned,Unassigned
-even_MAG-GUT6619,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Unassigned,Unassigned,Unassigned
+even_MAG-GUT6619,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Unassigned,Unassigned,Unassigned
 even_MAG-GUT6623,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT66278,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnospira
 even_MAG-GUT66279,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
@@ -2278,7 +2278,7 @@ even_MAG-GUT6753,,p__Proteobacteria,c__Betaproteobacteria,,,,,Proteobacteria,Bet
 even_MAG-GUT67531,,p__Proteobacteria,c__Betaproteobacteria,,,,,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella
 even_MAG-GUT67550,,p__Proteobacteria,c__Betaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT67625,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,stop (only 1 child),,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
-even_MAG-GUT67681,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT67681,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT67689,,p__Proteobacteria,c__Betaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT67723,,p__Actinobacteria,c__Actinobacteria,o__Bifidobacteriales,,,,Actinobacteria,Actinobacteria,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium
 even_MAG-GUT67741,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Unassigned
@@ -2453,11 +2453,11 @@ even_MAG-GUT72317,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Cl
 even_MAG-GUT7247,,p__Firmicutes,c__Negativicutes,stop (only 1 child),,,,Firmicutes,Negativicutes,Selenomonadales,Veillonellaceae,Veillonella
 even_MAG-GUT7253,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae(reject),,,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
 even_MAG-GUT72571,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
-even_MAG-GUT72585,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT72585,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT72738,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT7278,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae(reject),,,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus
 even_MAG-GUT72832,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
-even_MAG-GUT72841,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT72841,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT7285,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Lactobacillus,,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus
 even_MAG-GUT7291,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XI,Finegoldia
 even_MAG-GUT72929,,p__Bacteroidetes,c__Bacteroidia,o__Bacteroidales,f__Porphyromonadaceae,,,Bacteroidetes,Bacteroidia,Bacteroidales,Porphyromonadaceae,Barnesiella
@@ -2473,7 +2473,7 @@ even_MAG-GUT73407,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Cl
 even_MAG-GUT73422,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Clostridium
 even_MAG-GUT73491,,p__Firmicutes,c__Negativicutes,stop (only 1 child),,,,Firmicutes,Negativicutes,Selenomonadales,Veillonellaceae,Dialister
 even_MAG-GUT73497,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
-even_MAG-GUT73734,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT73734,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT73749,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT73804,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT73847,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Lactobacillus,,Tenericutes,Unassigned,Unassigned,Unassigned,Unassigned
@@ -2800,7 +2800,7 @@ even_MAG-GUT84184,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Cl
 even_MAG-GUT8428,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Unassigned
 even_MAG-GUT84304,,p__Bacteroidetes,c__Bacteroidia,o__Bacteroidales,f__Porphyromonadaceae,,,Bacteroidetes,Bacteroidia,Bacteroidales,Porphyromonadaceae,Barnesiella
 even_MAG-GUT84361,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
-even_MAG-GUT84374,,p__Proteobacteria,c__Alphaproteobacteria(reject),,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
+even_MAG-GUT84374,,p__Proteobacteria,c__Alphaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT84395,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus
 even_MAG-GUT84479,,p__Proteobacteria,c__Betaproteobacteria,,,,,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Azospirillum
 even_MAG-GUT84500,,p__Firmicutes,c__Clostridia,o__Clostridiales,,,,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium
