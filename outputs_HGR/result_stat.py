@@ -21,7 +21,7 @@ correct_count = 0
 stop_count = 0
 for pred, true in zip(res_col, comp_col):
     # print(pred, true)
-    if str(pred) == 'nan':
+    if str(pred) == 'nan' or true == 'Unassigned':
         continue
     total += 1
     if 'reject' in pred:
