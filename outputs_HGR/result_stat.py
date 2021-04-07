@@ -15,24 +15,26 @@ comp_rank = rank[0].upper()+rank[1:]+ " (reference)"
 comp_col = results[comp_rank]
 # print(comp_col)
 
-total = 0
+total_count = 0
 rej_count = 0
 correct_count = 0
-stop_count = 0
+nan_count = 0
 for pred, true in zip(res_col, comp_col):
-    # print(pred, true)
-    if str(pred) == 'nan' or true == 'Unassigned':
+    if true == 'Unassigned':
         continue
-    total += 1
-    if 'reject' in pred:
+    total_count += 1
+    if str(pred) == 'nan':
+        nan_count += 1
+    elif 'reject' in pred:
         rej_count += 1
-    elif 'stop' in pred:
-        stop_count += 1
     elif pred.split('__')[-1] == true:
         correct_count += 1
 
-print("==== printing stats for", rank, " ====")
-print("precision:", correct_count/(total-rej_count-stop_count))
-print("recall:", correct_count/total)
-print("rejection rate:", rej_count/total)
-print("stop rate:", stop_count/total)
+print("==== printing stats at", rank, "====")
+print("precision:", correct_count/(total_count-rej_count-nan_count))
+print("recall:", correct_count/(total_count-nan_count))
+print("rejection rate:", rej_count/(total_count-nan_count))
+
+print("==== printing stats up to", rank, "====")
+print("recall:", correct_count/total_count)
+print("rejection rate:", rej_count/total_count)
