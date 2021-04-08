@@ -37,4 +37,4 @@ print("rejection rate:", rej_count/(total_count-nan_count))
 
 print("==== printing stats up to", rank, "====")
 print("recall:", correct_count/total_count)
-print("rejection rate:", rej_count/total_count)
+print("rejection rate:", (rej_count+nan_count)/total_count)
