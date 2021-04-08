@@ -2,7 +2,7 @@ import os
 import sys 
 import platform
 
-base_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/outputs/"
+base_path = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs/"
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/BlindKameris-new/outputs/"
 
