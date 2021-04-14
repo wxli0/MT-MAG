@@ -2,7 +2,7 @@ import os
 import sys
 import pandas as pd 
 
-result_path = "HGR-prediction-full-path.csv"
+result_path = "HGR-prediction-full-path-old.csv"
 results =  pd.read_csv(result_path, index_col=0, header=0, dtype = str)
 # print(results)
 
