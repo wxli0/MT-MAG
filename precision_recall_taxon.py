@@ -73,7 +73,7 @@ for alpha in alphas:
         done = True
     recall.append(r)
     print("alpha =", alpha, "precision:", p, "recall:", r)    
-thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.09)
+thres_alpha = max(statistics.mean(probs)-0.3, thres_alpha-0.09)
 
 plt.xticks(alphas[::5],  rotation='vertical')
 plt.xlabel("threshould")
