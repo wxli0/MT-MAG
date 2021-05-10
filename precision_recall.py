@@ -103,6 +103,7 @@ for taxon in taxons:
     thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.09)
     rej_dict[taxon] = thres_alpha
     
+    plt.figure(taxon)
     plt.xticks(alphas[::5],  rotation='vertical')
     plt.xlabel("threshould")
     plt.ylabel("precision/recall")
