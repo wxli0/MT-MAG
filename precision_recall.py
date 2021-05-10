@@ -30,21 +30,16 @@ taxons = [x[:-4] for x in xls.sheet_names]
 w_dfs = []
 for taxon in taxons:
     b_sheet = taxon + '-b-p'
-    w_sheet = taxon + '-b-w'
     b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
     tmp_col = ['Row']
     tmp_col.extend(b_df.columns)
     w_df = pd.DataFrame(columns=tmp_col)
-    print(b_df)
-    print(w_df)
     w_df.set_index('Row')
-    print(w_df)
     w_dfs.append(w_df)
 
 # construct w_dfs
 for taxon in taxons:
     b_sheet = taxon + '-b-p'
-    w_sheet = taxon + '-b-w'
     b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
     for index, row in b_df.iterrows():
         pred = row['prediction']
@@ -52,6 +47,8 @@ for taxon in taxons:
             w_df = w_dfs[taxons.index(pred)]
             w_dfs[taxons.index(pred)].loc[len(w_df.index)] = row
 
+print("print w_dfs")
+print(w_dfs)
 
 
 # calculating excel_alpha_info
@@ -72,7 +69,6 @@ rej_dict = {} # precision threshold by taxon
 
 for taxon in taxons:
     b_sheet = taxon + '-b-p'
-    w_sheet = taxon + '-b-w'
     precisions = []
     recalls = []
     done = False
@@ -82,7 +78,7 @@ for taxon in taxons:
         correct_count = 0
         reject_count = 0
         b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
-        w_df = pd.read_excel(file_name, sheet_name=w_sheet, index_col=0, header=0)
+        w_df = w_dfs[taxons.index(taxon)]
         read_count = b_df.shape[0]+w_df.shape[0]
         for index, row in b_df.iterrows():
             row_alpha_info = excel_alpha_info[index]
