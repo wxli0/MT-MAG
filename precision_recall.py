@@ -34,7 +34,7 @@ for taxon in taxons:
     tmp_col = ['Row']
     tmp_col.extend(b_df.columns)
     w_df = pd.DataFrame(columns=tmp_col)
-    w_df.set_index('Row')
+    w_df = w_df.set_index('Row')
     w_dfs.append(w_df)
 
 # construct w_dfs
