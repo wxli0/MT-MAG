@@ -57,12 +57,10 @@ for taxon in taxons:
     df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
     sheet_alpha_info = []
     for index, row in df.iterrows():
-        print("index adding is:", index)
         round_down_max = math.floor(row['max']*100)/100.0
         pred_num = round_down_max/gap
         true_half = [True]*(int(pred_num))
         true_half.extend([False]*int((alpha_num-pred_num)))
-        print("here:", true_half.extend([False]*int((alpha_num-pred_num))))
         excel_alpha_info[index] =  true_half
 
 rej_dict = {} # precision threshold by taxon
