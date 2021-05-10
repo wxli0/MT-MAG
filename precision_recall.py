@@ -32,7 +32,7 @@ for taxon in taxons:
     b_sheet = taxon + '-b-p'
     w_sheet = taxon + '-b-w'
     b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
-    w_df = pd.DataFrame(columns=['Row'].extend(b_df.columns))
+    w_df = pd.DataFrame(columns=b_df.columns)
     print(b_df)
     print(w_df)
     w_df.set_index('Row')
