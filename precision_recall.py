@@ -46,8 +46,7 @@ for taxon in taxons:
         if pred != taxon: # add to w_df
             print("reach adding to w_df")
             print(row)
-            w_df = w_dfs[taxons.index(pred)]
-            w_dfs[taxons.index(pred)].loc[len(w_df.index)] = row
+            w_dfs[taxons.index(pred)].loc[index] = row
             print(w_dfs[taxons.index(pred)])
 
 print("print w_dfs")
