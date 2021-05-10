@@ -19,8 +19,9 @@ def correct(df, rank, index, partial=False):
             correct_count += 1
         else:
             wrong_count += 1
-        return [nan_count, rej_count, correct_count, partial_correct_count, wrong_count, total_count]
+        return [nan_count, rej_count, correct_count, wrong_count, total_count]
     rank_index = all_ranks.index(rank)
+    partial_correct_list = [0]*len(all_ranks)
     for i in reversed(range(rank_index+1)):
         cur_rank = all_ranks[i]
         cur_pred = df.loc[index, cur_rank]
@@ -38,26 +39,27 @@ def correct(df, rank, index, partial=False):
                 correct_count += 1
             else:
                 partial_correct_count += 1
+                partial_correct_list[i] += 1
             break
         else:
             wrong_count += 1
             break
-    return [nan_count, rej_count, rej_root_count, correct_count, partial_correct_count, wrong_count, total_count]
+    return [nan_count, rej_count, rej_root_count, correct_count, partial_correct_count, wrong_count, total_count], partial_correct_list
         
 # e.g. python3 result_stat.py class
-result_path = "HGR-prediction-full-path.csv"
+result_path = "HGR-prediction-full-path-old.csv"
 results =  pd.read_csv(result_path, index_col=0, header=0, dtype = str)
 # print(results)
 rank = sys.argv[1]
 all_ranks = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 
 
-total_stats = [0]*6
+total_stats = [0]*5
 for index, row in results.iterrows():
     stats = correct(results, rank, index, False)
     total_stats = list( map(add, total_stats, stats) )
 
-[nan_count, rej_count, correct_count, partial_correct_count, wrong_count, total_count] = total_stats
+[nan_count, rej_count, correct_count, wrong_count, total_count] = total_stats
 print("total_count:", total_count)
 
 print("==== printing stats at", rank, "====")
@@ -70,12 +72,17 @@ print("recall:", correct_count/total_count)
 print("rejection rate:", (rej_count+nan_count)/total_count)
 
 total_stats = [0]*7
+partial_correct_list = [0]*len(all_ranks)
 for index, row in results.iterrows():
-    stats = correct(results, rank, index, True)
+    stats, cur_partial_correct_list = correct(results, rank, index, True)
     total_stats = list( map(add, total_stats, stats) )
+    partial_correct_list = list(map(add, partial_correct_list, cur_partial_correct_list))
 [nan_count, rej_count, rej_root_count, correct_count, partial_correct_count, wrong_count, total_count] = total_stats
 
 print("==== if we accept partially correct prediction ====")
-print("correct (including partially correct) rate:", (correct_count+partial_correct_count)/total_count)
+print("correct rate:", correct_count/total_count)
+print("partially correct rate:", partial_correct_count/total_count)
+for i in range(len(all_ranks)-2): # -2 as we stop at genus classification
+    print("partially correct and rejects at "+all_ranks[i+1]+" rate:", partial_correct_list[i])
 print("incorrect rate:", wrong_count/total_count)
-print("rejects at root rate", rej_root_count/total_count)
+print("rejects at phylum rate", rej_root_count/total_count)
