@@ -79,8 +79,11 @@ for taxon in taxons:
         reject_count = 0
         b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
         w_df = w_dfs[taxons.index(taxon)]
-        read_count = b_df.shape[0]+w_df.shape[0]
+        read_count = w_df.shape[0]
         for index, row in b_df.iterrows():
+            if row['prediction'] != taxon:
+                continue
+            read_count += 1
             row_alpha_info = excel_alpha_info[index]
             if not row_alpha_info[int(alpha/gap)]:
                 reject_count += 1
