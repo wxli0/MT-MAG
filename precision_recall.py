@@ -38,7 +38,9 @@ for taxon in taxons:
     w_dfs.append(w_df)
 
 # construct w_dfs
+print("constructing dfs")
 for taxon in taxons:
+    print("construct df for:", taxon)
     b_sheet = taxon + '-b-p'
     b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
     for index, row in b_df.iterrows():
@@ -54,6 +56,7 @@ print(w_dfs)
 
 
 # calculating excel_alpha_info
+print("calculating excel_alpha_info")
 for taxon in taxons:
     b_sheet = taxon + '-b-p'
     df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
@@ -67,7 +70,9 @@ for taxon in taxons:
 
 rej_dict = {} # precision threshold by taxon
 
+print("constructing rej_dict")
 for taxon in taxons:
+    print("constructing rej_dict for:", taxon)
     b_sheet = taxon + '-b-p'
     precisions = []
     recalls = []
