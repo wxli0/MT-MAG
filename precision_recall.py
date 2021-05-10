@@ -34,6 +34,7 @@ for taxon in taxons:
     b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
     w_df = pd.DataFrame(columns=['Row'].extend(b_df.columns))
     print(b_df)
+    print(w_df)
     w_df.set_index('Row')
     print(w_df)
     w_dfs.append(w_df)
