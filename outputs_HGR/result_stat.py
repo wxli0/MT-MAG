@@ -2,6 +2,7 @@ import os
 import sys
 import pandas as pd 
 from operator import add
+import matplotlib.pyplot as plt
 
 def correct(df, rank, index, partial=False):
     nan_count = rej_count = correct_count = partial_correct_count = wrong_count = total_count= rej_root_count = 0
@@ -28,6 +29,8 @@ def correct(df, rank, index, partial=False):
         cur_rank = all_ranks[i]
         cur_pred = df.loc[index, cur_rank]
         cur_true = df.loc[index, cur_rank[0].upper()+cur_rank[1:]+ " (reference)"]
+        if cur_rank == rank and cur_true == "Unassigned":
+            break
         if cur_rank_true not in genus_dict:
             genus_dict[cur_rank_true] = [0]*3
         if cur_rank == rank:
@@ -99,3 +102,21 @@ print("incorrect rate:", wrong_count/total_count)
 print("rejects at phylum rate", rej_root_count/total_count)
 
 print(genus_dict)
+
+langs = []
+incorrect_rates = []
+widths = []
+for key, value in genus_dict.items():
+    langs.append(key)
+    incorrect_rates.append((value[2]-value[0]-value[1])/value[2])
+    widths.append(value[2])
+
+fig = plt.figure()
+widths = [20*w/sum(widths) for w in widths]
+plt.bar(langs,incorrect_rates, width=widths)
+plt.suptitle('Incorrect rates vs checkM genus labels')
+plt.xticks(rotation='82.5', fontsize=2.8)
+plt.xlabel('checkM genus labels')
+plt.ylabel('incorrect rate')
+plt.savefig('incorrect_rate_by_genus_labels.png',dpi=400)
+# plt.show()
