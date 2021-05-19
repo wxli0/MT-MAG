@@ -188,7 +188,7 @@ RUG186.fa,,,,,,,,,,d__Archaea;p__Methanobacteriota;c__Methanobacteria;o__Methano
 RUG187.fa,,,,,,,,,,d__Bacteria;p__Firmicutes;c__Bacilli;o__RFN20;f__CAG-826;g__UBA733;s__UBA733 sp900316365,,,,,,,,,,,,,,,,g__UBA1217,0.0092,s__Bacillus licheniformis,0.0056
 RUG188.fa,,,,,,,,,,d__Bacteria;p__Actinobacteriota;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae;g__RUG013;s__RUG013 sp001486445,,,,,,,,,,,,,,,,g__UBA1217,0.0102,s__CAG-791 sp900320025,0.0274
 RUG189.fa,,,,,,,,,,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Ruminococcus_E;s__Ruminococcus_E sp900316385,,,,,,,,,,,,,,,,g__UBA1217,0.0089,s__Prevotella sp900316015,0.0874
-RUG190.fa,,,,,,,,,,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Succinivibrionaceae;g__Succinivibrio;s__Succinivibrio sp900316375,,,,,,,,,,,,,,,,g__RUG410,0.0071,s__Succinivibrio sp900316375,0.1335
+RUG190.fa,,,,,,,s__UBA2040 sp002332715,,,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Succinivibrionaceae;g__Succinivibrio;s__Succinivibrio sp900316375,,,,,,,,,,,,,,,,g__RUG410,0.0071,s__Succinivibrio sp900316375,0.1335
 RUG191.fa,,,,,,,,,,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__RUG191;s__RUG191 sp900316395,,,,,,,,,,,,,,,,g__Fibrobacter,0.416,s__Ruminobacter amylophilus,0.055
 RUG192.fa,,,,,,,,,,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__UBA4372;s__UBA4372 sp900316355,,,,,,,,,,,,,,,,g__UBA1217,0.0092,s__Bacillus licheniformis,0.009
 RUG193.fa,,,,,,,,,,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__UBA932;g__RC9;s__RC9 sp900316525,,,,,,,,,,,,,,,,g__UBA1217,0.008,s__C941 sp900318335,0.0233
