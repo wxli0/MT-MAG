@@ -121,11 +121,12 @@ for taxon in taxons:
     plt.legend()
     plt.savefig(file_name[:-5]+'-'+taxon+'-pr.png')
 
-BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection_threshold/"
+ver = file_name.split('/')[0].split('-')[-1]
+BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection-threshold-"+ver+"/"
 if platform.platform()[:5] == 'Linux':
-    BK_path = "/home/w328li/BlindKameris-new/rejection_threshold/"
+    BK_path = "/home/w328li/BlindKameris-new/rejection-threshold-"+ver+"/"
 if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
-    BK_path = "/h/wanxinli/BlindKameris-new/rejection_threshold/"
+    BK_path = "/h/wanxinli/BlindKameris-new/rejection-threshold-"+ver+"/"
 
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
