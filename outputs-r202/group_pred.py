@@ -27,6 +27,6 @@ for index, row in  MLDSP_df.iterrows():
         print("enter")
         if not os.path.isdir(base_path+"rumen_mags/"+label):
             os.mkdir(base_path+"rumen_mags/"+label)
-        copyfile(base_path+"rumen_mags/all/"+index+"sta", base_path+"rumen_mags/"+label+"/"+index+"sta")
+        copyfile(base_path+"rumen_mags/root/"+index+"sta", base_path+"rumen_mags/"+label+"/"+index+"sta")
         
 
