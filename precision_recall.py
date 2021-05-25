@@ -108,7 +108,10 @@ for taxon in taxons:
         precisions.append(p)
         r = correct_count/read_count
         recalls.append(r)
-    thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
+    if len(probs) == 0:
+        thres_alpha = 0
+    else:
+        thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
     rej_dict[taxon] = thres_alpha
     
     plt.figure(taxon)
