@@ -6,10 +6,11 @@ import openpyxl
 # e.g. 
 file_path = sys.argv[1]
 file_short = file_path.split('/')[-1]
+ver = file_path.split('/')[0].split('-')[-1]
 sheet = file_short[:-5]+"_pred-t-p"
 if len(sys.argv) == 3:
     sheet = sys.argv[2]
-MLDSP_pred_path = "outputs_HGR/HGR-prediction-full-path.csv"
+MLDSP_pred_path = "outputs-HGR-"+ver+"/HGR-prediction-full-path.csv"
 
 taxon = ""
 if sheet.startswith('d') or sheet.startswith('e'):
