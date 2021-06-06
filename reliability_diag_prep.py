@@ -32,12 +32,10 @@ parent = file_name.split('/')[1][:-11]
 xls = pd.ExcelFile(file_name)
 taxons = [x[:-4] for x in xls.sheet_names]
 
-# construct w_dfs
+# read sheets
 for taxon in taxons:
     sheet = taxon + '-b-p'
     df = pd.read_excel(file_name, sheet_name=sheet, index_col=0, header=0)
-    # print(df[taxon].tolist())
-    # writing to different files
     for taxon_other in taxons:
         file_X = 'outputs-'+ver+'/'+parent+'-'+taxon_other+'-rej-X.txt'
         file_Y = 'outputs-'+ver+'/'+parent+'-'+taxon_other+'-rej-Y.txt'
