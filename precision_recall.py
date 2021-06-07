@@ -16,6 +16,7 @@ import statistics
 gap = 0.01
 alphas = np.arange(0, 1+gap, gap).tolist()
 file_name = sys.argv[1]
+data_type = sys.argv[2]
 
 xls = pd.ExcelFile(file_name)
 precision = []
@@ -125,11 +126,11 @@ for taxon in taxons:
     plt.savefig(file_name[:-5]+'-'+taxon+'-pr.png')
 
 ver = file_name.split('/')[0].split('-')[-1]
-BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection-threshold-"+ver+"/"
+BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection-threshold-"+data_type+ver+"/"
 if platform.platform()[:5] == 'Linux':
-    BK_path = "/home/w328li/BlindKameris-new/rejection-threshold-"+ver+"/"
+    BK_path = "/home/w328li/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
 if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
-    BK_path = "/h/wanxinli/BlindKameris-new/rejection-threshold-"+ver+"/"
+    BK_path = "/h/wanxinli/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
 
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
