@@ -107,7 +107,9 @@ for taxon in taxons:
             thres_alpha = p
             done = True
         precisions.append(p)
-        r = correct_count/read_count
+        r = 1
+        if read_count != 0:
+            r = correct_count/read_count
         recalls.append(r)
     if len(probs) == 0:
         thres_alpha = 0
