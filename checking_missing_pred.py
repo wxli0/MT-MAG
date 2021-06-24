@@ -24,7 +24,7 @@ for path in paths:
             if 'reject' in cur_pred:
                 break
             if cur_pred == 'nan':
-                print(index, row)
+                # print(index, row)
                 if pre_pred not in missing_ranks[r]:
                     missing_ranks[r].append(pre_pred)
                 break

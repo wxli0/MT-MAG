@@ -16,7 +16,8 @@ import statistics
 gap = 0.01
 alphas = np.arange(0, 1+gap, gap).tolist()
 file_name = sys.argv[1]
-data_type = sys.argv[2]
+test_file = sys.argv[2]
+data_type = sys.argv[3]
 
 xls = pd.ExcelFile(file_name)
 precision = []
@@ -55,6 +56,11 @@ for taxon in taxons:
 print("print w_dfs")
 print(w_dfs)
 
+# read in test file
+test_df = pd.read_csv(test_file, header=0, index_col=0)
+existing_preds = list(set(test_df['prediction']))
+for i in range(len(existing_preds)):
+    existing_preds[i] = int(existing_preds[i])-1
 
 # calculating excel_alpha_info
 print("calculating excel_alpha_info")
@@ -69,10 +75,27 @@ for taxon in taxons:
         true_half.extend([False]*int((alpha_num-pred_num)))
         excel_alpha_info[index] =  true_half
 
+ver = file_name.split('/')[0].split('-')[-1]
+BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection-threshold-"+data_type+ver+"/"
+if platform.platform()[:5] == 'Linux':
+    BK_path = "/home/w328li/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
+if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
+    BK_path = "/h/wanxinli/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
+
 rej_dict = {} # precision threshold by taxon
+rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
 print("constructing rej_dict")
 for taxon in taxons:
+    if os.path.exists(rej_path):
+        rej_dict = json.load(open(rej_path))
+        if taxon in rej_dict:
+            print(taxon, "already in rej_dict")
+            break     
+    taxon_index = taxons.index(taxon)
+    if taxon_index not in existing_preds:
+        print(taxon, "not in existing_preds")
+        break
     print("constructing rej_dict for:", taxon)
     b_sheet = taxon + '-b-p'
     precisions = []
@@ -116,6 +139,8 @@ for taxon in taxons:
     else:
         thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
     rej_dict[taxon] = thres_alpha
+    with open(rej_path, 'w') as f:
+        json.dump(rej_dict, f)
     
     plt.figure(taxon)
     plt.xticks(alphas[::5],  rotation='vertical')
@@ -127,12 +152,7 @@ for taxon in taxons:
     plt.legend()
     plt.savefig(file_name[:-5]+'-'+taxon+'-pr.png')
 
-ver = file_name.split('/')[0].split('-')[-1]
-BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection-threshold-"+data_type+ver+"/"
-if platform.platform()[:5] == 'Linux':
-    BK_path = "/home/w328li/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
-if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
-    BK_path = "/h/wanxinli/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
+
 
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
