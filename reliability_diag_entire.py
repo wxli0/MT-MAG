@@ -45,6 +45,26 @@ for taxon in taxons:
         else:
             write_to_file([0]*df.shape[0], file_Y)
 
+for taxon in taxons:
+    arg = parent+'-'+taxon
+    os.system("Rscript reliability_diag_single.R "+arg)
+
+score_file_path = 'outputs-'+ver+'/'+parent+'-score.txt'
+score_file = open(score_file_path, 'r')
+score_file_lines = score_file.readlines()
+ 
+scores = []
+for line in score_file_lines:
+    scores.append(float(line))
+plt.hist(scores)
+plt.savefig('outputs-'+ver+'/'+parent+'-score.png')
+
+
+
+
+
+
+
     
     
             
