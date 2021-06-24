@@ -39,8 +39,8 @@ for index, row in df.iterrows():
     #     raise Exception()
     MLDSP_df.at[index[:-3], taxon] = row['rejection-f']
 
-print(MLDSP_df)
-print(MLDSP_df.shape)
-print(df.shape)
+# print(MLDSP_df)
+# print(MLDSP_df.shape)
+# print(df.shape)
 
 MLDSP_df.to_csv(MLDSP_pred_path, index=True, header=True)
