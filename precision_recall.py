@@ -49,12 +49,12 @@ for taxon in taxons:
         pred = row['prediction']
         if pred != taxon: # add to w_df
             print("reach adding to w_df")
-            print(row)
+            # print(row)
             w_dfs[taxons.index(pred)].loc[index] = row
-            print(w_dfs[taxons.index(pred)])
+            # print(w_dfs[taxons.index(pred)])
 
-print("print w_dfs")
-print(w_dfs)
+# print("print w_dfs")
+# print(w_dfs)
 
 # read in test file
 test_df = pd.read_excel(test_file, sheet_name = 'quadratic-svm-score', header=0, index_col=0)
