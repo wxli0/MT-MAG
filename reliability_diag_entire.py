@@ -16,6 +16,7 @@ import statistics
 # python3 reliability_diag_entire.py outputs-r202/o__UBA1407_train.xlsx
 
 def write_to_file(vec, file_name):
+    print("file_name is:", file_name)
     if os.path.exists(file_name):
         append_write = 'a' # append if already exists
     else:
@@ -50,7 +51,7 @@ for taxon in taxons:
 for taxon in taxons:
     print("generating reliablity diagram for", taxon)
     arg = parent+'-'+taxon
-    os.system("Rscript reliability_diag_single.R "+arg)
+    os.system("Rscript reliability_diag_single.R '"+arg+"'")
 
 score_file_path = 'outputs-'+ver+'/'+parent+'-score.txt'
 score_file = open(score_file_path, 'r')
