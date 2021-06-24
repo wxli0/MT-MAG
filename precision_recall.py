@@ -48,7 +48,6 @@ for taxon in taxons:
     for index, row in b_df.iterrows():
         pred = row['prediction']
         if pred != taxon: # add to w_df
-            print("reach adding to w_df")
             # print(row)
             w_dfs[taxons.index(pred)].loc[index] = row
             # print(w_dfs[taxons.index(pred)])
