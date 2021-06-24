@@ -57,7 +57,7 @@ print("print w_dfs")
 print(w_dfs)
 
 # read in test file
-test_df = pd.read_csv(test_file, header=0, index_col=0)
+test_df = pd.read_excel(test_file, sheet_name = 'quadratic-svm-score', header=0, index_col=0)
 existing_preds = list(set(test_df['prediction']))
 for i in range(len(existing_preds)):
     existing_preds[i] = int(existing_preds[i])-1
