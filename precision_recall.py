@@ -90,11 +90,11 @@ for taxon in taxons:
         rej_dict = json.load(open(rej_path))
         if taxon in rej_dict:
             print(taxon, "already in rej_dict")
-            break     
+            continue     
     taxon_index = taxons.index(taxon)
     if taxon_index not in existing_preds:
         print(taxon, "not in existing_preds")
-        break
+        continue
     print("constructing rej_dict for:", taxon)
     b_sheet = taxon + '-b-p'
     precisions = []
