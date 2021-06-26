@@ -1,1 +1,9 @@
 d__Bacteria 20
+p__Campylobacterota 6
+p__Elusimicrobiota 6
+p__Actinobacteriota 9
+p__Spirochaetota 9
+p__Fusobacteriota 8
+p__Bacteroidota 4
+p__Proteobacteria 3
+p__Firmicutes_A 5

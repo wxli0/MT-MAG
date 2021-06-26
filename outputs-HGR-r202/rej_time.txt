@@ -1,1 +1,9 @@
 d__Bacteria 186
+p__Campylobacterota 7
+p__Elusimicrobiota 2
+p__Actinobacteriota 10
+p__Spirochaetota 13
+p__Fusobacteriota 5
+p__Bacteroidota 3
+p__Proteobacteria 6
+p__Firmicutes_A 6
