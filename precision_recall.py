@@ -25,7 +25,7 @@ recall = []
 weighted = []
 
 excel_alpha_info = {}
-alpha_num = (1+gap)/gap+1
+alpha_num = 1/gap+1
 
 taxons = [x[:-4] for x in xls.sheet_names]
 
@@ -69,7 +69,7 @@ for taxon in taxons:
     sheet_alpha_info = []
     for index, row in df.iterrows():
         round_down_max = math.floor(row['max']*100)/100.0
-        pred_num = round_down_max/gap
+        pred_num = round_down_max/gap+1
         true_half = [True]*(int(pred_num))
         true_half.extend([False]*int((alpha_num-pred_num)))
         excel_alpha_info[index] =  true_half
@@ -97,12 +97,10 @@ for taxon in taxons:
         continue
     print("constructing rej_dict for:", taxon)
     b_sheet = taxon + '-b-p'
-    precisions = []
-    recalls = []
-    done = False
-    thres_alpha = 0
     probs = []
     for alpha in alphas:
+        probs = []
+        thres_alpha = 1
         correct_count = 0
         reject_count = 0
         b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
@@ -115,7 +113,7 @@ for taxon in taxons:
             row_alpha_info = excel_alpha_info[index]
             if not row_alpha_info[int(alpha/gap)]:
                 reject_count += 1
-            elif row['prediction'] == taxon:
+            elif row['prediction'] == taxon: # index that are correctly classified to be taxon
                 correct_count += 1
                 probs.append(row['max'])
         for index, row in w_df.iterrows():
@@ -123,35 +121,19 @@ for taxon in taxons:
             if not row_alpha_info[int(alpha/gap)]:
                 reject_count += 1
         p = 1
-        if (read_count-reject_count) != 0:
+        if (read_count-reject_count) != 0: # not all are rejected
             p = correct_count/(read_count-reject_count)
-        if not done and p > 0.9:
-            thres_alpha = p
-            done = True
-        precisions.append(p)
-        r = 1
-        if read_count != 0:
-            r = correct_count/read_count
-        recalls.append(r)
-    if len(probs) == 0:
-        thres_alpha = 0
+        if p > 0.9:
+            thres_alpha = alpha
+            break
+    if correct_count == 0:
+        thres_alpha = 1 # no instances are classified correctly to taxon
     else:
         thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
     rej_dict[taxon] = thres_alpha
     with open(rej_path, 'w') as f:
         json.dump(rej_dict, f)
     
-    plt.figure(taxon)
-    plt.xticks(alphas[::5],  rotation='vertical')
-    plt.xlabel("threshould")
-    plt.ylabel("precision/recall")
-    plt.plot(alphas, precisions, 'o-', label="Precision", markersize=2)
-    plt.plot(alphas, recalls, 'o-', label="Recall", markersize=2)
-    plt.axhline(y=0.9, color='r', linestyle='-')
-    plt.legend()
-    plt.savefig(file_name[:-5]+'-'+taxon+'-pr.png')
-
-
 
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
