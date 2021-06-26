@@ -40,7 +40,7 @@ for index, row in df.iterrows():
     print(index, row)
     MLDSP_df.at[index[:-3], taxon] = row['rejection-f']
 
-# print(MLDSP_df)
+print(MLDSP_df)
 # print(MLDSP_df.shape)
 # print(df.shape)
 
