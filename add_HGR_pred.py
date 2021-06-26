@@ -37,10 +37,10 @@ for index, row in df.iterrows():
     # if not math.isnan(MLDSP_df.loc[index[:-3]][taxon]):
     #     print("success")
     #     raise Exception()
-    print(index, row)
+    # print(index, row)
     MLDSP_df.at[index[:-3], taxon] = row['rejection-f']
 
-print(MLDSP_df)
+# print(MLDSP_df)
 # print(MLDSP_df.shape)
 # print(df.shape)
 
