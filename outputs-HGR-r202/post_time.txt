@@ -7,3 +7,11 @@ p__Fusobacteriota 8
 p__Bacteroidota 4
 p__Proteobacteria 3
 p__Firmicutes_A 5
+c__Campylobacteria 3
+c__Elusimicrobia 5
+c__Spirochaetia 5
+c__Alphaproteobacteria 10
+c__Fusobacteriia 9
+c__Actinomycetia 8
+c__Coriobacteriia 10
+c__Gammaproteobacteria 6
