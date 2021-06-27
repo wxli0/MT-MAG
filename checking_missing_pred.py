@@ -31,6 +31,7 @@ base_path = "/Users/wanxinli/Desktop/project.nosync/"
 if platform.platform()[:5] == 'Linux':
     base_path = "/h/w328li/"
 
+# execute the commands
 path1 = base_path+"BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 mrs1 = check_missing(path1, ranks1)
