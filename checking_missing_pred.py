@@ -2,6 +2,7 @@ import pandas as pd
 import os 
 import sys
 import platform
+import subprocess
 
 # check missing predictions in HGR/MLDSP-prediction-full-path.csv
 
@@ -51,6 +52,8 @@ if exec:
         classes = mrs2[k]
         if len(classes) != 0:
             for c in classes:
-                os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
-                print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+                running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
+                if running_proc.count('\\n') <= 2:
+                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
 
