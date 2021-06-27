@@ -13,7 +13,9 @@ if len(sys.argv) == 3:
 MLDSP_pred_path = "outputs-"+ver+"/MLDSP-prediction-full-path.csv"
 
 taxon = ""
-if sheet.startswith('d'):
+if sheet.startswith('r'):
+    taxon = 'domain'
+elif sheet.startswith('d'):
     taxon = "phylum"
 elif sheet.startswith('p'):
     taxon = "class"
