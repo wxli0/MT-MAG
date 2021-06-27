@@ -22,9 +22,9 @@ print(MLDSP_df)
 
 for index, row in  MLDSP_df.iterrows():
     label = row[taxon]
-    print("label is:", label)
+    # print("label is:", label)
     if not str(label) == 'nan':
-        print("enter")
+        # print("enter")
         if not os.path.isdir(base_path+"rumen_mags/"+label):
             os.mkdir(base_path+"rumen_mags/"+label)
         copyfile(base_path+"rumen_mags/root/"+index+"sta", base_path+"rumen_mags/"+label+"/"+index+"sta")
