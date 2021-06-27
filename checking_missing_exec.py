@@ -63,16 +63,17 @@ if exec:
                     print(c, "in HGR running process")
 
 print("GTDB missing ranks are:", mrs1)
-for k in mrs1:
-    classes = mrs1[k]
-    if len(classes) != 0:
-        for c in classes:
-            running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
-            proc_all =  str(subprocess.check_output("screen -ls", shell=True))
-            if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh "'+c)
-                print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh "'+c)
-            elif proc_all.count('\\n') > 40:
-                print('too many processes running')
-            else:
-                print(c, "in GTDB running process")
+if exec:
+    for k in mrs1:
+        classes = mrs1[k]
+        if len(classes) != 0:
+            for c in classes:
+                running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
+                proc_all =  str(subprocess.check_output("screen -ls", shell=True))
+                if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
+                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh "'+c)
+                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh "'+c)
+                elif proc_all.count('\\n') > 40:
+                    print('too many processes running')
+                else:
+                    print(c, "in GTDB running process")
