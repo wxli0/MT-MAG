@@ -56,4 +56,6 @@ if exec:
                 if running_proc.count('\\n') <= 2:
                     os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
                     print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+                else:
+                    print(c, "in running process")
 
