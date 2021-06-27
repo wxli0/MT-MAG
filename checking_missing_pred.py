@@ -1,16 +1,11 @@
 import pandas as pd 
 import os 
+import platform
 
 # check missing predictions in HGR/MLDSP-prediction-full-path.csv
-paths = ["/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv", \
-    "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv"]
 
-ranks_list=  [['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species'], \
-    ['phylum', 'class', 'order', 'family', 'genus', 'species']]
-
-for path in paths:
+def check_missing(path, ranks):
     df = pd.read_csv(path, index_col=0, header=0, dtype = str)
-    ranks = ranks_list[paths.index(path)]
 
     # init missing_ranks
     missing_ranks = {}
@@ -30,6 +25,21 @@ for path in paths:
                 break
             pre_pred = cur_pred
 
-    print(missing_ranks)
+    return missing_ranks
+
+base_path = "/Users/wanxinli/Desktop/project.nosync/"
+if platform.platform()[:5] == 'Linux':
+    base_path = "/h/w328li/"
+
+path1 = base_path+"BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
+ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
+mrs1 = check_missing(path1, ranks1)
+print("GTDB missing ranks are:", mrs1)
+
+path2 = base_path+"BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv"
+ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
+mrs2 = check_missing(path2, ranks2)
+print("HGR missing ranks are:", mrs2)
+
 
 
