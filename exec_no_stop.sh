@@ -7,5 +7,5 @@ do
     echo "==== begin checking_missing_exec ====" 
     python3 checking_missing_exec.py True
     echo "==== begin sleep ===="
-    sleep 1600  
+    sleep 1200  
 done
