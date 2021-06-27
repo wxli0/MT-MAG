@@ -29,7 +29,7 @@ def check_missing(path, ranks):
 
 base_path = "/Users/wanxinli/Desktop/project.nosync/"
 if platform.platform()[:5] == 'Linux':
-    base_path = "/h/w328li/"
+    base_path = "/home/w328li/"
 
 # execute the commands
 path1 = base_path+"BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
