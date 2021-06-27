@@ -42,8 +42,9 @@ ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 mrs2 = check_missing(path2, ranks2)
 print("HGR missing ranks are:", mrs2)
 for k in mrs2:
-    classes = mrs1[k]
-    for c in classes:
-        os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
-        print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+    classes = mrs2[k]
+    if len(classes) != 0:
+        for c in classes:
+            os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+            print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
 
