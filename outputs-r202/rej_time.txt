@@ -1,3 +1,2 @@
 root 74
-d__Bacteria 5
 d__Bacteria 390

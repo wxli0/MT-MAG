@@ -1,3 +1,2 @@
 root 10
-d__Bacteria 18
 d__Bacteria 15
