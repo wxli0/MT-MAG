@@ -1,6 +1,6 @@
-Row,domain,phylum,class,order,family,genus,species,,Unnamed: 9,gtdb-tk-domain,gtdb-tk-phylum,gtdb-tk-class,gtdb-tk-order,gtdb-tk-family,gtdb-tk-genus,gtdb-tk-species,Unnamed: 17,Unnamed: 18,deepMicrobes genus classification,deepMicrobes genus confidence,deepMicrobes species classification,deepMicrobes species confidence
+Row,domain,phylum,class,order,family,genus,species,Unnamed: 8,Unnamed: 9,gtdb-tk-domain,gtdb-tk-phylum,gtdb-tk-class,gtdb-tk-order,gtdb-tk-family,gtdb-tk-genus,gtdb-tk-species,Unnamed: 17,Unnamed: 18,deepMicrobes genus classification,deepMicrobes genus confidence,deepMicrobes species classification,deepMicrobes species confidence
 RUG001.fa,,,,,,,,,,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__UBA7741,s__UBA7741 sp900314575,,,,,,
-RUG002.fa,,,,,,,,,,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__UBA1367,s__UBA1367 sp900314645,,,,,,
+RUG002.fa,,,,,,,s__UBA1367 sp900314645,,,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__UBA1367,s__UBA1367 sp900314645,,,,,,
 RUG003.fa,,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900315455,,,,,,
 RUG004.fa,,,,,,,,,,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__UBA7741,s__UBA7741 sp900314495,,,,,,
 RUG005.fa,,,,,,,,,,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Dialisteraceae,g__Dialister,s__Dialister sp900314595,,,,,,
