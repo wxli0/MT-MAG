@@ -30,3 +30,12 @@ o__Veillonellales 6
 c__Clostridia 11
 c__Bacilli 5
 c__Bacteroidia 3
+o__Haloplasmatales_A 6
+o__Acholeplasmatales 15
+f__Campylobacteraceae 14
+f__Mycobacteriaceae 11
+f__Propionibacteriaceae 15
+o__ML615J-28 15
+f__Treponemataceae 16
+f__Elusimicrobiaceae 12
+o__Staphylococcales 11
