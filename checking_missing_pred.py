@@ -1,5 +1,6 @@
 import pandas as pd 
 import os 
+import sys
 import platform
 
 # check missing predictions in HGR/MLDSP-prediction-full-path.csv
@@ -31,6 +32,10 @@ base_path = "/Users/wanxinli/Desktop/project.nosync/"
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/"
 
+exec = False
+if len(sys.argv) == 2:
+    exec = sys.argv[1]
+
 # execute the commands
 path1 = base_path+"BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
@@ -41,10 +46,11 @@ path2 = base_path+"BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.cs
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 mrs2 = check_missing(path2, ranks2)
 print("HGR missing ranks are:", mrs2)
-for k in mrs2:
-    classes = mrs2[k]
-    if len(classes) != 0:
-        for c in classes:
-            os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
-            print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+if exec:
+    for k in mrs2:
+        classes = mrs2[k]
+        if len(classes) != 0:
+            for c in classes:
+                os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+                print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
 
