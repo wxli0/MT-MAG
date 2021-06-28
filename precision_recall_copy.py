@@ -123,6 +123,7 @@ for taxon in taxons:
         p = 1
         if (read_count-reject_count) != 0: # not all are rejected
             p = correct_count/(read_count-reject_count)
+        print("precision is:", p)
         if p > 0.9:
             thres_alpha = alpha
             break
