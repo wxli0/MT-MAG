@@ -127,6 +127,7 @@ for taxon in taxons:
             thres_alpha = alpha
             break
     if correct_count == 0:
+        print("enter here")
         thres_alpha = 1 # no instances are classified correctly to taxon
     else:
         thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
