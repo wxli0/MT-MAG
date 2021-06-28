@@ -1,3 +1,7 @@
 p__Elusimicrobiota 5
 p__Spirochaetota 8
 p__Campylobacterota 4
+p__Bacteroidota 6
+p__Actinobacteriota 14
+p__Fusobacteriota 13
+p__Firmicutes_A 22
