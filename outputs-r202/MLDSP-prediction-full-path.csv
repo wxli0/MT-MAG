@@ -756,7 +756,7 @@ RUG754.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clos
 RUG755.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Muribaculaceae,g__Sodaliphilus,s__Sodaliphilus sp900322135,,,,,,,,,,,,,,,,
 RUG756.fa,d__Bacteria,p__Desulfobacterota,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-74,g__RUG756,s__RUG756 sp900322115,,,,,,,,,,,,,,,,
 RUG757.fa,d__Bacteria,p__Firmicutes_A,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__UBA1213,s__UBA1213 sp900322105,,,,,,,,,,,,,,,,
-RUG758.fa,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__Selenomonadales,f__Selenomonadaceae,g__Selenomonas_A,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__UBA1213,s__UBA1213 sp900322145,,,,,,,,,,,,,,,,
+RUG758.fa,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__Selenomonadales,f__Selenomonadaceae,g__Selenomonas_A,s__Selenomonas_A lactilytica,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__UBA1213,s__UBA1213 sp900322145,,,,,,,,,,,,,,,,
 RUG759.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900322095,,,,,,,,,,,,,,,,
 RUG760.fa,d__Bacteria,p__Firmicutes_A,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__UBA1390,g__RUG760,s__RUG760 sp900322165,,,,,,,,,,,,,,,,
 RUG761.fa,d__Bacteria,p__Planctomycetota,,,,,,,,d__Archaea,p__Methanobacteriota,c__Methanobacteria,o__Methanobacteriales,f__Methanobacteriaceae,g__Methanosphaera,s__Methanosphaera sp900322125,,,,,,,,,,,,,,,,
