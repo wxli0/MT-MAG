@@ -2949,7 +2949,7 @@ even_MAG-GUT88626,,p__Firmicutes_C,c__Negativicutes,,,,,,,p__Firmicutes_C,c__Neg
 even_MAG-GUT88654,,p__Fusobacteriota,c__Fusobacteriia,o__Fusobacteriales,f__Fusobacteriaceae,g__Fusobacterium_A,s__Fusobacterium_A sp900555485,,,p__Fusobacteriota,c__Fusobacteriia,o__Fusobacteriales,f__Fusobacteriaceae,g__Fusobacterium_A,s__Fusobacterium_A mortiferum
 even_MAG-GUT88679,,p__Firmicutes_A,c__Clostridia_A,,,,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__Borkfalkiaceae,g__QALS01,s__QALS01 sp003150575
 even_MAG-GUT88680,,p__Firmicutes_C,c__Negativicutes,,,,,,,p__Firmicutes_C,c__Negativicutes,o__Acidaminococcales,f__Acidaminococcaceae,g__Acidaminococcus,s__Acidaminococcus intestini
-even_MAG-GUT88709,,p__Fusobacteriota,c__Fusobacteriia,o__Fusobacteriales,,,,,,p__Fusobacteriota,c__Fusobacteriia,o__Fusobacteriales,f__Fusobacteriaceae,g__Fusobacterium_A,s__Fusobacterium_A mortiferum
+even_MAG-GUT88709,,p__Fusobacteriota,c__Fusobacteriia,o__Fusobacteriales,f__Fusobacteriaceae,,,,,p__Fusobacteriota,c__Fusobacteriia,o__Fusobacteriales,f__Fusobacteriaceae,g__Fusobacterium_A,s__Fusobacterium_A mortiferum
 even_MAG-GUT88714,,p__Firmicutes,,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
 even_MAG-GUT88733,,p__Firmicutes,,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
 even_MAG-GUT88737,,p__Firmicutes,,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
