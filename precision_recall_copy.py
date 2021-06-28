@@ -135,14 +135,14 @@ for taxon in taxons:
         print("thres_alpha is:", thres_alpha)
         thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
     rej_dict[taxon] = thres_alpha
-    # with open(rej_path, 'w') as f:
-    #     json.dump(rej_dict, f)
+    with open(rej_path, 'w') as f:
+        json.dump(rej_dict, f)
     
 
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
-# if not os.path.isfile(rej_path):
-#     with open(rej_path, 'w') as f:
-#         json.dump(rej_dict, f)
+if not os.path.isfile(rej_path):
+    with open(rej_path, 'w') as f:
+        json.dump(rej_dict, f)
 
 
