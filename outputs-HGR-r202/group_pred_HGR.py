@@ -25,7 +25,7 @@ for index, row in  MLDSP_df.iterrows():
         continue
     # print("label is:", label)
     if not str(label) == 'nan':
-        # print("enter")
+        print(index, "label is:", label)
         if not os.path.isdir(base_path+"labeled_genome-r202/hgr_mags/"+label):
             os.mkdir(base_path+"labeled_genome-r202/hgr_mags/"+label)
         copyfile(base_path+"mag_reads_250bp_1w_200000/"+index+".fa", base_path+"labeled_genome-r202/hgr_mags/"+label+"/"+index+".fa")
