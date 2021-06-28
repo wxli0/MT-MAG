@@ -112,9 +112,8 @@ for taxon in taxons:
             row_alpha_info = excel_alpha_info[index]
             if not row_alpha_info[int(alpha/gap)]:
                 reject_count += 1
-            elif row['prediction'] == taxon: # index that are correctly classified to be taxon
-                correct_count += 1
-                probs.append(row['max'])
+            correct_count += 1
+            probs.append(row['max'])
         print("correct count is:", correct_count)
         for index, row in w_df.iterrows():
             row_alpha_info = excel_alpha_info[index]
@@ -131,6 +130,8 @@ for taxon in taxons:
         print("enter here")
         thres_alpha = 1 # no instances are classified correctly to taxon
     else:
+        print("probs mean is:", statistics.mean(probs))
+        print("thres_alpha is:", thres_alpha)
         thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
     rej_dict[taxon] = thres_alpha
     # with open(rej_path, 'w') as f:
