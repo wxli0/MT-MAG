@@ -97,6 +97,7 @@ for taxon in taxons:
     b_sheet = taxon + '-b-p'
     probs = []
     for alpha in alphas:
+        print("alpha is:", alpha)
         probs = []
         thres_alpha = 1
         correct_count = 0
@@ -114,6 +115,7 @@ for taxon in taxons:
             elif row['prediction'] == taxon: # index that are correctly classified to be taxon
                 correct_count += 1
                 probs.append(row['max'])
+        print("correct count is:", correct_count)
         for index, row in w_df.iterrows():
             row_alpha_info = excel_alpha_info[index]
             if not row_alpha_info[int(alpha/gap)]:
