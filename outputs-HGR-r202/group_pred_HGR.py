@@ -27,10 +27,7 @@ for index, row in  MLDSP_df.iterrows():
         continue
     # print("label is:", label)
     if not str(label) == 'nan':
-        if os.path.isdir(base_path+"labeled_genome-r202/hgr_mags/"+label) and (label not in created):
-            os.rmdir(base_path+"labeled_genome-r202/hgr_mags/"+label)
-            print("removed", base_path+"labeled_genome-r202/hgr_mags/"+label)
-        elif not os.path.isdir(base_path+"labeled_genome-r202/hgr_mags/"+label):
+        if not os.path.isdir(base_path+"labeled_genome-r202/hgr_mags/"+label):
             created.append(label)
             os.mkdir(base_path+"labeled_genome-r202/hgr_mags/"+label)
             print("created", base_path+"labeled_genome-r202/hgr_mags/"+label)
