@@ -113,7 +113,7 @@ for taxon in taxons:
             row_alpha_info = excel_alpha_info[index]
             if not row_alpha_info[int(alpha/gap)]:
                 reject_count += 1
-            correct_count += 1
+                correct_count += 1
             probs.append(row['max'])
         for index, row in w_df.iterrows():
             row_alpha_info = excel_alpha_info[index]
@@ -125,7 +125,7 @@ for taxon in taxons:
         if p > 0.9:
             thres_alpha = alpha
             break
-    if correct_count == 0:
+    if len(probs) == 0:
         print("enter here")
         thres_alpha = 1 # no instances are classified correctly to taxon
     else:

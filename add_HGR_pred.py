@@ -31,14 +31,7 @@ MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 # print(MLDSP_df)
 # print(math.isnan(MLDSP_df.loc['RUG518']['family']))
 for index, row in df.iterrows():
-    # print("index is:", index)
-    # print("taxon is:", taxon)
-    # print("rejection-f is:", row['rejection-f'])
-    # if not math.isnan(MLDSP_df.loc[index[:-3]][taxon]):
-    #     print("success")
-    #     raise Exception()
-    # print(index, row)
-    MLDSP_df.at[index[:-3], taxon] = row['rejection-f']
+    MLDSP_df.at[index[:-3], taxon] = row['prediction'] # used to be 'rejection-f'
 
 # print(MLDSP_df)
 # print(MLDSP_df.shape)

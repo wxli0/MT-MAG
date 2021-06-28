@@ -33,6 +33,6 @@ wb.save(file)
 
 os.system("python3 run_add_max.py "+file)
 
-os.system("python3 run_rejection_f.py "+file+" " + rej_file)
+# os.system("python3 run_rejection_f.py "+file+" " + rej_file)
 
 
