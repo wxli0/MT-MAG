@@ -656,7 +656,7 @@ RUG654.fa,d__Bacteria,p__Actinobacteriota,,,,,,,,d__Bacteria,p__Actinobacteriota
 RUG655.fa,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__CAG-127,s__CAG-127 sp900321145,,,,,,,,,,,,,,,,
 RUG656.fa,d__Bacteria,p__Verrucomicrobiota,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__UBA2856,s__UBA2856 sp900319065,,,,,,,,,,,,,,,,
 RUG657.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__UBA1179,s__UBA1179 sp900318995,,,,,,,,,,,,,,,,
-RUG658.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Tissierellales,f__Peptoniphilaceae,g__Anaerococcus,,,,d__Bacteria,p__Elusimicrobiota,c__Endomicrobia,o__Endomicrobiales,f__Endomicrobiaceae,g__RUG658,s__RUG658 sp900321055,,,,,,,,,,,,,,,,
+RUG658.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Tissierellales,f__Peptoniphilaceae,g__Anaerococcus,s__Anaerococcus sp900541365,,,d__Bacteria,p__Elusimicrobiota,c__Endomicrobia,o__Endomicrobiales,f__Endomicrobiaceae,g__RUG658,s__RUG658 sp900321055,,,,,,,,,,,,,,,,
 RUG659.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__P3,g__UBA1711,s__UBA1711 sp900316235,,,,,,,,,,,,,,,,
 RUG660.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900314915,,,,,,,,,,,,,,,,
 RUG661.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__RUG420,s__RUG420 sp900317985,,,,,,,,,,,,,,,,
