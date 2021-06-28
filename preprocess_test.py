@@ -4,7 +4,6 @@ import openpyxl
 import os 
 
 file = sys.argv[1]
-rej_file = sys.argv[2]
 
 df = pd.read_excel(file, sheet_name = "quadratic-svm-score", index_col=0, header=0)
 
