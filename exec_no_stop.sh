@@ -3,6 +3,14 @@ i=0
 while true  
 do  
     echo "iteration ${i}"
+    echo "==== git commit ===="
+    cd ~/MLDSP
+    git add .
+    git commit -m "updated outputs"
+    git push
+    cd ~/BlindKameris-new
+    git add .
+    git commit -m "updated outputs"
     echo "==== begin group_pred ===="
     python3 outputs-r202/group_pred.py phylum
     python3 outputs-r202/group_pred.py class
