@@ -1,6 +1,8 @@
-#!/bin/sh  
+#!/bin/sh
+i=0  
 while true  
 do  
+    echo "iteration ${i}"
     echo "==== begin group_pred ===="
     python3 outputs-r202/group_pred.py phylum
     python3 outputs-r202/group_pred.py class
@@ -13,6 +15,7 @@ do
     python3 outputs-HGR-r202/group_pred_HGR.py genus
     echo "==== begin checking_missing_exec ====" 
     python3 checking_missing_exec.py True
-    echo "==== begin sleep ===="
-    sleep 120  
+    echo "==== begin sleep 2 minutes ===="
+    sleep 120
+    i=$((i+1))  
 done
