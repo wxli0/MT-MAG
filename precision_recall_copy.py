@@ -82,6 +82,8 @@ rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
 print("constructing rej_dict")
 for taxon in taxons:
+    if taxon != 'p__Firmicutes_A':
+        continue
     if os.path.exists(rej_path):
         rej_dict = json.load(open(rej_path))
         if taxon in rej_dict:
