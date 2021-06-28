@@ -113,9 +113,8 @@ for taxon in taxons:
             row_alpha_info = excel_alpha_info[index]
             if not row_alpha_info[int(alpha/gap)]:
                 reject_count += 1
-            elif row['prediction'] == taxon: # index that are correctly classified to be taxon
-                correct_count += 1
-                probs.append(row['max'])
+            correct_count += 1
+            probs.append(row['max'])
         for index, row in w_df.iterrows():
             row_alpha_info = excel_alpha_info[index]
             if not row_alpha_info[int(alpha/gap)]:
