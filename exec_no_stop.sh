@@ -15,7 +15,7 @@ do
     python3 outputs-HGR-r202/group_pred_HGR.py genus
     echo "==== begin checking_missing_exec ====" 
     python3 checking_missing_exec.py True
-    echo "==== begin sleep 2 minutes ===="
+    echo "==== begin sleep 2 minutes at $(date)===="
     sleep 120
     i=$((i+1))  
 done
