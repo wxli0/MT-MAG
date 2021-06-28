@@ -52,6 +52,8 @@ if exec:
         classes = mrs2[k]
         if len(classes) != 0:
             for c in classes:
+                if c == 'root':
+                    continue
                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
