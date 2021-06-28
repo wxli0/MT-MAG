@@ -21,11 +21,12 @@ print(MLDSP_df)
 
 for index, row in  MLDSP_df.iterrows():
     label = row[taxon]
-    if str(index).endswith('_1') or str(index).endswith('_2'):
+    index_str = str(index)
+    if index_str.endswith('_1') or index_str.endswith('_2'):
         continue
     # print("label is:", label)
     if not str(label) == 'nan':
         if not os.path.isdir(base_path+"labeled_genome-r202/hgr_mags/"+label):
             os.mkdir(base_path+"labeled_genome-r202/hgr_mags/"+label)
-        copyfile(base_path+"mag_reads_250bp_1w_200000/"+str(index)+".fa", base_path+"labeled_genome-r202/hgr_mags/"+label+"/"+index(index)+".fa")
+        copyfile(base_path+"mag_reads_250bp_1w_200000/"+index_str+".fa", base_path+"labeled_genome-r202/hgr_mags/"+label+"/"+index_str+".fa")
         
