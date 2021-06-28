@@ -264,3 +264,5 @@ g__Turicibacter 9
 g__Turicibacter 8
 g__Turicibacter 5
 g__Turicibacter 8
+g__Turicibacter 8
+g__Turicibacter 6

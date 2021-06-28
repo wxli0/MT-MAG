@@ -71,3 +71,9 @@ p__Verrucomicrobiota 31
 c__Thermoplasmata 324
 o__RFP12 29
 o__Methanomassiliicoccales 48
+o__Treponematales 127
+f__UBA1067 36
+f__Methanomethylophilaceae 63
+f__UBA12059 9
+g__Methanomethylophilus 30
+g__RUG572 43
