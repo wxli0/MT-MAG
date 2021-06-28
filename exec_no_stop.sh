@@ -11,6 +11,7 @@ do
     cd ~/BlindKameris-new
     git add .
     git commit -m "updated outputs"
+    git push
     echo "==== begin group_pred ===="
     python3 outputs-r202/group_pred.py phylum
     python3 outputs-r202/group_pred.py class
