@@ -21,7 +21,7 @@ print(MLDSP_df)
 
 for index, row in  MLDSP_df.iterrows():
     label = row[taxon]
-    if index.endswith('_1') or index.endswith('_2'):
+    if str(index).endswith('_1') or str(index).endswith('_2'):
         continue
     # print("label is:", label)
     if not str(label) == 'nan':
