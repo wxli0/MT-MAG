@@ -86,6 +86,8 @@ rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
 print("constructing rej_dict")
 for taxon in taxons:
+    if taxon != 'p__Firmicutes_A':
+        continue
     if os.path.exists(rej_path):
         rej_dict = json.load(open(rej_path))
         if taxon in rej_dict:
@@ -129,16 +131,18 @@ for taxon in taxons:
         print("enter here")
         thres_alpha = 1 # no instances are classified correctly to taxon
     else:
+        print("mean probs is:", statistics.mean(probs))
+        print("thres_alpha is:", thres_alpha)
         thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
     rej_dict[taxon] = thres_alpha
-    with open(rej_path, 'w') as f:
-        json.dump(rej_dict, f)
+    # with open(rej_path, 'w') as f:
+    #     json.dump(rej_dict, f)
     
 
 rej_path = BK_path+file_name.split('/')[-1][:-11]+'.json'
 
-if not os.path.isfile(rej_path):
-    with open(rej_path, 'w') as f:
-        json.dump(rej_dict, f)
+# if not os.path.isfile(rej_path):
+#     with open(rej_path, 'w') as f:
+#         json.dump(rej_dict, f)
 
 
