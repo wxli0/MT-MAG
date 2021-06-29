@@ -9,7 +9,7 @@ X <- scan(X_file)
 Y <- scan(Y_file)
 res <- reliabilitydiag(x = X, y = Y)
 reliablity_score <- (summary(res))$miscalibration
-parent <- strsplit(file, '-')[[1]][1]
+parent <- strsplit(file, '/')[[1]][1]
 write(reliablity_score,file=paste0('outputs-r202/', parent, '-score.txt'),append=TRUE)
 
 plot(res)
