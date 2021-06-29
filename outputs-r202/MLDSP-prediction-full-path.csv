@@ -595,7 +595,7 @@ RUG593.fa,d__Archaea,p__Methanobacteriota,c__Methanobacteria,o__Methanobacterial
 RUG594.fa,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__RF39,f__UBA660,g__UBA2730,s__UBA2730 sp900320505,,,,,,,,,,,,,,,,
 RUG595.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__CAG-791,s__CAG-791 sp900317555,,,,,,,,,,,,,,,,
 RUG596.fa,d__Bacteria,p__Verrucomicrobiota,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Acetatifactor,s__Acetatifactor sp900320485,,,,,,,,,,,,,,,,
-RUG597.fa,d__Bacteria,p__Spirochaetota,c__Spirochaetia,o__Sphaerochaetales,f__Sphaerochaetaceae,g__UBA9848,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelotrichaceae,g__Bulleidia,s__Bulleidia sp900320455,,,,,,,,,,,,,,,,
+RUG597.fa,d__Bacteria,p__Spirochaetota,c__Spirochaetia,o__Sphaerochaetales,f__Sphaerochaetaceae,g__UBA9848,s__UBA9848 sp003454065,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelotrichaceae,g__Bulleidia,s__Bulleidia sp900320455,,,,,,,,,,,,,,,,
 RUG598.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__UBA4372,s__UBA4372 sp900320435,,,,,,,,,,,,,,,,
 RUG599.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900320445,,,,,,,,,,,,,,,,
 RUG600.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Paludibacteraceae,g__RF16,s__RF16 sp900317745,,,,,,,,,,,,,,,,
@@ -912,4 +912,3 @@ hRUG910.fa,d__Bacteria,p__Planctomycetota,,,,,,,,d__Bacteria,p__Firmicutes,c__Ba
 hRUG911.fa,d__Bacteria,p__Spirochaetota,c__Spirochaetia,o__Treponematales,f__UBA1318,g__UBA1318,s__UBA1318 sp002307015,,,d__Bacteria,p__Proteobacteria,c__Gammaproteobacteria,o__Burkholderiales,f__Burkholderiaceae,g__Mesosutterella,s__Mesosutterella sp902797695,,,,,,,,,,,,,,,,
 hRUG912.fa,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelotrichaceae,g__Absicoccus,s__Absicoccus porci,,,,,,,,,,,,,,,,
 hRUG913.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900314915,,,,,,,,,,,,,,,,
-
