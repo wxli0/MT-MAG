@@ -32,17 +32,21 @@ def calc_partial_recall_incorrect(path, ranks, special_pred=[]):
                 
     return recall, incorrect
 
-def calc_recall(path, ranks, special_pred=[]):
+def calc_precision_recall(path, ranks, special_pred=[]):
     df = pd.read_csv(path, header=0, index_col=0)
-    recall = 0
+    rejected = 0
+    correct = 0
     for index, row in df.iterrows():
         cur_rank = ranks[-1]
         cur_pred = str(df.loc[index][cur_rank])
         label_rank = "gtdb-tk-"+cur_rank
         label_pred = str(df.loc[index][label_rank])
         if cur_pred == label_pred:
-            recall += 1/df.shape[0]
-    return recall
+            correct += 1
+        elif 'reject' in cur_pred or cur_pred == 'nan':
+            rejected += 1
+    return correct/(df.shape[0]-rejected), correct/df.shape[0] 
+
 
 # compute rejection level statistics 
 def rej_stats(path, ranks):
@@ -65,8 +69,8 @@ path1 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-r202-ar
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 sp1 = ['g__Prevotella']
 pr1, ir1 = calc_partial_recall_incorrect(path1, ranks1)
-r1 = calc_recall(path1, ranks1)
-print("partial recall r1 is:", pr1, "incorrect rate ir1:", ir1, "recall r1 is:", r1)
+p1, r1 = calc_precision_recall(path1, ranks1)
+print("partial recall r1 is:", pr1, "incorrect rate ir1:", ir1, "recall r1 is:", r1, "precision p1 is:", p1)
 rej_stat1= rej_stats(path1, ranks1)
 for r in rej_stat1:
     print(rej_stat1[r], "rejects at ", r)
@@ -75,8 +79,8 @@ path2 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-HGR-r20
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 sp2 =  ['g__Ruminococcus_F', 'g__F0040', 'g__Pediococcus']
 pr2, ir2 = calc_partial_recall_incorrect(path2, ranks2, sp2)
-r2 = calc_recall(path2, ranks2)
-print("partial recall r2 is:", pr2, "incorrect rate ir1:", ir2, "recall r2 is:", r2)
+p2, r2 = calc_precision_recall(path2, ranks2)
+print("partial recall r2 is:", pr2, "incorrect rate ir1:", ir2, "recall r2 is:", r2, "precision p2 is:", p2)
 rej_stat2 = rej_stats(path2, ranks2)
 for r in rej_stat2:
     print(rej_stat2[r], "rejects at ", r)
