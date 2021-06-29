@@ -693,7 +693,7 @@ RUG691.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacter
 RUG692.fa,d__Bacteria,p__Verrucomicrobiota,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Clostridium_R,s__Clostridium_R sp900321355,,,,,,,,,,,,,,,,
 RUG693.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900321425,,,,,,,,,,,,,,,,
 RUG694.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Eubacterium_Q,s__Eubacterium_Q sp900321505,,,,,,,,,,,,,,,,
-RUG695.fa,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,,,,,,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,f__Thermoguttaceae,g__RUG695,s__RUG695 sp900321495,,,,,,,,,,,,,,,,
+RUG695.fa,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,f__Thermoguttaceae,,,,,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,f__Thermoguttaceae,g__RUG695,s__RUG695 sp900321495,,,,,,,,,,,,,,,,
 RUG696.fa,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__RFN20,f__CAG-826,g__UBA733,s__UBA733 sp900321535,,,,,,,,,,,,,,,,
 RUG697.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900318625,,,,,,,,,,,,,,,,
 RUG698.fa,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__RFN20,f__CAG-826,g__UBA4951,s__UBA4951 sp900321485,,,,,,,,,,,,,,,,
