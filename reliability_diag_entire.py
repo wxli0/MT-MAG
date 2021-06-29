@@ -50,8 +50,7 @@ for taxon in taxons:
 
 for taxon in taxons:
     print("generating reliablity diagram for", taxon)
-    arg = parent+'/'+taxon
-    os.system("Rscript reliability_diag_single.R '"+arg+"'")
+    os.system("Rscript reliability_diag_single.R '"+parent+"' "+"'"+taxon+"'")
 
 print("parent is:", parent)
 score_file_path = 'outputs-'+ver+'/'+parent+'-score.txt'
