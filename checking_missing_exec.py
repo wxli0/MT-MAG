@@ -47,22 +47,22 @@ path2 = base_path+"BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.cs
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 mrs2 = check_missing(path2, ranks2)
 print("HGR missing ranks are:", mrs2)
-if exec:
-    for k in mrs2:
-        classes = mrs2[k]
-        if len(classes) != 0:
-            for c in classes:
-                if c == 'root':
-                    continue
-                running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
-                proc_all =  str(subprocess.check_output("screen -ls", shell=True))
-                if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
-                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
-                elif proc_all.count('\\n') > 40:
-                    print('too many processes running')
-                else:
-                    print(c, "in HGR running process")
+# if exec:
+#     for k in mrs2:
+#         classes = mrs2[k]
+#         if len(classes) != 0:
+#             for c in classes:
+#                 if c == 'root':
+#                     continue
+#                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
+#                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
+#                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
+#                     os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+#                     print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+#                 elif proc_all.count('\\n') > 40:
+#                     print('too many processes running')
+#                 else:
+#                     print(c, "in HGR running process")
 
 print("GTDB missing ranks are:", mrs1)
 if exec:
