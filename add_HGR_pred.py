@@ -5,7 +5,8 @@ import openpyxl
 
 from filelock import FileLock
 
-with FileLock("myfile.txt.lock"):
+print("waiting to acqure add_HGR_pred lock")
+with FileLock("add_HGR_pred.lock"):
     print("Lock in add_HGR_pred acquired.")
 
     file_path = sys.argv[1]
