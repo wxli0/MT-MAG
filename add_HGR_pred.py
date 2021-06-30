@@ -3,11 +3,10 @@ import pandas as pd
 import math
 import openpyxl
 
-# e.g. 
 from filelock import FileLock
 
 with FileLock("myfile.txt.lock"):
-    print("Lock acquired.")
+    print("Lock in add_HGR_pred acquired.")
 
     file_path = sys.argv[1]
     file_short = file_path.split('/')[-1]
@@ -37,3 +36,4 @@ with FileLock("myfile.txt.lock"):
         MLDSP_df.at[index[:-3], taxon] = row['prediction'] # used to be 'rejection-f'
 
     MLDSP_df.to_csv(MLDSP_pred_path, index=True, header=True)
+    print("Lock in add_HGR_pred released.")
