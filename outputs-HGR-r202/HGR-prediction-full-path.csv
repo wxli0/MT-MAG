@@ -928,7 +928,7 @@ even_MAG-GUT32130,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmi
 even_MAG-GUT32169,,p__Bacteroidota,c__Bacteroidia,,,,,,,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Rikenellaceae,g__Alistipes_A,s__Alistipes_A sp900240235
 even_MAG-GUT32170,,p__Bacteroidota,c__Bacteroidia,,,,,,,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Rikenellaceae,g__Alistipes,s__Alistipes dispar
 even_MAG-GUT32215,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-217,s__CAG-217 sp000436335,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-217,s__CAG-217 sp000436335
-even_MAG-GUT32242,,p__Firmicutes,c__Bacilli,o__Haloplasmatales_A,f__Turicibacteraceae,g__Turicibacter,,,,p__Firmicutes,c__Bacilli,o__Haloplasmatales_A,f__Turicibacteraceae,g__Turicibacter,s__Turicibacter sanguinis
+even_MAG-GUT32242,,p__Firmicutes,c__Bacilli,o__Haloplasmatales_A,f__Turicibacteraceae,g__Turicibacter,s__Turicibacter sp001543345,,,p__Firmicutes,c__Bacilli,o__Haloplasmatales_A,f__Turicibacteraceae,g__Turicibacter,s__Turicibacter sanguinis
 even_MAG-GUT32255,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Schaedlerella,s__Schaedlerella glycyrrhizinilytica
 even_MAG-GUT3231,,p__Firmicutes,c__Bacilli,o__Lactobacillales,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
 even_MAG-GUT3233,,p__Firmicutes,c__Bacilli,o__Lactobacillales,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
