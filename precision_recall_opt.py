@@ -96,10 +96,10 @@ def taxon_recall(taxon):
         if row['prediction'] == taxon:
             total_count += 1
             reject_start = math.floor(row['max']*1/gap)/(1/gap)+gap
-            reject_zero_half = [0]*(int(reject_start*1/gap))
-            reject_incre = reject_zero_half.extend([1]*(int(alpha_num-reject_start*1/gap)))
-            correct_one_half = [1]*(int(reject_start*1/gap))
-            correct_incre  = correct_one_half.extend([0]*(int(alpha_num-reject_start*1/gap)))
+            reject_incre = [0]*(int(reject_start*1/gap))
+            reject_incre.extend([1]*(int(alpha_num-reject_start*1/gap)))
+            correct_incre = [1]*(int(reject_start*1/gap))
+            correct_incre.extend([0]*(int(alpha_num-reject_start*1/gap)))
             print("correct_incre is:", correct_incre)
             correct_stat = [sum(x) for x in zip(correct_stat, correct_incre)]
             reject_stat = [sum(x) for x in zip(reject_stat, reject_incre)]
@@ -107,8 +107,8 @@ def taxon_recall(taxon):
     for index, row in w_df.iterrows():
         total_count += 1
         reject_start = math.floor(row['max']*1/gap)/(1/gap)+gap
-        reject_zero_half = [0]*(int(reject_start*1/gap))
-        reject_incre = reject_zero_half.extend([1]*(int(alpha_num-reject_start*1/gap)))
+        reject_incre = [0]*(int(reject_start*1/gap))
+        reject_incre.extend([1]*(int(alpha_num-reject_start*1/gap)))
         reject_stat = [sum(x) for x in zip(reject_stat, reject_incre)] 
 
     # compute thres_alpha
