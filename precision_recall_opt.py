@@ -26,7 +26,7 @@ precision = []
 recall = []
 weighted = []
 
-alpha_num = 1/gap+1
+alpha_num = int(1/gap+1)
 
 taxons = [x[:-4] for x in xls.sheet_names]
 parent = file_name.split('/')[-1][:-11]
@@ -54,13 +54,7 @@ for taxon in taxons:
             w_dfs[taxons.index(pred)].loc[index] = row
 
 # read in test file
-sheetnames = pd.ExcelFile(test_file).sheet_names
-test_df = None
-sheet_name = 'quadratic-svm-score'
-other_sheet_name = parent+"_pred-t-p"
-if other_sheet_name in sheetnames:
-    sheet_name = other_sheet_name
-test_df = pd.read_excel(test_file, sheet_name = sheet_name, header=0, index_col=0)
+test_df = pd.read_excel(test_file, sheet_name = 'quadratic-svm-score', header=0, index_col=0)
 existing_preds = list(set(test_df['prediction']))
 for i in range(len(existing_preds)):
     existing_preds[i] = int(existing_preds[i])-1
