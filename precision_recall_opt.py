@@ -43,8 +43,7 @@ for taxon in taxons:
     w_dfs.append(w_df)
 
 # construct w_dfs
-print("constructing dfs")
-for taxon in taxons:
+def df_taxon(taxon):
     print("construct df for:", taxon)
     b_sheet = taxon + '-b-p'
     b_df = pd.read_excel(file_name, sheet_name=b_sheet, index_col=0, header=0)
@@ -52,6 +51,10 @@ for taxon in taxons:
         pred = row['prediction']
         if pred != taxon: # add to w_df
             w_dfs[taxons.index(pred)].loc[index] = row
+
+print("constructing dfs")
+p = Pool(10)
+all_thres = p.map(df_taxon, taxons)
 
 # read in test file
 test_df = pd.read_excel(test_file, sheet_name = 'quadratic-svm-score', header=0, index_col=0)
