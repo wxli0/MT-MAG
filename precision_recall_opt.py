@@ -12,7 +12,7 @@ import math
 import statistics
 from multiprocessing import Pool
 
-# python3 precision_recall_opt.py outputs-r202/p__Riflebacteria_train.xlsx outputs-r202/p__Riflebacteria.xlsx GTDB
+# python3 precision_recall_opt.py outputs-r202/d__Bacteria_train.xlsx outputs-r202/d__Bacteria.xlsx GTDB
 
 gap = 0.01
 alphas = np.arange(0, 1+gap, gap).tolist()
@@ -100,7 +100,6 @@ def taxon_recall(taxon):
             reject_incre.extend([1]*(int(alpha_num-reject_start*1/gap)))
             correct_incre = [1]*(int(reject_start*1/gap))
             correct_incre.extend([0]*(int(alpha_num-reject_start*1/gap)))
-            print("correct_incre is:", correct_incre)
             correct_stat = [sum(x) for x in zip(correct_stat, correct_incre)]
             reject_stat = [sum(x) for x in zip(reject_stat, reject_incre)]
             probs.append(row['max'])
