@@ -100,6 +100,7 @@ def taxon_recall(taxon):
             reject_incre = reject_zero_half.extend([1]*(int(alpha_num-reject_start*1/gap)))
             correct_one_half = [1]*(int(reject_start*1/gap))
             correct_incre  = correct_one_half.extend([0]*(int(alpha_num-reject_start*1/gap)))
+            print("correct_incre is:", correct_incre)
             correct_stat = [sum(x) for x in zip(correct_stat, correct_incre)]
             reject_stat = [sum(x) for x in zip(reject_stat, reject_incre)]
             probs.append(row['max'])
