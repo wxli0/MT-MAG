@@ -57,8 +57,8 @@ if exec:
                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
-                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh "'+c)
+                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
+                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
@@ -73,8 +73,8 @@ if exec:
                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh "'+c)
-                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh "'+c)
+                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + '"')
+                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + '"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
