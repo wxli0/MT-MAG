@@ -119,3 +119,6 @@ c__Bacteroidia 5
 g__Proteus 14
 o__Lachnospirales 9
 p__Firmicutes_C 10
+p__Firmicutes_C 3
+g__CAG-1427 268
+f__Coriobacteriaceae 3
