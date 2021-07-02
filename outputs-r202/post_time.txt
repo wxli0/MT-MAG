@@ -59,3 +59,4 @@ g__Methanobrevibacter_B 7
 p__Bacteroidota 9
 p__Spirochaetota 13
 p__Desulfobacterota 10
+p__Spirochaetota 6
