@@ -117,3 +117,5 @@ f__Enterobacteriaceae 649
 p__Firmicutes_C 6
 c__Bacteroidia 5
 g__Proteus 14
+o__Lachnospirales 9
+p__Firmicutes_C 10
