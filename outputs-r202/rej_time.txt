@@ -80,3 +80,5 @@ p__Planctomycetota 4
 p__Bacteroidota 6
 p__Planctomycetota 4
 p__Spirochaetota 6
+p__Spirochaetota 5
+p__Planctomycetota 7
