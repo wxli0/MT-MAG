@@ -56,3 +56,4 @@ c__Bacteroidia 4
 f__Fusobacteriaceae 38
 c__Gammaproteobacteria 102
 o__Coriobacteriales 139
+o__Lachnospirales 3
