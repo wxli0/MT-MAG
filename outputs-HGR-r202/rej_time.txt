@@ -137,3 +137,6 @@ p__Firmicutes_C 3
 g__UMGS911 10
 p__Firmicutes_C 3
 o__Lachnospirales 7
+c__Bacteroidia 3
+p__Firmicutes_C 2
+f__Coriobacteriaceae 4
