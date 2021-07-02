@@ -39,3 +39,5 @@ p__Spirochaetota 4
 p__Methanobacteriota 99
 p__Spirochaetota 5
 p__Spirochaetota 6
+p__Planctomycetota 3
+p__Spirochaetota 5

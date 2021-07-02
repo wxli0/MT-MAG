@@ -152,3 +152,7 @@ g__CAG-180 16
 g__CAG-488 18
 g__Ruminococcus_E 43
 p__Firmicutes_C 6
+p__Firmicutes_C 4
+o__Lachnospirales 4
+f__Coriobacteriaceae 5
+c__Bacteroidia 5
