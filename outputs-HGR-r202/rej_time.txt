@@ -57,3 +57,11 @@ f__Fusobacteriaceae 38
 c__Gammaproteobacteria 102
 o__Coriobacteriales 139
 o__Lachnospirales 3
+p__Firmicutes_C 3
+g__Cutibacterium 9
+g__Propionibacterium 9
+g__51-20 19
+g__Akkermansia 24
+g__Monoglobus 25
+g__UBA1436 37
+g__Corynebacterium 86
