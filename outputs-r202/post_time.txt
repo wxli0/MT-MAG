@@ -89,3 +89,5 @@ o__Campylobacterales 5
 p__Spirochaetota 7
 p__Planctomycetota 8
 f__Campylobacteraceae 7
+p__Planctomycetota 6
+p__Spirochaetota 6
