@@ -102,3 +102,4 @@ g__Duodenibacillus 13
 p__Firmicutes_C 17
 f__Butyricicoccaceae 24
 c__Bacteroidia 10
+p__Firmicutes_C 8
