@@ -67,3 +67,5 @@ p__Firmicutes_A 434
 p__Spirochaetota 3
 g__Methanobrevibacter 25
 p__Spirochaetota 3
+p__Spirochaetota 6
+p__Verrucomicrobiota 4
