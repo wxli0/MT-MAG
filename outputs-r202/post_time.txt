@@ -69,3 +69,4 @@ g__Methanobrevibacter 5
 p__Spirochaetota 6
 p__Spirochaetota 11
 p__Verrucomicrobiota 17
+p__Spirochaetota 11
