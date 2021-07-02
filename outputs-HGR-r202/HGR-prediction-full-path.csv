@@ -1,4 +1,4 @@
-Row,Unnamed: 1,phylum,class,order,family,genus,specices,notes,Unnamed: 7,gtdb-tk-phylum,gtdb-tk-class,gtdb-tk-order,gtdb-tk-family,gtdb-tk-genus,gtdb-tk-species
+Row,Unnamed: 1,phylum,class,order,family,genus,species,notes,Unnamed: 7,gtdb-tk-phylum,gtdb-tk-class,gtdb-tk-order,gtdb-tk-family,gtdb-tk-genus,gtdb-tk-species
 even_MAG-GUT1000,,p__Actinobacteriota,c__Actinomycetia,o__Propionibacteriales,f__Propionibacteriaceae,g__Cutibacterium,,,,p__Actinobacteriota,c__Actinomycetia,o__Propionibacteriales,f__Propionibacteriaceae,g__Cutibacterium,s__Cutibacterium acnes
 even_MAG-GUT1001,,p__Actinobacteriota,c__Actinomycetia,o__Propionibacteriales,f__Propionibacteriaceae,g__Propionibacterium(reject),,,,p__Actinobacteriota,c__Actinomycetia,o__Propionibacteriales,f__Propionibacteriaceae,g__Cutibacterium,s__Cutibacterium avidum
 even_MAG-GUT10080,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Lachnospira,s__Lachnospira rogosae_A
