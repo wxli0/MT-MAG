@@ -48,3 +48,6 @@ p__Spirochaetota 6
 c__Methanobacteria 5
 p__Spirochaetota 6
 p__Spirochaetota 10
+p__Thermoplasmatota 9
+p__Spirochaetota 6
+p__Actinobacteriota 8
