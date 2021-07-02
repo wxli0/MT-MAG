@@ -61,3 +61,6 @@ p__Spirochaetota 11
 p__Desulfobacterota 7
 p__Spirochaetota 4
 p__Spirochaetota 3
+p__Spirochaetota 6
+g__Methanobrevibacter_A 901
+p__Firmicutes_A 434
