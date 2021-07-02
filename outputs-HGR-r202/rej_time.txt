@@ -49,3 +49,8 @@ f__Propionibacteriaceae 17
 f__Mycobacteriaceae 11
 f__Bifidobacteriaceae 9
 f__Elusimicrobiaceae 22
+f__Monoglobaceae 32
+o__Clostridiales 16
+f__CAG-239 40
+c__Bacteroidia 4
+f__Fusobacteriaceae 38
