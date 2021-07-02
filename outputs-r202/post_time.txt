@@ -70,3 +70,6 @@ p__Spirochaetota 6
 p__Spirochaetota 11
 p__Verrucomicrobiota 17
 p__Spirochaetota 11
+p__Spirochaetota 11
+p__Planctomycetota 6
+p__Actinobacteriota 6
