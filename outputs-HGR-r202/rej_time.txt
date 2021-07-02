@@ -96,3 +96,9 @@ p__Firmicutes_C 13
 g__Turicimonas 8
 g__Mesosutterella 12
 g__Sutterella 33
+g__Parasutterella 39
+g__CAG-521 50
+g__Duodenibacillus 68
+p__Firmicutes_C 10
+f__Butyricicoccaceae 91
+c__Bacteroidia 7
