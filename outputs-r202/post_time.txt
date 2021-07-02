@@ -66,3 +66,4 @@ g__Methanobrevibacter_A 5
 p__Firmicutes_A 6
 p__Spirochaetota 7
 g__Methanobrevibacter 5
+p__Spirochaetota 6
