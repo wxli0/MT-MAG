@@ -142,3 +142,12 @@ p__Firmicutes_C 2
 f__Coriobacteriaceae 4
 p__Firmicutes_C 1
 f__Acutalibacteraceae 2398
+c__Bacteroidia 3
+p__Firmicutes_C 2
+g__Clostridium_A 5
+g__Anaeromassilibacillus 8
+g__CAG-217 7
+g__CAG-177 10
+g__CAG-180 16
+g__CAG-488 18
+g__Ruminococcus_E 43
