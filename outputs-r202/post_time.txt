@@ -73,3 +73,5 @@ p__Spirochaetota 11
 p__Spirochaetota 11
 p__Planctomycetota 6
 p__Actinobacteriota 6
+p__Spirochaetota 9
+p__Planctomycetota 8
