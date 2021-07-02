@@ -25,3 +25,4 @@ p__Desulfobacterota 10
 p__Actinobacteriota 9
 p__Bacteroidota 7
 g__Fibrobacter 1501
+p__Verrucomicrobiota 21

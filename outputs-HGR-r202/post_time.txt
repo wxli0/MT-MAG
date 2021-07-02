@@ -114,3 +114,6 @@ g__Senegalimassilia 11
 g__Romboutsia 6
 g__Slackia_A 8
 f__Enterobacteriaceae 7
+p__Firmicutes_C 13
+c__Bacteroidia 10
+g__Proteus 6
