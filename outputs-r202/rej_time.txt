@@ -27,3 +27,4 @@ p__Bacteroidota 7
 g__Fibrobacter 1501
 p__Verrucomicrobiota 21
 c__Campylobacteria 74
+p__Planctomycetota 5
