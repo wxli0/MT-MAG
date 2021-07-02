@@ -135,3 +135,5 @@ c__Bacteroidia 5
 f__CAG-272 10
 p__Firmicutes_C 17
 g__UMGS911 6
+p__Firmicutes_C 7
+o__Lachnospirales 3

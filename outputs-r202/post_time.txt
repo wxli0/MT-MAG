@@ -30,3 +30,5 @@ c__Campylobacteria 6
 p__Planctomycetota 13
 d__Archaea 6
 p__Actinobacteriota 6
+p__Spirochaetota 5
+p__Spirochaetota 6
