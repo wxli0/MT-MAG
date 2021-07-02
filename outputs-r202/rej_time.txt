@@ -1,1 +1,6 @@
 root 16
+d__Bacteria 56
+p__Riflebacteria 4
+p__Eremiobacterota 16
+p__Fibrobacterota 26
+c__Ozemobacteria 17
