@@ -37,3 +37,5 @@ o__Mycobacteriales 8
 o__Elusimicrobiales 6
 o__Monoglobales 6
 o__RF32 11
+o__Actinomycetales 21
+o__Fusobacteriales 7
