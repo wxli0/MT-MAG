@@ -35,3 +35,4 @@ p__Spirochaetota 6
 p__Desulfobacterota 8
 p__Spirochaetota 5
 p__Bacteroidota 7
+p__Spirochaetota 5
