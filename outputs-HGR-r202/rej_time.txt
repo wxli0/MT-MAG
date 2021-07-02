@@ -202,3 +202,5 @@ c__Bacteroidia 7
 f__Coriobacteriaceae 5
 p__Firmicutes_C 2
 p__Firmicutes_C 7
+p__Firmicutes_C 5
+c__Bacteroidia 3
