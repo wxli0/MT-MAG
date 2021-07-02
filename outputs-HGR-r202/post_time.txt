@@ -84,3 +84,10 @@ g__Olsenella_B 8
 g__Succinivibrio 10
 o__Oscillospirales 19
 f__Clostridiaceae 7
+f__Anaerovoracaceae 9
+f__Coriobacteriaceae 6
+p__Firmicutes_C 11
+f__Burkholderiaceae 9
+g__Olsenella 8
+g__Clostridium_J 8
+g__CAG-145 8
