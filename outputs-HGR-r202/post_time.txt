@@ -78,3 +78,9 @@ o__Enterobacterales 8
 p__Firmicutes_C 14
 f__Atopobiaceae 9
 c__Bacteroidia 11
+f__Succinivibrionaceae 8
+p__Firmicutes_C 11
+g__Olsenella_B 8
+g__Succinivibrio 10
+o__Oscillospirales 19
+f__Clostridiaceae 7
