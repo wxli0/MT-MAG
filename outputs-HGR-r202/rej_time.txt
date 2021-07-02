@@ -74,3 +74,7 @@ o__Burkholderiales 56
 p__Firmicutes_C 3
 g__Fenollaria 21
 g__Peptoniphilus_A 82
+o__Enterobacterales 49
+p__Firmicutes_C 6
+f__Atopobiaceae 113
+c__Bacteroidia 9
