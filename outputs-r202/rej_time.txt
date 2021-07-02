@@ -21,3 +21,5 @@ p__Spirochaetota 8
 f__Fibrobacteraceae 41
 g__Lustribacter 11
 p__Verrucomicrobiota 15
+p__Desulfobacterota 10
+p__Actinobacteriota 9

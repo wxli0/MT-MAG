@@ -91,3 +91,8 @@ f__Burkholderiaceae 208
 g__Olsenella 16
 g__Clostridium_J 16
 g__CAG-145 24
+o__Lachnospirales 9
+p__Firmicutes_C 13
+g__Turicimonas 8
+g__Mesosutterella 12
+g__Sutterella 33
