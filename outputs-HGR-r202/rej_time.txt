@@ -103,3 +103,6 @@ p__Firmicutes_C 10
 f__Butyricicoccaceae 91
 c__Bacteroidia 7
 p__Firmicutes_C 4
+g__Agathobaculum 40
+p__Firmicutes_C 4
+f__Peptostreptococcaceae 153
