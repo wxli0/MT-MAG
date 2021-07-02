@@ -210,3 +210,6 @@ p__Firmicutes_C 8
 o__Lachnospirales 4
 f__CAG-314 12
 f__CAG-917 6
+p__Firmicutes_C 8
+g__CAG-314 10
+g__CAG-349 9
