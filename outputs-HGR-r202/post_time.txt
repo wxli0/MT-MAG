@@ -65,3 +65,8 @@ g__Akkermansia 40
 g__Monoglobus 31
 g__UBA1436 23
 g__Corynebacterium 13
+g__Bifidobacterium 32
+g__CAG-495 12
+p__Firmicutes_C 21
+g__Fusobacterium_A 10
+f__Peptoniphilaceae 18

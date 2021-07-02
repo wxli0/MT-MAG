@@ -10,3 +10,8 @@ o__Ozemobacterales 9
 c__Chitinivibrionia 9
 o__Baltobacterales 32
 p__Campylobacterota 92
+f__Ozemobacteraceae 44
+o__Chitinivibrionales 23
+p__Planctomycetota 7
+g__RUG334 8
+o__Fibrobacterales 39
