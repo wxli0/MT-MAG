@@ -28,3 +28,4 @@ g__Fibrobacter 1501
 p__Verrucomicrobiota 21
 c__Campylobacteria 74
 p__Planctomycetota 5
+d__Archaea 1279
