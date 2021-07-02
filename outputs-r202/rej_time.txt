@@ -5,3 +5,5 @@ p__Eremiobacterota 16
 p__Fibrobacterota 26
 c__Ozemobacteria 17
 c__Eremiobacteria 16
+c__Fibrobacteria 41
+o__Ozemobacterales 9

@@ -41,3 +41,11 @@ o__Actinomycetales 21
 o__Fusobacteriales 7
 o__Tissierellales 6
 o__Peptostreptococcales 7
+p__Firmicutes_C 23
+o__Peptostreptococcales 15
+o__Tissierellales 15
+f__Akkermansiaceae 11
+f__Propionibacteriaceae 9
+f__Mycobacteriaceae 12
+f__Bifidobacteriaceae 8
+f__Elusimicrobiaceae 10
