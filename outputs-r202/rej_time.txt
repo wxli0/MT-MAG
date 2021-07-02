@@ -57,3 +57,5 @@ f__Methanobacteriaceae 107
 p__Spirochaetota 4
 g__Methanobrevibacter_B 13
 p__Bacteroidota 8
+p__Spirochaetota 11
+p__Desulfobacterota 7
