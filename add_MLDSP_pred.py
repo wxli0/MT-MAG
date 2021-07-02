@@ -35,7 +35,7 @@ with FileLock("add_MLDSP_pred.lock"):
     df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
     MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
     for index, row in df.iterrows():
-        MLDSP_df.at[index[:-3], taxon] = row['prediction'] # used to be 'rejection-f'
+        MLDSP_df.at[index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
 
     MLDSP_df.to_csv(MLDSP_pred_path, index=True, header=True)
     print("Lock in add_MLDSP_pred acquired.")
