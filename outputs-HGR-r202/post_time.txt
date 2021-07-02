@@ -195,3 +195,5 @@ p__Firmicutes_C 11
 f__Coriobacteriaceae 2
 c__Bacteroidia 8
 p__Firmicutes_C 11
+p__Firmicutes_C 12
+o__Lachnospirales 2
