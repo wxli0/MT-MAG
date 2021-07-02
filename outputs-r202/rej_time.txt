@@ -91,3 +91,6 @@ p__Planctomycetota 7
 f__Campylobacteraceae 14
 p__Spirochaetota 3
 p__Planctomycetota 3
+g__Campylobacter 77
+p__Spirochaetota 3
+p__Planctomycetota 8
