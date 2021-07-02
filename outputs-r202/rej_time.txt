@@ -15,3 +15,6 @@ o__Chitinivibrionales 23
 p__Planctomycetota 7
 g__RUG334 8
 o__Fibrobacterales 39
+f__Chitinispirillaceae 45
+f__Baltobacteraceae 302
+p__Spirochaetota 8

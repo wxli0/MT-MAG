@@ -70,3 +70,7 @@ g__CAG-495 83
 p__Firmicutes_C 4
 g__Fusobacterium_A 97
 f__Peptoniphilaceae 186
+o__Burkholderiales 56
+p__Firmicutes_C 3
+g__Fenollaria 21
+g__Peptoniphilus_A 82
