@@ -106,3 +106,11 @@ p__Firmicutes_C 4
 g__Agathobaculum 40
 p__Firmicutes_C 4
 f__Peptostreptococcaceae 153
+f__Eggerthellaceae 417
+f__Coriobacteriaceae 5
+p__Firmicutes_C 3
+g__Eggerthella 6
+g__Senegalimassilia 28
+g__Romboutsia 25
+g__Slackia_A 23
+f__Enterobacteriaceae 649
