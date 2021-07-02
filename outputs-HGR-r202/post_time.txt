@@ -166,3 +166,6 @@ p__Firmicutes_C 6
 p__Firmicutes_C 10
 o__Lachnospirales 3
 p__Firmicutes_C 6
+c__Bacteroidia 7
+p__Firmicutes_C 5
+f__Coriobacteriaceae 1

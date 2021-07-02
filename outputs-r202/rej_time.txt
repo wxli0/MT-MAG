@@ -51,3 +51,5 @@ p__Spirochaetota 4
 p__Thermoplasmatota 4
 p__Spirochaetota 2
 p__Actinobacteriota 8
+o__Methanobacteriales 58
+p__Spirochaetota 2
