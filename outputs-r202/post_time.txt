@@ -47,3 +47,4 @@ p__Verrucomicrobiota 12
 p__Spirochaetota 6
 c__Methanobacteria 5
 p__Spirochaetota 6
+p__Spirochaetota 10
