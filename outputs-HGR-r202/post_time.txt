@@ -151,3 +151,4 @@ g__CAG-177 9
 g__CAG-180 11
 g__CAG-488 14
 g__Ruminococcus_E 8
+p__Firmicutes_C 12
