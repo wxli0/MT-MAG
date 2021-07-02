@@ -197,3 +197,5 @@ c__Bacteroidia 3
 p__Firmicutes_C 3
 p__Firmicutes_C 3
 o__Lachnospirales 4
+p__Firmicutes_C 3
+c__Bacteroidia 7
