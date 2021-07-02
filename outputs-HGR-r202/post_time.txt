@@ -39,3 +39,5 @@ o__Monoglobales 6
 o__RF32 11
 o__Actinomycetales 21
 o__Fusobacteriales 7
+o__Tissierellales 6
+o__Peptostreptococcales 7
