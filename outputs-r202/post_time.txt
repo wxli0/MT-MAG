@@ -53,3 +53,7 @@ p__Spirochaetota 6
 p__Actinobacteriota 8
 o__Methanobacteriales 5
 p__Spirochaetota 6
+f__Methanobacteriaceae 23
+p__Spirochaetota 9
+g__Methanobrevibacter_B 7
+p__Bacteroidota 9
