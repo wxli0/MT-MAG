@@ -54,3 +54,5 @@ o__Clostridiales 41
 f__CAG-239 9
 c__Bacteroidia 8
 f__Fusobacteriaceae 14
+c__Gammaproteobacteria 16
+o__Coriobacteriales 10
