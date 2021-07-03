@@ -143,3 +143,10 @@ p__Spirochaetota 5
 p__Planctomycetota 3
 c__Clostridia_A 3
 c__Clostridia 5
+c__Thermoplasmata 31
+p__Desulfobacterota 10
+p__Actinobacteriota 7
+p__Spirochaetota 12
+p__Planctomycetota 11
+c__Clostridia_A 11
+c__Clostridia 12
