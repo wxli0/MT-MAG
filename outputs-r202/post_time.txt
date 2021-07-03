@@ -784,3 +784,8 @@ p__Planctomycetota 6
 p__Spirochaetota 8
 c__Clostridia_A 7
 c__Clostridia 9
+o__Methanomassiliicoccales 5
+p__Planctomycetota 5
+p__Spirochaetota 5
+c__Clostridia_A 4
+c__Clostridia 12
