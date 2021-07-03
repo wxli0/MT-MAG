@@ -603,3 +603,8 @@ p__Planctomycetota 4
 c__Clostridia_A 5
 c__Clostridia 5
 c__Actinomycetia 1074
+o__Methanomassiliicoccales 3
+p__Spirochaetota 4
+p__Planctomycetota 5
+c__Clostridia_A 5
+c__Clostridia 5
