@@ -100,3 +100,6 @@ p__Spirochaetota 3
 p__Planctomycetota 5
 p__Spirochaetota 4
 p__Planctomycetota 4
+p__Spirochaetota 5
+p__Planctomycetota 4
+p__Actinobacteriota 6

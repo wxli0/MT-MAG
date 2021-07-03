@@ -213,3 +213,8 @@ f__CAG-917 6
 p__Firmicutes_C 8
 g__CAG-314 10
 g__CAG-349 9
+p__Firmicutes_C 9
+g__UMGS692 5
+c__Bacteroidia 6
+f__CAG-138 6
+f__Borkfalkiaceae 5
