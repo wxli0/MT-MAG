@@ -126,3 +126,7 @@ p__Planctomycetota 16
 p__Spirochaetota 18
 p__Spirochaetota 6
 p__Planctomycetota 6
+p__Planctomycetota 6
+p__Spirochaetota 6
+p__Desulfobacterota 11
+p__Actinobacteriota 7
