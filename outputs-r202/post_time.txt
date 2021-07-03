@@ -138,3 +138,8 @@ p__Spirochaetota 10
 c__Clostridia_A 8
 p__Planctomycetota 9
 c__Clostridia 34
+p__Bacteroidota 9
+p__Spirochaetota 5
+p__Planctomycetota 3
+c__Clostridia_A 3
+c__Clostridia 5
