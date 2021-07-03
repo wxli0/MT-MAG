@@ -124,3 +124,5 @@ p__Planctomycetota 6
 p__Spirochaetota 6
 p__Spirochaetota 7
 p__Planctomycetota 8
+p__Spirochaetota 4
+p__Planctomycetota 4
