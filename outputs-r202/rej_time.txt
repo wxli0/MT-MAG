@@ -114,3 +114,6 @@ p__Spirochaetota 10
 p__Planctomycetota 12
 p__Spirochaetota 4
 p__Planctomycetota 4
+p__Verrucomicrobiota 3
+p__Spirochaetota 4
+p__Planctomycetota 4
