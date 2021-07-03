@@ -274,3 +274,8 @@ f__Coriobacteriaceae 5
 c__Bacteroidia 12
 p__Firmicutes_C 5
 f__Oscillospiraceae 6
+o__Lachnospirales 4
+c__Bacteroidia 7
+p__Firmicutes_C 5
+f__Oscillospiraceae 4
+f__Coriobacteriaceae 5
