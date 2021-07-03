@@ -170,3 +170,10 @@ p__Spirochaetota 3
 p__Planctomycetota 3
 c__Clostridia_A 3
 c__Clostridia 6
+p__Verrucomicrobiota 5
+p__Desulfobacterota 7
+o__Methanomassiliicoccales 1
+p__Planctomycetota 3
+p__Spirochaetota 3
+c__Clostridia_A 3
+c__Clostridia 3
