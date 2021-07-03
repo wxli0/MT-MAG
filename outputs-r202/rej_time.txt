@@ -119,3 +119,6 @@ p__Spirochaetota 4
 p__Planctomycetota 4
 p__Spirochaetota 9
 p__Planctomycetota 12
+p__Thermoplasmatota 695
+p__Planctomycetota 6
+p__Spirochaetota 6
