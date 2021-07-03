@@ -262,3 +262,9 @@ p__Spirochaetota 3
 p__Planctomycetota 3
 c__Clostridia_A 4
 c__Clostridia 4
+p__Verrucomicrobiota 6
+o__Methanomassiliicoccales 2
+p__Spirochaetota 2
+p__Planctomycetota 3
+c__Clostridia_A 3
+c__Clostridia 4
