@@ -209,3 +209,10 @@ c__Clostridia_A 4
 p__Spirochaetota 4
 c__Clostridia 5
 p__Verrucomicrobiota 13
+p__Desulfobacterota 12
+o__Methanomassiliicoccales 5
+c__Clostridia_A 3
+p__Spirochaetota 4
+p__Planctomycetota 4
+c__Clostridia 5
+p__Bacteroidota 6
