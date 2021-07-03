@@ -571,3 +571,6 @@ p__Firmicutes_C 11
 f__Oscillospiraceae 10
 p__Firmicutes_C 5
 f__Oscillospiraceae 5
+p__Firmicutes_C 7
+f__Oscillospiraceae 8
+c__Bacteroidia 4
