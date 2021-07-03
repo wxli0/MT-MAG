@@ -132,3 +132,9 @@ p__Desulfobacterota 10
 p__Actinobacteriota 17
 p__Spirochaetota 4
 p__Planctomycetota 6
+p__Verrucomicrobiota 10
+c__Clostridia_A 12
+p__Spirochaetota 3
+p__Planctomycetota 4
+c__Clostridia_A 5
+c__Clostridia 10
