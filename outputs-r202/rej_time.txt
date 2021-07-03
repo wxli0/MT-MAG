@@ -505,3 +505,10 @@ p__Planctomycetota 4
 c__Clostridia_A 4
 c__Clostridia 4
 o__Coriobacteriales 692
+o__Methanomassiliicoccales 2
+p__Spirochaetota 3
+p__Planctomycetota 4
+c__Clostridia_A 3
+c__Clostridia 3
+f__RUG033 24
+f__UMGS124 5
