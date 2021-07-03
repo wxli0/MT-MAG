@@ -527,3 +527,8 @@ g__Olegusella 6
 g__RUG440 4
 g__UBA1367 9
 g__Olsenella 6
+o__Methanomassiliicoccales 6
+p__Planctomycetota 6
+p__Spirochaetota 6
+c__Clostridia_A 5
+c__Clostridia 7
