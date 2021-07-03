@@ -105,3 +105,5 @@ p__Spirochaetota 7
 p__Actinobacteriota 6
 p__Spirochaetota 7
 p__Planctomycetota 6
+p__Spirochaetota 7
+p__Planctomycetota 6
