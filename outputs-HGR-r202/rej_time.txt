@@ -333,3 +333,6 @@ f__Oscillospiraceae 3
 f__Coriobacteriaceae 2
 p__Firmicutes_C 1
 f__Oscillospiraceae 3
+c__Bacteroidia 3
+p__Firmicutes_C 2
+f__Oscillospiraceae 6
