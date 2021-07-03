@@ -587,3 +587,6 @@ f__Oscillospiraceae 7
 o__Lachnospirales 3
 p__Firmicutes_C 1
 f__Oscillospiraceae 4
+p__Firmicutes_C 2
+f__Oscillospiraceae 5
+c__Bacteroidia 2
