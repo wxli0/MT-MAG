@@ -218,3 +218,8 @@ g__UMGS692 5
 c__Bacteroidia 6
 f__CAG-138 6
 f__Borkfalkiaceae 5
+p__Firmicutes_C 8
+g__UBA1685 6
+g__Phil1 5
+g__QALS01 9
+f__Coriobacteriaceae 2
