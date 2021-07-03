@@ -469,3 +469,8 @@ p__Planctomycetota 6
 c__Clostridia_A 6
 c__Clostridia 8
 p__Verrucomicrobiota 8
+o__Methanomassiliicoccales 4
+p__Spirochaetota 5
+p__Planctomycetota 4
+c__Clostridia_A 5
+c__Clostridia 7
