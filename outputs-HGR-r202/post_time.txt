@@ -318,3 +318,7 @@ c__Bacteroidia 4
 g__Gemmiger 4
 p__Firmicutes_C 4
 f__Oscillospiraceae 5
+o__Lachnospirales 4
+p__Firmicutes_C 6
+f__Coriobacteriaceae 1
+c__Bacteroidia 7
