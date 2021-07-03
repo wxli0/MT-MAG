@@ -305,3 +305,12 @@ c__Bacteroidia 3
 o__Lachnospirales 5
 p__Firmicutes_C 2
 f__Oscillospiraceae 4
+f__Coriobacteriaceae 3
+f__Ruminococcaceae 3188
+p__Firmicutes_C 2
+f__Oscillospiraceae 5
+g__CAG-353 6
+g__Ruminococcus_D 31
+g__CAG-115 34
+g__Ruminiclostridium_E 34
+g__Faecalibacterium 49
