@@ -1324,3 +1324,4 @@ c__Spirochaetia 1984
 o__Treponematales 92
 f__UBA12059 13
 f__Treponemataceae 50
+g__Treponema_D 7
