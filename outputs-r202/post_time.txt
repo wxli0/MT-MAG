@@ -1279,3 +1279,4 @@ c__Bacteroidia 35
 c__Bacteroidia 12
 c__Bacteroidia 12
 p__Firmicutes_C 7
+c__Bacteroidia 21
