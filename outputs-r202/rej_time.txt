@@ -1307,3 +1307,9 @@ f__UBA1444 27
 f__Acidaminococcaceae 26
 o__Selenomonadales 23
 g__UBA1444 18
+o__Veillonellales 89
+g__Succiniclasticum 42
+g__Acidaminococcus 68
+f__Dialisteraceae 15
+f__Megasphaeraceae 20
+p__Spirochaetota 1015
