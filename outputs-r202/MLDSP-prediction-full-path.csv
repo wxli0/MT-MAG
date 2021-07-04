@@ -728,7 +728,7 @@ RUG726.fa,d__Bacteria,p__Spirochaetota(reject),,,,,,,,d__Bacteria,p__Firmicutes_
 RUG727.fa,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__RF39,f__UBA660,g__RUG727,s__RUG727 sp900321795,,,,,,,,,,,,,,,,
 RUG728.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Cyanobacteria,c__Vampirovibrionia,o__Gastranaerophilales,f__Gastranaerophilaceae,g__UBA6984,s__UBA6984 sp900321735,,,,,,,,,,,,,,,,
 RUG729.fa,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__Olsenella,s__Olsenella umbonata,,,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__Olsenella,s__Olsenella umbonata,,,,,,,,,,,,,,,,
-RUG730.fa,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__UBA1444,,,,,,d__Bacteria,p__RUG730,c__RUG730,o__RUG730,f__RUG730,g__RUG730,s__RUG730 sp900321865,,,,,,,,,,,,,,,,
+RUG730.fa,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__UBA1444,f__UBA1444,,,,,d__Bacteria,p__RUG730,c__RUG730,o__RUG730,f__RUG730,g__RUG730,s__RUG730 sp900321865,,,,,,,,,,,,,,,,
 RUG731.fa,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Proteobacteria,c__Gammaproteobacteria,o__Enterobacterales,f__Succinivibrionaceae,g__UBA2810,s__UBA2810 sp900317945,,,,,,,,,,,,,,,,
 RUG732.fa,d__Bacteria,p__Spirochaetota(reject),,,,,,,,d__Bacteria,p__Spirochaetota,c__Spirochaetia,o__Treponematales,f__Treponemataceae,g__Treponema_D,s__,,,,,,,,,,,,,,,,
 RUG733.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__UBA3839,s__UBA3839 sp900321835,,,,,,,,,,,,,,,,
