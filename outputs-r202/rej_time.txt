@@ -1313,3 +1313,8 @@ g__Acidaminococcus 68
 f__Dialisteraceae 15
 f__Megasphaeraceae 20
 p__Spirochaetota 1015
+f__Selenomonadaceae 258
+g__UBA2897 23
+g__RUG643 22
+g__Caecibacter 29
+g__Selenomonas_C 30
