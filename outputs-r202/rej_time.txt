@@ -1275,3 +1275,4 @@ o__Methanomassiliicoccales 3
 o__Methanomassiliicoccales 49
 f__Methanomethylophilaceae 68
 g__Methanomethylophilus 21
+c__Bacteroidia 25
