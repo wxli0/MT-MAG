@@ -1277,3 +1277,5 @@ f__Methanomethylophilaceae 68
 g__Methanomethylophilus 21
 c__Bacteroidia 25
 c__Bacteroidia 18
+c__Bacteroidia 17
+p__Firmicutes_C 68
