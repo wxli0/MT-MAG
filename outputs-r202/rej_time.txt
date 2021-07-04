@@ -1321,3 +1321,4 @@ g__Selenomonas_C 30
 g__Dialister 199
 p__Planctomycetota 1965
 c__Spirochaetia 1984
+o__Treponematales 92
