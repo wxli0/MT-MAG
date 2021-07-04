@@ -968,3 +968,6 @@ g__Acidaminococcus 26
 f__Megasphaeraceae 25
 g__Caecibacter 14
 f__Dialisteraceae 37
+f__Coriobacteriaceae 6
+g__Megasphaera 45
+f__Veillonellaceae 33
