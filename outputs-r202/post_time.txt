@@ -1319,3 +1319,4 @@ g__RUG643 16
 g__Caecibacter 10
 g__Selenomonas_C 6
 g__Dialister 7
+p__Planctomycetota 9
