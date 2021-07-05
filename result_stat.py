@@ -2,50 +2,42 @@ import os
 import pandas as pd
 
 
-# calculates the recall
-def calc_partial_recall_incorrect(path, ranks, special_pred=[]):
+# calculates the precision, recall, incorrect rate, partial recall
+def calc_stats(path, ranks):
     df = pd.read_csv(path, header=0, index_col=0)
-    recall = 0
+    partial_correct = 0
+    correct = 0
     incorrect = 0
+    rejected = 0
+    total = 0
     for index, row in df.iterrows():
         for i in range(len(ranks)):
             cur_rank = ranks[i]
             cur_pred = str(df.loc[index][cur_rank])
             label_rank = "gtdb-tk-"+cur_rank
             label_pred = str(df.loc[index][label_rank])
+            pre_rank = ranks[i-1]
+            pre_pred = str(df.loc[index][pre_rank])
+            pre_label_rank = "gtdb-tk-"+pre_rank
+            pre_label_pred = str(df.loc[index][pre_label_rank])
             if cur_rank == ranks[-1] and cur_pred == label_pred:
-                recall += 1/df.shape[0]
+                partial_correct += 1
+                correct += 1
+                total += 1
                 break
-            elif cur_rank != ranks[0]:
-                pre_rank = ranks[i-1]
-                pre_pred = str(df.loc[index][pre_rank])
-                pre_label_rank = "gtdb-tk-"+pre_rank
-                pre_label_pred = str(df.loc[index][pre_label_rank])
-                if 'reject' in cur_pred and pre_pred == pre_label_pred:
-                    recall += i/len(ranks)*1/df.shape[0]
-                    break
-            elif cur_pred in special_pred and cur_pred == label_pred:
-                recall += 1/df.shape[0]
+            elif (cur_rank != ranks[0] and 'reject' in cur_pred and pre_pred == pre_label_pred) \
+                or cur_rank == ranks[0] and 'reject' in cur_pred:
+                partial_correct += i/len(ranks)
+                total += 1
+                rejected += 1
                 break
-            elif cur_pred != label_pred:
-                incorrect += 1/df.shape[0]
+            elif cur_pred != label_pred and cur_pred != 'nan':
+                incorrect += 1
+                total += 1
+                break
                 
-    return recall, incorrect
+    return correct/(total-rejected), correct/total, incorrect/total, partial_correct/total
 
-def calc_precision_recall(path, ranks, special_pred=[]):
-    df = pd.read_csv(path, header=0, index_col=0)
-    rejected = 0
-    correct = 0
-    for index, row in df.iterrows():
-        cur_rank = ranks[-1]
-        cur_pred = str(df.loc[index][cur_rank])
-        label_rank = "gtdb-tk-"+cur_rank
-        label_pred = str(df.loc[index][label_rank])
-        if cur_pred == label_pred:
-            correct += 1
-        elif 'reject' in cur_pred or cur_pred == 'nan':
-            rejected += 1
-    return correct/(df.shape[0]-rejected), correct/df.shape[0] 
 
 
 # compute rejection level statistics 
@@ -67,23 +59,19 @@ def rej_stats(path, ranks):
 
 path1 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-r202-archive1/MLDSP-prediction-full-path-archive.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
-sp1 = ['g__Prevotella']
-pr1, ir1 = calc_partial_recall_incorrect(path1, ranks1)
-p1, r1 = calc_precision_recall(path1, ranks1)
-print("partial recall r1 is:", pr1, "incorrect rate ir1:", ir1, "recall r1 is:", r1, "precision p1 is:", p1)
-rej_stat1= rej_stats(path1, ranks1)
-for r in rej_stat1:
-    print(rej_stat1[r], "rejects at ", r)
+precision1, recall1, incorrect_rate1, partial_recall1 = calc_stats(path1, ranks1)
+print("precision is:", precision1, "recall is:", recall1, "incorrect rate is:", incorrect_rate1, "partial recall is:", partial_recall1)
+# rej_stat1= rej_stats(path1, ranks1)
+# for r in rej_stat1:
+#     print(rej_stat1[r], "rejects at ", r)
 
 path2 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-HGR-r202-archive1/HGR-prediction-full-path.csv"
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
-sp2 =  ['g__Ruminococcus_F', 'g__F0040', 'g__Pediococcus']
-pr2, ir2 = calc_partial_recall_incorrect(path2, ranks2, sp2)
-p2, r2 = calc_precision_recall(path2, ranks2)
-print("partial recall r2 is:", pr2, "incorrect rate ir1:", ir2, "recall r2 is:", r2, "precision p2 is:", p2)
-rej_stat2 = rej_stats(path2, ranks2)
-for r in rej_stat2:
-    print(rej_stat2[r], "rejects at ", r)
+precision2, recall2, incorrect_rate2, partial_recall2 = calc_stats(path2, ranks2)
+print("precision is:", precision2, "recall is:", recall2, "incorrect rate is:", incorrect_rate2, "partial recall is:", partial_recall2)
+# rej_stat2 = rej_stats(path2, ranks2)
+# for r in rej_stat2:
+#     print(rej_stat2[r], "rejects at ", r)
 
 
 
