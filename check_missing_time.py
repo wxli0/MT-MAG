@@ -21,7 +21,7 @@ base_path = "/Users/wanxinli/Desktop/project.nosync/"
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/"
 
-path1 = base_path+'BlindKameris-new/outputs-r202/time.csv'
+path1 = base_path+'BlindKameris-new/outputs-HGR-r202/time.csv'
 time_cat1 = 'rej_time'
 missing_ranks1 = check_missing(path1, time_cat1)
 
@@ -29,8 +29,8 @@ for rank in missing_ranks1:
     running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+rank, shell=True))
     proc_all =  str(subprocess.check_output("screen -ls", shell=True))
     if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-        os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_3_4.sh '+rank + '"')
-        print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_3_4.sh '+rank + '"')
+        os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR_3_4.sh '+rank + '"')
+        print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR_3_4.sh '+rank + '"')
     elif proc_all.count('\\n') > 40:
         print('too many processes running')
     else:
