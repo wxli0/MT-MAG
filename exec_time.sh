@@ -12,7 +12,7 @@ do
     git add .
     git commit -m "updated outputs"
     git push
-    echo "==== begin checking_missing_time ====" 
+    echo "==== begin check_missing_time ====" 
     python3 checking_missing_time.py 
     echo "==== begin sleep 5 minutes at $(date)===="
     sleep 300
