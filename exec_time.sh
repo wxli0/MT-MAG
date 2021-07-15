@@ -13,7 +13,7 @@ do
     git commit -m "updated outputs"
     git push
     echo "==== begin check_missing_time ====" 
-    python3 checking_missing_time.py 
+    python3 check_missing_time.py 
     echo "==== begin sleep 5 minutes at $(date)===="
     sleep 300
     i=$((i+1))  
