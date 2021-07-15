@@ -16,7 +16,12 @@ def check_missing(path, time_cat):
             missing_ranks.append(index)
 
     return missing_ranks
-path1 = '/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-r202/time.csv'
+
+base_path = "/Users/wanxinli/Desktop/project.nosync/"
+if platform.platform()[:5] == 'Linux':
+    base_path = "/home/w328li/"
+
+path1 = base_path+'BlindKameris-new/outputs-r202/time.csv'
 time_cat1 = 'rej_time'
 missing_ranks1 = check_missing(path1, time_cat1)
 
