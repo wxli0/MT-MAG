@@ -19,6 +19,7 @@ for dir in os.listdir(data_dir):
         else:
             all_species.extend(children)
 
+print("single_child_genus is:", single_child_genus)
 index_species_not_exist = []
 index_genus_single_child = []
 for index, row in HGR_df.iterrows():
@@ -31,6 +32,6 @@ for index, row in HGR_df.iterrows():
 
 
 print("index_species_not_exist length is:", len(index_species_not_exist), index_species_not_exist)
-print("index_genus_single_child is:", index_genus_single_child)
+print("index_genus_single_child length is:", len(index_genus_single_child), index_genus_single_child)
         
 
