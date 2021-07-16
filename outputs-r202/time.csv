@@ -1,3 +1,4 @@
+,NA: single child or not enough genomes for cross validation,NA: no predictions belong to the row,,
 taxon,train_time,test_time,rej_time,post_time
 c__Actinomycetia,25620,,1074,5
 c__Bacilli,19695,,3192,8
