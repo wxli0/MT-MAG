@@ -15,7 +15,7 @@ for dir in os.listdir(data_dir):
         dir_path = data_dir + dir + '/'
         children = os.listdir(dir_path)
         if len(children) == 1:
-            single_child_genus.append(dir)
+            single_child_genus.append(dir[:13])
         else:
             all_species.extend(children)
 
