@@ -30,7 +30,7 @@ for index, row in HGR_df.iterrows():
         index_genus_single_child.append(index)
 
 
-print("index_species_not_exist is:", index_species_not_exist)
+print("index_species_not_exist length is:", len(index_species_not_exist), index_species_not_exist)
 print("index_genus_single_child is:", index_genus_single_child)
         
 
