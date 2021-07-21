@@ -59,7 +59,7 @@ def calc_stats(path, ranks, ignore_taxons =[]):
 
 
 
-path1 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-r202-archive1/MLDSP-prediction-full-path-archive.csv"
+path1 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 precision1, recall1, incorrect_rate1, partial_recall1, rej_stats1 = calc_stats(path1, ranks1)
 print("precision is:", precision1, "recall is:", recall1, "incorrect rate is:", incorrect_rate1, "partial recall is:", partial_recall1)
@@ -67,7 +67,7 @@ for r in rej_stats1:
     print(rej_stats1[r], "rejects at ", r)
 print("total rejection rate is:", sum(rej_stats1.values()))
 
-path2 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-HGR-r202-archive1/HGR-prediction-full-path.csv"
+path2 = "/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv"
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 ignore_taxons2 = ['g__Pediococcus', 'g__Ruminococcus_F', 'g__F0040']
 precision2, recall2, incorrect_rate2, partial_recall2, rej_stats2 = calc_stats(path2, ranks2)
