@@ -56,7 +56,7 @@ def calc_stats(path, ranks, ignore_taxons =[], ignore_indices = []):
             
     for k in rej_stats:
         rej_stats[k] /= total
-                
+    print("total is:", total)           
     return correct/(total-rejected), correct/total, incorrect/total, partial_correct/total, rej_stats
 
 
