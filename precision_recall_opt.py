@@ -77,7 +77,7 @@ print("constructing rej_dict")
 def taxon_recall(taxon):
     if os.path.exists(rej_path):
         rej_dict = json.load(open(rej_path))
-        if taxon in rej_dict:
+        if taxon in rej_dict and rej_dict[taxon] is not None:
             print(taxon, "already in rej_dict")
             return  rej_dict[taxon]   
     taxon_index = taxons.index(taxon)
