@@ -1573,3 +1573,4 @@ o__Leptospirales 3
 o__Kapabacteriales 3
 o__Nitrososphaerales 3
 o__Pirellulales 3
+g__Ruminococcus 4

@@ -1573,3 +1573,4 @@ o__Gemmatales 2
 o__Kapabacteriales 2
 o__Nitrososphaerales 2
 o__Pirellulales 2
+g__Ruminococcus 566
