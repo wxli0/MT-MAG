@@ -13,7 +13,7 @@ for file in os.listdir(GTDB_dir):
 print("======== HGR ========")
 HGR_dir = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
 for file in os.listdir(HGR_dir):
-    if file.endswith("_split_pruned"):
+    if file.endswith("_split_pruned") and not file.startswith("g__"):
         children = os.listdir(HGR_dir+file)
         if len(children) == 1:
             print(file[:-13])
