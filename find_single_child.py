@@ -28,5 +28,5 @@ ranks2 = ['phylum', 'class', 'order', 'family', 'genus']
 dir2 = '/mnt/sda/MLDSP-samples-r202/'
 suffix2 = "_split_pruned"
 single_child_taxons2 = find_single_child(path2, ranks2, dir2)
-print("single_child taxons for GTDB are:", single_child_taxons2)
+print("single_child taxons for HGR are:", single_child_taxons2)
 
