@@ -10,7 +10,7 @@ def find_single_child(path, ranks, dir, suffix = ""):
     all_taxons = []
     for rank in ranks:
         all_taxons.append(list(df[rank]))
-    all_taxons = list(set(all_taxons))
+    all_taxons = set(all_taxons).tolist()
     for taxon in all_taxons:
         if len(os.listdir(dir+taxon+suffix)) == 1:
             single_child_taxons.append(taxon)
