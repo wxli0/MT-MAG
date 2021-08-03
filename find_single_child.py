@@ -13,7 +13,8 @@ def find_single_child(path, ranks, dir, suffix = ""):
         taxon = str(taxon)
         if 'reject' in taxon or taxon == 'nan':
             continue
-        if len(os.listdir(dir+taxon+suffix)) == 1:
+        children = os.listdir(dir+taxon+suffix)
+        if len(children) == 1:
             single_child_taxons.append(taxon)
     return single_child_taxons
 
