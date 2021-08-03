@@ -27,6 +27,6 @@ path2 = "./outputs-HGR-r202/HGR-prediction-full-path.csv"
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus']
 dir2 = '/mnt/sda/MLDSP-samples-r202/'
 suffix2 = "_split_pruned"
-single_child_taxons2 = find_single_child(path2, ranks2, dir2)
+single_child_taxons2 = find_single_child(path2, ranks2, dir2, suffix=suffix2)
 print("single_child taxons for HGR are:", single_child_taxons2)
 
