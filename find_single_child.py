@@ -15,7 +15,7 @@ def find_single_child(path, ranks, dir, suffix = ""):
             continue
         children = os.listdir(dir+taxon+suffix)
         if len(children) == 1:
-            single_child_taxons.append(taxon)
+            single_child_taxons.append(taxon+suffix)
     return single_child_taxons
 
 path1 = "./outputs-r202/MLDSP-prediction-full-path.csv"
