@@ -17,8 +17,10 @@ dir2 = '/mnt/sda/DeepMicrobes-data/labeled_genome-r202/'
 suffix2 = "_split_pruned"
 single_child_taxons2 = find_single_child(path2, ranks2, dir2, suffix=suffix2)
 print("single_child taxons for HGR are:", single_child_taxons2)
+i = 0
 
 while True:
+    print("iteration:", i)
     for taxon in single_child_taxons1:
         running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
@@ -46,4 +48,5 @@ while True:
             print(taxon, "in HGR running process")
         else:
             print(taxon, "HGR completed")
+    print("sleep for 10 min")
     time.sleep(600) # sleep for 10 mins
