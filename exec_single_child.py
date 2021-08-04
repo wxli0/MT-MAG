@@ -39,8 +39,8 @@ for taxon in single_child_taxons2:
     proc_all =  str(subprocess.check_output("screen -ls", shell=True))
     if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
         and not os.path.exists('outputs-r202/test-c__Methanobacteria.xlsx'):
-            os.system("screen -dm bash -c "+"cd ~/MLDSP; matlab -r "+"'run addme;stackedMain("+"'HGR'"+", '"+taxon+"', 'hgr_mags/"+taxon+"');exit")
-            print("enter screen -dm bash -c "+"cd ~/MLDSP; matlab -r "+"'run addme;stackedMain("+"'HGR'"+", '"+taxon+"', 'hgr_mags/"+taxon+"');exit")
+            os.system("screen -dm bash -c "+"'''"+"cd ~/MLDSP; matlab -r "+"'run addme;stackedMain("+"'HGR'"+", '"+taxon+"', 'hgr_mags/"+taxon+"');exit'''")
+            print("enter screen -dm bash -c "+"'''"+"cd ~/MLDSP; matlab -r "+"'run addme;stackedMain("+"'HGR'"+", '"+taxon+"', 'hgr_mags/"+taxon+"');exit'''")
     elif proc_all.count('\\n') > 40:
         print('too many processes running')
     elif running_proc.count('\\n') > 2:
