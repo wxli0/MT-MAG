@@ -25,10 +25,10 @@ while True:
     for taxon in single_child_taxons1:
         running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
-        if os.path.exists("~/MLDSP/outputs-r202/test-"+taxon+".xlsx"):
+        if os.path.exists(os.path.expanduser("~/MLDSP/outputs-r202/test-"+taxon+".xlsx")):
             print(taxon, "in GTDB completed")
         elif running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
-            and not os.path.exists("~/MLDSP/outputs-r202/test-"+taxon+".xlsx"):
+            and not os.path.exists(os.path.expanduser("~/MLDSP/outputs-r202/test-"+taxon+".xlsx")):
                 print("test file is:", "~/MLDSP/outputs-r202/test-"+taxon+".xlsx")
                 # os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")
                 print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")
@@ -40,10 +40,12 @@ while True:
     for taxon in single_child_taxons2:
         running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
-        if os.path.exists('~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx'):
+        if os.path.exists(os.path.expanduser(\
+            '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx')):
             print(taxon, "in HGR completed")
         elif running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
-            and not os.path.exists('~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx'):
+            and not os.path.exists(os.path.expanduser(\
+                '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx')):
             # os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")     
             print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"") 
         elif proc_all.count('\\n') > 40:
