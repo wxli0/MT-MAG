@@ -27,7 +27,7 @@ while True:
         if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
             and not os.path.exists('outputs-r202/test-c__Methanobacteria.xlsx'):
                 # os.system("screen -dm bash -c "+"'''"+"cd ~/MLDSP; matlab -r "+'"run addme;stackedMain('+"'GTDB'"+", '"+taxon+"', 'rumen_mags/"+taxon+"');exit\"'''")
-                print("screen -dm bash -c "+"\"cd ~/MLDSP; matlab -r "+"run addme;stackedMain("+"'GTDB'"+", '"+taxon+"', 'rumen_mags/"+taxon+"');exit\"")
+                print("screen -dm bash -c "+"\"cd ~/MLDSP; matlab -r "+"'run addme;stackedMain("+"\'GTDB\'"+", \'"+taxon+"\', \'rumen_mags/"+taxon+"\');exit'\"")
         elif proc_all.count('\\n') > 40:
             print('too many processes running')
         elif running_proc.count('\\n') > 2:
@@ -41,7 +41,7 @@ while True:
         if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
             and not os.path.exists('outputs-r202/test-c__Methanobacteria.xlsx'):
                 # os.system("screen -dm bash -c "+"'''"+"cd ~/MLDSP; matlab -r "+'"run addme;stackedMain('+"'HGR'"+", '"+taxon+"', 'hgr_mags/"+taxon+"');exit\"'''")
-                print("screen -dm bash -c "+"\"cd ~/MLDSP; matlab -r "+"run addme;stackedMain("+"'HGR'"+", '"+taxon+"', 'hgr_mags/"+taxon+"');exit\"")
+                print("screen -dm bash -c "+"\"cd ~/MLDSP; matlab -r "+"'run addme;stackedMain("+"\'HGR\'"+", \'"+taxon+"\', \'hgr_mags/"+taxon+"\');exit'\"")
         elif proc_all.count('\\n') > 40:
             print('too many processes running')
         elif running_proc.count('\\n') > 2:
