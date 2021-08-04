@@ -26,7 +26,7 @@ while True:
         running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
         if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
-            and not os.path.exists('outputs-r202/test-c__Methanobacteria.xlsx'):
+            and not os.path.exists("outputs-r202/test-"+taxon+".xlsx"):
                 os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")
                 print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")
         elif proc_all.count('\\n') > 40:
@@ -36,13 +36,14 @@ while True:
         else:
             print(taxon, "GTDB completed")
 
+    test_cat = "HGR"
     for taxon in single_child_taxons2:
         running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
         if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
-            and not os.path.exists('outputs-r202/test-c__Methanobacteria.xlsx'):
-                # os.system("screen -dm bash -c "+"'''"+"cd ~/MLDSP; matlab -r "+'"run addme;stackedMain('+"'HGR'"+", '"+taxon+"', 'hgr_mags/"+taxon+"');exit\"'''")
-                print("screen -dm bash -c "+"\"cd ~/MLDSP; matlab -r "+"'run addme;stackedMain("+"\'HGR\'"+", \'"+taxon+"\', \'hgr_mags/"+taxon+"\');exit'\"")
+            and not os.path.exists('outputs-HGR-r202/test-'+taxon+'.xlsx'):
+            os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")     
+            print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"") 
         elif proc_all.count('\\n') > 40:
             print('too many processes running')
         elif running_proc.count('\\n') > 2:
