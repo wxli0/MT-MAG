@@ -48,7 +48,7 @@ with FileLock("add_pred.lock"):
             short_index = index[:-3]
         prev_pred = pred_df.at[short_index, taxon]
         if prev_pred in row['rejection-f']:
-            pred_df.at[short_index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
+            pred_df.at[short_index, taxon] = row['rejection-f'] # 'prediction' for complete.csv
         elif str(prev_pred) != 'nan':
             with FileLock("conflict.lock"):
                 with open('conflict.txt', 'a') as file:
