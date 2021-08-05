@@ -28,16 +28,16 @@ def check_invalid(data_dir, path):
         # genus prediction with single child
         elif row['genus'] in single_child_genus or row['gtdb-tk-genus'] in single_child_genus:
             index_genus_single_child.append(index)
-    return index_species_not_exist, index_genus_single_child
+    return index_species_not_exist, single_child_genus
 
 HGR_path = '~/BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv'
 data_dir1 = '/mnt/sda/DeepMicrobes-data/labeled_genome-r202/'
-index_species_not_exist1, index_genus_single_child1 = check_invalid(data_dir1, HGR_path)
+index_species_not_exist1, single_child_genus1 = check_invalid(data_dir1, HGR_path)
 print("index_species_not_exist1 length is:", len(index_species_not_exist1), index_species_not_exist1)
-print("index_genus_single_child1 length is:", len(index_genus_single_child1), index_genus_single_child1)
+print("single_child_genus1 length is:", len(single_child_genus1), single_child_genus1)
         
 MLDSP_path = '~/BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv'
 data_dir2 = '/mnt/sda/MLDSP-samples-r202/'
-index_species_not_exist2, index_genus_single_child2 = check_invalid(data_dir2, MLDSP_path)
+index_species_not_exist2, single_child_genus2 = check_invalid(data_dir2, MLDSP_path)
 print("index_species_not_exist2 length is:", len(index_species_not_exist2), index_species_not_exist2)
-print("index_genus_single_child2 length is:", len(index_genus_single_child2), index_genus_single_child2)
+print("single_child_genus2 length is:", len(single_child_genus2), single_child_genus2)
