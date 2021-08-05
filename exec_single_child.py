@@ -19,7 +19,7 @@ single_child_taxons2 = find_single_child(path2, ranks2, dir2, suffix=suffix2)
 print("single_child taxons for HGR are:", single_child_taxons2)
 i = 0
 
-remove = True
+remove = False
 if remove:
     for taxon in single_child_taxons1:
         output_path = "~/BlindKameris-new/outputs-r202/"+taxon+".xlsx"
