@@ -5,17 +5,23 @@ import openpyxl
 
 from filelock import FileLock
 
-print("waiting to acqure add_HGR_pred lock")
-with FileLock("add_HGR_pred.lock"):
-    print("Lock in add_HGR_pred acquired.")
+print("waiting to acqure add_pred lock")
+with FileLock("add_pred.lock"):
+    print("Lock in add_pred acquired.")
 
-    file_path = sys.argv[1]
+    file_path = sys.argv[2]
+    type = sys.argv[1]
     file_short = file_path.split('/')[-1]
     ver = file_path.split('/')[0].split('-')[-1]
     sheet = file_short[:-5]+"_pred-t-p"
-    if len(sys.argv) == 3:
-        sheet = sys.argv[2]
-    pred_path = "outputs-HGR-"+ver+"/HGR-prediction-full-path.csv"
+    pred_name = ""
+    if type == 'HGR':
+        pred_name = "HGR-prediction-full-path.csv"
+    elif type == 'GTDB':
+        pred_name = "MLDSP-prediction-full-path.csv"
+
+    
+    pred_path = "outputs-HGR-"+ver+"/"+pred_name
 
     taxon = ""
     if sheet.startswith('d') or sheet.startswith('e'):
@@ -34,12 +40,14 @@ with FileLock("add_HGR_pred.lock"):
     taxon_df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
     pred_df =  pd.read_csv(pred_path, index_col=0, header=0, dtype = str)
     for index, row in taxon_df.iterrows():
-        if (not index.endswith("_1")) and (not index.endswith("_2")):
-            cur_pred = pred_df.at[index[:-3], taxon]
-            if cur_pred in row['rejection-f']:
-                pred_df.at[index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
-            elif str(cur_pred) != 'nan':
-                print("Invalid:", index, "previous pred:", cur_pred, "new pred:", row['rejection-f'])
+        short_index = index
+        if type == 'HGR':
+            short_index = index[:-3]
+        cur_pred = pred_df.at[short_index[:-3], taxon]
+        if cur_pred in row['rejection-f']:
+            pred_df.at[short_index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
+        elif str(cur_pred) != 'nan':
+            print("Invalid:", index, "previous pred:", cur_pred, "new pred:", row['rejection-f'])
             
     pred_df.to_csv(pred_path, index=True, header=True)
-    print("Lock in add_HGR_pred released.")
+    print("Lock in add_pred released.")
