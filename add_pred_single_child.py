@@ -52,8 +52,8 @@ with FileLock("add_pred.lock"):
         elif str(cur_pred) != 'nan':
             with FileLock("conflict.lock"):
                 with open('conflict.txt', 'w+') as file:
-                    file.write("file_path is:", file_path, "invalid:", index, \
-                        "previous pred:", cur_pred, "new pred:", row['rejection-f'])
+                    file.write("file_path is: "+file_path+" invalid: "+index+ \
+                        " previous pred: "+cur_pred+" new pred: "+row['rejection-f'])
             
     pred_df.to_csv(pred_path, index=True, header=True)
     print("Lock in add_pred released.")
