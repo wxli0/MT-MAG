@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 import math
 import openpyxl
+import time
 
 from filelock import FileLock
 
@@ -50,6 +51,7 @@ with FileLock("add_pred.lock"):
             pred_df.at[short_index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
         elif str(cur_pred) != 'nan':
             print("Invalid:", index, "previous pred:", cur_pred, "new pred:", row['rejection-f'])
+            time.sleep(60*60*60)
             
     pred_df.to_csv(pred_path, index=True, header=True)
     print("Lock in add_pred released.")
