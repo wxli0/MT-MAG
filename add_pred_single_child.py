@@ -46,14 +46,14 @@ with FileLock("add_pred.lock"):
         short_index = index
         if type == 'HGR':
             short_index = index[:-3]
-        cur_pred = pred_df.at[short_index, taxon]
-        if cur_pred in row['rejection-f']:
+        prev_pred = pred_df.at[short_index, taxon]
+        if prev_pred in row['rejection-f']:
             pred_df.at[short_index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
-        elif str(cur_pred) != 'nan':
+        elif str(prev_pred) != 'nan':
             with FileLock("conflict.lock"):
-                with open('conflict.txt', 'w+') as file:
-                    file.write("file_path is: "+file_path+" invalid: "+index+ \
-                        " previous pred: "+cur_pred+" new pred: "+row['rejection-f'])
+                with open('conflict.txt', 'a') as file:
+                    file.write("file_path is: "+file_path+" short_index is: "+short_index+ \
+                        " previous pred: "+prev_pred+" new pred: "+row['rejection-f']+"\n")
             
     pred_df.to_csv(pred_path, index=True, header=True)
     print("Lock in add_pred released.")
