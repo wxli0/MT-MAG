@@ -35,6 +35,7 @@ while True:
     print("iteration:", i)
     test_cat = "GTDB"
     for taxon in single_child_taxons1:
+        print("processing", taxon)
         running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
         if os.path.exists(os.path.expanduser("~/MLDSP/outputs-r202/test-"+taxon+".xlsx")):
@@ -47,22 +48,22 @@ while True:
             print('too many processes running')
         elif running_proc.count('\\n') > 2:
             print(taxon, "in GTDB running process")
-    test_cat = "HGR"
-    for taxon in single_child_taxons2:
-        running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
-        proc_all =  str(subprocess.check_output("screen -ls", shell=True))
-        if os.path.exists(os.path.expanduser(\
-            '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx')):
-            print(taxon, "in HGR completed")
-        elif running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
-            and not os.path.exists(os.path.expanduser(\
-                '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx')):
-            os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")     
-            print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"") 
-        elif proc_all.count('\\n') > 40:
-            print('too many processes running')
-        elif running_proc.count('\\n') > 2:
-            print(taxon, "in HGR running process")
+    # test_cat = "HGR"
+    # for taxon in single_child_taxons2:
+    #     running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
+    #     proc_all =  str(subprocess.check_output("screen -ls", shell=True))
+    #     if os.path.exists(os.path.expanduser(\
+    #         '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx')):
+    #         print(taxon, "in HGR completed")
+    #     elif running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
+    #         and not os.path.exists(os.path.expanduser(\
+    #             '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx')):
+    #         os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"")     
+    #         print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+test_cat+" "+taxon+"\"") 
+    #     elif proc_all.count('\\n') > 40:
+    #         print('too many processes running')
+    #     elif running_proc.count('\\n') > 2:
+    #         print(taxon, "in HGR running process")
 
             
     print("sleep for 10 min")
