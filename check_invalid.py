@@ -10,8 +10,9 @@ def check_invalid(data_dir, path):
     all_species = []
     for dir in os.listdir(data_dir):
         # single child for genus 
-        if (data_dir == '/mnt/sda/DeepMicrobes-data/labeled_genome-r202/' and dir.startswith('g__') and dir.endswith('_split_pruned')) \
-            or (data_dir == '/mnt/sda/MLDSP-samples-r202/' and dir.startswith('g__')):
+        if (data_dir == '/mnt/sda/DeepMicrobes-data/labeled_genome-r202/' and \
+            dir.startswith('g__') and dir.endswith('_split_pruned') and dir != 'g__') \
+            or (data_dir == '/mnt/sda/MLDSP-samples-r202/' and dir.startswith('g__') and dir != 'g__'):
             dir_path = data_dir + dir + '/'
             children = os.listdir(dir_path)
             if len(children) == 1:
