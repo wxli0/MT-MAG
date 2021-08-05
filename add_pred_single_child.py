@@ -45,7 +45,8 @@ with FileLock("add_pred.lock"):
         if type == 'HGR':
             short_index = index[:-3]
         print("short_index is:", short_index)
-        cur_pred = pred_df.at[short_index[:-3], taxon]
+        print("taxon is:", taxon)
+        cur_pred = pred_df.at[short_index, taxon]
         if cur_pred in row['rejection-f']:
             pred_df.at[short_index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
         elif str(cur_pred) != 'nan':
