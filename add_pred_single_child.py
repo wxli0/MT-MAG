@@ -16,12 +16,14 @@ with FileLock("add_pred.lock"):
     sheet = file_short[:-5]+"_pred-t-p"
     pred_name = ""
     if type == 'HGR':
+        pred_dir = "outputs-HGR-"+ver
         pred_name = "HGR-prediction-full-path.csv"
     elif type == 'GTDB':
+        pred_dir = "outputs-"+ver
         pred_name = "MLDSP-prediction-full-path.csv"
 
     
-    pred_path = "outputs-HGR-"+ver+"/"+pred_name
+    pred_path = pred_dir+"/"+pred_name
 
     taxon = ""
     if sheet.startswith('d') or sheet.startswith('e'):
