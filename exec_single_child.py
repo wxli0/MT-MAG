@@ -19,6 +19,18 @@ single_child_taxons2 = find_single_child(path2, ranks2, dir2, suffix=suffix2)
 print("single_child taxons for HGR are:", single_child_taxons2)
 i = 0
 
+remove = True
+if remove:
+    for taxon in single_child_taxons1:
+        if os.path.exists(os.path.expanduser("~/MLDSP/outputs-r202/test-"+taxon+".xlsx")):
+            os.remove(os.path.expanduser("~/MLDSP/outputs-r202/test-"+taxon+".xlsx"))
+    for taxon in single_child_taxons2:
+         if os.path.exists(os.path.expanduser(\
+            '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx')):
+            os.remove(os.path.expanduser(\
+            '~/MLDSP/outputs-HGR-r202/test-'+taxon+'_split_pruned.xlsx'))
+print("removed existing single child output files")
+
 while True:
     print("iteration:", i)
     test_cat = "GTDB"
