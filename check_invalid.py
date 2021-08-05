@@ -16,7 +16,10 @@ def check_invalid(data_dir, path):
             dir_path = data_dir + dir + '/'
             children = os.listdir(dir_path)
             if len(children) == 1:
-                single_child_genus.append(dir[:-13])
+                if data_dir == '/mnt/sda/DeepMicrobes-data/labeled_genome-r202/':
+                    single_child_genus.append(dir[:-13])
+                else:
+                    single_child_genus.append(dir)
             else:
                 all_species.extend(children)
 
@@ -31,12 +34,14 @@ def check_invalid(data_dir, path):
             index_genus_single_child.append(index)
     return index_species_not_exist, single_child_genus
 
+print("========== checking invalid entries in HGR ===============")
 HGR_path = '~/BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv'
 data_dir1 = '/mnt/sda/DeepMicrobes-data/labeled_genome-r202/'
 index_species_not_exist1, single_child_genus1 = check_invalid(data_dir1, HGR_path)
 print("index_species_not_exist1 length is:", len(index_species_not_exist1), index_species_not_exist1)
 print("single_child_genus1 length is:", len(single_child_genus1), single_child_genus1)
         
+print("========== checking invalid entries in GTDB ===============")
 MLDSP_path = '~/BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv'
 data_dir2 = '/mnt/sda/MLDSP-samples-r202/'
 index_species_not_exist2, single_child_genus2 = check_invalid(data_dir2, MLDSP_path)
