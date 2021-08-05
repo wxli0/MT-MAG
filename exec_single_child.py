@@ -26,7 +26,7 @@ if remove:
         if os.path.exists(os.path.expanduser(output_path)):
             os.remove(os.path.expanduser(output_path))
     for taxon in single_child_taxons2:
-        output_path = "~/BlindKameris-new/outputs-r202/"+taxon+".xlsx"
+        output_path = "~/BlindKameris-new/outputs-HGR-r202/"+taxon+".xlsx"
         if os.path.exists(os.path.expanduser(output_path)):
             os.remove(os.path.expanduser(output_path))
 print("removed existing single child output files")
