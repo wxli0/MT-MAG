@@ -40,9 +40,11 @@ with FileLock("add_pred.lock"):
     taxon_df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
     pred_df =  pd.read_csv(pred_path, index_col=0, header=0, dtype = str)
     for index, row in taxon_df.iterrows():
+        print("index is:", index, "row is:", row)
         short_index = index
         if type == 'HGR':
             short_index = index[:-3]
+        print("short_index is:", short_index)
         cur_pred = pred_df.at[short_index[:-3], taxon]
         if cur_pred in row['rejection-f']:
             pred_df.at[short_index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
