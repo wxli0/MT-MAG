@@ -50,8 +50,10 @@ with FileLock("add_pred.lock"):
         if cur_pred in row['rejection-f']:
             pred_df.at[short_index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
         elif str(cur_pred) != 'nan':
-            print("Invalid:", index, "previous pred:", cur_pred, "new pred:", row['rejection-f'])
-            time.sleep(60*60*60)
+            with FileLock("conflict.lock"):
+                with open('myfile.dat', 'w+') as file:
+                    file.write("file_path is:", file_path, "invalid:", index, \
+                        "previous pred:", cur_pred, "new pred:", row['rejection-f'])
             
     pred_df.to_csv(pred_path, index=True, header=True)
     print("Lock in add_pred released.")
