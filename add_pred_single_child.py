@@ -21,7 +21,7 @@ Add MT-MAG classification result store in a file (@param file_path) of a specifi
 """
 
 print("waiting to acqure add_pred lock")
-with FileLock("add_pred.lock"):
+with FileLock("lock/add_pred.lock"):
     print("Lock in add_pred acquired.")
 
     file_path = sys.argv[2]

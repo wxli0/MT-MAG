@@ -16,7 +16,7 @@ Add MT-MAG classification of Task 2 (training dataset: HGR) into \
 """
 
 print("waiting to acqure add_HGR_pred lock")
-with FileLock("add_HGR_pred.lock"):
+with FileLock("lock/add_HGR_pred.lock"):
     print("Lock in add_HGR_pred acquired.")
 
     file_path = sys.argv[1]

@@ -16,7 +16,7 @@ Add MT-MAG classification of Task 1 (training dataset: GTDB) into \
 """
 
 print("waiting to acqure add_GTDB_pred lock")
-with FileLock("add_GTDB_pred.lock"):
+with FileLock("lock/add_GTDB_pred.lock"):
     print("Lock in add_GTDB_pred acquired.")
     file_path = sys.argv[1]
     file_short = file_path.split('/')[-1]
