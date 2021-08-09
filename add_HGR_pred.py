@@ -5,6 +5,16 @@ import openpyxl
 
 from filelock import FileLock
 
+""" 
+Add MT-MAG classification of Task 2 (training dataset: HGR) into \
+    the classification result file
+    
+    Command line arguments:
+    :param sys.argv[1]: file_path, file path where MT-MAG classification result \
+        is stored in 
+    :type file_path: str
+"""
+
 print("waiting to acqure add_HGR_pred lock")
 with FileLock("add_HGR_pred.lock"):
     print("Lock in add_HGR_pred acquired.")

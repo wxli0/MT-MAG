@@ -6,14 +6,20 @@ import numpy as np
 from math import exp
 import openpyxl
 
-# argv[1]: file_name
-# argv[2]: sheet_name
-# e.g.
+""" 
+Add 'max' column to a sheet in a file to represent the maximum posterior \
+    likelihhods for all classes per classification
+
+    Command line arguments:
+    :param argv[1]: file_path, file path
+    :type argv[1]: str
+    :param argv[2]: sheet, sheet name
+    :type argv[2]: str
+    :Example: python3 add_max.py outputs-r202/g__Prevotella.xlsx g__Prevotella-t-p
+"""
 
 file_path = sys.argv[1]
 sheet = sys.argv[2]
-
-
 
 df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
 pred = df['prediction']

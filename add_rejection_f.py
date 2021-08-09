@@ -4,6 +4,23 @@ import pandas as pd
 import openpyxl
 import json
 
+""" 
+Add "rejection-f" column to the sheet (@param sheet_name) in a file \
+    (@param file_name). The "rejection-f" represents the final decision baesd \
+        on "max" and the rejection threshold (@param threshold_dict)
+    
+    Command line arguments:
+    :param sys.argv[1]: file_path. The file path where MT-MAG classification \
+        result is stored in 
+    :type sys.argv[1]: str
+    :param sys.argv[2]: sheet_name. The sheet of results that we are manipulating
+    :type sys.argv[2]: str
+    :param sys.argv[3]: rejection_dict. The rejection threshold dictionary with \
+        keys being the child class names, and values being the rejection \
+            thresholds for the child classes.
+
+"""
+
 # alpha: changed manually
 # argv[1]: file_name
 # argv[2]: sheet_name

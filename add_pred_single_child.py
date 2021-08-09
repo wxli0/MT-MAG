@@ -6,6 +6,20 @@ import time
 
 from filelock import FileLock
 
+""" 
+Add MT-MAG classification result store in a file (@param file_path) of a specific task \
+    type (@param type) into the classification result file. The classification \
+        task is a single-child taxon classification.
+
+    Command line arguments:
+    :param sys.argv[1]: file_path, file path where MT-MAG classification result \
+        is stored in 
+    :type file_path: str
+    :param sys.argv[2]: type of the task, with "GTDB" represents Task 1 and \
+        "HGR" represents Task 2
+    :type type: str
+"""
+
 print("waiting to acqure add_pred lock")
 with FileLock("add_pred.lock"):
     print("Lock in add_pred acquired.")
