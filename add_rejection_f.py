@@ -21,12 +21,6 @@ Add "rejection-f" column to the sheet (@param sheet_name) in a file \
 
 """
 
-# alpha: changed manually
-# argv[1]: file_name
-# argv[2]: sheet_name
-# argv[3]: alpha, threshold
-# e.g.
-
 file_path = sys.argv[1]
 sheet = sys.argv[2]
 threshold_dict = json.load(open(sys.argv[3]))
