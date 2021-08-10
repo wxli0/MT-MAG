@@ -51,8 +51,8 @@ if len(sys.argv) == 2:
 path1 = base_path+"BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 mrs1 = check_missing(path1, ranks1)
-data_dir1 = ""
-suffix1 = "/mnt/sda/MLDSP-samples-r202/"
+data_dir1 = "/mnt/sda/MLDSP-samples-r202/"
+suffix1 = ""
 
 path2 = base_path+"BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv"
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
