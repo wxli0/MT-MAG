@@ -1,9 +1,9 @@
-import sys
-import pandas as pd
-import math
-import openpyxl
-
 from filelock import FileLock
+import math
+import pandas as pd
+import openpyxl
+import sys
+
 
 """ 
 Add MT-MAG classification of Task 2 (training dataset: HGR) into \

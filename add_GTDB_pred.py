@@ -1,9 +1,8 @@
-import sys
-import pandas as pd
+from filelock import FileLock
 import math
 import openpyxl
-
-from filelock import FileLock
+import pandas as pd
+import sys
 
 """ 
 Add MT-MAG classification of Task 1 (training dataset: GTDB) into \

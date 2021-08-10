@@ -1,8 +1,10 @@
-import numpy as np
 import matplotlib.pyplot as plt
-import os 
 from matplotlib.ticker import MaxNLocator
+import numpy as np
 
+"""
+Calcuates reliability score of a taxon based on the output of reliablity_diag_entire.py
+"""
 
 bins = np.arange(0,0.01,0.001)
 score_file_path = 'outputs-r202/g__UBA1232-score.txt'

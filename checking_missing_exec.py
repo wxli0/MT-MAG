@@ -1,12 +1,21 @@
+import os
 import pandas as pd 
-import os 
-import sys
 import platform
 import subprocess
+import sys
 
-# check missing predictions in HGR/MLDSP-prediction-full-path.csv
+"""
+Check missing predictions in the classification result file
+"""
 
 def check_missing(path, ranks):
+    """
+    Checks ranks with incomplete predictions in the classification result path
+    :param path: path of the classification result file
+    :type path: str
+    :param ranks: a list of ranks in the classification result file
+    :type ranks: List[str]
+    """
     df = pd.read_csv(path, index_col=0, header=0, dtype = str)
 
     # init missing_ranks

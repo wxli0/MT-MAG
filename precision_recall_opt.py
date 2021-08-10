@@ -1,17 +1,28 @@
-import sys
-import numpy as np 
-import pandas as pd
+import json 
+import math
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import os
-import shutil
-import json 
-import platform
-import math
-import statistics
 from multiprocessing import Pool
+import numpy as np 
+import os
+import pandas as pd
+import platform
+import statistics
+import sys
 
+"""
+Calculates rejection thresholds based on a training result file, and a \
+    testing result file for a taxon for a specific training dataset. This is \
+        used for non-single-child taxons.
+:param sys.argv[1]: file_name. Path of the training result file.
+:type sys.argv[1]: str
+:param sys.argv[2]: test_file.
+:type sys.argv[2]: str
+:param sys.argv[3]: data_type. Training data type of the classification Task. \
+    GTDB or HGR.
+:type sys.argb[3]: str
+"""
 # python3 precision_recall_opt.py outputs-r202/d__Bacteria_train.xlsx outputs-r202/d__Bacteria.xlsx GTDB
 
 gap = 0.01

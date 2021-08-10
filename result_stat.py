@@ -2,8 +2,19 @@ import os
 import pandas as pd
 
 
-# calculates the precision, recall, incorrect rate, partial recall, rejection rate at different levels
 def calc_stats(path, ranks, ignore_taxons =[], ignore_indices = []):
+    """
+    Calculates the precision, recall, incorrect rate, partial recall, \
+        rejection rate at different levels for MT-MAG classificaton result.
+    :param path: path of the classification result file.
+    :type path: str
+    :param ranks: ranks in the classification result file.
+    :type ranks: List[str]
+    :param ignore_taxons: taxa to ignore in the calculation
+    :type ignore_taxons: List[str]
+    :param ignore_indices: test indices to ignore in the calculation
+    :type ignore_indices: List[str]
+    """
     df = pd.read_csv(path, header=0, index_col=0)
     partial_correct = 0
     correct = 0

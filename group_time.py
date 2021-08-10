@@ -1,11 +1,17 @@
+import numpy as np
 import os
 import pandas as pd
 import sys
-import numpy as np
 
-#e.g. python3 group_time.py outputs-r202
-# or python3 group_time.py outputs-HGR-r202
+"""
+Add MT-MAG classification time into corresponding time file
 
+:param sys.argv[1]: dir_cat. The directory of the time files.
+:type sys.argv[1]: str
+
+:Example: python3 group_time.py outputs-r202
+:Example python3 group_time.py outputs-HGR-r202
+"""
 dir_cat = sys.argv[1]
 # df = pd.DataFrame(columns = ['taxon', 'train_time', 'test_time', 'rej_time', 'post_time'])
 # df = pd.DataFrame(columns = ['taxon', 'test_time'])

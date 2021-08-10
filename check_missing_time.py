@@ -4,12 +4,20 @@ import sys
 import platform
 import subprocess
 
-# check missing predictions in HGR/MLDSP-prediction-full-path.csv
-
+"""
+check missing predictions in HGR/MLDSP-prediction-full-path.csv
+"""
 
 def check_missing(path, time_cat):
+    """
+    Determines the single child genus and query instances with GTDB-tk classified \
+        species not exist in training dataset, and single-child genera
+    :param data_dir: training dataset directory
+    :type data_dir: str
+    :param path: MT-MAG and GTDB-tk result path
+    :type path: str
+    """
     df = pd.read_csv(path, index_col=0, header=0, dtype=str)
-
     missing_ranks = []
     for index, row in df.iterrows():
         if str(row[time_cat]) == "nan":

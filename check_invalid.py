@@ -3,8 +3,16 @@ import sys
 import pandas as pd
 
 
-
 def check_invalid(data_dir, path):
+    """
+    Determines the single child genus and query instances with GTDB-tk classified \
+        species not exist in training dataset, and single-child genera
+    :param data_dir: training dataset directory
+    :type data_dir: str
+    :param path: MT-MAG and GTDB-tk result path
+    :type path: str
+    """
+    
     df = pd.read_csv(path, index_col=0, header=0, dtype = str)
     single_child_genus = []
     all_species = []

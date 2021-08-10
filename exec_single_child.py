@@ -4,7 +4,10 @@ import pandas as pd
 import subprocess
 import time
 
-# check single child taxons and exec single child classifications
+"""
+check single child taxons and execute single child MT-MAG classifications
+"""
+
 path1 = "./outputs-r202/MLDSP-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus']
 dir1 = '/mnt/sda/MLDSP-samples-r202/'

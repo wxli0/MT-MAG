@@ -1,7 +1,7 @@
-import sys
-import pandas as pd
 import math
 import openpyxl
+import pandas as pd
+import sys
 
 """ 
 Add GTDB-Tk classification of Task 2 (training dataset: HGR) into \

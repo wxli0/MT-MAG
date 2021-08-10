@@ -1,19 +1,18 @@
-# preprocessing output to send it to R reliabilitydiag 
-
-import sys
-import numpy as np 
-import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import numpy as np 
+import pandas as pd
 import os
-import shutil
-import json 
-import platform
-import math
-import statistics
+import sys
 
-# python3 reliability_diag_entire.py outputs-r202/o__UBA1407_train.xlsx
+"""
+Send MT-MAG result file to R reliabilitydiag 
+:param sys.argv[1]: File path of the result file
+:type sys.argv[1]: str
+
+:Example python3 reliability_diag_entire.py outputs-r202/o__UBA1407_train.xlsx
+"""
 
 def write_to_file(vec, file_name):
     print("file_name is:", file_name)

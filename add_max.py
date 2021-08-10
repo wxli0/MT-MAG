@@ -1,10 +1,9 @@
-import sys
+from math import exp
+import numpy as np
+import openpyxl
 import os
 import pandas as pd 
-import openpyxl
-import numpy as np
-from math import exp
-import openpyxl
+import sys
 
 """ 
 Add 'max' column to a sheet in a file to represent the maximum posterior \

@@ -1,7 +1,14 @@
-import sys
 import pandas as pd 
+import sys
 import openpyxl
 import os 
+
+"""
+Preprocess training result file. Combine sheets across different folds into one. \
+    Replace prediction numbers by taxon names.
+:param sys.argv[1]: file. File path of the training result file.
+:type sys.argv[1]: str.
+"""
 
 file = sys.argv[1]
 
@@ -10,8 +17,8 @@ print("pre_sheet_names are:", pre_sheet_names)
 
 df_merged = pd.read_excel(file, sheet_name = "quadratic-svm-score1", index_col=0, header=0)
 
-for i in range(len(pre_sheet_names)):
-    sheet = pre_sheet_names[i]
+for i in range(len(pre_sheet_names))-1:
+    sheet = pre_sheet_names[i+1]
     df = pd.read_excel(file, sheet_name = sheet, index_col=0, header=0)
     df_merged = pd.concat([df_merged, df])
 

@@ -1,14 +1,15 @@
-import sys
-import pandas as pd
-import math
-import openpyxl
-import time
 
 from filelock import FileLock
+import math
+import openpyxl
+import pandas as pd
+import sys
+import time
+
 
 """ 
-Add MT-MAG classification result store in a file (@param file_path) of a specific task \
-    type (@param type) into the classification result file. The classification \
+Add MT-MAG classification result store in a file (:param file_path) of a specific task \
+    type (:param type) into the classification result file. The classification \
         task is a single-child taxon classification.
 
     Command line arguments:
