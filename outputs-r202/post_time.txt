@@ -142,3 +142,4 @@ p__Actinobacteriota 2
 g__UBA4372 2
 g__Sodaliphilus 3
 p__Spirochaetota 3
+c__Coriobacteriia 4
