@@ -4,3 +4,6 @@ p__Firmicutes_A 4
 p__Actinobacteriota 2
 p__Spirochaetota 2
 p__Firmicutes_A 4
+p__Actinobacteriota 2
+p__Spirochaetota 2
+p__Firmicutes_A 4

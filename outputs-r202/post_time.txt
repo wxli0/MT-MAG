@@ -1,1 +1,2 @@
 d__Bacteria 7
+d__Archaea 2

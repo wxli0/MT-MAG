@@ -1,1 +1,2 @@
 d__Bacteria 47
+d__Archaea 352
