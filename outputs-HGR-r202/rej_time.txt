@@ -347,3 +347,7 @@ g__Ruminiclostridium_E 12
 g__CAG-115 12
 g__Faecalibacterium 34
 g__Gemmiger 48
+p__Actinobacteriota 4
+p__Spirochaetota 4
+p__Firmicutes_A 5
+g__Ruminococcus 7

@@ -206,3 +206,9 @@ f__UBA1242 2
 g__RUG099 3
 g__Bacillus 3
 o__Oscillospirales 3
+g__Absicoccus 4
+g__WRAD01 4
+o__Erysipelotrichales 3
+g__UBA4372 3
+g__Bulleidia 3
+g__Sodaliphilus 3

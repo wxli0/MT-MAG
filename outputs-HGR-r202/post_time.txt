@@ -347,3 +347,7 @@ g__Ruminococcus_D 4
 p__Firmicutes_A 9
 g__Faecalibacterium 2
 g__Gemmiger 3
+p__Actinobacteriota 4
+p__Spirochaetota 4
+g__Ruminococcus 3
+p__Firmicutes_A 7
