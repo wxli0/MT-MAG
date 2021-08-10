@@ -59,3 +59,6 @@ g__Dialister 62
 g__UBA1067 119
 f__Desulfovibrionaceae 182
 g__Methanobrevibacter_A 283
+g__Fibrobacter 354
+g__Methanobrevibacter 9
+g__Campylobacter 21
