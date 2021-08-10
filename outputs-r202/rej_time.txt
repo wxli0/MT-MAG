@@ -1,2 +1,10 @@
 d__Bacteria 47
 d__Archaea 352
+p__Eremiobacterota 8
+p__Fibrobacterota 11
+p__Firmicutes_C 18
+p__Campylobacterota 28
+p__Methanobacteriota 31
+p__Verrucomicrobiota 85
+p__Thermoplasmatota 189
+p__Bacteroidota 282

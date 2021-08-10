@@ -1,2 +1,10 @@
 d__Bacteria 7
 d__Archaea 2
+p__Eremiobacterota 3
+p__Fibrobacterota 2
+p__Firmicutes_C 2
+p__Campylobacterota 3
+p__Methanobacteriota 2
+p__Verrucomicrobiota 3
+p__Thermoplasmatota 3
+p__Bacteroidota 4
