@@ -51,10 +51,14 @@ if len(sys.argv) == 2:
 path1 = base_path+"BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 mrs1 = check_missing(path1, ranks1)
+data_dir1 = ""
+suffix1 = "/mnt/sda/MLDSP-samples-r202/"
 
 path2 = base_path+"BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv"
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 mrs2 = check_missing(path2, ranks2)
+data_dir2 = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+suffix2 = "_split_pruned"
 print("HGR missing ranks are:", mrs2)
 if exec:
     for k in mrs2:
@@ -66,8 +70,15 @@ if exec:
                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
-                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
+                    if len(os.listdir(data_dir2+c+suffix2)) > 1: # not single child taxon
+                        os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
+                        print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
+                    else:
+                        os.system(\
+                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                                "HGR"+" "+c+"\"")
+                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                                "HGR"+" "+c+"\"")
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
@@ -82,8 +93,15 @@ if exec:
                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + '"')
-                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + '"')
+                    if len(os.listdir(data_dir2+c+suffix2)) > 1: # not single child taxon
+                        os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + '"')
+                        print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + '"')
+                    else:
+                        os.system(\
+                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                                "GTDB"+" "+c+"\"")
+                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                                "GTDB"+" "+c+"\"")
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
