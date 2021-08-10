@@ -2,3 +2,9 @@ d__Bacteria 9
 p__Actinobacteriota 2
 p__Spirochaetota 2
 p__Firmicutes_A 5
+p__Spirochaetota 3
+c__Spirochaetia 3
+p__Actinobacteriota 3
+p__Firmicutes_A 5
+c__Actinomycetia 3
+c__Clostridia 9
