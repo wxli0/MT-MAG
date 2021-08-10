@@ -162,3 +162,17 @@ c__Bacilli 1528
 o__Lachnospirales 143
 o__Peptostreptococcales 181
 g__Sodaliphilus 615
+g__UBA7741 5
+g__CAIFEU01 5
+g__RUG721 5
+o__ML615J-28 8
+f__UBA1390 9
+f__Saccharofermentanaceae 10
+g__Olegusella 10
+g__RUG440 19
+o__Erysipelotrichales 22
+g__UBA1367 27
+g__Olsenella 31
+o__RFN20 45
+o__Bacillales 103
+o__Mycoplasmatales 104

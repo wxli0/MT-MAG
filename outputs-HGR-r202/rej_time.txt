@@ -329,3 +329,9 @@ p__Firmicutes_A 8
 g__CAG-488 8
 g__Eubacterium_R 132
 f__Oscillospiraceae 1350
+p__Actinobacteriota 5
+p__Spirochaetota 7
+p__Firmicutes_A 8
+g__ER4 24
+g__Dysosmobacter 72
+g__CAG-110 191
