@@ -143,3 +143,10 @@ g__UBA4372 392
 g__Sodaliphilus 584
 p__Spirochaetota 232
 c__Coriobacteriia 96
+g__UBA4372 425
+c__Spirochaetia 475
+c__Actinomycetia 508
+g__Sodaliphilus 644
+o__Treponematales 42
+o__Actinomycetales 184
+o__Coriobacteriales 263
