@@ -8,3 +8,13 @@ p__Methanobacteriota 2
 p__Verrucomicrobiota 3
 p__Thermoplasmatota 3
 p__Bacteroidota 4
+c__Lentisphaeria 3
+c__Eremiobacteria 3
+c__Fibrobacteria 3
+c__Campylobacteria 2
+p__Planctomycetota 3
+c__Thermoplasmata 2
+c__Kiritimatiellae 3
+c__Negativicutes 3
+c__Bacteroidia 3
+p__Desulfobacterota 3

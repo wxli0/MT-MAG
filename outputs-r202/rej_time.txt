@@ -8,3 +8,13 @@ p__Methanobacteriota 31
 p__Verrucomicrobiota 85
 p__Thermoplasmatota 189
 p__Bacteroidota 282
+c__Lentisphaeria 4
+c__Eremiobacteria 6
+c__Fibrobacteria 10
+c__Campylobacteria 27
+p__Planctomycetota 404
+c__Thermoplasmata 99
+c__Kiritimatiellae 99
+c__Negativicutes 159
+c__Bacteroidia 428
+p__Desulfobacterota 838
