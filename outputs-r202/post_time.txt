@@ -29,3 +29,17 @@ o__Methanomassiliicoccales 3
 o__Veillonellales 2
 o__Methanobacteriales 2
 c__Planctomycetes 2
+f__Dialisteraceae 3
+f__Megasphaeraceae 3
+f__Acidaminococcaceae 3
+f__Ozemobacteraceae 2
+f__UBA1407 2
+f__Chitinispirillaceae 2
+f__Fibrobacteraceae 2
+f__UBA1067 3
+f__Methanomethylophilaceae 3
+f__Methanobacteriaceae 3
+f__Baltobacteraceae 3
+o__Desulfovibrionales 3
+f__Selenomonadaceae 2
+o__Campylobacterales 3
