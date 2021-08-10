@@ -1,3 +1,0 @@
-root 3
-root 4
-d__Bacteria 6

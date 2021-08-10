@@ -1,3 +1,0 @@
-root 2
-root 14
-d__Bacteria 46
