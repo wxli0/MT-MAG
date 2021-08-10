@@ -216,3 +216,11 @@ g__Clostridium 2
 f__CAG-272 2
 g__Absicoccus 3
 o__Erysipelotrichales 2
+f__Oscillospiraceae 3
+g__Absicoccus 3
+g__CAG-103 3
+o__Erysipelotrichales 3
+g__UBA4372 2
+g__UBA1777 2
+g__Sodaliphilus 3
+g__CAG-110 2
