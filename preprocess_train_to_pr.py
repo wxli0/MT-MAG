@@ -17,7 +17,7 @@ print("pre_sheet_names are:", pre_sheet_names)
 
 df_merged = pd.read_excel(file, sheet_name = "quadratic-svm-score1", index_col=0, header=0)
 
-for i in range(len(pre_sheet_names))-1:
+for i in range(len(pre_sheet_names)-1):
     sheet = pre_sheet_names[i+1]
     df = pd.read_excel(file, sheet_name = sheet, index_col=0, header=0)
     df_merged = pd.concat([df_merged, df])
