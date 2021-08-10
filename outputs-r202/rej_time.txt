@@ -18,3 +18,14 @@ c__Kiritimatiellae 99
 c__Negativicutes 159
 c__Bacteroidia 428
 p__Desulfobacterota 838
+o__Baltobacterales 6
+o__Acidaminococcales 6
+o__Chitinivibrionales 7
+o__Fibrobacterales 8
+o__Selenomonadales 9
+o__RFP12 10
+o__UBA1407 14
+o__Methanomassiliicoccales 16
+o__Veillonellales 18
+o__Methanobacteriales 22
+c__Planctomycetes 61
