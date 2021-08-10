@@ -265,3 +265,6 @@ o__Monoglobales 8
 o__Actinomycetales 11
 o__Peptostreptococcales 15
 o__Tissierellales 16
+o__Coriobacteriales 37
+o__Oscillospirales 79
+o__Lachnospirales 179

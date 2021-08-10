@@ -265,3 +265,6 @@ p__Firmicutes_A 5
 o__Actinomycetales 3
 o__Peptostreptococcales 3
 o__Tissierellales 2
+o__Coriobacteriales 3
+o__Oscillospirales 6
+o__Lachnospirales 3

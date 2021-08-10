@@ -139,3 +139,6 @@ p__Firmicutes 2
 g__RC9 5
 p__Firmicutes_A 3
 p__Actinobacteriota 2
+g__UBA4372 2
+g__Sodaliphilus 3
+p__Spirochaetota 3
