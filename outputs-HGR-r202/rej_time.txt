@@ -51,3 +51,7 @@ f__Saccharimonadaceae 3
 p__Actinobacteriota 3
 p__Spirochaetota 4
 p__Firmicutes_A 5
+f__Saccharimonadaceae 3
+p__Actinobacteriota 3
+p__Spirochaetota 3
+p__Firmicutes_A 4
