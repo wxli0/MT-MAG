@@ -335,3 +335,7 @@ p__Firmicutes_A 9
 g__ER4 3
 g__Dysosmobacter 3
 g__CAG-110 3
+p__Actinobacteriota 5
+p__Spirochaetota 4
+p__Firmicutes_A 9
+f__Ruminococcaceae 8
