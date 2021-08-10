@@ -351,3 +351,6 @@ p__Actinobacteriota 4
 p__Spirochaetota 4
 p__Firmicutes_A 5
 g__Ruminococcus 7
+p__Actinobacteriota 4
+p__Spirochaetota 4
+p__Firmicutes_A 6

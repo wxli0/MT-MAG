@@ -212,3 +212,7 @@ o__Erysipelotrichales 14
 g__UBA4372 385
 g__Bulleidia 180
 g__Sodaliphilus 598
+g__Clostridium 677
+f__CAG-272 345
+g__Absicoccus 3
+o__Erysipelotrichales 12
