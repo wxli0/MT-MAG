@@ -150,3 +150,15 @@ g__Sodaliphilus 644
 o__Treponematales 42
 o__Actinomycetales 184
 o__Coriobacteriales 263
+c__Clostridia 1026
+f__UMGS124 3
+f__UBA12059 7
+o__Saccharofermentanales 21
+f__Treponemataceae 24
+o__Clostridiales 26
+g__UBA4372 404
+f__Atopobiaceae 61
+c__Bacilli 1528
+o__Lachnospirales 143
+o__Peptostreptococcales 181
+g__Sodaliphilus 615

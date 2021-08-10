@@ -320,3 +320,12 @@ g__QALS01 6
 p__Firmicutes_A 7
 g__Treponema_D 6
 f__Acutalibacteraceae 861
+g__CAG-217 4
+g__Anaeromassilibacillus 5
+p__Actinobacteriota 5
+g__CAG-177 5
+p__Spirochaetota 6
+p__Firmicutes_A 8
+g__CAG-488 8
+g__Eubacterium_R 132
+f__Oscillospiraceae 1350

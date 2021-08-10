@@ -320,3 +320,12 @@ g__Olsenella 4
 p__Firmicutes_A 6
 g__Treponema_D 2
 f__Acutalibacteraceae 7
+g__Anaeromassilibacillus 3
+g__CAG-217 5
+g__CAG-177 4
+p__Spirochaetota 3
+p__Actinobacteriota 5
+g__CAG-488 4
+p__Firmicutes_A 7
+g__Eubacterium_R 3
+f__Oscillospiraceae 3
