@@ -339,3 +339,11 @@ p__Actinobacteriota 5
 p__Spirochaetota 6
 p__Firmicutes_A 7
 f__Ruminococcaceae 1862
+p__Actinobacteriota 7
+p__Spirochaetota 8
+p__Firmicutes_A 9
+g__Ruminococcus_D 12
+g__Ruminiclostridium_E 12
+g__CAG-115 12
+g__Faecalibacterium 34
+g__Gemmiger 48
