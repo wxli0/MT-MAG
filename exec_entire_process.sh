@@ -21,10 +21,10 @@ do
         python3 outputs-r202/group_pred.py order
         python3 outputs-r202/group_pred.py family
         python3 outputs-r202/group_pred.py genus
-        python3 outputs-HGR-r202/group_pred_HGR.py class
-        python3 outputs-HGR-r202/group_pred_HGR.py order
-        python3 outputs-HGR-r202/group_pred_HGR.py family
-        python3 outputs-HGR-r202/group_pred_HGR.py genus
+        # python3 outputs-HGR-r202/group_pred_HGR.py class
+        # python3 outputs-HGR-r202/group_pred_HGR.py order
+        # python3 outputs-HGR-r202/group_pred_HGR.py family
+        # python3 outputs-HGR-r202/group_pred_HGR.py genus
         echo "==== begin checking_missing_exec ====" 
         python3 checking_missing_exec.py True
     else
