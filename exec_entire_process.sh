@@ -5,7 +5,7 @@ pre_proc_num=0
 do  
     echo "iteration ${i}"
     cur_proc_num=`echo $(screen -ls)|grep -Po "[[:digit:]]+ *(?=Socket)"`
-    if [ $cur_proc_num -lt $pre_proc_num ] || [ $i == 0]; then
+    if [ $cur_proc_num -lt $pre_proc_num ] || [ $i == 0 ]; then
         echo "==== git commit ===="
         cd ~/MLDSP
         git add .
