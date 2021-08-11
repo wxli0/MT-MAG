@@ -870,3 +870,8 @@ p__Spirochaetota 5
 p__Firmicutes_A 6
 g__CAG-81 10
 g__Enterocloster 150
+g__UMGS1370 7
+p__Spirochaetota 12
+p__Actinobacteriota 5
+c__Spirochaetia 8
+p__Firmicutes_A 8
