@@ -1,0 +1,4 @@
+file_path is: outputs-HGR-r202/o__Treponematales.xlsx short_index is: even_MAG-GUT23276 previous pred: f__Acutalibacteraceae new pred: f__Treponemataceae(reject)
+file_path is: outputs-HGR-r202/o__Treponematales.xlsx short_index is: even_MAG-GUT50868 previous pred: f__Acutalibacteraceae new pred: f__Treponemataceae(reject)
+file_path is: outputs-HGR-r202/o__Treponematales.xlsx short_index is: even_MAG-GUT52820 previous pred: f__Acutalibacteraceae new pred: f__Treponemataceae(reject)
+file_path is: outputs-HGR-r202/o__Treponematales.xlsx short_index is: even_MAG-GUT5342 previous pred: f__Acutalibacteraceae new pred: f__Treponemataceae(reject)
