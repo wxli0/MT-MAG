@@ -870,3 +870,4 @@ p__Actinobacteriota 4
 p__Firmicutes_A 6
 g__CAG-81 3
 g__Enterocloster 3
+g__UMGS1370 4
