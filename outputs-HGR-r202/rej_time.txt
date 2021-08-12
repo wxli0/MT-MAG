@@ -905,3 +905,7 @@ g__UBA1436 16
 o__Burkholderiales 28
 g__CAG-495 24
 o__Enterobacterales 48
+f__Succinivibrionaceae 31
+f__Fusobacteriaceae 77
+c__Negativicutes 189
+g__51-20 10

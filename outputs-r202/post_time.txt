@@ -568,3 +568,6 @@ c__Coriobacteriia 5
 p__Firmicutes 12
 p__Bacteroidota 2
 p__Planctomycetota 2
+c__UBA10030 10
+p__Verrucomicrobiota 3
+o__Campylobacterales 4
