@@ -588,3 +588,5 @@ g__RUG721 5
 g__UBA7741 4
 g__Olegusella 4
 g__RUG440 5
+g__UBA1367 4
+g__Olsenella 13
