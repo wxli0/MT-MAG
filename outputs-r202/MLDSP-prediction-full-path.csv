@@ -367,7 +367,7 @@ RUG365.fa,d__Bacteria,p__Firmicutes_A,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clos
 RUG366.fa,d__Bacteria,p__Spirochaetota(reject),,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900319655,,,,,,,,,,,,,,,,
 RUG367.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__UBA4372,s__UBA4372 sp900318115,,,,,,,,,,,,,,,,
 RUG368.fa,d__Bacteria,p__Spirochaetota(reject),,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900315605,,,,,,,,,,,,,,,,
-RUG369.fa,d__Bacteria,p__Eremiobacterota,c__Eremiobacteria,o__Baltobacterales,f__Baltobacteraceae,g__Lustribacter,,,,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,f__Thermoguttaceae,g__RUG369,s__RUG369 sp900318195,,,,,,,,,,,,,,,,
+RUG369.fa,d__Bacteria,p__Eremiobacterota,c__Eremiobacteria,o__Baltobacterales,f__Baltobacteraceae,g__Lustribacter,s__Lustribacter telmatis,,,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,f__Thermoguttaceae,g__RUG369,s__RUG369 sp900318195,,,,,,,,,,,,,,,,
 RUG370.fa,d__Bacteria,p__Firmicutes_A(reject),,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900100595,,,,,,,,,,,,,,,,
 RUG371.fa,d__Bacteria,p__Firmicutes_C,c__Negativicutes,,,,,,,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__Selenomonadales,f__Selenomonadaceae,g__Selenomonas_C,s__Selenomonas_C sp900318215,,,,,,,,,,,,,,,,
 RUG372.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Paludibacteraceae,g__RF16,s__RF16 sp900318245,,,,,,,,,,,,,,,,
