@@ -517,3 +517,5 @@ c__Eremiobacteria 4
 o__Chitinivibrionales 4
 c__Fibrobacteria 4
 o__Methanobacteriales 5
+f__Chitinispirillaceae 5
+o__Baltobacterales 5
