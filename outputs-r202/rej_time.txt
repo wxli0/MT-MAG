@@ -520,3 +520,5 @@ o__Methanobacteriales 53
 f__Chitinispirillaceae 36
 o__Baltobacterales 9
 p__Firmicutes_C 40
+o__Fibrobacterales 52
+f__Methanobacteriaceae 73
