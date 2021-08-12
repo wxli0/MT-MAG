@@ -532,3 +532,5 @@ g__Methanobrevibacter 27
 g__Fibrobacter 1035
 p__Actinobacteriota 49
 p__Desulfobacterota 107
+c__Campylobacteria 66
+c__Negativicutes 441
