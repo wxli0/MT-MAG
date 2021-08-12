@@ -887,3 +887,4 @@ p__Spirochaetota 9
 p__Actinobacteriota 6
 p__Bacteroidota 9
 p__Firmicutes_A 12
+p__Proteobacteria 18
