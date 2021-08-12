@@ -580,3 +580,5 @@ o__Treponematales 109
 f__Treponemataceae 44
 o__Coriobacteriales 46
 f__Methanomethylophilaceae 74
+f__UMGS124 10
+g__Methanomethylophilus 21
