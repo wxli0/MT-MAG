@@ -30,7 +30,7 @@ do
         echo "==== begin checking_missing_exec ====" 
         python3 checking_missing_exec.py True
     else
-            echo "No processes finished."
+        echo "No processes finished."
     fi
 
     pre_proc_num=$cur_proc_num
