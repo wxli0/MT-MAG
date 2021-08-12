@@ -882,3 +882,7 @@ d__Bacteria 4
 d__Bacteria 2
 d__Bacteria 7
 d__Bacteria 305
+p__Firmicutes_B 12
+p__Spirochaetota 11
+p__Actinobacteriota 10
+p__Bacteroidota 6
