@@ -892,3 +892,4 @@ c__Alphaproteobacteria 24
 o__RF32 13
 c__Bacteroidia 6
 o__Coriobacteriales 105
+f__Elusimicrobiaceae 26
