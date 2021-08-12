@@ -925,3 +925,6 @@ g__UMGS1590 12
 g__Olsenella 10
 g__Succinivibrio 19
 f__Acidaminococcaceae 40
+g__Fusobacterium_A 39
+g__Acidaminococcus 17
+o__Veillonellales 62
