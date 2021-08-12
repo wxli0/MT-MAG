@@ -933,3 +933,7 @@ f__Enterobacteriaceae 393
 f__Megasphaeraceae 19
 c__Spirochaetia 12
 g__Caecibacter 23
+c__Bacteroidia 2
+f__Veillonellaceae 24
+g__Megasphaera 31
+g__Veillonella_A 9
