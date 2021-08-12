@@ -888,3 +888,5 @@ p__Actinobacteriota 6
 p__Bacteroidota 9
 p__Firmicutes_A 12
 p__Proteobacteria 18
+c__Alphaproteobacteria 11
+o__RF32 6
