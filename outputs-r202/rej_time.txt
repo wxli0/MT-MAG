@@ -591,3 +591,5 @@ g__RUG440 22
 g__UBA1367 38
 g__Olsenella 68
 c__Planctomycetes 142
+p__Bacteroidota 9
+p__Bacteroidota 6
