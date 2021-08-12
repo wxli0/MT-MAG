@@ -509,3 +509,4 @@ root 15
 root 14
 d__Archaea 344
 d__Bacteria 76
+p__Methanobacteriota 52
