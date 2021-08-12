@@ -560,3 +560,6 @@ p__Spirochaetota 606
 o__Methanomassiliicoccales 35
 c__Kiritimatiellae 256
 o__RFP12 24
+f__UBA1067 35
+p__Firmicutes_A 347
+g__RUG572 37
