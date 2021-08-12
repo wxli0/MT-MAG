@@ -584,3 +584,7 @@ f__UMGS124 10
 g__Methanomethylophilus 21
 f__Atopobiaceae 128
 g__CAIFEU01 5
+g__RUG721 8
+g__UBA7741 5
+g__Olegusella 13
+g__RUG440 22
