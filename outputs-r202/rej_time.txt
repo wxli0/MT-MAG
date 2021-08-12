@@ -539,3 +539,8 @@ g__UBA1444 15
 f__Acidaminococcaceae 19
 o__Selenomonadales 17
 o__Veillonellales 36
+g__Succiniclasticum 31
+g__Acidaminococcus 58
+f__Megasphaeraceae 16
+f__Dialisteraceae 11
+p__Thermoplasmatota 486
