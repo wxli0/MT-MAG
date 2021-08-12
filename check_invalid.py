@@ -1,5 +1,10 @@
+"""
+Checks incomplete entries in HGR/MLDSP-prediction-full-path.csv.
+
+No command line arguments are required. 
+"""
+
 import os
-import sys
 import pandas as pd
 
 

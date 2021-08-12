@@ -5,7 +5,10 @@ import subprocess
 import time
 
 """
-check single child taxons and execute single child MT-MAG classifications
+Checks single child taxons in and execute single child MT-MAG classifications \
+    in HGR/MLDSP-prediction-full-path.csv.
+
+No command line arguments are required.
 """
 
 path1 = "./outputs-r202/MLDSP-prediction-full-path.csv"

@@ -1,8 +1,3 @@
-import numpy as np
-import os
-import pandas as pd
-import sys
-
 """
 Add MT-MAG classification time into corresponding time file
 
@@ -12,6 +7,13 @@ Add MT-MAG classification time into corresponding time file
 :Example: python3 group_time.py outputs-r202
 :Example python3 group_time.py outputs-HGR-r202
 """
+
+import numpy as np
+import os
+import pandas as pd
+import sys
+
+
 dir_cat = sys.argv[1]
 # df = pd.DataFrame(columns = ['taxon', 'train_time', 'test_time', 'rej_time', 'post_time'])
 # df = pd.DataFrame(columns = ['taxon', 'test_time'])

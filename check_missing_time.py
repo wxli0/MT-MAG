@@ -1,12 +1,14 @@
+"""
+Checks missing predictions in HGR/MLDSP-prediction-full-path.csv.
+
+No command line arguments are required.
+"""
+
 import pandas as pd
 import os
-import sys
 import platform
 import subprocess
 
-"""
-check missing predictions in HGR/MLDSP-prediction-full-path.csv
-"""
 
 def check_missing(path, time_cat):
     """

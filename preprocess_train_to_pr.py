@@ -1,14 +1,15 @@
-import pandas as pd 
-import sys
-import openpyxl
-import os 
-
 """
 Preprocess training result file. Combine sheets across different folds into one. \
     Replace prediction numbers by taxon names.
 :param sys.argv[1]: file. File path of the training result file.
 :type sys.argv[1]: str.
 """
+
+import pandas as pd 
+import sys
+import openpyxl
+import os 
+
 
 file = sys.argv[1]
 

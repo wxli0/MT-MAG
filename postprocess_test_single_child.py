@@ -1,14 +1,15 @@
-import openpyxl
-import os
-import pandas as pd 
-import sys
-
 """
 Add 'rejection-f' column of the single child taxa to \
     the classification result file
 :param sys.argv[1]: file. The file path of the classification result file.
 :type sys.argv[1]: str
 """
+
+import openpyxl
+import os
+import pandas as pd 
+import sys
+
 
 file = sys.argv[1]
 

@@ -1,9 +1,3 @@
-import json
-import openpyxl
-import os
-import pandas as pd 
-import sys
-
 """ 
 Add "rejection-f" column to the sheet (:param sheet_name) in a file \
     (:param file_name). The "rejection-f" represents the final decision baesd \
@@ -19,6 +13,12 @@ Add "rejection-f" column to the sheet (:param sheet_name) in a file \
         keys being the child class names, and values being the rejection \
             thresholds for the child classes.
 """
+
+import json
+import openpyxl
+import pandas as pd 
+import sys
+
 
 file_path = sys.argv[1]
 sheet = sys.argv[2]

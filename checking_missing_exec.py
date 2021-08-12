@@ -1,12 +1,15 @@
+"""
+Check missing predictions in the classification result files (GTDB and HGR)
+
+No command line arguments are required
+"""
+
 import os
 import pandas as pd 
 import platform
 import subprocess
 import sys
 
-"""
-Check missing predictions in the classification result file
-"""
 
 def check_missing(path, ranks):
     """

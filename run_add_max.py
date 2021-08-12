@@ -1,6 +1,14 @@
+"""
+Wrapper script to call run_max.py for all sheet in a file
+
+Command line arguments:
+:param sys.argv[1]: file_name. Excel file path
+:type sys.argv[1]: str
+"""
+
 import os
-import sys
 import pandas as pd
+import sys
 
 file_name = sys.argv[1]
 xls = pd.ExcelFile(file_name)

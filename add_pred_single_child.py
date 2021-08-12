@@ -1,12 +1,3 @@
-
-from filelock import FileLock
-import math
-import openpyxl
-import pandas as pd
-import sys
-import time
-
-
 """ 
 Add MT-MAG classification result store in a file (:param file_path) of a specific task \
     type (:param type) into the classification result file. The classification \
@@ -20,6 +11,11 @@ Add MT-MAG classification result store in a file (:param file_path) of a specifi
         "HGR" represents Task 2
     :type type: str
 """
+
+from filelock import FileLock
+import pandas as pd
+import sys
+
 
 print("waiting to acqure add_pred lock")
 with FileLock("lock/add_pred.lock"):

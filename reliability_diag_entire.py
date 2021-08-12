@@ -1,11 +1,3 @@
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import numpy as np 
-import pandas as pd
-import os
-import sys
-
 """
 Send MT-MAG result file to R reliabilitydiag 
 :param sys.argv[1]: File path of the result file
@@ -13,6 +5,14 @@ Send MT-MAG result file to R reliabilitydiag
 
 :Example python3 reliability_diag_entire.py outputs-r202/o__UBA1407_train.xlsx
 """
+
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+import sys
+
 
 def write_to_file(vec, file_name):
     print("file_name is:", file_name)

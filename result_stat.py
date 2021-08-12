@@ -1,4 +1,11 @@
-import os
+"""
+Calculates the precision, recall, incorrect rate, partial recall, \
+    rejection rate at different levels for MT-MAG classificaton result \
+        in HGR/MLDSP-prediction-full-path.csv.
+
+No command line arguments are required.
+"""
+
 import pandas as pd
 
 

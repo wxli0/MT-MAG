@@ -1,11 +1,20 @@
+"""
+Wrapper script to call add_rejection_f.py for all sheet in a file
 
-import sys
-import numpy as np 
-import pandas as pd
-import matplotlib.pyplot as plt
+Command line arguments:
+:param sys.argv[1]: file_name. Excel file path
+:type sys.argv[1]: str
+:param sys.argv[2]: thresholds. A json file containing A dictionary of \
+    (class, stopping threshold) pairs for taxons in file_name
+:type sys.argv[2]: str
+
+Example: python3 run_rejection_f.py outputs/fft-p__Bacteroidota.xlsx rejection_threshold/p__Bacteroidota.json
+"""
+
 import os
+import pandas as pd
+import sys
 
-# e.g. python3 run_rejection_f.py outputs/fft-p__Bacteroidota.xlsx rejection_threshold/p__Bacteroidota.json 
 file_name = sys.argv[1]
 thresholds = sys.argv[2]
 

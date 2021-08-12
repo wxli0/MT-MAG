@@ -1,10 +1,3 @@
-from math import exp
-import numpy as np
-import openpyxl
-import os
-import pandas as pd 
-import sys
-
 """ 
 Add 'max' column to a sheet in a file to represent the maximum posterior \
     likelihhods for all classes per classification
@@ -16,6 +9,13 @@ Add 'max' column to a sheet in a file to represent the maximum posterior \
     :type argv[2]: str
     :Example: python3 add_max.py outputs-r202/g__Prevotella.xlsx g__Prevotella-t-p
 """
+
+from math import exp
+import numpy as np
+import openpyxl
+import pandas as pd 
+import sys
+
 
 file_path = sys.argv[1]
 sheet = sys.argv[2]

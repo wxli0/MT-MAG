@@ -1,8 +1,3 @@
-import pandas as pd 
-import openpyxl
-import os 
-import sys
-
 """
 Preprocess test result file. Rename quadratic-svm-score sheet in the test \
     result file. Replace prediction numbesr by taxon names. Add 'max', and \
@@ -12,6 +7,12 @@ Preprocess test result file. Rename quadratic-svm-score sheet in the test \
 :param sys.argv[2]: path of the rejection file for the test result file
 :type sys.argv[2]: str
 """
+
+import pandas as pd 
+import openpyxl
+import os 
+import sys
+
 
 file = sys.argv[1]
 rej_file = sys.argv[2]

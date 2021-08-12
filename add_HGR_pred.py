@@ -1,10 +1,3 @@
-from filelock import FileLock
-import math
-import pandas as pd
-import openpyxl
-import sys
-
-
 """ 
 Add MT-MAG classification of Task 2 (training dataset: HGR) into \
     the classification result file
@@ -14,6 +7,11 @@ Add MT-MAG classification of Task 2 (training dataset: HGR) into \
         is stored in 
     :type file_path: str
 """
+
+from filelock import FileLock
+import pandas as pd
+import sys
+
 
 print("waiting to acqure add_HGR_pred lock")
 with FileLock("lock/add_HGR_pred.lock"):

@@ -1,8 +1,3 @@
-import math
-import openpyxl
-import pandas as pd
-import sys
-
 """ 
 Add GTDB-Tk classification of Task 2 (training dataset: HGR) into \
     the classification result file
@@ -11,6 +6,9 @@ Add GTDB-Tk classification of Task 2 (training dataset: HGR) into \
     :param MLDSP_pred_path: file_path, file path of the classification file
     :type argv[1]: str
 """
+
+import pandas as pd
+
 
 MLDSP_pred_path = "outputs_HGR/HGR-prediction-full-path.csv"
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
