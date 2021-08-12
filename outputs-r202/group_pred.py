@@ -26,7 +26,7 @@ for index, row in  MLDSP_df.iterrows():
     if not str(label) == 'nan':
         if not os.path.isdir(base_path+"rumen_mags/"+label):
             os.mkdir(base_path+"rumen_mags/"+label)
-            print("creating", base_path+"rumen_mags/"+label)
+            print("created", base_path+"rumen_mags/"+label)
         copyfile(base_path+"rumen_mags/root/"+index+"sta", base_path+"rumen_mags/"+label+"/"+index+"sta")
         
 

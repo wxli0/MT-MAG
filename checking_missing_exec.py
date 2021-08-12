@@ -63,29 +63,29 @@ mrs2 = check_missing(path2, ranks2)
 data_dir2 = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
 suffix2 = "_split_pruned"
 print("HGR missing ranks are:", mrs2)
-# if exec:
-#     for k in mrs2:
-#         classes = mrs2[k]
-#         if len(classes) != 0:
-#             for c in classes:
-#                 if c == 'root':
-#                     continue
-#                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
-#                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
-#                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-#                     if len(os.listdir(data_dir2+c+suffix2)) > 1: # not single child taxon
-#                         os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
-#                         print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
-#                     else:
-#                         os.system(\
-#                             "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
-#                                 "HGR"+" "+c+"\"")
-#                         print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
-#                                 "HGR"+" "+c+"\"")
-#                 elif proc_all.count('\\n') > 40:
-#                     print('too many processes running')
-#                 else:
-#                     print(c, "in HGR running process")
+if exec:
+    for k in mrs2:
+        classes = mrs2[k]
+        if len(classes) != 0:
+            for c in classes:
+                if c == 'root':
+                    continue
+                running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
+                proc_all =  str(subprocess.check_output("screen -ls", shell=True))
+                if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
+                    if len(os.listdir(data_dir2+c+suffix2)) > 1: # not single child taxon
+                        os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
+                        print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
+                    else:
+                        os.system(\
+                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                                "HGR"+" "+c+"\"")
+                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                                "HGR"+" "+c+"\"")
+                elif proc_all.count('\\n') > 40:
+                    print('too many processes running')
+                else:
+                    print(c, "in HGR running process")
 
 print("GTDB missing ranks are:", mrs1)
 if exec:
