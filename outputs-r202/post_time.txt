@@ -526,3 +526,5 @@ g__Methanobrevibacter_B 5
 f__Fibrobacteraceae 7
 f__Baltobacteraceae 7
 g__Lustribacter 5
+p__Campylobacterota 7
+g__Methanobrevibacter_A 6
