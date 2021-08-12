@@ -596,3 +596,5 @@ p__Bacteroidota 4
 p__Bacteroidota 8
 p__Bacteroidota 5
 p__Bacteroidota 7
+p__Bacteroidota 8
+p__Verrucomicrobiota 3
