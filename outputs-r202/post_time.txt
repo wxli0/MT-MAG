@@ -595,3 +595,4 @@ p__Bacteroidota 6
 p__Bacteroidota 4
 p__Bacteroidota 8
 p__Bacteroidota 5
+p__Bacteroidota 7
