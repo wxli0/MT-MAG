@@ -544,3 +544,8 @@ g__Acidaminococcus 58
 f__Megasphaeraceae 16
 f__Dialisteraceae 11
 p__Thermoplasmatota 486
+g__Caecibacter 9
+o__Desulfovibrionales 147
+f__Selenomonadaceae 188
+p__Verrucomicrobiota 28
+g__Dialister 196
