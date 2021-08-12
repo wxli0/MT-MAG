@@ -576,3 +576,4 @@ o__UBA10030 34
 g__Campylobacter 48
 c__Spirochaetia 1111
 p__Bacteroidota 11
+o__Treponematales 109
