@@ -617,3 +617,4 @@ c__Actinomycetia 1079
 o__Lachnospirales 263
 o__Peptostreptococcales 320
 c__Bacilli 3206
+p__Verrucomicrobiota 14
