@@ -551,3 +551,5 @@ p__Verrucomicrobiota 28
 g__Dialister 196
 g__UBA2897 10
 g__Selenomonas_C 23
+c__Lentisphaeria 7
+o__UBA1407 39
