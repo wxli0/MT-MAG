@@ -559,3 +559,4 @@ c__Thermoplasmata 286
 p__Spirochaetota 606
 o__Methanomassiliicoccales 35
 c__Kiritimatiellae 256
+o__RFP12 24
