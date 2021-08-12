@@ -573,3 +573,5 @@ p__Verrucomicrobiota 39
 o__Campylobacterales 2065
 f__Campylobacteraceae 12
 o__UBA10030 34
+g__Campylobacter 48
+c__Spirochaetia 1111
