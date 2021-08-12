@@ -63,8 +63,8 @@ with FileLock("lock/add_pred.lock"):
         if str(prev_pred) in row['rejection-f'] or str(prev_pred) == 'nan':
             pred_df.at[short_index, taxon] = row['rejection-f'] # 'prediction' for complete.csv
         elif str(prev_pred) != 'nan':
-            with FileLock("conflict.lock"):
-                with open('conflict.txt', 'a') as file:
+            with FileLock("lock/conflict.lock"):
+                with open('lock/conflict.txt', 'a') as file:
                     file.write("file_path is: "+file_path+" short_index is: "+short_index+ \
                         " previous pred: "+prev_pred+" new pred: "+row['rejection-f']+"\n")
             
