@@ -917,3 +917,11 @@ f__Coriobacteriaceae 33
 g__Mesosutterella 6
 g__Senegalimassilia 11
 g__Sutterella 13
+g__Slackia_A 20
+g__Parasutterella 17
+g__CAG-521 26
+g__Duodenibacillus 44
+g__UMGS1590 12
+g__Olsenella 10
+g__Succinivibrio 19
+f__Acidaminococcaceae 40
