@@ -563,3 +563,4 @@ o__RFP12 24
 f__UBA1067 35
 p__Firmicutes_A 347
 g__RUG572 37
+g__UBA1067 337
