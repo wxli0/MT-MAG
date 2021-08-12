@@ -890,3 +890,4 @@ p__Firmicutes_A 12
 p__Proteobacteria 18
 c__Alphaproteobacteria 11
 o__RF32 6
+c__Bacteroidia 1
