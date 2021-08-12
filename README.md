@@ -1,3 +1,17 @@
-# files and use case
-add_HGR_true.py: add GTDB-Tk classification of Task 1 (training dataset: GTDB) into classification result file
-add_GTDB_true.py: add GTDB-Tk classification of Task 2 (training dataset: HGR) into classification result file
+---
+output:
+  pdf_document: default
+---
+# MT-MAG commands to run Task 1 and Task 2
+
+To run Task 1 and Task 2 for the entire taxonomies
+
+- bash exec_entire_process.sh
+
+To run Task 1 for a taxon t 
+
+- bash phase.sh t
+
+To run Task 2 for a taxon t
+
+- bash phase_HGR.sh t
