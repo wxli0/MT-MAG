@@ -590,3 +590,4 @@ g__Olegusella 13
 g__RUG440 22
 g__UBA1367 38
 g__Olsenella 68
+c__Planctomycetes 142
