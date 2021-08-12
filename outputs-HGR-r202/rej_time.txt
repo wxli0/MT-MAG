@@ -898,3 +898,7 @@ f__CAG-239 27
 c__Gammaproteobacteria 129
 f__Atopobiaceae 93
 c__Bacteroidia 7
+f__Coriobacteriaceae 35
+g__Olsenella_B 12
+f__Peptococcaceae 10
+g__UBA1436 16
