@@ -512,3 +512,7 @@ d__Bacteria 13
 p__Methanobacteriota 4
 p__Eremiobacterota 3
 p__Fibrobacterota 3
+f__Ozemobacteraceae 4
+c__Eremiobacteria 4
+o__Chitinivibrionales 4
+c__Fibrobacteria 4
