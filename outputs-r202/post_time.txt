@@ -567,3 +567,4 @@ g__UBA1067 8
 c__Coriobacteriia 5
 p__Firmicutes 12
 p__Bacteroidota 2
+p__Planctomycetota 2
