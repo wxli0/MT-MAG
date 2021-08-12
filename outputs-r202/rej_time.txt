@@ -556,3 +556,4 @@ o__UBA1407 39
 f__Desulfovibrionaceae 505
 f__UBA1407 29
 c__Thermoplasmata 286
+p__Spirochaetota 606
