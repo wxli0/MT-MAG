@@ -1,7 +1,7 @@
 #!/bin/sh
 i=0  
-while true 
 pre_proc_num=0
+while true
 do  
     echo "iteration ${i}"
     cur_proc_num=`echo $(screen -ls)|grep -Po "[[:digit:]]+ *(?=Socket)"`
