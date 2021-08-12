@@ -530,3 +530,4 @@ p__Campylobacterota 7
 g__Methanobrevibacter_A 6
 g__Methanobrevibacter 6
 g__Fibrobacter 11
+p__Actinobacteriota 1
