@@ -529,3 +529,4 @@ g__Lustribacter 5
 p__Campylobacterota 7
 g__Methanobrevibacter_A 6
 g__Methanobrevibacter 6
+g__Fibrobacter 11
