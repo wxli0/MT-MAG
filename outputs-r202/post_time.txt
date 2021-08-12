@@ -557,3 +557,5 @@ f__Desulfovibrionaceae 7
 f__UBA1407 8
 c__Thermoplasmata 7
 p__Spirochaetota 7
+o__Methanomassiliicoccales 7
+c__Kiritimatiellae 6
