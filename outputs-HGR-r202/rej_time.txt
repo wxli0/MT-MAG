@@ -893,3 +893,6 @@ o__RF32 13
 c__Bacteroidia 6
 o__Coriobacteriales 105
 f__Elusimicrobiaceae 26
+o__Fusobacteriales 18
+f__CAG-239 27
+c__Gammaproteobacteria 129
