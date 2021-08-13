@@ -987,3 +987,8 @@ f__Anaerovoracaceae 13
 f__Borkfalkiaceae 13
 g__Clostridium_J 16
 c__Bacteroidia 9
+g__QALS01 10
+o__Lachnospirales 4
+g__CAG-145 10
+g__UBA1191 8
+f__Anaerotignaceae 9

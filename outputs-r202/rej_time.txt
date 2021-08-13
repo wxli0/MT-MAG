@@ -631,3 +631,5 @@ p__Bacteroidota 16
 g__RUG159 11
 c__Lentisphaeria 14
 p__Bacteroidota 17
+c__Lentisphaeria 11
+p__Bacteroidota 13
