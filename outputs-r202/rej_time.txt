@@ -733,3 +733,5 @@ g__CAG-180 62
 g__RUG592 201
 c__Lentisphaeria 8
 p__Bacteroidota 9
+c__Lentisphaeria 8
+p__Bacteroidota 9
