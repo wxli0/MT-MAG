@@ -633,3 +633,5 @@ c__Lentisphaeria 14
 p__Bacteroidota 17
 c__Lentisphaeria 11
 p__Bacteroidota 13
+c__Lentisphaeria 16
+p__Bacteroidota 20

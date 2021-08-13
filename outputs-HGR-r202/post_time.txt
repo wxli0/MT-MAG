@@ -992,3 +992,5 @@ o__Lachnospirales 4
 g__CAG-145 10
 g__UBA1191 8
 f__Anaerotignaceae 9
+g__Anaerotignum 13
+o__Lachnospirales 6
