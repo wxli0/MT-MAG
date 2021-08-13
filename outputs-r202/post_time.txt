@@ -650,3 +650,7 @@ g__Sharpea 8
 c__Lentisphaeria 8
 p__Bacteroidota 14
 g__UBA3207 10
+g__UBA2450 8
+c__Lentisphaeria 14
+p__Bacteroidota 16
+g__UBA4951 6

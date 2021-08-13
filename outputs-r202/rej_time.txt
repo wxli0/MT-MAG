@@ -651,3 +651,6 @@ c__Lentisphaeria 13
 p__Bacteroidota 15
 g__UBA3207 54
 g__UBA2450 79
+c__Lentisphaeria 23
+p__Bacteroidota 27
+g__UBA4951 138
