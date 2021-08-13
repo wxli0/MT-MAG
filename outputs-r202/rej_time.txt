@@ -712,3 +712,5 @@ g__CAG-390 18
 p__Bacteroidota 14
 c__Lentisphaeria 13
 f__UBA660 8097
+c__Lentisphaeria 9
+p__Bacteroidota 14
