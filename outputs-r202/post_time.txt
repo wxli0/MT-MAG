@@ -717,3 +717,6 @@ p__Bacteroidota 19
 c__Lentisphaeria 4
 p__Bacteroidota 6
 o__Lactobacillales 8
+c__Lentisphaeria 7
+p__Bacteroidota 11
+f__Streptococcaceae 7
