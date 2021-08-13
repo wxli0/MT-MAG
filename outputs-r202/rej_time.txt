@@ -647,3 +647,7 @@ c__Lentisphaeria 28
 p__Bacteroidota 24
 g__Intestinibaculum 12
 g__Sharpea 10
+c__Lentisphaeria 13
+p__Bacteroidota 15
+g__UBA3207 54
+g__UBA2450 79
