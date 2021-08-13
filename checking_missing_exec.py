@@ -73,6 +73,9 @@ if exec:
                 running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
+                    if not os.path.exists(data_dir2+c+suffix2):
+                        os.system("python3 ~/DeepMicrobes/scripts/split_fasta_5000.py "+data_dir2+c)
+                        print("created", data_dir2+c+suffix2)
                     if len(os.listdir(data_dir2+c+suffix2)) > 1: # not single child taxon
                         os.system('screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
                         print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
