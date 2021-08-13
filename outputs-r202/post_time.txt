@@ -705,3 +705,7 @@ p__Bacteroidota 9
 o__Oscillospirales 1
 c__Lentisphaeria 8
 p__Bacteroidota 9
+c__Lentisphaeria 5
+p__Bacteroidota 7
+g__Stoquefichus 5
+g__CAG-390 4
