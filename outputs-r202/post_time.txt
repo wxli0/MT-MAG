@@ -619,3 +619,5 @@ o__Peptostreptococcales 8
 c__Bacilli 5
 p__Verrucomicrobiota 3
 o__Oscillospirales 0
+c__Lentisphaeria 20
+p__Bacteroidota 29

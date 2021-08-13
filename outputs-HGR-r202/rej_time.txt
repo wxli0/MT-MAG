@@ -967,3 +967,8 @@ o__Monoglobales 13
 f__CAG-314 26
 o__TANB77 36
 f__Peptoniphilaceae 95
+g__CAG-314 10
+g__Fenollaria 10
+f__UBA1255 12
+f__Butyricicoccaceae 71
+g__Peptoniphilus_A 34
