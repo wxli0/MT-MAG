@@ -972,3 +972,11 @@ g__Fenollaria 10
 f__UBA1255 12
 f__Butyricicoccaceae 71
 g__Peptoniphilus_A 34
+f__CAG-138 173
+g__Anaerococcus 46
+f__Monoglobaceae 31
+f__CAG-917 40
+g__CAG-349 15
+g__UBA1685 18
+g__Phil1 14
+g__Monoglobus 16

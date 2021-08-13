@@ -621,3 +621,6 @@ p__Verrucomicrobiota 14
 o__Oscillospirales 121
 c__Lentisphaeria 16
 p__Bacteroidota 21
+c__Lentisphaeria 17
+p__Bacteroidota 19
+o__ML615J-28 20
