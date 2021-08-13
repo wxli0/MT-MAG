@@ -709,3 +709,6 @@ c__Lentisphaeria 5
 p__Bacteroidota 7
 g__Stoquefichus 5
 g__CAG-390 4
+c__Lentisphaeria 9
+p__Bacteroidota 12
+f__UBA660 5
