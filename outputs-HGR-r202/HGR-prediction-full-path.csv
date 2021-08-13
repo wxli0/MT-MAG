@@ -513,7 +513,7 @@ even_MAG-GUT1930,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Eubacteriace
 even_MAG-GUT19307,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Megasphaeraceae,g__Megasphaera,s__Megasphaera sp000417505,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Megasphaeraceae,g__Megasphaera,s__Megasphaera sp000417505
 even_MAG-GUT19408,,p__Proteobacteria,c__Gammaproteobacteria,o__Burkholderiales,f__Burkholderiaceae,g__Mesosutterella,s__Mesosutterella multiformis,,,p__Proteobacteria,c__Gammaproteobacteria,o__Burkholderiales,f__Burkholderiaceae,g__Mesosutterella,s__Mesosutterella multiformis
 even_MAG-GUT19423,,p__Bacteroidota,c__Bacteroidia,,,,,,,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Barnesiellaceae,g__Barnesiella,s__Barnesiella intestinihominis
-even_MAG-GUT19428,,p__Firmicutes,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelotrichaceae,g__Amedibacterium,s__Amedibacterium intestinale
+even_MAG-GUT19428,,p__Firmicutes,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelotrichaceae,g__Amedibacterium,s__Amedibacterium intestinale
 even_MAG-GUT19429,,p__Firmicutes_C,c__Clostridia,o__Lachnospirales(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Megasphaeraceae,g__Megasphaera,s__Megasphaera sp000417505
 even_MAG-GUT19459,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales(reject),,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900314705
 even_MAG-GUT1946,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
@@ -825,8 +825,8 @@ even_MAG-GUT28964,,p__Proteobacteria,c__Alphaproteobacteria,o__Monoglobales_A,f_
 even_MAG-GUT28976,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__51-20,s__51-20 sp001917175,,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__51-20,s__51-20 sp001917175
 even_MAG-GUT28983,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Lachnospira,s__Lachnospira rogosae_A
 even_MAG-GUT29001,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__51-20,s__51-20 sp001917175,,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__51-20,s__51-20 sp001917175
-even_MAG-GUT29051,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__UMGS692,s__UMGS692 sp900544545
-even_MAG-GUT29076,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__UMGS692,s__UMGS692 sp900544545
+even_MAG-GUT29051,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__UMGS692,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__UMGS692,s__UMGS692 sp900544545
+even_MAG-GUT29076,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__UMGS692,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__UMGS692,s__UMGS692 sp900544545
 even_MAG-GUT29111,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales(reject),,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
 even_MAG-GUT29134,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
 even_MAG-GUT2914,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
@@ -1277,7 +1277,7 @@ even_MAG-GUT42455,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__CAG-272,,
 even_MAG-GUT42468,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Lachnospira,s__Lachnospira rogosae_A
 even_MAG-GUT4247,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales(reject),,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-180,s__CAG-180 sp000432435
 even_MAG-GUT42485,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-138,,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-138,g__Phil1,s__Phil1 sp001940855
-even_MAG-GUT42494,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__CAG-314,s__CAG-314 sp000437915
+even_MAG-GUT42494,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__CAG-314,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-314,g__CAG-314,s__CAG-314 sp000437915
 even_MAG-GUT425,,p__Bacteroidota(reject),,,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Actinomycetales,f__Bifidobacteriaceae,g__Bifidobacterium,s__Bifidobacterium breve
 even_MAG-GUT42537,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Eubacterium_F,s__Eubacterium_F sp003491505
 even_MAG-GUT42578,,p__Firmicutes,c__Clostridia,o__Clostridiales,f__Clostridiaceae,,,,,p__Firmicutes,c__Bacilli,o__RF39,f__UBA660,g__CAG-605,s__CAG-605 sp900545005
@@ -1507,7 +1507,7 @@ even_MAG-GUT46923,,p__Campylobacterota(reject),,,,,,,,p__Campylobacterota,c__Cam
 even_MAG-GUT46931,,p__Firmicutes_C,c__Clostridia,o__Monoglobales_A(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT46962,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
 even_MAG-GUT46965,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Clostridium_Q,s__Clostridium_Q sp000435655
-even_MAG-GUT46987,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT46987,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT470,,p__Actinobacteriota(reject),c__Clostridia(reject),,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Actinomycetales,f__Bifidobacteriaceae,g__Bifidobacterium,s__Bifidobacterium breve
 even_MAG-GUT47063,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Streptococcaceae,g__Streptococcus,s__Streptococcus parasanguinis_B
 even_MAG-GUT47072,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
@@ -1617,7 +1617,7 @@ even_MAG-GUT49004,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__La
 even_MAG-GUT49005,,p__Firmicutes,c__Clostridia,o__Clostridiales,f__Clostridiaceae,,,,,p__Firmicutes,c__Bacilli,o__Staphylococcales,f__Staphylococcaceae,g__Staphylococcus,s__Staphylococcus epidermidis
 even_MAG-GUT49009,,p__Actinobacteriota(reject),c__Clostridia(reject),,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Propionibacteriales,f__Propionibacteriaceae,g__Cutibacterium,s__Cutibacterium avidum
 even_MAG-GUT49010,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
-even_MAG-GUT49011,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT49011,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT49015,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
 even_MAG-GUT4902,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,,,,,p__Synergistota,c__Synergistia,o__Synergistales,f__Synergistaceae,g__Cloacibacillus,s__Cloacibacillus evryensis
 even_MAG-GUT49023,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
@@ -1662,7 +1662,7 @@ even_MAG-GUT49356,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__La
 even_MAG-GUT49359,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
 even_MAG-GUT49371,,p__Firmicutes_C,c__Clostridia,o__Lachnospirales(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT49379,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
-even_MAG-GUT49384,,p__Firmicutes,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Streptococcaceae,g__Streptococcus,s__Streptococcus agalactiae
+even_MAG-GUT49384,,p__Firmicutes,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Streptococcaceae,g__Streptococcus,s__Streptococcus agalactiae
 even_MAG-GUT49393,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
 even_MAG-GUT49394,,p__Actinobacteriota(reject),c__Clostridia(reject),,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Propionibacteriales,f__Propionibacteriaceae,g__Cutibacterium,s__Cutibacterium avidum
 even_MAG-GUT49399,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
@@ -2296,7 +2296,7 @@ even_MAG-GUT68023,,p__Actinobacteriota(reject),c__Coriobacteriia(reject),,,,,,,p
 even_MAG-GUT68043,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus,s__Enterococcus faecalis
 even_MAG-GUT6806,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Faecalibacterium,s__Faecalibacterium sp900539885
 even_MAG-GUT68072,,p__Bacteroidota,c__Bacteroidia,,,,,,,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Barnesiellaceae,g__Barnesiella,s__Barnesiella intestinihominis
-even_MAG-GUT68086,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT68086,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT68091,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__CAG-495,s__CAG-495 sp000432275,,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__CAG-495,s__CAG-495 sp000432275
 even_MAG-GUT68111,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
 even_MAG-GUT68145,,p__Actinobacteriota(reject),,,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Actinomycetales,f__Bifidobacteriaceae,g__Bifidobacterium,s__Bifidobacterium bifidum
@@ -2310,7 +2310,7 @@ even_MAG-GUT68216,,p__Firmicutes_C,c__Clostridia,o__Tissierellales(reject),,,,,,
 even_MAG-GUT68234,,p__Proteobacteria(reject),,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Lacticaseibacillus,s__Lacticaseibacillus rhamnosus
 even_MAG-GUT68241,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales(reject),,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
 even_MAG-GUT68245,,p__Actinobacteriota(reject),c__Clostridia(reject),,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Propionibacteriales,f__Propionibacteriaceae,g__Propionibacterium,s__Propionibacterium freudenreichii
-even_MAG-GUT68260,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT68260,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT68269,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Lachnospira,s__Lachnospira rogosae_A
 even_MAG-GUT68301,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__CAG-882,s__CAG-882 sp003486385
 even_MAG-GUT68308,,p__Proteobacteria,c__Alphaproteobacteria,o__Monoglobales_A,f__UBA9506,g__CAG-495,s__CAG-495 sp001917125,,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__CAG-495,s__CAG-495 sp001917125
@@ -2343,7 +2343,7 @@ even_MAG-GUT68996,,p__Proteobacteria,c__Gammaproteobacteria,o__Burkholderiales,f
 even_MAG-GUT69048,,p__Actinobacteriota(reject),c__Actinomycetia(reject),,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Actinomycetales,f__Bifidobacteriaceae,g__Bifidobacterium,s__Bifidobacterium bifidum
 even_MAG-GUT69064,,p__Proteobacteria(reject),,,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Actinomycetales,f__Bifidobacteriaceae,g__Bifidobacterium,s__Bifidobacterium breve
 even_MAG-GUT69096,,p__Firmicutes_C,c__Clostridia,o__Tissierellales(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
-even_MAG-GUT69113,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT69113,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT69117,,p__Bacteroidota(reject),,,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Actinomycetales,f__Bifidobacteriaceae,g__Bifidobacterium,s__Bifidobacterium breve
 even_MAG-GUT69121,,p__Proteobacteria(reject),,,,,,,,p__Actinobacteriota,c__Actinomycetia,o__Actinomycetales,f__Bifidobacteriaceae,g__Bifidobacterium,s__Bifidobacterium breve
 even_MAG-GUT69123,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella atypica,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella atypica
@@ -2357,7 +2357,7 @@ even_MAG-GUT69253,,p__Bacteroidota(reject),c__Clostridia(reject),,,,,,,p__Actino
 even_MAG-GUT69285,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-217,s__CAG-217 sp000436335
 even_MAG-GUT6929,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae(reject),,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__CAG-115,s__CAG-115 sp003531585
 even_MAG-GUT69364,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Lachnospira,s__Lachnospira sp000437735
-even_MAG-GUT69367,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT69367,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT69378,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT69384,,p__Bacteroidota(reject),,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Lactobacillus,s__Lactobacillus paragasseri
 even_MAG-GUT69417,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella atypica,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
@@ -2568,7 +2568,7 @@ even_MAG-GUT77386,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutaliba
 even_MAG-GUT77389,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__CAG-495,s__CAG-495 sp000436375,,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__CAG-495,s__CAG-495 sp000436375
 even_MAG-GUT77408,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Lachnospira,s__Lachnospira rogosae_A
 even_MAG-GUT7746,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Eubacterium_R,s__Eubacterium_R sp000434995
-even_MAG-GUT77471,,p__Firmicutes,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes,c__Bacilli,o__RF39,f__UBA660,g__CAG-988,s__CAG-988 sp003149915
+even_MAG-GUT77471,,p__Firmicutes,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes,c__Bacilli,o__RF39,f__UBA660,g__CAG-988,s__CAG-988 sp003149915
 even_MAG-GUT7749,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales(reject),,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__Mediterraneibacter,s__Mediterraneibacter torques
 even_MAG-GUT7751,,p__Firmicutes,c__Clostridia,o__Clostridiales,f__Clostridiaceae,,,,,p__Firmicutes,c__Bacilli,o__RF39,f__UBA660,g__CAG-302,s__CAG-302 sp000431795
 even_MAG-GUT77514,,p__Proteobacteria,c__Alphaproteobacteria,o__Monoglobales_A(reject),f__CAG-239,g__51-20,s__51-20 sp001917175,,,p__Proteobacteria,c__Alphaproteobacteria,o__RF32,f__CAG-239,g__51-20,s__51-20 sp001917175
@@ -2899,7 +2899,7 @@ even_MAG-GUT86747,,p__Firmicutes,c__Clostridia,o__Clostridiales(reject),,,,,,p__
 even_MAG-GUT86758,,p__Firmicutes,c__Clostridia,o__Tissierellales(reject),,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Lactobacillus,s__Lactobacillus paragasseri
 even_MAG-GUT86853,,p__Firmicutes_C,c__Clostridia,o__Lachnospirales(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Megasphaeraceae,g__Megasphaera,s__Megasphaera sp000417505
 even_MAG-GUT86868,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__Borkfalkiaceae,,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__Borkfalkiaceae,g__QALS01,s__QALS01 sp003150575
-even_MAG-GUT8687,,p__Firmicutes_A,c__Clostridia,o__Monoglobales,,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-177,s__CAG-177 sp000431775
+even_MAG-GUT8687,,p__Firmicutes_A,c__Clostridia,o__Monoglobales,f__Monoglobaceae,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-177,s__CAG-177 sp000431775
 even_MAG-GUT86870,,p__Firmicutes_C,c__Negativicutes,o__Acidaminococcales,f__Acidaminococcaceae,g__Acidaminococcus,s__Acidaminococcus sp900538365,,,p__Firmicutes_C,c__Negativicutes,o__Acidaminococcales,f__Acidaminococcaceae,g__Acidaminococcus,s__Acidaminococcus intestini
 even_MAG-GUT86935,,p__Firmicutes_C,c__Clostridia,o__Lachnospirales(reject),,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Megasphaeraceae,g__Megasphaera,s__Megasphaera sp000417505
 even_MAG-GUT87091,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__Borkfalkiaceae,,,,,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__Borkfalkiaceae,g__QALS01,s__QALS01 sp003150575
@@ -3007,7 +3007,7 @@ even_MAG-GUT89668,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__La
 even_MAG-GUT89684,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Streptococcaceae,g__Streptococcus,s__Streptococcus lutetiensis
 even_MAG-GUT89695,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Streptococcaceae,g__Streptococcus,s__Streptococcus lutetiensis
 even_MAG-GUT89697,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Streptococcaceae,g__Streptococcus,s__Streptococcus lutetiensis
-even_MAG-GUT89717,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT89717,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT89719,,p__Spirochaetota(reject),c__Spirochaetia,o__Treponematales,f__Treponemataceae,g__Treponema_D,s__Treponema_D sp900541995(reject),,,p__Firmicutes_C,c__Negativicutes,o__Acidaminococcales,f__Acidaminococcaceae,g__Acidaminococcus,s__Acidaminococcus intestini
 even_MAG-GUT89720,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
 even_MAG-GUT89735,,p__Firmicutes,c__Clostridia,o__Clostridiales,f__Clostridiaceae,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Ligilactobacillus,s__Ligilactobacillus salivarius
@@ -3038,7 +3038,7 @@ even_MAG-GUT90077,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__La
 even_MAG-GUT90087,,p__Spirochaetota(reject),,,,,,,,p__Firmicutes_C,c__Negativicutes,o__Acidaminococcales,f__Acidaminococcaceae,g__Acidaminococcus,s__Acidaminococcus intestini
 even_MAG-GUT90090,,p__Firmicutes,c__Clostridia,o__Clostridiales(reject),,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Ligilactobacillus,s__Ligilactobacillus salivarius
 even_MAG-GUT90107,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
-even_MAG-GUT90108,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
+even_MAG-GUT90108,,p__Firmicutes_C,c__Clostridia,o__Eubacteriales,f__Garciellaceae,g__Garciella,,,,p__Firmicutes_C,c__Negativicutes,o__Veillonellales,f__Veillonellaceae,g__Veillonella,s__Veillonella parvula_A
 even_MAG-GUT90109,,p__Spirochaetota(reject),c__Spirochaetia,o__Treponematales,f__Treponemataceae,g__Treponema_D,s__Treponema_D sp900541995(reject),,,p__Firmicutes_C,c__Negativicutes,o__Acidaminococcales,f__Acidaminococcaceae,g__Acidaminococcus,s__Acidaminococcus intestini
 even_MAG-GUT90127,,p__Firmicutes,c__Bacilli,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Enterococcaceae,g__Enterococcus_B,s__Enterococcus_B faecium
 even_MAG-GUT90143,,p__Bacteroidota,c__Bacteroidia,,,,,,,p__Firmicutes,c__Bacilli,o__Lactobacillales,f__Lactobacillaceae,g__Ligilactobacillus,s__Ligilactobacillus animalis
