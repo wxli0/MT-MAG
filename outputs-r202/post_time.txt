@@ -624,3 +624,8 @@ p__Bacteroidota 29
 c__Lentisphaeria 23
 p__Bacteroidota 23
 o__ML615J-28 8
+f__UBA1390 7
+g__Saccharofermentans 5
+c__Lentisphaeria 10
+p__Bacteroidota 12
+g__RUG159 12

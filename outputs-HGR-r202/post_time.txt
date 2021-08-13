@@ -980,3 +980,8 @@ g__CAG-349 10
 g__UBA1685 12
 g__Phil1 11
 g__Monoglobus 9
+g__Corynebacterium 11
+g__Agathobaculum 7
+f__Clostridiaceae 8
+f__Anaerovoracaceae 13
+f__Borkfalkiaceae 13
