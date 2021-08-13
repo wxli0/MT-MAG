@@ -995,3 +995,5 @@ f__Anaerotignaceae 9
 g__Anaerotignum 13
 o__Lachnospirales 6
 f__Peptostreptococcaceae 16
+c__Bacteroidia 5
+g__Romboutsia 12

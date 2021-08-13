@@ -642,3 +642,8 @@ p__Bacteroidota 8
 c__Lentisphaeria 10
 p__Bacteroidota 10
 f__Erysipelatoclostridiaceae 20
+f__CAG-826 8
+c__Lentisphaeria 12
+p__Bacteroidota 23
+g__Intestinibaculum 8
+g__Sharpea 8
