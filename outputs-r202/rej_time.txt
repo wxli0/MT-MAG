@@ -635,3 +635,7 @@ c__Lentisphaeria 11
 p__Bacteroidota 13
 c__Lentisphaeria 16
 p__Bacteroidota 20
+o__Erysipelotrichales 44
+o__RFN20 120
+c__Lentisphaeria 13
+p__Bacteroidota 18
