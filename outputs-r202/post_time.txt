@@ -843,3 +843,8 @@ o__Oscillospirales 2
 f__UBA8401 2
 c__Lentisphaeria 4
 p__Bacteroidota 6
+c__Lentisphaeria 2
+p__Bacteroidota 4
+g__RUG131 2
+g__CAG-964 2
+g__RUG762 2
