@@ -818,3 +818,5 @@ p__Bacteroidota 3
 c__Lentisphaeria 4
 p__Bacteroidota 6
 o__Oscillospirales 1
+c__Lentisphaeria 2
+p__Bacteroidota 3
