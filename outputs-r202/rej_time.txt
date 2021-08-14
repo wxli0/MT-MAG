@@ -775,3 +775,12 @@ c__Lentisphaeria 3
 p__Bacteroidota 3
 p__Bacteroidota 3
 c__Lentisphaeria 3
+c__Lentisphaeria 5
+p__Bacteroidota 6
+g__RUG727 5
+g__RUG343 6
+g__RUG591 5
+g__UBA2730 5
+g__CAG-822 6
+g__CAG-1000 33
+g__UBA3789 52
