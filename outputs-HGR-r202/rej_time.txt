@@ -1110,3 +1110,4 @@ g__Clostridium 1524
 c__Bacteroidia 3
 f__Ruminococcaceae 3
 o__Lachnospirales 19
+f__Ruminococcaceae 3
