@@ -1125,3 +1125,6 @@ f__Ruminococcaceae 2
 f__Oscillospiraceae 2
 g__Clostridium 1327
 c__Bacteroidia 4
+c__Bacilli 2
+f__Ruminococcaceae 1
+f__Oscillospiraceae 2
