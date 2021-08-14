@@ -1059,3 +1059,5 @@ c__Bacteroidia 2
 o__Lachnospirales 15
 c__Bacteroidia 3
 o__Lachnospirales 7
+c__Bacteroidia 3
+o__Lachnospirales 6
