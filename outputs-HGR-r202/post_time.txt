@@ -1227,3 +1227,9 @@ c__Bacteroidia 5
 c__Bacilli 8
 f__Ruminococcaceae 11
 o__Lachnospirales 4
+f__Oscillospiraceae 4
+c__Bacteroidia 3
+c__Bacilli 6
+f__Ruminococcaceae 7
+o__Lachnospirales 3
+g__Clostridium 1
