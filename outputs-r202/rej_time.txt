@@ -784,3 +784,6 @@ g__UBA2730 5
 g__CAG-822 6
 g__CAG-1000 33
 g__UBA3789 52
+g__Lactococcus 59
+c__Lentisphaeria 4
+p__Bacteroidota 4
