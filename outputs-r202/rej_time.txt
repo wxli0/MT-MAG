@@ -751,3 +751,6 @@ g__UBA1213 3
 p__Bacteroidota 7
 c__Lentisphaeria 4
 p__Bacteroidota 4
+c__Lentisphaeria 3
+p__Bacteroidota 3
+g__UBA1213 847
