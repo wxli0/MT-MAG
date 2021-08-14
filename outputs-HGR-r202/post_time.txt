@@ -1167,3 +1167,6 @@ f__Oscillospiraceae 9
 c__Bacilli 14
 f__Ruminococcaceae 19
 c__Bacteroidia 2
+f__Oscillospiraceae 3
+c__Bacilli 5
+f__Ruminococcaceae 6
