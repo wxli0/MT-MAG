@@ -1179,3 +1179,7 @@ c__Bacilli 7
 f__Ruminococcaceae 9
 o__Lachnospirales 4
 g__Clostridium 1
+f__Oscillospiraceae 5
+c__Bacilli 8
+f__Ruminococcaceae 11
+o__Lachnospirales 5
