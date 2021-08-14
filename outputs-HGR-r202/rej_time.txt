@@ -1200,3 +1200,8 @@ f__Oscillospiraceae 1
 c__Bacteroidia 2
 o__Lachnospirales 6
 g__Clostridium 670
+c__Bacilli 2
+f__Ruminococcaceae 2
+f__Oscillospiraceae 2
+c__Bacteroidia 3
+o__Lachnospirales 11
