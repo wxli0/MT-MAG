@@ -1025,3 +1025,8 @@ g__Bifidobacterium 6
 g__Ruminococcus_E 6
 c__Lentisphaeria 6
 p__Bacteroidota 9
+o__Bacillales 5
+g__Ruminococcus_E 6
+g__Bifidobacterium 5
+c__Lentisphaeria 5
+p__Bacteroidota 5

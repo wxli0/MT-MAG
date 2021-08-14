@@ -1106,3 +1106,7 @@ f__Ruminococcaceae 2
 f__Ruminococcaceae 3
 o__Lachnospirales 16
 f__Ruminococcaceae 2
+g__Clostridium 1524
+c__Bacteroidia 3
+f__Ruminococcaceae 3
+o__Lachnospirales 19
