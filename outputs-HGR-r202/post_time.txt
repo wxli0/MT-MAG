@@ -1111,3 +1111,6 @@ c__Bacteroidia 1
 f__Ruminococcaceae 12
 o__Lachnospirales 1
 f__Ruminococcaceae 15
+c__Bacteroidia 1
+f__Ruminococcaceae 13
+g__Clostridium 1
