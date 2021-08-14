@@ -1071,3 +1071,5 @@ o__Lachnospirales 21
 c__Bacteroidia 5
 g__Clostridium 1736
 o__Lachnospirales 27
+c__Bacteroidia 6
+g__Clostridium 1683
