@@ -1117,3 +1117,6 @@ g__Clostridium 1594
 f__Ruminococcaceae 3
 f__Oscillospiraceae 3
 c__Bacilli 2
+c__Bacilli 2
+f__Ruminococcaceae 2
+f__Oscillospiraceae 2
