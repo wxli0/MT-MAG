@@ -787,3 +787,5 @@ g__UBA3789 4
 g__Lactococcus 3
 c__Lentisphaeria 2
 p__Bacteroidota 4
+c__Lentisphaeria 2
+p__Bacteroidota 3
