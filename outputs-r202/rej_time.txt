@@ -850,3 +850,6 @@ g__CAG-964 8
 g__RUG762 13
 c__Lentisphaeria 8
 p__Bacteroidota 10
+c__Lentisphaeria 14
+p__Bacteroidota 14
+g__Ruminococcus_E 1
