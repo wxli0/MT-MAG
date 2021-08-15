@@ -1714,3 +1714,4 @@ g__Faecalibacterium 4
 g__Gemmiger 6
 g__Ruminococcus 3
 c__Bacteroidia 2
+o__Lachnospirales 2
