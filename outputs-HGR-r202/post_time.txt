@@ -1706,3 +1706,9 @@ o__Lachnospirales 3
 c__Bacteroidia 1
 o__Lachnospirales 2
 f__Ruminococcaceae 12
+g__CAG-115 12
+g__Ruminiclostridium_E 3
+o__Lachnospirales 1
+g__Ruminococcus_D 4
+g__Faecalibacterium 4
+g__Gemmiger 6
