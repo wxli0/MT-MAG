@@ -718,7 +718,7 @@ RUG716.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacter
 RUG717.fa,d__Bacteria,p__Desulfobacterota(reject),c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__UBA932,g__RC9,s__RC9 sp900317925,,,,,,,,,,,,,,,,
 RUG718.fa,d__Bacteria,p__Spirochaetota(reject),,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900316555,,,,,,,,,,,,,,,,
 RUG719.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Paludibacteraceae,g__RF16,s__RF16 sp900317745,,,,,,,,,,,,,,,,
-RUG720.fa,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__UBA932,g__RC9,s__RC9 sp900321655,,,,,,,,,,,,,,,,
+RUG720.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__UBA932,g__RC9,s__RC9 sp900321655,,,,,,,,,,,,,,,,
 RUG721.fa,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__RUG721,s__RUG721 sp900321745,,,d__Bacteria,p__Actinobacteriota,c__Coriobacteriia,o__Coriobacteriales,f__Atopobiaceae,g__RUG721,s__RUG721 sp900321745,,,,,,,,,,,,,,,,
 RUG722.fa,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__UBA932,g__RC9,s__RC9 sp900321715,,,,,,,,,,,,,,,,
 RUG723.fa,d__Bacteria,p__Fibrobacterota(reject),,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Muribaculaceae,g__Sodaliphilus,s__Sodaliphilus pleomorphus,,,,,,,,,,,,,,,,
