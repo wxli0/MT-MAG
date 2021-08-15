@@ -1677,3 +1677,4 @@ c__Bacteroidia 3
 g__Clostridium 1
 f__Oscillospiraceae 2
 o__Lachnospirales 3
+c__Bacteroidia 2
