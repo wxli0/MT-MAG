@@ -1697,3 +1697,4 @@ c__Bacilli 5
 c__Bacilli 13
 c__Bacteroidia 5
 c__Bacilli 2
+c__Bacteroidia 6
