@@ -1714,3 +1714,4 @@ o__Lachnospirales 5
 g__Ruminococcus_D 7
 g__Faecalibacterium 40
 g__Gemmiger 77
+g__Ruminococcus 9

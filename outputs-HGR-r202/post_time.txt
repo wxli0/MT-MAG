@@ -1712,3 +1712,4 @@ o__Lachnospirales 1
 g__Ruminococcus_D 4
 g__Faecalibacterium 4
 g__Gemmiger 6
+g__Ruminococcus 3
