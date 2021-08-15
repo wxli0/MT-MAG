@@ -1691,3 +1691,5 @@ c__Bacteroidia 5
 o__Lachnospirales 13
 c__Bacteroidia 6
 c__Bacilli 1
+c__Bacilli 2
+g__Clostridium 1630
