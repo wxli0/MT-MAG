@@ -1692,3 +1692,6 @@ c__Bacteroidia 2
 c__Bacilli 9
 c__Bacilli 7
 g__Clostridium 7
+c__Bacilli 4
+c__Bacteroidia 2
+c__Bacilli 2
