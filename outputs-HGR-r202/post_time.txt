@@ -1769,3 +1769,10 @@ g__Streptococcus 7
 f__Lachnospiraceae 3
 g__Schaedlerella 9
 g__Dorea_A 11
+g__CAG-590 6
+g__Eubacterium_F 8
+g__CAG-81 6
+g__CAG-882 5
+g__TF01-11 6
+g__Mediterraneibacter 6
+g__UBA9502 6
