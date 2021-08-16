@@ -1789,3 +1789,5 @@ g__Blautia_A 5
 g__Phocaeicola 8
 g__Bacteroides 6
 f__Lachnospiraceae 19
+g__Schaedlerella 3
+g__UMGS1370 2
