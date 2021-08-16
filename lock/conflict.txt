@@ -243,3 +243,4 @@ file_path is: outputs-HGR-r202/p__Firmicutes.xlsx short_index is: even_MAG-GUT91
 file_path is: outputs-HGR-r202/p__Firmicutes.xlsx short_index is: even_MAG-GUT91958 previous pred: c__Clostridia new pred: c__Bacilli
 file_path is: outputs-HGR-r202/p__Firmicutes.xlsx short_index is: even_MAG-GUT91967 previous pred: c__Clostridia new pred: c__Bacilli
 file_path is: outputs-HGR-r202/p__Firmicutes.xlsx short_index is: even_MAG-GUT9766 previous pred: c__Clostridia new pred: c__Bacilli
+file_path is: outputs-HGR-r202/f__UBA11471.xlsx short_index is: even_MAG-GUT317 previous pred: g__Eubacterium new pred: g__UBA11471
