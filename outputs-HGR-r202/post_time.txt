@@ -1761,3 +1761,8 @@ o__RFN20 6
 o__Lactobacillales 8
 f__Enterococcaceae 7
 f__Lactobacillaceae 5
+g__Enterococcus_D 6
+g__Ligilactobacillus 6
+g__Limosilactobacillus 5
+g__Enterococcus_B 5
+g__Streptococcus 7
