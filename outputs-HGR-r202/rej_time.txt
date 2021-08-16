@@ -1769,3 +1769,5 @@ g__Limosilactobacillus 12
 g__Enterococcus_B 8
 g__Streptococcus 192
 f__Lachnospiraceae 15301
+g__Schaedlerella 15
+g__Dorea_A 16
