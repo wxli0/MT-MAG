@@ -1748,3 +1748,8 @@ o__Lachnospirales 5
 o__Lachnospirales 50
 o__Bacteroidales 460
 f__Porphyromonadaceae 13
+g__UBA11471 9
+f__UBA932 21
+g__Barnesiella 22
+g__Porphyromonas 27
+f__Rikenellaceae 46
