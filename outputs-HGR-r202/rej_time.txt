@@ -1739,3 +1739,5 @@ g__ER4 41
 g__Dysosmobacter 122
 c__Bacteroidia 5
 g__CAG-110 380
+o__Lachnospirales 3
+c__Bacteroidia 8
