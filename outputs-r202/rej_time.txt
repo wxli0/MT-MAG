@@ -1671,3 +1671,5 @@ f__Paludibacteraceae 116
 g__UBA1217 15
 g__F23-D06 39
 f__Lachnospiraceae 2
+f__Lachnospiraceae 2
+f__Bacteroidaceae 505
