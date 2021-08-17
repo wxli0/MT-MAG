@@ -1695,3 +1695,5 @@ f__Lachnospiraceae 13
 g__Sodaliphilus 6
 f__Lachnospiraceae 12
 g__Phocaeicola 6
+f__Lachnospiraceae 13
+g__UBA1232 1
