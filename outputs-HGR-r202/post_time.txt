@@ -1794,3 +1794,5 @@ g__UMGS1370 2
 g__Schaedlerella 6
 g__Schaedlerella 5
 f__CAG-826 8
+g__Schaedlerella 4
+g__UBA733 9
