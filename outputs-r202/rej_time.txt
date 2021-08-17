@@ -1673,3 +1673,9 @@ g__F23-D06 39
 f__Lachnospiraceae 2
 f__Lachnospiraceae 2
 f__Bacteroidaceae 505
+f__Lachnospiraceae 2
+g__F082 599
+g__UBA4293 11
+g__RUG210 8
+g__UBA2918 10
+g__Alloprevotella 16
