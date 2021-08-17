@@ -1679,3 +1679,8 @@ g__UBA4293 11
 g__RUG210 8
 g__UBA2918 10
 g__Alloprevotella 16
+g__UBA6398 20
+g__UBA3839 41
+g__UBA6382 40
+f__Lachnospiraceae 3
+g__UBA1179 74
