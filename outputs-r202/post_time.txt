@@ -1658,3 +1658,7 @@ f__Lachnospiraceae 13
 f__Lachnospiraceae 15
 f__Lachnospiraceae 10
 o__Bacteroidales 17
+f__Lachnospiraceae 10
+f__WCHB1-69 6
+f__P3 8
+f__F082 6
