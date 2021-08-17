@@ -1669,3 +1669,5 @@ g__UBA3663 13
 f__Muribaculaceae 95
 f__Paludibacteraceae 116
 g__UBA1217 15
+g__F23-D06 39
+f__Lachnospiraceae 2
