@@ -1791,3 +1791,4 @@ g__Bacteroides 6
 f__Lachnospiraceae 19
 g__Schaedlerella 3
 g__UMGS1370 2
+g__Schaedlerella 6
