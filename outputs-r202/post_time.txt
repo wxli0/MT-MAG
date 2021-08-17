@@ -1662,3 +1662,10 @@ f__Lachnospiraceae 10
 f__WCHB1-69 6
 f__P3 8
 f__F082 6
+f__UBA932 7
+f__Lachnospiraceae 13
+g__UBA1756 4
+g__UBA3663 4
+f__Muribaculaceae 5
+f__Paludibacteraceae 5
+g__UBA1217 4
