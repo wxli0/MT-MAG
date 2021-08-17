@@ -1,4 +1,9 @@
 #!/bin/sh
+
+: '
+Script for calling check_missing_time periodically
+'
+
 i=0  
 while true  
 do  

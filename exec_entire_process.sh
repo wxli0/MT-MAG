@@ -1,4 +1,10 @@
 #!/bin/sh
+
+: '
+Script for grouping test sequences, and calling check_missing_pred 
+periodically
+'
+
 i=0  
 pre_proc_num=0
 while true
