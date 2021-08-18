@@ -1713,3 +1713,14 @@ g__RUG842 18
 g__UBA3633 11
 g__RUG115 14
 g__RUG191 11
+g__UBA629 8
+g__UBA2882 9
+g__UBA2912 11
+g__RUG306 9
+g__Weimerbacter 6
+g__UBA4285 6
+g__Faecalimonas 6
+g__CAG-590 5
+g__AC2028 6
+g__CAG-603 7
+g__NK4A136 6
