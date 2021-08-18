@@ -1724,3 +1724,10 @@ g__CAG-590 5
 g__AC2028 6
 g__CAG-603 7
 g__NK4A136 6
+g__Eubacterium_F 6
+g__NK4A144 4
+g__NK4A144 5
+g__CAG-127 5
+g__Eubacterium_H 4
+g__Agathobacter 5
+g__Lachnospira 6
