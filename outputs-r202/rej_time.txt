@@ -1732,3 +1732,7 @@ g__CAG-127 70
 g__Eubacterium_H 88
 g__Agathobacter 79
 g__Lachnospira 115
+g__UBA2856 135
+g__Oribacterium 106
+g__UBA1066 237
+g__Ruminococcus 1288
