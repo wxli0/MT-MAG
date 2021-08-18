@@ -1736,3 +1736,5 @@ g__UBA2856 135
 g__Oribacterium 106
 g__UBA1066 237
 g__Ruminococcus 1288
+g__Butyrivibrio 360
+g__Eubacterium_Q 541
