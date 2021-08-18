@@ -1740,3 +1740,5 @@ g__Butyrivibrio 360
 g__Eubacterium_Q 541
 g__CAG-791 663
 g__Ruminococcus 907
+g__Blautia_A 826
+g__Ruminococcus 483
