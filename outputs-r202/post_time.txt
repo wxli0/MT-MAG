@@ -1708,3 +1708,8 @@ f__Ruminococcaceae 3
 f__Ruminococcaceae 2
 f__Ruminococcaceae 3
 f__Lachnospiraceae 7
+g__Catonella 15
+g__RUG842 18
+g__UBA3633 11
+g__RUG115 14
+g__RUG191 11
