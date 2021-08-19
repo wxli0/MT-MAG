@@ -28,11 +28,9 @@ elif data_type == "HGR":
 
 
 print("waiting to acqure add_GTDB_pred lock")
-with FileLock(pred_path):
+with FileLock(lock_path):
     print("Lock in add_pred acquired.")
-
-
-
+    
     taxon = ""
     if sheet.startswith('r'):
         taxon = 'domain'
