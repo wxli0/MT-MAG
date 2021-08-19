@@ -61,7 +61,7 @@ def exec_phase(missing_ranks, data_type):
         data_dir = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
         suffix = "_split_pruned"
     for rank in missing_ranks:
-        classes = mrs2[rank]
+        classes = missing_ranks[rank]
         if len(classes) != 0:
             for c in classes:
                 if c == 'root':
