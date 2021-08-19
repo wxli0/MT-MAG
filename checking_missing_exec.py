@@ -81,9 +81,9 @@ if exec:
                         print('enter screen -dm bash -c "cd ~/MLDSP; bash phase_HGR.sh '+c + '"')
                     else:
                         os.system(\
-                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
                                 "HGR"+" "+c+"\"")
-                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
                                 "HGR"+" "+c+"\"")
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
@@ -104,9 +104,9 @@ if exec:
                         print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + '"')
                     else:
                         os.system(\
-                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
                                 "GTDB"+" "+c+"\"")
-                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_classify.sh "+\
+                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
                                 "GTDB"+" "+c+"\"")
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')

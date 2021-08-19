@@ -12,17 +12,26 @@ from filelock import FileLock
 import pandas as pd
 import sys
 
+file_path = sys.argv[1]
+data_type = sys.argv[2]
+file_short = file_path.split('/')[-1]
+ver = file_path.split('/')[0].split('-')[-1]
+sheet = file_short[:-5]+"_pred-t-p"
+pred_path = ""
+lock_path=""
+if data_type == "GTDB":
+    pred_path = "outputs-"+ver+"/MLDSP-prediction-full-path.csv"
+    lock_path = "lock/add_GTDB_pred.lock"
+elif data_type == "HGR":
+    pred_path = "outputs-HGR-"+ver+"/HGR-prediction-full-path.csv"
+    lock_path = "lock/add_HGR_pred.lock"
+
 
 print("waiting to acqure add_GTDB_pred lock")
-with FileLock("lock/add_GTDB_pred.lock"):
-    print("Lock in add_GTDB_pred acquired.")
-    file_path = sys.argv[1]
-    file_short = file_path.split('/')[-1]
-    ver = file_path.split('/')[0].split('-')[-1]
-    sheet = file_short[:-5]+"_pred-t-p"
-    if len(sys.argv) == 3:
-        sheet = sys.argv[2]
-    MLDSP_pred_path = "outputs-"+ver+"/MLDSP-prediction-full-path.csv"
+with FileLock(pred_path):
+    print("Lock in add_pred acquired.")
+
+
 
     taxon = ""
     if sheet.startswith('r'):
@@ -41,10 +50,12 @@ with FileLock("lock/add_GTDB_pred.lock"):
         taxon = "species"
 
     df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
-    MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
+    pred_df =  pd.read_csv(pred_path, index_col=0, header=0, dtype = str)
     for index, row in df.iterrows():
-        MLDSP_df.at[index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
+        if data_type == "HGR" and (index.endswith("_1") or index.endswith("_2")):
+            continue
+        pred_df.at[index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
 
-    MLDSP_df.to_csv(MLDSP_pred_path, index=True, header=True)
-    print("Lock in add_GTDB_pred acquired.")
+    pred_df.to_csv(pred_path, index=True, header=True)
+    print("Lock in add_pred acquired.")
 
