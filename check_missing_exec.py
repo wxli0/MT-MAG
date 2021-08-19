@@ -78,9 +78,9 @@ def exec_phase(missing_ranks, data_type):
                     else:
                         os.system(\
                             "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
-                                data_type+" "+c+"\"")
+                                c+" "+data_type+"\"")
                         print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
-                                data_type+" "+c+"\"")
+                                c+" "+data_type+"\"")
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:

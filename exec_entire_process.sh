@@ -33,8 +33,8 @@ do
         python3 outputs-HGR-r202/group_pred_HGR.py order
         python3 outputs-HGR-r202/group_pred_HGR.py family
         python3 outputs-HGR-r202/group_pred_HGR.py genus
-        echo "==== begin checking_missing_exec ====" 
-        python3 checking_missing_exec.py True
+        echo "==== begin check_missing_exec ====" 
+        python3 check_missing_exec.py True
     else
         echo "No processes finished."
     fi
