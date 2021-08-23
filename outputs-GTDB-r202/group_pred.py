@@ -1,6 +1,7 @@
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join('..', 'config')))
+print(sys.path)
 import config
 import pandas as pd 
 from shutil import copyfile
