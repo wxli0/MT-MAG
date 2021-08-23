@@ -1,0 +1,6 @@
+{
+    "input_folder": "rumen_mags/class_level/p__Firmicutes/c__Bacilli",
+    "output_folder": "rumen_mags/order_level/c__Bacilli",
+    "file_path": "c__Bacilli.xlsx",
+    "sheet": "c__Bacilli_pred-t-p"
+}

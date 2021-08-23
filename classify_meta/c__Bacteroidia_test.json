@@ -1,0 +1,8 @@
+{
+    "train_folder": "c__Bacteroidia",
+    "test_folders": ["rumen_mags/c__Bacteroidia_pred_test_wrapper"]
+}
+
+
+
+

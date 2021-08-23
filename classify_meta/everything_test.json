@@ -1,0 +1,5 @@
+{
+    "train_folder": "everything",
+    "test_folders": ["rumen_mags/everything_pred_test_wrapper"]
+}
+

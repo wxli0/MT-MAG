@@ -1,0 +1,9 @@
+{
+    "train_folder": "c__Negativicutes_train",
+    "test_folders": ["c__Negativicutes_eval/o__Selenomonadales_eval_wrapper", 
+        "c__Negativicutes_eval/o__Veillonellales_eval_wrapper", 
+        "c__Negativicutes_eval/o__Acidaminococcales_eval_wrapper"]
+}
+
+
+

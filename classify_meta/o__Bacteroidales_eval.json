@@ -1,0 +1,14 @@
+{
+    "train_folder": "o__Bacteroidales_train",
+    "test_folders": ["o__Bacteroidales_eval/f__Bacteroidaceae_eval_wrapper","o__Bacteroidales_eval/f__Dysgonomonadaceae_eval_wrapper",  
+        "o__Bacteroidales_eval/f__Muribaculaceae_eval_wrapper",  "o__Bacteroidales_eval/f__P3_eval_wrapper",  
+    "o__Bacteroidales_eval/f__Paludibacteraceae_eval_wrapper",  "o__Bacteroidales_eval/f__Rikenellaceae_eval_wrapper",  
+    "o__Bacteroidales_eval/f__Tannerellaceae_eval_wrapper",  "o__Bacteroidales_eval/f__UBA7960_eval_wrapper",  
+    "o__Bacteroidales_eval/f__UBA932_eval_wrapper", "o__Bacteroidales_eval/f__WCHB1-69_eval_wrapper", 
+    "o__Bacteroidales_eval/f__F082_eval_wrapper"
+    ]
+}
+
+
+
+

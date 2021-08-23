@@ -1,0 +1,6 @@
+{
+    "input_folder": "rumen_mags/all",
+    "output_folder": "rumen_mags",
+    "file_path": "everything.xlsx",
+    "sheet": "everything_pred-t-p"
+}

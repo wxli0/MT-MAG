@@ -1,0 +1,6 @@
+{
+    "input_folder": "rumen_mags/class_level/p__Firmicutes_A/c__Clostridia",
+    "output_folder": "rumen_mags/order_level/c__Clostridia",
+    "file_path": "c__Clostridia.xlsx",
+    "sheet": "c__Clostridia_pred-t-p"
+}

@@ -1,0 +1,8 @@
+{
+    "train_folder": "d__Bacteria_include_p__Bacteroidota_train",
+    "test_folders": ["d__Bacteria_include_p__Bacteroidota_eval/p__Actinobacteriota_eval_wrapper",  "d__Bacteria_include_p__Bacteroidota_eval/p__Bacteroidota_eval_wrapper",  "d__Bacteria_include_p__Bacteroidota_eval/p__Chloroflexota_eval_wrapper",  "d__Bacteria_include_p__Bacteroidota_eval/p__Cyanobacteria_eval_wrapper",  "d__Bacteria_include_p__Bacteroidota_eval/p__Desulfobacterota_eval_wrapper"]
+}
+
+
+
+

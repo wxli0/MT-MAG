@@ -1,0 +1,9 @@
+{
+    "train_folder": "o__Lactobacillales",
+    "test_folders": ["rumen_mags/o__Lactobacillales_pred_test_wrapper"]
+
+}
+
+
+
+

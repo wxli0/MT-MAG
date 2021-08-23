@@ -1,0 +1,15 @@
+{
+    "train_folder": "o__Lactobacillales_train",
+    "test_folders": ["o__Lactobacillales_eval/f__Enterococcaceae_eval_wrapper",
+    "o__Lactobacillales_eval/f__Listeriaceae_eval_wrapper",
+    "o__Lactobacillales_eval/f__Lactobacillaceae_eval_wrapper",
+    "o__Lactobacillales_eval/f__Carnobacteriaceae_eval_wrapper",
+    "o__Lactobacillales_eval/f__Streptococcaceae_eval_wrapper",
+    "o__Lactobacillales_eval/f__Aerococcaceae_eval_wrapper"
+]
+
+}
+
+
+
+

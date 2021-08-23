@@ -1,7 +1,21 @@
-# BlindKameris
-Semi-Supervised Extension of the Kameris Software https://pypi.org/project/kameris/. For a detailed description of the method and for an overview of the code see. ``` Unified.ipyn```. For a detailed description of the method and the experiments, see the document ```Draft.pdf```
+---
+output:
+  pdf_document: default
+---
+# MT-MAG commands to run Task 1: simulated/sparse dataset) and Task 2: real/dense dataset
 
-## Kameris. 
-- In case you want to use the supervised version of the software, an interactive version is available in the ```kameris.ipynb``` notebook. 
-- To use the notebook on your custom dataset you can use ```preprocessing.py``` to format your data. 
-- You need to have Biopython installed. 
+To run Task 1 and Task 2 for the entire taxonomies
+
+- bash exec_entire_process.sh
+
+To run Task 1 for a taxon t 
+
+- bash phase.sh t HGR
+
+To run Task 2 for a taxon t
+
+- bash phase.sh t GTDB
+
+# commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset
+
+- python3 result_stat.py

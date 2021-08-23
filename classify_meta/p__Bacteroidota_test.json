@@ -1,0 +1,8 @@
+{
+    "train_folder": "p__Bacteroidota",
+    "test_folders": ["rumen_mags/p__Bacteroidota_pred_test_wrapper"]
+}
+
+
+
+

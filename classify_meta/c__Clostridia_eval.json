@@ -1,0 +1,10 @@
+{
+    "train_folder": "c__Clostridia_train",
+    "test_folders": ["c__Clostridia_eval/o__Acetivibrionales_eval_wrapper",  "c__Clostridia_eval/o__Lachnospirales_eval_wrapper",        "c__Clostridia_eval/o__Saccharofermentanales_eval_wrapper",
+        "c__Clostridia_eval/o__Clostridiales_eval_wrapper",     "c__Clostridia_eval/o__Oscillospirales_eval_wrapper",       "c__Clostridia_eval/o__TANB77_eval_wrapper",
+        "c__Clostridia_eval/o__Eubacteriales_eval_wrapper",     "c__Clostridia_eval/o__Peptostreptococcales_eval_wrapper",  "c__Clostridia_eval/o__Tissierellales_eval_wrapper"]
+}
+
+
+
+
