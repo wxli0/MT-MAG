@@ -3,7 +3,7 @@ Send MT-MAG result file to R reliabilitydiag
 :param sys.argv[1]: File path of the result file
 :type sys.argv[1]: str
 
-:Example python3 reliability_diag_entire.py outputs-r202/o__UBA1407_train.xlsx
+:Example python3 reliability_diag_entire.py outputs-GTDB-r202/o__UBA1407_train.xlsx
 """
 
 import matplotlib

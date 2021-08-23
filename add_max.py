@@ -7,7 +7,7 @@ Add 'max' column to a sheet in a file to represent the maximum posterior \
     :type argv[1]: str
     :param argv[2]: sheet, sheet name
     :type argv[2]: str
-    :Example: python3 add_max.py outputs-r202/g__Prevotella.xlsx g__Prevotella-t-p
+    :Example: python3 add_max.py outputs-GTDB-r202/g__Prevotella.xlsx g__Prevotella-t-p
 """
 
 from math import exp

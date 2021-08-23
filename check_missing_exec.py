@@ -4,22 +4,28 @@ Check missing predictions in the classification result files (GTDB and HGR)
 No command line arguments are required
 """
 
+import getpass
 import os
 import pandas as pd 
-import platform
 import subprocess
 import sys
 
 
-def check_missing(path, ranks):
+def check_missing(path, ranks, root_taxon):
     """
     Checks ranks with incomplete predictions in the classification result path
     :param path: path of the classification result file
     :type path: str
     :param ranks: a list of ranks in the classification result file
     :type ranks: List[str]
+    :param root_taxon: str
+    :type root_taxon: the root taxon to start classification
     """
     df = pd.read_csv(path, index_col=0, header=0, dtype = str)
+    first_rank_res = list(df[ranks[0]])
+    first_rank_str_res = [str(x) for x in first_rank_res]
+    if first_rank_str_res == ['nan']:
+        return {'root': root_taxon}
 
     # init missing_ranks
     missing_ranks = {}
@@ -27,7 +33,7 @@ def check_missing(path, ranks):
         missing_ranks[r] = []
 
     for index, row in df.iterrows():
-        pre_pred = 'root'
+        pre_pred = None
         for r in ranks:
             cur_pred = str(df.loc[index][r])
             if 'reject' in cur_pred:
@@ -42,7 +48,7 @@ def check_missing(path, ranks):
     return missing_ranks
 
 
-def exec_phase(missing_ranks, data_type):
+def exec_phase(missing_ranks, data_type, suffix=""):
     """
     Iterate over missing ranks (missing_ranks) for task with data type (data_type) 
     
@@ -53,6 +59,7 @@ def exec_phase(missing_ranks, data_type):
     :param suffix: suffix of the folders in data_dir
     :type suffix: str
     """
+    user_name = getpass.getuser()
     data_dir = ""
     suffix = ""
     if data_type == 'GTDB':
@@ -64,9 +71,9 @@ def exec_phase(missing_ranks, data_type):
         classes = missing_ranks[rank]
         if len(classes) != 0:
             for c in classes:
-                if c == 'root':
-                    continue
-                running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+c, shell=True))
+                if c is None:
+                    raise Exception("missing first taxon classification")
+                running_proc = str(subprocess.check_output("ps aux|grep "+user_name+"|grep "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
                     if data_type == 'HGR' and not os.path.exists(data_dir+c+suffix):
@@ -87,31 +94,29 @@ def exec_phase(missing_ranks, data_type):
                     print(c, "in " + data_type + " running process")
 
 
-base_path = "/Users/wanxinli/Desktop/project.nosync/"
-if platform.platform()[:5] == 'Linux':
-    base_path = "/home/w328li/"
-
 exec = False
 if len(sys.argv) == 2:
     exec = sys.argv[1]
 
 # execute the commands
 
-path1 = base_path+"BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv"
+path1 = os.path.join("./outputs-GTDB-r202/GTDB-prediction-full-path.csv")
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
-mrs1 = check_missing(path1, ranks1)
+root_taxon1 = 'root'
+mrs1 = check_missing(path1, ranks1, root_taxon1)
 data_dir1 = "/mnt/sda/MLDSP-samples-r202/"
 suffix1 = ""
 
-path2 = base_path+"BlindKameris-new/outputs-HGR-r202/HGR-prediction-full-path.csv"
+path2 = os.path.join("./outputs-HGR-r202/HGR-prediction-full-path.csv")
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
-mrs2 = check_missing(path2, ranks2)
+root_taxon2 = 'd__Bacteria'
+mrs2 = check_missing(path2, ranks2, root_taxon2)
 data_dir2 = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
 suffix2 = "_split_pruned"
 print("HGR missing ranks are:", mrs2)
 if exec:
-    exec_phase(mrs2, 'HGR')
+    exec_phase(mrs2, 'HGR', suffix=suffix1)
 
 print("GTDB missing ranks are:", mrs1)
 if exec:
-    exec_phase(mrs1, 'GTDB')
+    exec_phase(mrs1, 'GTDB', suffix=suffix2)

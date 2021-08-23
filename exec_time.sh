@@ -13,7 +13,7 @@ do
     git add .
     git commit -m "updated outputs"
     git push
-    cd ~/BlindKameris-new
+    cd ~/MT-MAG
     git add .
     git commit -m "updated outputs"
     git push

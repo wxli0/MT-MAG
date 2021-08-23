@@ -27,12 +27,8 @@ with FileLock("lock/add_pred.lock"):
     ver = file_path.split('/')[0].split('-')[-1]
     sheet = file_short[:-5]+"_pred-t-p"
     pred_name = ""
-    if type == 'HGR':
-        pred_dir = "outputs-HGR-"+ver
-        pred_name = "HGR-prediction-full-path.csv"
-    elif type == 'GTDB':
-        pred_dir = "outputs-"+ver
-        pred_name = "MLDSP-prediction-full-path.csv"
+    pred_dir = "outputs-"+type+"-"+ver
+    pred_name = type+"-prediction-full-path.csv"
 
     
     pred_path = pred_dir+"/"+pred_name

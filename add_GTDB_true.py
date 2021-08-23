@@ -15,7 +15,7 @@ MLDSP_pred_path = "outputs/MLDSP-prediction.csv"
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 print(MLDSP_df)
 
-GTDB_Tk_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/data/DS_10283_3009/GTDB-Tk_classification.csv"
+GTDB_Tk_path = "/Users/wanxinli/Desktop/project/MLDSP/data/DS_10283_3009/GTDB-Tk_classification.csv"
 GTDB_Tk_df = pd.read_csv(GTDB_Tk_path, index_col=0, header=0, dtype = str)
 print(GTDB_Tk_df)
 

@@ -8,7 +8,7 @@ import numpy as np
 
 
 bins = np.arange(0,0.01,0.001)
-score_file_path = 'outputs-r202/g__UBA1232-score.txt'
+score_file_path = 'outputs-GTDB-r202/g__UBA1232-score.txt'
 score_file = open(score_file_path, 'r')
 score_file_lines = score_file.readlines()
 scores = []
@@ -18,4 +18,4 @@ ax = plt.figure().gca()
 ax.yaxis.set_major_locator(MaxNLocator(integer=True))
 plt.xticks(bins)
 plt.hist(scores, bins=bins)
-plt.savefig('outputs-r202'+'/'+'tmp.png')
+plt.savefig('outputs-GTDB-r202'+'/'+'tmp.png')

@@ -1,4 +1,0 @@
-d__Bacteria 109
-p__Riflebacteria 3
-p__Eremiobacterota 18
-p__Fibrobacterota 29

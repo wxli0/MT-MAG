@@ -14,7 +14,7 @@ MLDSP_pred_path = "outputs_HGR/HGR-prediction-full-path.csv"
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 # print(MLDSP_df)
 
-true_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/outputs_HGR/Table_S2.csv"
+true_path = "/Users/wanxinli/Desktop/project.nosync/MLDSP/samples/Table_S2.csv"
 true_df = pd.read_csv(true_path, index_col=0, header=1, dtype = str)
 print(true_df)
 

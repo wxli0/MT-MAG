@@ -1,4 +1,5 @@
 from find_single_child import find_single_child
+import getpass
 import os 
 import pandas as pd 
 import subprocess
@@ -6,12 +7,12 @@ import time
 
 """
 Checks single child taxons in and execute single child MT-MAG classifications \
-    in HGR/MLDSP-prediction-full-path.csv.
+    in HGR/GTDB-prediction-full-path.csv.
 
 No command line arguments are required.
 """
 
-path1 = "./outputs-r202/MLDSP-prediction-full-path.csv"
+path1 = "./outputs-GTDB-r202/GTDB-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus']
 dir1 = '/mnt/sda/MLDSP-samples-r202/'
 single_child_taxons1 = find_single_child(path1, ranks1, dir1)
@@ -28,26 +29,27 @@ i = 0
 remove = False
 if remove:
     for taxon in single_child_taxons1:
-        output_path = "~/BlindKameris-new/outputs-r202/"+taxon+".xlsx"
+        output_path = "./outputs-GTDB-r202/"+taxon+".xlsx"
         if os.path.exists(os.path.expanduser(output_path)):
             os.remove(os.path.expanduser(output_path))
     for taxon in single_child_taxons2:
-        output_path = "~/BlindKameris-new/outputs-HGR-r202/"+taxon+".xlsx"
+        output_path = "./outputs-HGR-r202/"+taxon+".xlsx"
         if os.path.exists(os.path.expanduser(output_path)):
             os.remove(os.path.expanduser(output_path))
 print("removed existing single child output files")
 
+user_name = getpass.getuser()
 while True:
     print("iteration:", i)
     test_cat = "GTDB"
     for taxon in single_child_taxons1:
         print("processing", taxon)
-        running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
+        running_proc = str(subprocess.check_output("ps aux|grep "+user_name+"|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
-        if os.path.exists(os.path.expanduser("~/BlindKameris-new/outputs-r202/"+taxon+".xlsx")):
+        if os.path.exists(os.path.expanduser("./outputs-GTDB-r202/"+taxon+".xlsx")):
             print(taxon, "in GTDB completed")
         elif running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
-            and not os.path.exists(os.path.expanduser("~/BlindKameris-new/outputs-r202/"+taxon+".xlsx")):
+            and not os.path.exists(os.path.expanduser("./outputs-GTDB-r202/"+taxon+".xlsx")):
                 os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+test_cat+" "+taxon+"\"")
                 print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+test_cat+" "+taxon+"\"")
         elif proc_all.count('\\n') > 40:
@@ -56,14 +58,14 @@ while True:
             print(taxon, "in GTDB running process")
     test_cat = "HGR"
     for taxon in single_child_taxons2:
-        running_proc = str(subprocess.check_output("ps aux|grep w328li|grep "+taxon, shell=True))
+        running_proc = str(subprocess.check_output("ps aux|grep "+user_name+"|grep "+taxon, shell=True))
         proc_all =  str(subprocess.check_output("screen -ls", shell=True))
         if os.path.exists(os.path.expanduser(\
-            '~/BlindKameris-new/outputs-HGR-r202/'+taxon+'.xlsx')):
+            './outputs-HGR-r202/'+taxon+'.xlsx')):
             print(taxon, "in HGR completed")
         elif running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40 \
             and not os.path.exists(os.path.expanduser(\
-                '~/BlindKameris-new/outputs-HGR-r202/'+taxon+'.xlsx')):
+                './outputs-HGR-r202/'+taxon+'.xlsx')):
             os.system("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+test_cat+" "+taxon+"\"")     
             print("screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+test_cat+" "+taxon+"\"") 
         elif proc_all.count('\\n') > 40:

@@ -11,7 +11,7 @@ Calculates rejection thresholds based on a training result file, and a \
     GTDB or HGR.
 :type sys.argb[3]: str
 
-:Example precision_recall_opt.py outputs-r202/d__Bacteria_train.xlsx outputs-r202/d__Bacteria.xlsx GTDB
+:Example precision_recall_opt.py outputs-GTDB-r202/d__Bacteria_train.xlsx outputs-GTDB-r202/d__Bacteria.xlsx GTDB
 """
 
 import json 
@@ -78,11 +78,11 @@ for i in range(len(existing_preds)):
 
 
 ver = file_name.split('/')[0].split('-')[-1]
-BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/rejection-threshold-"+data_type+ver+"/"
+BK_path = "./rejection-threshold-"+data_type+ver+"/"
 if platform.platform()[:5] == 'Linux':
-    BK_path = "/home/w328li/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
+    BK_path = "./rejection-threshold-"+data_type+"-"+ver+"/"
 if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
-    BK_path = "/h/wanxinli/BlindKameris-new/rejection-threshold-"+data_type+"-"+ver+"/"
+    BK_path = "./rejection-threshold-"+data_type+"-"+ver+"/"
 
 rej_path = BK_path+parent+'.json'
 

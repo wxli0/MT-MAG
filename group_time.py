@@ -4,7 +4,7 @@ Add MT-MAG classification time into corresponding time file
 :param sys.argv[1]: dir_cat. The directory of the time files.
 :type sys.argv[1]: str
 
-:Example: python3 group_time.py outputs-r202
+:Example: python3 group_time.py outputs-GTDB-r202
 :Example python3 group_time.py outputs-HGR-r202
 """
 
@@ -23,9 +23,9 @@ time_cats = ['test_time']
 print(df.columns)
 for time_cat in time_cats:
     time_file = time_cat+'.txt'
-    file_path = '/Users/wanxinli/Desktop/project.nosync/BlindKameris-new/'+dir_cat+'/'+time_file
+    file_path = '/Users/wanxinli/Desktop/project.nosync/MT-MAG/'+dir_cat+'/'+time_file
     if not os.path.exists(file_path):
-        file_path = '/Users/wanxinli/Desktop/project.nosync/MLDSP-desktop/'+dir_cat+'/'+time_file
+        file_path = '/Users/wanxinli/Desktop/project.nosync/MLDSP/'+dir_cat+'/'+time_file
 
     file = open(file_path, 'r')
     lines = file.readlines()

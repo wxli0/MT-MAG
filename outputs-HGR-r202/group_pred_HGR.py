@@ -10,12 +10,9 @@ import numpy as np
 # e.g. python3 group_pred.py order
 taxon = sys.argv[1]
 
-BK_path = "/Users/wanxinli/Desktop/project/BlindKameris-new/"
-base_path = "/mnt/sda/DeepMicrobes-data/" 
-if platform.platform()[:5] == 'Linux':
-    BK_path = "/home/w328li/BlindKameris-new/"
+base_path = "/mnt/sda/DeepMicrobes-data/"
 
-MLDSP_pred_path = BK_path+"outputs-HGR-r202/HGR-prediction-full-path.csv"
+MLDSP_pred_path = "./outputs-HGR-r202/HGR-prediction-full-path.csv"
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 print(MLDSP_df)
 
