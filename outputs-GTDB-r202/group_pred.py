@@ -1,5 +1,6 @@
-import config
 import sys
+sys.path.insert(0, '../')
+import config
 import pandas as pd 
 import os
 from shutil import copyfile
