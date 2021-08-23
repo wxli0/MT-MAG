@@ -1,8 +1,8 @@
 import sys
-sys.path.insert(0, '../')
+import os
+sys.path.append(os.path.abspath(os.path.join('..', 'config')))
 import config
 import pandas as pd 
-import os
 from shutil import copyfile
 
 # e.g. python3 group_pred.py order
