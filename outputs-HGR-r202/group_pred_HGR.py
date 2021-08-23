@@ -1,11 +1,7 @@
 import sys
 import pandas as pd 
-import json
 import os
 from shutil import copyfile
-import platform
-import shutil
-import numpy as np
 
 # e.g. python3 group_pred.py order
 taxon = sys.argv[1]

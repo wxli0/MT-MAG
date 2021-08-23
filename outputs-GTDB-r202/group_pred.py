@@ -1,7 +1,6 @@
 import sys
 import os
 sys.path.append(os.path.abspath('./'))
-print(sys.path)
 import config
 import pandas as pd 
 from shutil import copyfile
