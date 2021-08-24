@@ -79,15 +79,10 @@ def exec_phase(missing_ranks, data_type, suffix=""):
                     if data_type == 'HGR' and not os.path.exists(data_dir+c+suffix):
                         os.system("python3 ~/DeepMicrobes/scripts/split_fasta_5000.py "+data_dir+c)
                         print("created", data_dir+c+suffix)
-                    if len(os.listdir(data_dir+c+suffix)) > 1: # not single child taxon
-                        os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + ' ' + data_type + '"')
-                        print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + ' '+ data_type + '"')
-                    else:
-                        os.system(\
-                            "screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
-                                c+" "+data_type+"\"")
-                        print("enter screen -dm bash -c "+"\"cd ~/MLDSP; bash phase_single.sh "+\
-                                c+" "+data_type+"\"")
+
+                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + ' ' + data_type + '"')
+                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + ' '+ data_type + '"')
+
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
