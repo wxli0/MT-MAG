@@ -24,7 +24,6 @@ def check_missing(path, ranks, root_taxon):
     df = pd.read_csv(path, index_col=0, header=0, dtype = str)
     first_rank_res = list(df[ranks[0]])
     first_rank_str_res = list(set([str(x) for x in first_rank_res]))
-    print("first_rank_str_res is:", first_rank_str_res)
     if first_rank_str_res == ['nan']:
         return {'root': [root_taxon]}
 
