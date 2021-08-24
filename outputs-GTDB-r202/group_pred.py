@@ -1,9 +1,8 @@
-import sys
-import os
-sys.path.append(os.path.abspath('./'))
 import config
+import os
 import pandas as pd 
 from shutil import copyfile
+import sys
 
 # e.g. python3 group_pred.py order
 taxon = sys.argv[1]
