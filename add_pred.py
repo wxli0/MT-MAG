@@ -17,7 +17,7 @@ data_type = sys.argv[2]
 file_short = file_path.split('/')[-1]
 ver = file_path.split('/')[0].split('-')[-1]
 sheet = file_short[:-5]+"_pred-t-p"
-pred_path = "outputs-"+ver+"/"+data_type+"-prediction-full-path.csv"
+pred_path = "outputs-"+data_type+"-"+ver+"/"+data_type+"-prediction-full-path.csv"
 lock_path="lock/add_"+data_type+"_pred.lock"
 
 print("waiting to acqure add_GTDB_pred lock")
