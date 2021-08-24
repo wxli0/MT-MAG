@@ -26,7 +26,7 @@ def check_missing(path, ranks, root_taxon):
     first_rank_str_res = list(set([str(x) for x in first_rank_res]))
     print("first_rank_str_res is:", first_rank_str_res)
     if first_rank_str_res == ['nan']:
-        return {'root': root_taxon}
+        return {'root': [root_taxon]}
 
     # init missing_ranks
     missing_ranks = {}
