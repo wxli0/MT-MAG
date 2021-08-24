@@ -5,3 +5,4 @@ g__UMGS1312 2
 d__Bacteria 1
 d__Bacteria 1
 d__Bacteria 1
+ 20
