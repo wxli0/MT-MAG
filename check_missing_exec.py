@@ -74,7 +74,7 @@ def exec_phase(missing_ranks, data_type, suffix=""):
             for c in classes:
                 if c is None:
                     raise Exception("missing first taxon classification")
-                running_proc = str(subprocess.check_output("ps aux|grep "+user_name+"|grep "+c, shell=True))
+                running_proc = str(subprocess.check_output("ps aux|grep "+user_name+"|grep phase.sh "+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
                     if data_type == 'HGR' and not os.path.exists(data_dir+c+suffix):
