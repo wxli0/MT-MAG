@@ -17,12 +17,15 @@ Add "rejection-f" column to the sheet (:param sheet_name) in a file \
 import json
 import openpyxl
 import pandas as pd 
+import os
 import sys
 
 
 file_path = sys.argv[1]
 sheet = sys.argv[2]
-threshold_dict = json.load(open(sys.argv[3]))
+threshold_dict = {}
+if os.path.exists(sys.argv[3]):
+    threshold_dict = json.load(open(sys.argv[3]))
 
 df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
 
@@ -35,7 +38,7 @@ for index, row in df.iterrows():
         alpha = threshold_dict[row['prediction']]
     if row['max'] < alpha:
         rejection_f.append(row['prediction']+'(reject)')
-    else:
+    else: # if we are just classifying the genomes without rejection threshods 
         rejection_f.append(row['prediction'])
 if 'rejection-f' in df.columns:
     del df['rejection-f']

@@ -113,10 +113,13 @@ root_taxon2 = 'd__Bacteria'
 mrs2 = check_missing(path2, ranks2, root_taxon2)
 data_dir2 = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
 suffix2 = "_split_pruned"
-print("HGR missing ranks are:", mrs2)
-if exec:
-    exec_phase(mrs2, 'HGR', suffix=suffix1)
 
 print("GTDB missing ranks are:", mrs1)
 if exec:
-    exec_phase(mrs1, 'GTDB', suffix=suffix2)
+    exec_phase(mrs1, 'GTDB', suffix=suffix1)
+
+print("HGR missing ranks are:", mrs2)
+if exec:
+    exec_phase(mrs2, 'HGR', suffix=suffix2)
+
+
