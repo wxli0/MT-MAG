@@ -24,12 +24,12 @@ do
         git commit -m "updated outputs"
         git push
         echo "==== begin group_pred ===="
-        python3 outputs-GTDB-r202/group_pred.py domain
-        python3 outputs-GTDB-r202/group_pred.py phylum
-        python3 outputs-GTDB-r202/group_pred.py class
-        python3 outputs-GTDB-r202/group_pred.py order
-        python3 outputs-GTDB-r202/group_pred.py family
-        python3 outputs-GTDB-r202/group_pred.py genus
+        # python3 outputs-GTDB-r202/group_pred.py domain
+        # python3 outputs-GTDB-r202/group_pred.py phylum
+        # python3 outputs-GTDB-r202/group_pred.py class
+        # python3 outputs-GTDB-r202/group_pred.py order
+        # python3 outputs-GTDB-r202/group_pred.py family
+        # python3 outputs-GTDB-r202/group_pred.py genus
         python3 outputs-HGR-r202/group_pred_HGR.py phylum
         python3 outputs-HGR-r202/group_pred_HGR.py class
         python3 outputs-HGR-r202/group_pred_HGR.py order

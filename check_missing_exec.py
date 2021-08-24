@@ -97,12 +97,16 @@ if len(sys.argv) == 2:
 
 # execute the commands
 
-path1 = os.path.join("./outputs-GTDB-r202/GTDB-prediction-full-path.csv")
-ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
-root_taxon1 = 'root'
-mrs1 = check_missing(path1, ranks1, root_taxon1)
-data_dir1 = "/mnt/sda/MLDSP-samples-r202/"
-suffix1 = ""
+# path1 = os.path.join("./outputs-GTDB-r202/GTDB-prediction-full-path.csv")
+# ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
+# root_taxon1 = 'root'
+# mrs1 = check_missing(path1, ranks1, root_taxon1)
+# data_dir1 = "/mnt/sda/MLDSP-samples-r202/"
+# suffix1 = ""
+
+# print("GTDB missing ranks are:", mrs1)
+# if exec:
+#     exec_phase(mrs1, 'GTDB', suffix=suffix1)
 
 path2 = os.path.join("./outputs-HGR-r202/HGR-prediction-full-path.csv")
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
@@ -110,10 +114,6 @@ root_taxon2 = 'd__Bacteria'
 mrs2 = check_missing(path2, ranks2, root_taxon2)
 data_dir2 = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
 suffix2 = "_split_pruned"
-
-print("GTDB missing ranks are:", mrs1)
-if exec:
-    exec_phase(mrs1, 'GTDB', suffix=suffix1)
 
 print("HGR missing ranks are:", mrs2)
 if exec:
