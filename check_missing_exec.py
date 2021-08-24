@@ -32,7 +32,7 @@ def check_missing(path, ranks, root_taxon):
     for r in ranks:
         missing_ranks[r] = []
 
-    for index, row in df.iterrows():
+    for index, _ in df.iterrows():
         pre_pred = None
         for r in ranks:
             cur_pred = str(df.loc[index][r])
@@ -48,7 +48,7 @@ def check_missing(path, ranks, root_taxon):
     return missing_ranks
 
 
-def exec_phase(missing_ranks, data_type, suffix=""):
+def exec_phase(missing_ranks, data_type):
     """
     Iterate over missing ranks (missing_ranks) for task with data type (data_type) 
     
@@ -56,17 +56,8 @@ def exec_phase(missing_ranks, data_type, suffix=""):
     :type missing_ranks: List[str]
     :param data_type: data type of the task. 'HGR' or 'GTDB'
     :type data_type: str
-    :param suffix: suffix of the folders in data_dir
-    :type suffix: str
     """
     user_name = getpass.getuser()
-    data_dir = ""
-    suffix = ""
-    if data_type == 'GTDB':
-        data_dir = "/mnt/sda/MLDSP-samples-r202/"
-    elif data_type == 'HGR':
-        data_dir = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
-        suffix = "_split_pruned"
     for rank in missing_ranks:
         classes = missing_ranks[rank]
         if len(classes) != 0:
@@ -77,12 +68,8 @@ def exec_phase(missing_ranks, data_type, suffix=""):
                     "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh "+"'"+c, shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    if data_type == 'HGR' and not os.path.exists(data_dir+c+suffix):
-                        os.system("python3 ~/DeepMicrobes/scripts/split_fasta_5000.py "+data_dir+c)
-                        print("created", data_dir+c+suffix)
-
-                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + ' ' + data_type + '"')
-                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh '+c + ' '+ data_type + '"')
+                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + '"')
+                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d '+ data_type + '"')
 
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
@@ -100,22 +87,18 @@ if len(sys.argv) == 2:
 # ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 # root_taxon1 = 'root'
 # mrs1 = check_missing(path1, ranks1, root_taxon1)
-# data_dir1 = "/mnt/sda/MLDSP-samples-r202/"
-# suffix1 = ""
 
 # print("GTDB missing ranks are:", mrs1)
 # if exec:
-#     exec_phase(mrs1, 'GTDB', suffix=suffix1)
+#     exec_phase(mrs1, 'GTDB')
 
 path2 = os.path.join("./outputs-HGR-r202/HGR-prediction-full-path.csv")
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 root_taxon2 = 'd__Bacteria'
 mrs2 = check_missing(path2, ranks2, root_taxon2)
-data_dir2 = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
-suffix2 = "_split_pruned"
 
 print("HGR missing ranks are:", mrs2)
 if exec:
-    exec_phase(mrs2, 'HGR', suffix=suffix2)
+    exec_phase(mrs2, 'HGR')
 
 
