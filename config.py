@@ -6,7 +6,6 @@ import os
 from os.path import expanduser
 import os
 import platform
-import sys
 
 
 
@@ -20,5 +19,3 @@ DM_path = os.path.join(base_path, "DeepMicrobes")
 MT_MAG_path = os.path.join(base_path, "MT-MAG")
 
 GTDB_train_path = '/mnt/sda/MLDSP-samples-r202'
-
-sys.path.append(MT_MAG_path))
