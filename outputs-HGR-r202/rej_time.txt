@@ -1,3 +1,6 @@
 g__UMGS911 4
 g__UMGS911 4
 g__UMGS1312 0
+d__Bacteria 0
+d__Bacteria 0
+d__Bacteria 0
