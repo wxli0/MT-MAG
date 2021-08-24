@@ -65,7 +65,7 @@ def exec_phase(missing_ranks, data_type):
                 if c is None:
                     raise Exception("missing first taxon classification")
                 running_proc = str(subprocess.check_output(\
-                    "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh "+"'"+c, shell=True))
+                    "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh -s "+c+"'", shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
                     os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + '"')
