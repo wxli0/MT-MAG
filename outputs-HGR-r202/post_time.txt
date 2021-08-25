@@ -707,3 +707,7 @@ g__Ruminococcus_E 6
 g__CAG-217 6
 g__UMGS911 4
 g__Eubacterium_R 9
+o__Lachnospirales 2
+f__CAG-274 6
+f__Anaerotignaceae 8
+g__Prevotella 10
