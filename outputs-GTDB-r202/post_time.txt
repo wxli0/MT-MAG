@@ -23,3 +23,6 @@ o__ARK-15 5
 c__Nitrososphaeria 3
 g__Methanobrevibacter 5
 o__Methanomassiliicoccales 5
+f__ARK-15 3
+f__Methanomassiliicoccaceae 2
+f__Methanomethylophilaceae 3
