@@ -83,14 +83,14 @@ if len(sys.argv) == 2:
 
 # execute the commands
 
-# path1 = os.path.join("./outputs-GTDB-r202/GTDB-prediction-full-path.csv")
-# ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
-# root_taxon1 = 'root'
-# mrs1 = check_missing(path1, ranks1, root_taxon1)
+path1 = os.path.join("./outputs-GTDB-r202/GTDB-prediction-full-path.csv")
+ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
+root_taxon1 = 'root'
+mrs1 = check_missing(path1, ranks1, root_taxon1)
 
-# print("GTDB missing ranks are:", mrs1)
-# if exec:
-#     exec_phase(mrs1, 'GTDB')
+print("GTDB missing ranks are:", mrs1)
+if exec:
+    exec_phase(mrs1, 'GTDB')
 
 path2 = os.path.join("./outputs-HGR-r202/HGR-prediction-full-path.csv")
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
