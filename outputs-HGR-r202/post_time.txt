@@ -583,3 +583,12 @@ f__Actinomycetaceae 9
 g__Duodenibacillus 9
 o__Coriobacteriales 10
 c__Negativicutes 14
+g__Dermabacter 7
+g__Cutibacterium 6
+g__Propionibacterium 8
+o__Selenomonadales 7
+g__Corynebacterium 9
+o__Acidaminococcales 9
+g__Bifidobacterium 10
+g__Pauljensenia 8
+f__Atopobiaceae 11
