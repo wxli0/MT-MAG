@@ -597,3 +597,16 @@ f__Selenomonadaceae 10
 f__Acidaminococcaceae 12
 o__Veillonellales 13
 f__Eggerthellaceae 12
+g__UMGS1519 6
+g__Selenomonas_C 6
+g__Eggerthella 5
+g__Olsenella 5
+g__Senegalimassilia 4
+g__Mitsuokella 4
+g__Succiniclasticum 4
+g__Acidaminococcus 5
+g__Slackia_A 5
+f__Megasphaeraceae 4
+f__Dialisteraceae 5
+f__Veillonellaceae 5
+g__CAG-1427 5
