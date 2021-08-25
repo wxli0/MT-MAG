@@ -19,3 +19,7 @@ g__Methanosphaera 4
 p__Thermoproteota 4
 g__Methanobrevibacter_A 4
 c__Thermoplasmata 3
+o__ARK-15 5
+c__Nitrososphaeria 3
+g__Methanobrevibacter 5
+o__Methanomassiliicoccales 5
