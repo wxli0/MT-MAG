@@ -3,3 +3,4 @@ g__CAG-822 2
 g__UMGS1312 2
 root 17
 d__Bacteria 2
+d__Archaea 5

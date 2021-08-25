@@ -629,3 +629,15 @@ f__UBA932 5
 f__Marinifilaceae 4
 f__Tannerellaceae 5
 f__Rikenellaceae 5
+f__Bacteroidaceae 6
+g__F0040 4
+g__Tidjanibacter 4
+g__Gabonibacter 5
+g__UBA11471 6
+g__Dysgonomonas 5
+g__Alistipes_A 4
+g__Barnesiella 4
+g__Porphyromonas 5
+g__Butyricimonas 5
+g__Prevotellamassilia 5
+g__RC9 3
