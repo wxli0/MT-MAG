@@ -661,3 +661,12 @@ f__UBA1255 7
 f__Peptoniphilaceae 9
 f__Anaerovoracaceae 4
 f__Peptostreptococcaceae 4
+o__Oscillospirales 16
+g__VUNA01 5
+g__Garciella 6
+g__UMGS1537 5
+g__Fenollaria 6
+g__Romboutsia 6
+g__CAG-238 5
+g__CAG-145 4
+g__Peptoniphilus_A 4
