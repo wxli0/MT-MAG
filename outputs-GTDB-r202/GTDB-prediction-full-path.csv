@@ -789,7 +789,7 @@ RUG787.fa,d__Archaea,p__Methanobacteriota,c__Methanobacteria,o__Methanobacterial
 RUG788.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900314935,,,,,,,,,,,,,,,,
 RUG789.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia_A,o__Christensenellales,f__CAG-138,g__RUG472,s__,,,,,,,,,,,,,,,,
 RUG790.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__UBA932,g__RC9,s__RC9 sp900313275,,,,,,,,,,,,,,,,
-RUG791.fa,d__Archaea,p__Thermoproteota,c__Nitrososphaeria,o__Nitrososphaerales,f__Nitrososphaeraceae,,,,,d__Bacteria,p__Proteobacteria,c__Alphaproteobacteria,o__Rs-D84,f__Rs-D84,g__Rs-D84,s__Rs-D84 sp900313285,,,,,,,,,,,,,,,,
+RUG791.fa,d__Archaea,p__Thermoproteota,c__Nitrososphaeria,o__Nitrososphaerales,f__Nitrososphaeraceae,g__TH5893,,,,d__Bacteria,p__Proteobacteria,c__Alphaproteobacteria,o__Rs-D84,f__Rs-D84,g__Rs-D84,s__Rs-D84 sp900313285,,,,,,,,,,,,,,,,
 RUG792.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Peptostreptococcales,f__Anaerovoracaceae,g__RUG099,s__RUG099 sp900317675,,,,,,,,,,,,,,,,
 RUG793.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__RF39,f__UBA660,g__UBA2730,s__UBA2730 sp900313345,,,,,,,,,,,,,,,,
 RUG794.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900316555,,,,,,,,,,,,,,,,
