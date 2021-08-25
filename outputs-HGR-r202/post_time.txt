@@ -675,3 +675,10 @@ f__UBA644 7
 f__QAMX01 6
 f__CAG-382 5
 f__Butyricicoccaceae 3
+g__UBA644 7
+g__UMGS1783 6
+g__UMGS1387 6
+g__QAMX01 5
+g__Butyricicoccus 6
+g__Agathobaculum 5
+f__CAG-272 5
