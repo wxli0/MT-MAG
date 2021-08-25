@@ -503,3 +503,11 @@ d__Bacteria 1
  3
  3
  3
+p__Proteobacteria 3
+p__Elusimicrobiota 3
+p__Firmicutes_B 4
+p__Campylobacterota 4
+p__Spirochaetota 7
+p__Cyanobacteria 4
+p__Fusobacteriota 4
+p__Verrucomicrobiota 2
