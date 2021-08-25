@@ -670,3 +670,8 @@ g__Romboutsia 6
 g__CAG-238 5
 g__CAG-145 4
 g__Peptoniphilus_A 4
+f__UMGS1783 7
+f__UBA644 7
+f__QAMX01 6
+f__CAG-382 5
+f__Butyricicoccaceae 3
