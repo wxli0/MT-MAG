@@ -563,3 +563,9 @@ f__Succinivibrionaceae 7
 g__Fusobacterium_A 7
 g__CAG-495 11
 c__Actinomycetia 11
+g__Succinivibrio 8
+o__Mycobacteriales 8
+o__Propionibacteriales 11
+f__Burkholderiaceae 10
+o__Actinomycetales 12
+f__Gastranaerophilaceae 9
