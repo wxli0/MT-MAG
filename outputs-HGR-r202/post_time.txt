@@ -762,3 +762,4 @@ g__Hungatella 4
 g__Ruminococcus 3
 g__Clostridium_Q 3
 g__UBA9502 2
+g__Blautia_A 4
