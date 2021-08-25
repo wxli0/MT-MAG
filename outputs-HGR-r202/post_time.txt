@@ -764,3 +764,10 @@ g__Clostridium_Q 3
 g__UBA9502 2
 g__Blautia_A 4
 f__Oscillospiraceae 2
+g__F23-B02 7
+g__UBA1777 5
+g__ER4 5
+g__CAG-170 4
+g__Dysosmobacter 2
+g__CAG-83 3
+g__CAG-110 2
