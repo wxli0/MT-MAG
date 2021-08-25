@@ -621,3 +621,11 @@ g__Veillonella 6
 p__Bacteroidota 3
 c__Bacteroidia 1
 o__Bacteroidales 5
+f__UBA11471 5
+f__Barnesiellaceae 3
+f__Porphyromonadaceae 4
+f__Dysgonomonadaceae 4
+f__UBA932 5
+f__Marinifilaceae 4
+f__Tannerellaceae 5
+f__Rikenellaceae 5
