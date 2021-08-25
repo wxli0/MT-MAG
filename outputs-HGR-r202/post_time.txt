@@ -550,3 +550,6 @@ f__CAG-977 51
 c__Gammaproteobacteria 53
 g__Victivallis 58
 g__Helicobacter_D 49
+g__UBA11549 50
+g__Treponema_D 56
+p__Actinobacteriota 23
