@@ -13,7 +13,7 @@ do
     cur_proc_num=`echo $(screen -ls)|grep -Po "[[:digit:]]+ *(?=Socket)"`
     echo "cur_proc_num is: $cur_proc_num"
     echo "pre_proc_num is: $pre_proc_num"
-    if [ $cur_proc_num -ne $pre_proc_num ] || [ $i == 0 ]; then
+    if [ $cur_proc_num != $pre_proc_num ] || [ $i == 0 ]; then
         echo "==== git commit ===="
         cd ~/MLDSP
         git add .
