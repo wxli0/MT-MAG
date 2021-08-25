@@ -711,3 +711,7 @@ o__Lachnospirales 2
 f__CAG-274 6
 f__Anaerotignaceae 8
 g__Prevotella 10
+g__UMGS1441 9
+g__CAG-274 8
+g__Anaerotignum 7
+f__Ruminococcaceae 12
