@@ -649,3 +649,4 @@ g__CAG-873 7
 g__CAG-279 4
 g__CAG-485 5
 g__Phocaeicola 4
+g__Bacteroides 6

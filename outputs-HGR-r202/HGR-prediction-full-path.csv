@@ -872,7 +872,7 @@ even_MAG-GUT30268,,p__Firmicutes_A,,,,,,,,p__Firmicutes_A,c__Clostridia,o__Oscil
 even_MAG-GUT30319,,p__Firmicutes_A,,,,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-488,s__CAG-488 sp000434055
 even_MAG-GUT30323,,p__Firmicutes_A,,,,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
 even_MAG-GUT30383,,p__Firmicutes_A,,,,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-217,s__CAG-217 sp000436335
-even_MAG-GUT30439,,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,g__Bacteroides,f__Bacteroidaceae,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__TF01-11,s__TF01-11 sp003529475
+even_MAG-GUT30439,,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,g__Bacteroides,f__Bacteroidaceae,s__Bacteroides cellulosilyticus,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__TF01-11,s__TF01-11 sp003529475
 even_MAG-GUT30448,,p__Firmicutes_A,,,,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
 even_MAG-GUT30479,,p__Firmicutes_A,,,,,,,,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__TF01-11,s__TF01-11 sp003529475
 even_MAG-GUT30522,,p__Firmicutes_A,,,,,,,,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Ruminococcaceae,g__Ruminococcus_D,s__Ruminococcus_D bicirculans
