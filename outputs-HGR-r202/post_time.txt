@@ -643,3 +643,8 @@ g__Prevotellamassilia 5
 g__RC9 3
 g__Parabacteroides 5
 g__Alistipes 5
+f__Muribaculaceae 5
+g__CAG-1031 5
+g__CAG-873 7
+g__CAG-279 4
+g__CAG-485 5

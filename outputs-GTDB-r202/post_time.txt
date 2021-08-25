@@ -5,3 +5,6 @@ root 17
 d__Bacteria 2
 d__Archaea 5
 d__Bacteria 2
+p__Nanoarchaeota 5
+p__Methanobacteriota 5
+d__Bacteria 2
