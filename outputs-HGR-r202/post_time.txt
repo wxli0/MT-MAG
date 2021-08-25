@@ -553,3 +553,6 @@ g__Helicobacter_D 49
 g__UBA11549 50
 g__Treponema_D 56
 p__Actinobacteriota 23
+f__CAG-239 68
+f__Fusobacteriaceae 43
+o__Burkholderiales 8
