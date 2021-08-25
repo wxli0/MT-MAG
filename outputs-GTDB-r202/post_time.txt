@@ -14,3 +14,6 @@ d__Bacteria 4
 o__Methanobacteriales 4
 f__Methanobacteriaceae 7
 p__Thermoplasmatota 4
+g__Methanobrevibacter_B 6
+g__Methanosphaera 4
+p__Thermoproteota 4
