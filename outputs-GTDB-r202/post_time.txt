@@ -8,3 +8,4 @@ d__Bacteria 2
 p__Nanoarchaeota 5
 p__Methanobacteriota 5
 d__Bacteria 2
+c__Methanobacteria 7
