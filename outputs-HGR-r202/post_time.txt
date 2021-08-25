@@ -556,3 +556,10 @@ p__Actinobacteriota 23
 f__CAG-239 68
 f__Fusobacteriaceae 43
 o__Burkholderiales 8
+o__Enterobacterales 10
+c__Coriobacteriia 9
+g__51-20 8
+f__Succinivibrionaceae 7
+g__Fusobacterium_A 7
+g__CAG-495 11
+c__Actinomycetia 11
