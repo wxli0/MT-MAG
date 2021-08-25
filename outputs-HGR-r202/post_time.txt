@@ -652,3 +652,7 @@ g__Phocaeicola 4
 g__Bacteroides 6
 p__Firmicutes_A 6
 c__Clostridia 13
+o__UBA1212 3
+o__Eubacteriales 2
+o__Tissierellales 2
+o__Peptostreptococcales 3
