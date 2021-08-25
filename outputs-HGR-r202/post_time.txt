@@ -522,3 +522,10 @@ c__Spirochaetia 4
 c__Fusobacteriia 3
 c__Vampirovibrionia 3
 c__Alphaproteobacteria 3
+o__Sphaerochaetales 54
+o__Elusimicrobiales 47
+o__Desulfitobacteriales 59
+o__Verrucomicrobiales 52
+o__Peptococcales 51
+o__Victivallales 51
+o__Campylobacterales 53
