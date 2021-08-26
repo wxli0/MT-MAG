@@ -36,11 +36,11 @@ while True:
         print("==== git commit ====")
         push_changes()
         print("==== begin group_pred ====")
-        group_pred_all_ranks(pred_path, base_path, test_dir, all_test_dir, ranks)
+        group_pred_all_ranks(pred_path, base_path, test_dir, all_test_dir, ranks[:-1])
         print("==== begin check_missing ====")
-        missing_ranks = check_missing(pred_path, ranks, root_taxon, test_dir=test_dir)
+        missing_ranks = check_missing(pred_path, ranks, root_taxon, base_path, test_dir)
         print('==== begin exec_phase ====')
-        exec_phase(missing_ranks, data_type, base_path=base_path, test_dir=test_dir)
+        exec_phase(missing_ranks, data_type, base_path, test_dir)
     else:
         print("No processes finished.")
 
