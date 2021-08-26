@@ -40,3 +40,5 @@ o__DTBS01 2
 o__UBA583 2
 p__Micrarchaeota 2
 f__UBA583 3
+g__UBA583 4
+c__Micrarchaeia 4
