@@ -773,3 +773,12 @@ g__CAG-83 3
 g__CAG-110 2
 p__Firmicutes 3
 c__Bacilli 5
+o__Haloplasmatales_A 4
+o__Acholeplasmatales 4
+o__ML615J-28 4
+o__Bacillales_D 4
+o__Staphylococcales 4
+o__RFN20 3
+o__RF39 3
+o__Erysipelotrichales 3
+o__Lactobacillales 3
