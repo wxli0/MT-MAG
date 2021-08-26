@@ -772,3 +772,4 @@ g__Dysosmobacter 2
 g__CAG-83 3
 g__CAG-110 2
 p__Firmicutes 3
+c__Bacilli 5

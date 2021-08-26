@@ -489,7 +489,7 @@ RUG487.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bact
 RUG488.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900316645,,,,,,,,,,,,,,,,
 RUG489.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__UBA932,g__RC9,s__RC9 sp900319375,,,,,,,,,,,,,,,,
 RUG490.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Muribaculaceae,g__Sodaliphilus,s__Sodaliphilus sp900318065,,,,,,,,,,,,,,,,
-RUG491.fa,d__Archaea,p__Micrarchaeota,c__Micrarchaeia,o__UBA10214,f__UBA10214,g__CAILMU01,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-177,s__CAG-177 sp900319455,,,,,,,,,,,,,,,,
+RUG491.fa,d__Archaea,p__Micrarchaeota,c__Micrarchaeia,o__UBA10214,f__UBA10214,g__CAILMU01,s__CAILMU01 sp013425375,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__CAG-177,s__CAG-177 sp900319455,,,,,,,,,,,,,,,,
 RUG492.fa,d__Archaea,p__Methanobacteriota,c__Methanobacteria,o__Methanobacteriales,f__Methanobacteriaceae,g__Methanobrevibacter_A,s__Methanobrevibacter_A sp900319535,,,d__Archaea,p__Methanobacteriota,c__Methanobacteria,o__Methanobacteriales,f__Methanobacteriaceae,g__Methanobrevibacter_A,s__Methanobrevibacter_A sp900319535,,,,,,,,,,,,,,,,
 RUG493.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Cyanobacteria,c__Vampirovibrionia,o__Gastranaerophilales,f__Gastranaerophilaceae,g__UBA2813,s__UBA2813 sp900319365,,,,,,,,,,,,,,,,
 RUG494.fa,d__Bacteria,,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Muribaculaceae,g__Sodaliphilus,s__Sodaliphilus sp900316835,,,,,,,,,,,,,,,,
