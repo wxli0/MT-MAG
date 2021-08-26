@@ -9,7 +9,7 @@ import os
 import pandas as pd 
 import subprocess
 
-def check_missing(path, ranks, root_taxon, test_dir):
+def check_missing(path, ranks, root_taxon, test_dir = None):
     """
     Checks ranks with incomplete predictions in the classification result path
     :param path: path of the classification result file

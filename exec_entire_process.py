@@ -17,10 +17,15 @@ metadata_path = sys.argv[0]
 
 metadata = json.load(open(metadata_path))
 ranks = metadata['ranks']
-test_dir = metadata['test_dir']
 root_taxon = metadata['root_taxon']
 data_type = metadata['data_type']
 pred_path = './outputs-'+data_type+"/"+data_type+"-prediction-full-path.csv"
+base_path = None
+if base_path in metadata:
+    base_path = metadata['base_path']
+test_dir = None
+if test_dir in metadata:
+    test_dir = metadata['test_dir']
 
 i=0  
 pre_proc_num=0
@@ -36,9 +41,9 @@ while True:
         print("==== begin group_pred ====")
         group_pred_all_ranks(pred_path, test_dir, ranks)
         print("==== begin check_missing ====")
-        missing_ranks = check_missing(pred_path, ranks, root_taxon, test_dir)
+        missing_ranks = check_missing(pred_path, ranks, root_taxon, test_dir=test_dir)
         print('==== begin exec_phase ====')
-        exec_phase(missing_ranks, data_type)
+        exec_phase(missing_ranks, data_type, base_path=base_path, test_dir=test_dir)
     else:
         print("No processes finished.")
 
