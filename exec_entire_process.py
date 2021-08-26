@@ -21,10 +21,10 @@ root_taxon = metadata['root_taxon']
 data_type = metadata['data_type']
 pred_path = './outputs-'+data_type+"/"+data_type+"-prediction-full-path.csv"
 base_path = None
-if base_path in metadata:
+if 'base_path' in metadata:
     base_path = metadata['base_path']
 test_dir = None
-if test_dir in metadata:
+if 'test_dir' in metadata:
     test_dir = metadata['test_dir']
 
 i=0  
