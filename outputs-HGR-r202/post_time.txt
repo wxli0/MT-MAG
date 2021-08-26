@@ -782,3 +782,15 @@ o__RFN20 3
 o__RF39 3
 o__Erysipelotrichales 3
 o__Lactobacillales 3
+f__CAG-631 4
+f__Turicibacteraceae 4
+f__Anaeroplasmataceae 4
+f__CAG-313 3
+f__CAG-288 3
+f__Amphibacillaceae 3
+f__CAG-826 3
+f__Staphylococcaceae 4
+f__Streptococcaceae 4
+f__Enterococcaceae 6
+f__Erysipelatoclostridiaceae 4
+f__Lactobacillaceae 4
