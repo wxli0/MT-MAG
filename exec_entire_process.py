@@ -13,7 +13,7 @@ import time
 from group_pred import group_pred_all_ranks
 from exec_helper import push_changes, check_missing, exec_phase
 
-metadata_path = sys.argv[0]
+metadata_path = sys.argv[1]
 
 metadata = json.load(open(metadata_path))
 ranks = metadata['ranks']
