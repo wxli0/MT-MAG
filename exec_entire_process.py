@@ -19,13 +19,10 @@ metadata = json.load(open(metadata_path))
 ranks = metadata['ranks']
 root_taxon = metadata['root_taxon']
 data_type = metadata['data_type']
+all_test_dir = metadata['all_test_dir']
+test_dir = metadata['test_dir']
+base_path = metadata['base_path']
 pred_path = './outputs-'+data_type+"/"+data_type+"-prediction-full-path.csv"
-base_path = None
-if 'base_path' in metadata:
-    base_path = metadata['base_path']
-test_dir = None
-if 'test_dir' in metadata:
-    test_dir = metadata['test_dir']
 
 i=0  
 pre_proc_num=0
@@ -39,7 +36,7 @@ while True:
         print("==== git commit ====")
         push_changes()
         print("==== begin group_pred ====")
-        group_pred_all_ranks(pred_path, test_dir, ranks)
+        group_pred_all_ranks(pred_path, base_path, test_dir, all_test_dir, ranks)
         print("==== begin check_missing ====")
         missing_ranks = check_missing(pred_path, ranks, root_taxon, test_dir=test_dir)
         print('==== begin exec_phase ====')

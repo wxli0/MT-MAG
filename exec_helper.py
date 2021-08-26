@@ -9,7 +9,7 @@ import os
 import pandas as pd 
 import subprocess
 
-def check_missing(path, ranks, root_taxon, test_dir = None):
+def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
     """
     Checks ranks with incomplete predictions in the classification result path
     :param path: path of the classification result file
@@ -21,14 +21,12 @@ def check_missing(path, ranks, root_taxon, test_dir = None):
     """
 
     # create a clean result file if does not exist
-    if not os.path.exists(path):
-        if test_dir is None: 
-            raise Exception("missing --test_data for check_missing_exec.py")
+    if not os.path.exists(pred_path):
         df = pd.DataFrame(columns=ranks)
-        df['Row'] = os.listdir(test_dir)
+        df['Row'] = os.listdir(os.path.join(base_path, test_dir))
         df = df.set_index('Row')
-        df.to_csv(path, header=True, index=True)
-    df = pd.read_csv(path, index_col=0, header=0, dtype = str)
+        df.to_csv(pred_path, header=True, index=True)
+    df = pd.read_csv(pred_path, index_col=0, header=0, dtype = str)
     first_rank_res = list(df[ranks[0]])
     first_rank_str_res = list(set([str(x) for x in first_rank_res]))
     if first_rank_str_res == ['nan']:
@@ -54,7 +52,7 @@ def check_missing(path, ranks, root_taxon, test_dir = None):
     return missing_ranks
 
 
-def exec_phase(missing_ranks, data_type, base_path = None, test_dir = None):
+def exec_phase(missing_ranks, data_type, base_path, test_dir):
     """
     Iterate over missing ranks (missing_ranks) for task with data type (data_type) 
     
@@ -74,18 +72,10 @@ def exec_phase(missing_ranks, data_type, base_path = None, test_dir = None):
                     "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh -s "+c+" -d "+data_type+"'", shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    if data_type == 'GTDB-r202' or data_type == 'HGR-r202':
-                        os.system(\
-                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + '"')
-                        print(\
-                            'enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d '+ data_type + '"')
-                    else:
-                        if base_path is None or test_dir is None:
-                            raise Exception("base_path and test_dir are required arguments for data_type "+ data_type)
-                        os.system(\
-                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
-
-
+                    os.system(\
+                        'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                    print(\
+                        'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
