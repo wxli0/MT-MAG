@@ -4,18 +4,12 @@ Check missing predictions in the classification result files (GTDB and HGR)
 No command line arguments are required
 """
 
-import argparse
 import getpass
 import os
 import pandas as pd 
 import subprocess
 
-parser = argparse.ArgumentParser(description='Check ranks missing predicitions and execute entire process')
-parser.add_argument("--exec",default=False, action='store_true')
-parser.add_argument('--test_data', help='path of result files')
-args = parser.parse_args()
-
-def check_missing(path, ranks, root_taxon):
+def check_missing(path, ranks, root_taxon, test_dir):
     """
     Checks ranks with incomplete predictions in the classification result path
     :param path: path of the classification result file
@@ -28,10 +22,10 @@ def check_missing(path, ranks, root_taxon):
 
     # create a clean result file if does not exist
     if not os.path.exists(path):
-        if args.test_data is None: 
+        if test_dir is None: 
             raise Exception("missing --test_data for check_missing_exec.py")
         df = pd.DataFrame(columns=ranks)
-        df['Row'] = os.listdir(args.test_data)
+        df['Row'] = os.listdir(test_dir)
         df = df.set_index('Row')
         df.to_csv(path, header=True, index=True)
     df = pd.read_csv(path, index_col=0, header=0, dtype = str)
@@ -52,7 +46,6 @@ def check_missing(path, ranks, root_taxon):
             if 'reject' in cur_pred:
                 break
             if cur_pred == 'nan':
-                # print(index, row)
                 if pre_pred not in missing_ranks[r]:
                     missing_ranks[r].append(pre_pred)
                 break
@@ -61,13 +54,13 @@ def check_missing(path, ranks, root_taxon):
     return missing_ranks
 
 
-def exec_phase(missing_ranks, data_type):
+def exec_phase(missing_ranks, data_type, base_path = None, test_dir = None):
     """
     Iterate over missing ranks (missing_ranks) for task with data type (data_type) 
     
     :param missing_ranks: missing ranks to be classified. Outputs from check_missing
     :type missing_ranks: List[str]
-    :param data_type: data type of the task. 'HGR' or 'GTDB'
+    :param data_type: data type of the task. 'HGR-r202' or 'GTDB-r202'
     :type data_type: str
     """
     user_name = getpass.getuser()
@@ -78,37 +71,32 @@ def exec_phase(missing_ranks, data_type):
                 if c is None:
                     raise Exception("missing first taxon classification")
                 running_proc = str(subprocess.check_output(\
-                    "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh -s "+c+"'", shell=True))
+                    "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh -s "+c+" -d "+data_type+"'", shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    os.system('screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + '"')
-                    print('enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d '+ data_type + '"')
+                    if data_type == 'GTDB-r202' or data_type == 'HGR-r202':
+                        os.system(\
+                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + '"')
+                        print(\
+                            'enter screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d '+ data_type + '"')
+                    else:
+                        if base_path is None or test_dir is None:
+                            raise Exception("base_path and test_dir are required arguments for data_type "+ data_type)
+                        os.system(\
+                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+
 
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
                     print(c, "in " + data_type + " running process")
 
-
-
-# execute the commands
-
-path1 = os.path.join("./outputs-GTDB-r202/GTDB-prediction-full-path.csv")
-ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
-root_taxon1 = 'root'
-mrs1 = check_missing(path1, ranks1, root_taxon1)
-
-print("GTDB missing ranks are:", mrs1)
-if args.exec:
-    exec_phase(mrs1, 'GTDB')
-
-path2 = os.path.join("./outputs-HGR-r202/HGR-prediction-full-path.csv")
-ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
-root_taxon2 = 'd__Bacteria'
-mrs2 = check_missing(path2, ranks2, root_taxon2)
-
-print("HGR missing ranks are:", mrs2)
-if args.exec:
-    exec_phase(mrs2, 'HGR')
-
-
+def push_changes():
+    os.system('cd ~/MLDSP')
+    os.system('git add .')
+    os.system('git commit -m "updated outputs"')
+    os.system('git push')
+    os.system('cd ~/MT-MAG')
+    os.system('git add .')
+    os.system('git commit -m "updated outputs"')
+    os.system('git push')

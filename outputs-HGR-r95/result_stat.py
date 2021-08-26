@@ -58,7 +58,7 @@ def correct(df, rank, index, partial=False):
         partial_correct_count, wrong_count, total_count], partial_correct_list
         
 # e.g. python3 result_stat.py class
-result_path = "HGR-prediction-full-path-old.csv"
+result_path = "HGR-r202-prediction-full-path-old.csv"
 results =  pd.read_csv(result_path, index_col=0, header=0, dtype = str)
 # print(results)
 rank = sys.argv[1]

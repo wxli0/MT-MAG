@@ -77,12 +77,11 @@ for i in range(len(existing_preds)):
     existing_preds[i] = int(existing_preds[i])-1
 
 
-ver = file_name.split('/')[0].split('-')[-1]
-BK_path = "./rejection-threshold-"+data_type+ver+"/"
+BK_path = "./rejection-threshold-"+data_type+"/"
 if platform.platform()[:5] == 'Linux':
-    BK_path = "./rejection-threshold-"+data_type+"-"+ver+"/"
+    BK_path = "./rejection-threshold-"+data_type+"-"+"/"
 if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
-    BK_path = "./rejection-threshold-"+data_type+"-"+ver+"/"
+    BK_path = "./rejection-threshold-"+data_type+"-"+"/"
 
 rej_path = BK_path+parent+'.json'
 

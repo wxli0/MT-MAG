@@ -15,9 +15,8 @@ import sys
 file_path = sys.argv[1]
 data_type = sys.argv[2]
 file_short = file_path.split('/')[-1]
-ver = file_path.split('/')[0].split('-')[-1]
 sheet = file_short[:-5]+"_pred-t-p"
-pred_path = "outputs-"+data_type+"-"+ver+"/"+data_type+"-prediction-full-path.csv"
+pred_path = "outputs-"+data_type+"/"+data_type+"-prediction-full-path.csv"
 lock_path="lock/add_"+data_type+"_pred.lock"
 
 print("waiting to acqure add_GTDB_pred lock")
@@ -43,7 +42,7 @@ with FileLock(lock_path):
     df = pd.read_excel(file_path, index_col=0, header=0, sheet_name=sheet)
     pred_df =  pd.read_csv(pred_path, index_col=0, header=0, dtype = str)
     for index, row in df.iterrows():
-        if data_type == "HGR" and (index.endswith("_1") or index.endswith("_2")):
+        if data_type == "HGR-r202" and (index.endswith("_1") or index.endswith("_2")):
             continue
         pred_df.at[index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
 

@@ -1,0 +1,6 @@
+{
+    "ranks": ["phylum", "class",  "order", "genus", "species"],
+    "data_type": "HGR-r202",
+    "test_dir": "/mnt/sda/DeepMicrobes-data/labeled_genome-r202",
+    "root_taxon": "d__Bacteria"
+}
