@@ -39,6 +39,7 @@ while True:
         group_pred_all_ranks(pred_path, base_path, test_dir, all_test_dir, ranks[:-1])
         print("==== begin check_missing ====")
         missing_ranks = check_missing(pred_path, ranks, root_taxon, base_path, test_dir)
+        print("missing_ranks are:", missing_ranks)
         print('==== begin exec_phase ====')
         exec_phase(missing_ranks, data_type, base_path, test_dir)
     else:
