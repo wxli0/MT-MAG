@@ -189,3 +189,16 @@ o__Veillonellales 5
 o__Krumholzibacteriales 5
 o__SAR324 4
 p__Verrucomicrobiota 2
+o__Selenomonadales 7
+o__Elusimicrobiales 7
+o__Acidaminococcales 8
+o__DTBS01 7
+o__Krumholzibacteriales 6
+o__Veillonellales 6
+o__Fibrobacterales 7
+o__Gastranaerophilales 7
+o__Ozemobacterales 7
+o__SAR324 6
+o__Palsa-1104 7
+o__UBA7950 7
+o__JdFR-76 8
