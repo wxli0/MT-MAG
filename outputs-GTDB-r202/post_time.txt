@@ -175,3 +175,17 @@ o__Veillonellales 4
 o__UBA7950 4
 o__SAR324 4
 o__Gastranaerophilales 5
+o__Elusimicrobiales 5
+o__Acidaminococcales 5
+o__Ozemobacterales 4
+o__Selenomonadales 5
+o__Fibrobacterales 5
+o__Gastranaerophilales 4
+o__Palsa-1104 4
+o__DTBS01 6
+o__UBA7950 5
+o__JdFR-76 5
+o__Veillonellales 5
+o__Krumholzibacteriales 5
+o__SAR324 4
+p__Verrucomicrobiota 2
