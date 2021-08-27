@@ -217,3 +217,17 @@ o__Veillonellales 6
 o__UBA7950 6
 p__Planctomycetota 4
 c__Spirochaetia 6
+o__Selenomonadales 4
+o__Acidaminococcales 4
+o__Palsa-1104 4
+o__Fibrobacterales 4
+o__Elusimicrobiales 5
+o__Gastranaerophilales 5
+o__Ozemobacterales 5
+o__DTBS01 5
+o__JdFR-76 4
+o__UBA7950 4
+o__Krumholzibacteriales 4
+o__Veillonellales 5
+o__SAR324 5
+o__Sphaerochaetales 3
