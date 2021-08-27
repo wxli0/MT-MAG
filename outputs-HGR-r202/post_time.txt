@@ -1191,3 +1191,16 @@ g__Blautia 4
 g__CAG-127 7
 g__Enterocloster 6
 f__Ruminococcaceae 16
+g__CAG-353 5
+g__UBA1409 4
+g__UBA1394 5
+g__Anaerotruncus 5
+g__Ruminococcus_F 5
+g__Ruminococcus 4
+g__CAG-115 4
+g__Ruminiclostridium_E 6
+g__Ruminococcus_C 6
+g__Faecalibacterium 4
+g__Gemmiger 4
+g__Ruminococcus_D 7
+g__Blautia_A 5
