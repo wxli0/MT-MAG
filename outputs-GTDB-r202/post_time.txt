@@ -137,3 +137,15 @@ o__UBA7950 7
 o__Selenomonadales 6
 o__Veillonellales 4
 c__Campylobacteria 3
+o__Selenomonadales 4
+o__Fibrobacterales 4
+o__Elusimicrobiales 5
+o__Acidaminococcales 5
+o__Ozemobacterales 5
+o__DTBS01 5
+o__Veillonellales 4
+o__JdFR-76 5
+o__Krumholzibacteriales 5
+o__UBA7950 5
+o__SAR324 5
+c__Polyangia 7
