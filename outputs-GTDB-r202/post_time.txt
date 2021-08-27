@@ -87,3 +87,11 @@ o__UBA7950 4
 o__SAR324 4
 o__Fibrobacterales 3
 c__Elusimicrobia 3
+p__Campylobacterota 4
+o__DTBS01 4
+o__Fibrobacterales 4
+o__Krumholzibacteriales 4
+o__JdFR-76 4
+o__UBA7950 4
+o__Ozemobacterales 4
+o__SAR324 4
