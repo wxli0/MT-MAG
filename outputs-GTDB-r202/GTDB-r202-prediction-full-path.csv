@@ -282,7 +282,7 @@ RUG280.fasta,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__B
 RUG281.fasta,d__Bacteria,p__Bacteroidota,,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Paludibacteraceae,g__RF16,s__RF16 sp900317345,,,,,,,,,,,,,,,,
 RUG282.fasta,d__Bacteria,p__Firmicutes_A,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Oscillospiraceae,g__UBA1777,s__UBA1777 sp900317375,,,,,,,,,,,,,,,,
 RUG283.fasta,d__Bacteria,p__Firmicutes_A,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__CAG-791,s__CAG-791 sp900318875,,,,,,,,,,,,,,,,
-RUG284.fasta,d__Bacteria,p__Myxococcota,,,,,,,,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,f__Thermoguttaceae,g__RUG369,s__RUG369 sp900317365,,,,,,,,,,,,,,,,
+RUG284.fasta,d__Bacteria,p__Myxococcota,c__Polyangia,,,,,,,d__Bacteria,p__Planctomycetota,c__Planctomycetes,o__Pirellulales,f__Thermoguttaceae,g__RUG369,s__RUG369 sp900317365,,,,,,,,,,,,,,,,
 RUG285.fasta,d__Bacteria,p__Firmicutes_A,,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Lachnospirales,f__Lachnospiraceae,g__CAG-791,s__CAG-791 sp900317475,,,,,,,,,,,,,,,,
 RUG286.fasta,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelatoclostridiaceae,g__Sharpea,s__Sharpea azabuensis,,,,,,,,,,,,,,,,
 RUG287.fasta,d__Bacteria,p__Firmicutes,,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelatoclostridiaceae,g__Kandleria,s__Kandleria vitulina,,,,,,,,,,,,,,,,

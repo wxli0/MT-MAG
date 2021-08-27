@@ -104,3 +104,12 @@ o__DTBS01 10
 o__SAR324 8
 o__Fibrobacterales 10
 o__Krumholzibacteriales 10
+o__DTBS01 8
+o__Fibrobacterales 9
+o__JdFR-76 9
+o__SAR324 9
+o__Ozemobacterales 9
+o__Krumholzibacteriales 9
+o__Elusimicrobiales 10
+o__UBA7950 10
+p__Myxococcota 6
