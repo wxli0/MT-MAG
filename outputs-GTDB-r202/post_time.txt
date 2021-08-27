@@ -71,3 +71,4 @@ o__Krumholzibacteriales 4
 o__UBA7950 4
 o__Ozemobacterales 3
 o__SAR324 4
+c__Fibrobacteria 4
