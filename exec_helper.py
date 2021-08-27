@@ -66,6 +66,8 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir):
         classes = missing_ranks[rank]
         if len(classes) != 0:
             for c in classes:
+                if not os.path.isdir(os.path.join(base_path, test_dir, c)): # group_pred has not grouped class c
+                    continue 
                 if c is None:
                     raise Exception("missing first taxon classification")
                 running_proc = str(subprocess.check_output(\
