@@ -1142,3 +1142,8 @@ g__Fusobacterium_A 5
 g__Eubacterium_R 9
 g__Parabacteroides 6
 f__UBA660 6
+g__CAG-988 7
+g__UBA7057 6
+g__CAG-605 6
+g__CAG-302 7
+f__Muribaculaceae 8
