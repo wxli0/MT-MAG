@@ -1187,3 +1187,7 @@ g__Coprococcus 4
 g__Lachnospira 7
 g__Faecalimonas 6
 g__Eubacterium_G 6
+g__Blautia 4
+g__CAG-127 7
+g__Enterocloster 6
+f__Ruminococcaceae 16
