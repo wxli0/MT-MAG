@@ -113,3 +113,14 @@ o__Krumholzibacteriales 9
 o__Elusimicrobiales 10
 o__UBA7950 10
 p__Myxococcota 6
+c__Negativicutes 5
+p__Cyanobacteria 3
+o__DTBS01 4
+o__JdFR-76 4
+o__Fibrobacterales 4
+o__Ozemobacterales 4
+o__Elusimicrobiales 4
+o__UBA7950 4
+o__Krumholzibacteriales 4
+o__SAR324 4
+p__Spirochaetota 4
