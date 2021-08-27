@@ -64,3 +64,10 @@ p__Fibrobacterota 3
 c__UBA2214 3
 c__SAR324 4
 c__Bipolaricaulia 4
+o__DTBS01 4
+p__Elusimicrobiota 3
+o__JdFR-76 4
+o__Krumholzibacteriales 4
+o__UBA7950 4
+o__Ozemobacterales 3
+o__SAR324 4
