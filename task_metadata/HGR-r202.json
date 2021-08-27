@@ -1,5 +1,5 @@
 {
-    "ranks": ["phylum", "class",  "order", "genus", "species"],
+    "ranks": ["phylum", "class",  "order", "family", "genus", "species"],
     "data_type": "HGR-r202",
     "base_path": "/mnt/sda/DeepMicrobes-data/labeled_genome-r202",
     "test_dir": "hgr_mags",
