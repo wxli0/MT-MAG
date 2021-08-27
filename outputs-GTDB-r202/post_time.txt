@@ -1535,3 +1535,5 @@ o__Krumholzibacteriales 5
 o__Ignavibacteriales 5
 o__Campylobacterales 5
 p__Patescibacteria 2
+o__Actinomycetales 5
+o__Pirellulales 2
