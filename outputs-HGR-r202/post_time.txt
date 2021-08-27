@@ -964,3 +964,5 @@ f__Streptococcaceae 4
 f__Treponemataceae 5
 f__Megasphaeraceae 12
 f__Actinomycetaceae 9
+f__UBA932 11
+f__Tannerellaceae 9
