@@ -518,7 +518,7 @@ RUG516.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Firm
 RUG517.fasta,d__Bacteria,p__Spirochaetota,c__Spirochaetia,o__Treponematales,f__Treponemataceae,,,,,d__Bacteria,p__Spirochaetota,c__Spirochaetia,o__Treponematales,f__Treponemataceae,g__Treponema_D,s__Treponema_D sp900319625,,,,,,,,,,,,,,,,
 RUG518.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Oscillospiraceae,g__UBA1777,s__UBA1777 sp900319695,,,,,,,,,,,,,,,,
 RUG519.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Muribaculaceae,g__Sodaliphilus,s__Sodaliphilus sp900318065,,,,,,,,,,,,,,,,
-RUG520.fasta,d__Bacteria,p__Bacteroidota,c__Ignavibacteria,,,,,,,d__Bacteria,p__Proteobacteria,c__Gammaproteobacteria,o__Enterobacterales,f__Succinivibrionaceae,g__UBA2804,s__UBA2804 sp900319705,,,,,,,,,,,,,,,,
+RUG520.fasta,d__Bacteria,p__Bacteroidota,c__Ignavibacteria,o__Ignavibacteriales,,,,,,d__Bacteria,p__Proteobacteria,c__Gammaproteobacteria,o__Enterobacterales,f__Succinivibrionaceae,g__UBA2804,s__UBA2804 sp900319705,,,,,,,,,,,,,,,,
 RUG521.fasta,d__Bacteria,p__Firmicutes,c__Bacilli,,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Erysipelotrichales,f__Erysipelotrichaceae,g__RUG521,s__RUG521 sp900319675,,,,,,,,,,,,,,,,
 RUG522.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900319655,,,,,,,,,,,,,,,,
 RUG523.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__UBA932,g__RC9,s__RC9 sp002354005,,,,,,,,,,,,,,,,
