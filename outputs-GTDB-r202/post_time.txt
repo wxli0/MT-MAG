@@ -312,3 +312,16 @@ o__Treponematales 11
 o__SAR324 9
 o__UBA7950 9
 p__Patescibacteria 2
+o__Selenomonadales 4
+o__Acidaminococcales 5
+o__Elusimicrobiales 5
+o__Treponematales 5
+o__Gastranaerophilales 4
+o__Palsa-1104 4
+o__Krumholzibacteriales 4
+o__DTBS01 4
+o__JdFR-76 4
+o__Campylobacterales 4
+o__Veillonellales 5
+o__UBA7950 5
+o__Sphaerochaetales 4
