@@ -49,3 +49,11 @@ d__Bacteria 37
 d__Bacteria 39
 d__Bacteria 37
 g__Methanobrevibacter 4
+o__DTBS01 4
+g__Methanobrevibacter 4
+p__RUG730 3
+p__Riflebacteria 3
+p__Krumholzibacteriota 4
+p__KSB1 4
+p__SAR324 3
+p__Bipolaricaulota 4
