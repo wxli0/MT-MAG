@@ -446,7 +446,7 @@ RUG444.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Firm
 RUG445.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900318795,,,,,,,,,,,,,,,,
 RUG446.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900318915,,,,,,,,,,,,,,,,
 RUG447.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900318905,,,,,,,,,,,,,,,,
-RUG448.fasta,d__Bacteria,p__Firmicutes,c__Bacilli,o__Izemoplasmatales,,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Izemoplasmatales,f__UBA1188,g__UBA1188,s__UBA1188 sp900318975,,,,,,,,,,,,,,,,
+RUG448.fasta,d__Bacteria,p__Firmicutes,c__Bacilli,o__Izemoplasmatales,f__UBA1188,,,,,d__Bacteria,p__Firmicutes,c__Bacilli,o__Izemoplasmatales,f__UBA1188,g__UBA1188,s__UBA1188 sp900318975,,,,,,,,,,,,,,,,
 RUG449.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,,,,d__Bacteria,p__Firmicutes_A,c__Clostridia,o__Oscillospirales,f__Acutalibacteraceae,g__Ruminococcus_E,s__Ruminococcus_E sp900100595,,,,,,,,,,,,,,,,
 RUG450.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__UBA1179,s__UBA1179 sp900318995,,,,,,,,,,,,,,,,
 RUG451.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,,,,,,,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,f__Bacteroidaceae,g__Prevotella,s__Prevotella sp900317305,,,,,,,,,,,,,,,,
