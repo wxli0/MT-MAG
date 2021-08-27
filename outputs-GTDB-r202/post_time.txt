@@ -150,3 +150,15 @@ o__UBA7950 5
 o__SAR324 5
 c__Polyangia 7
 c__Vampirovibrionia 4
+o__DTBS01 4
+o__Fibrobacterales 4
+o__Elusimicrobiales 5
+o__Acidaminococcales 5
+o__Selenomonadales 6
+o__Ozemobacterales 5
+o__Veillonellales 5
+o__JdFR-76 5
+o__Krumholzibacteriales 5
+o__SAR324 4
+o__UBA7950 4
+o__Palsa-1104 3
