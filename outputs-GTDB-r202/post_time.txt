@@ -95,3 +95,12 @@ o__JdFR-76 4
 o__UBA7950 4
 o__Ozemobacterales 4
 o__SAR324 4
+o__Elusimicrobiales 5
+o__Elusimicrobiales 9
+o__Ozemobacterales 9
+o__UBA7950 9
+o__JdFR-76 10
+o__DTBS01 10
+o__SAR324 8
+o__Fibrobacterales 10
+o__Krumholzibacteriales 10
