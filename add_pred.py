@@ -44,7 +44,7 @@ with FileLock(lock_path):
     for index, row in df.iterrows():
         if data_type == "HGR-r202" and (index.endswith("_1") or index.endswith("_2")):
             continue
-        pred_df.at[index[:-3], taxon] = row['rejection-f'] # 'prediction' for complete.csv
+        pred_df.at[index, taxon] = row['rejection-f'] # 'prediction' for complete.csv
 
     pred_df.to_csv(pred_path, index=True, header=True)
     print("Lock in add_pred acquired.")
