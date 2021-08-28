@@ -2655,3 +2655,13 @@ o__Oscillospirales 1
 c__Gammaproteobacteria 1
 p__Patescibacteria 1
 f__Bacteroidaceae 4
+g__UBA4293 5
+g__RUG210 4
+g__UBA2918 4
+g__Alloprevotella 4
+g__F0040 3
+g__UBA6398 3
+g__UBA6382 5
+g__UBA3839 4
+g__UBA1179 3
+g__Prevotellamassilia 3
