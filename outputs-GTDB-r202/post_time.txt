@@ -2414,3 +2414,16 @@ o__Desulfovibrionales 8
 o__Campylobacterales 8
 o__Sphaerochaetales 6
 o__Bacteroidales 28
+f__RUG350 5
+f__RUG033 7
+f__Palsa-1104 5
+f__0-14-0-80-60-11 5
+f__Ozemobacteraceae 7
+f__Elusimicrobiaceae 6
+f__Saccharofermentanaceae 5
+f__CAG-288 4
+f__Mycoplasmoidaceae 5
+f__WCHB1-69 10
+f__Acidaminococcaceae 7
+f__VadinHA17 5
+f__Erysipelatoclostridiaceae 5
