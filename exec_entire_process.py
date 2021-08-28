@@ -45,7 +45,8 @@ while True:
     else:
         print("No processes finished.")
 
-    pre_proc_num=cur_proc_num
+    stdout = Popen('echo $(screen -ls)|grep -Po "[[:digit:]]+ *(?=Socket)"', shell=True, stdout=PIPE).stdout
+    pre_proc_num=int(stdout.read())
     print("==== begin sleep 5 minutes at "+time.ctime()+" ====")
     time.sleep(300)
     i=i+1
