@@ -1899,3 +1899,5 @@ o__SAR324 4
 o__B119-G9 5
 o__Sphaerochaetales 4
 o__Bacteroidales 17
+p__Verrucomicrobiota 4
+p__Patescibacteria 1
