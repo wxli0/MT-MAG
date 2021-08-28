@@ -2640,3 +2640,5 @@ g__NK4A136 5
 g__NK4A144 5
 g__CAG-127 5
 g__Acetatifactor 5
+g__CAG-791 6
+g__Blautia_A 3
