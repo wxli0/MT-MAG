@@ -2573,3 +2573,13 @@ g__SFFH01 9
 g__Rectinema 8
 g__CAG-1000 6
 g__UBA3789 6
+g__Arctic96AD-7 5
+g__Campylobacter 7
+g__UBA6985 9
+g__Spiro-01 6
+g__Sodaliphilus 6
+g__RF16 7
+g__CAG-485 6
+g__Lactococcus 5
+g__UBA1191 6
+g__Acidaminococcus 5
