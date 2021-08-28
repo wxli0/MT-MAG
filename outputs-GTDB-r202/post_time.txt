@@ -2592,3 +2592,5 @@ g__CAG-312 4
 g__Bacillus 7
 o__Oscillospirales 3
 g__RC9 11
+g__Bifidobacterium 5
+p__Patescibacteria 1
