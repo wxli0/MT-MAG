@@ -2583,3 +2583,6 @@ g__CAG-485 6
 g__Lactococcus 5
 g__UBA1191 6
 g__Acidaminococcus 5
+g__Treponema_D 5
+g__Clostridium 5
+p__Proteobacteria 5
