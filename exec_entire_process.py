@@ -23,6 +23,9 @@ all_test_dir = metadata['all_test_dir']
 test_dir = metadata['test_dir']
 base_path = metadata['base_path']
 pred_path = './outputs-'+data_type+"/"+data_type+"-prediction-full-path.csv"
+partial = False
+if 'partial' in metadata:
+    partial = metadata['partial']
 
 i=0  
 pre_proc_num=0
@@ -41,7 +44,7 @@ while True:
         missing_ranks = check_missing(pred_path, ranks, root_taxon, base_path, test_dir)
         print("missing_ranks are:", missing_ranks)
         print('==== begin exec_phase ====')
-        exec_phase(missing_ranks, data_type, base_path, test_dir)
+        exec_phase(missing_ranks, data_type, base_path, test_dir, partial)
     else:
         print("No processes finished.")
 

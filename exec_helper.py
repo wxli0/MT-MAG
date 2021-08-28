@@ -52,7 +52,7 @@ def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
     return missing_ranks
 
 
-def exec_phase(missing_ranks, data_type, base_path, test_dir):
+def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
     """
     Iterate over missing ranks (missing_ranks) for task with data type (data_type) 
     
@@ -60,6 +60,12 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir):
     :type missing_ranks: List[str]
     :param data_type: data type of the task. 'HGR-r202' or 'GTDB-r202'
     :type data_type: str
+    :param base_path: training dataset path
+    :type base_path: str
+    :param test_dir: test dataset directory within the training dataset path
+    :type test_dir: str
+    :param partial: enable partial classification or not
+    :type partial: bool
     """
     user_name = getpass.getuser()
     for rank in missing_ranks:
@@ -74,10 +80,16 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir):
                     "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh -s "+c+" -d "+data_type+"'", shell=True))
                 proc_all =  str(subprocess.check_output("screen -ls", shell=True))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
-                    os.system(\
-                        'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
-                    print(\
-                        'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                    if not partial:
+                        os.system(\
+                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                        print(\
+                            'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                    else:
+                        os.system(\
+                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ''"')
+                        print(\
+                            'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ''"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
