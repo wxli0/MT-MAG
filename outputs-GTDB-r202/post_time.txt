@@ -2589,3 +2589,5 @@ p__Proteobacteria 5
 o__Opitutales 4
 f__CAG-312 5
 g__CAG-312 4
+g__Bacillus 7
+o__Oscillospirales 3
