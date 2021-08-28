@@ -12,3 +12,4 @@ o__Oscillospirales 1
 c__Gammaproteobacteria 0
 c__Gammaproteobacteria 0
 c__Gammaproteobacteria 0
+c__Alphaproteobacteria 0
