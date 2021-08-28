@@ -2665,3 +2665,6 @@ g__UBA6382 5
 g__UBA3839 4
 g__UBA1179 3
 g__Prevotellamassilia 3
+g__UBA4334 4
+c__Gammaproteobacteria 1
+g__UBA4372 5
