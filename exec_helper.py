@@ -87,9 +87,9 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
                             'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
                     else:
                         os.system(\
-                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ''"')
+                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
                         print(\
-                            'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ''"')
+                            'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
