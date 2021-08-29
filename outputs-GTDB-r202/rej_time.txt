@@ -75,3 +75,4 @@ g__CAG-180 0
 g__RUG592 0
 g__Eubacterium_R 0
 g__UBA1213 0
+c__Alphaproteobacteria 0

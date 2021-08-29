@@ -2748,3 +2748,4 @@ g__CAG-180 4
 g__RUG592 4
 g__Eubacterium_R 5
 g__UBA1213 5
+c__Alphaproteobacteria 6
