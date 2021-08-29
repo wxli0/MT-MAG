@@ -66,3 +66,4 @@ c__Coriobacteriia 0
 g__51-20 10
 g__CAG-495 23
 g__Fusobacterium_A 47
+c__Actinomycetia 41
