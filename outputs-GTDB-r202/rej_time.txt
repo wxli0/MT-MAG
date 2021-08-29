@@ -46,3 +46,12 @@ g__WREN01 0
 g__CAG-390 0
 g__UMGS1696 1
 f__Oscillospiraceae 0
+f__Ruminococcaceae 0
+g__RUG678 0
+g__Marseille-P3106 0
+g__RUG626 0
+c__Gammaproteobacteria 0
+g__NK3B98 0
+g__CAG-103 0
+g__ER4 0
+g__CAG-170 0

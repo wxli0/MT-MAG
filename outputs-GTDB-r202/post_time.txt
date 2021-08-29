@@ -2719,3 +2719,12 @@ g__WREN01 5
 g__CAG-390 5
 g__UMGS1696 3
 f__Oscillospiraceae 5
+g__RUG678 4
+f__Ruminococcaceae 5
+g__Marseille-P3106 4
+g__RUG626 5
+c__Gammaproteobacteria 3
+g__NK3B98 5
+g__CAG-103 4
+g__ER4 4
+g__CAG-170 5

@@ -225,3 +225,6 @@ o__ML615J-28 0
 o__Haloplasmatales_A 0
 o__Bacillales_D 9
 o__Staphylococcales 9
+o__RFN20 37
+f__CAG-631 1
+f__Turicibacteraceae 0
