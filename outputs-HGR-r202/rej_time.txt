@@ -283,3 +283,5 @@ g__Dysosmobacter 126
 g__Erysipelatoclostridium 7
 g__Faecalibacillus 17
 g__Streptococcus 158
+g__CAG-83 339
+g__CAG-110 361
