@@ -218,3 +218,4 @@ g__UBA1417 10
 g__Ruminococcus_E 17
 g__Bacteroides 2210
 g__Eubacterium_R 315
+c__Bacilli 18
