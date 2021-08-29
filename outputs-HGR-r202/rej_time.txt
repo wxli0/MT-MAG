@@ -6,3 +6,4 @@ d__Bacteria 0
 d__Bacteria 0
  0
 g__UMGS1590 3
+d__Bacteria 4
