@@ -1226,3 +1226,12 @@ p__Cyanobacteria 10
 p__Firmicutes_A 14
 p__Firmicutes_B 3
 p__Spirochaetota 4
+p__Verrucomicrobiota 4
+c__Peptococcia 5
+c__Desulfitobacteriia 4
+c__Elusimicrobia 4
+c__Campylobacteria 5
+c__Vampirovibrionia 5
+c__Spirochaetia 5
+c__Verrucomicrobiae 4
+c__Lentisphaeria 4

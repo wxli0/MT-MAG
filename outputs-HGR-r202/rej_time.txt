@@ -17,3 +17,12 @@ p__Cyanobacteria 0
 p__Fusobacteriota 1
 p__Firmicutes_B 5
 p__Spirochaetota 5
+p__Verrucomicrobiota 36
+c__Peptococcia 0
+c__Desulfitobacteriia 0
+c__Elusimicrobia 0
+c__Campylobacteria 0
+c__Vampirovibrionia 0
+c__Spirochaetia 8
+c__Verrucomicrobiae 9
+c__Lentisphaeria 10

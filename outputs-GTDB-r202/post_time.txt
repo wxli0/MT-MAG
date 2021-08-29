@@ -2709,3 +2709,5 @@ c__Gammaproteobacteria 1
 c__Gammaproteobacteria 1
 o__Oscillospirales 1
 c__Alphaproteobacteria 5
+c__Gammaproteobacteria 2
+p__Patescibacteria 3
