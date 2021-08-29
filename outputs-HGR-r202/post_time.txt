@@ -1432,3 +1432,5 @@ o__RF39 8
 o__Haloplasmatales_A 8
 o__ML615J-28 11
 o__Acholeplasmatales 11
+o__Bacillales_D 5
+o__Staphylococcales 6
