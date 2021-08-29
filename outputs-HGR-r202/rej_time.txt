@@ -277,3 +277,4 @@ g__Ligilactobacillus 22
 g__Enterococcus_B 15
 g__Enterococcus_A 10
 g__Limosilactobacillus 14
+g__Lactobacillus 24
