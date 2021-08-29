@@ -177,3 +177,8 @@ f__QAMX01 0
 f__UMGS1783 0
 f__UBA644 0
 f__CAG-382 40
+g__QAMX01 0
+g__UMGS1783 0
+g__UBA644 0
+g__UMGS1387 0
+f__Butyricicoccaceae 53
