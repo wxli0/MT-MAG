@@ -154,3 +154,6 @@ o__UBA1212 0
 o__Eubacteriales 11
 o__Tissierellales 42
 o__Peptostreptococcales 30
+f__Garciellaceae 0
+f__UBA1255 12
+f__Peptoniphilaceae 79
