@@ -131,3 +131,7 @@ g__Porphyromonas 29
 g__Gabonibacter 7
 f__Rikenellaceae 41
 f__Megasphaeraceae 24
+g__Tidjanibacter 0
+g__UMGS915 0
+g__Caecibacter 18
+g__Butyricimonas 37
