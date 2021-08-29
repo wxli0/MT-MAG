@@ -1306,3 +1306,5 @@ f__Atopobiaceae 7
 g__Duodenibacillus 7
 g__Olsenella_B 5
 g__Olsenella 6
+c__Negativicutes 11
+f__Gastranaerophilaceae 6
