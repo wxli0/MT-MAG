@@ -1366,3 +1366,9 @@ o__Peptostreptococcales 6
 f__Garciellaceae 5
 f__UBA1255 6
 f__Peptoniphilaceae 6
+f__Muribaculaceae 18
+g__Garciella 6
+g__CAG-1031 7
+g__UMGS1537 6
+g__Fenollaria 6
+g__Peptoniphilus_A 5
