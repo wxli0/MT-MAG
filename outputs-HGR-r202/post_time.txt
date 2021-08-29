@@ -1503,3 +1503,7 @@ g__Bulleidia 4
 g__Clostridium_AQ 4
 g__Holdemanella 5
 f__UBA660 4
+g__CAG-988 5
+g__UBA7057 3
+g__CAG-605 3
+g__CAG-302 4

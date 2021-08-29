@@ -294,3 +294,7 @@ g__Bulleidia 4
 g__Clostridium_AQ 9
 g__Holdemanella 29
 f__UBA660 1139
+g__CAG-988 0
+g__UBA7057 3
+g__CAG-605 5
+g__CAG-302 9
