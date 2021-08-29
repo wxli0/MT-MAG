@@ -93,3 +93,7 @@ g__Mesosutterella 13
 g__Sutterella 28
 g__Parasutterella 19
 g__CAG-521 27
+f__Atopobiaceae 83
+g__Duodenibacillus 54
+g__Olsenella_B 6
+g__Olsenella 10
