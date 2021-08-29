@@ -1501,3 +1501,4 @@ g__Faecalitalea 4
 g__NSJ-61 4
 g__Bulleidia 4
 g__Clostridium_AQ 4
+g__Holdemanella 5
