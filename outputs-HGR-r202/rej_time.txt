@@ -266,3 +266,4 @@ o__Lactobacillales 72
 g__UBA1777 57
 g__Gemmiger 108
 g__ER4 36
+f__Enterococcaceae 25
