@@ -99,3 +99,7 @@ g__Olsenella_B 6
 g__Olsenella 10
 c__Negativicutes 174
 f__Gastranaerophilaceae 249
+o__Acidaminococcales 0
+g__QAMI01 8
+o__Selenomonadales 12
+f__Coriobacteriaceae 4
