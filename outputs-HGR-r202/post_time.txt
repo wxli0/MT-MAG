@@ -1276,3 +1276,6 @@ g__51-20 9
 g__CAG-495 6
 g__Fusobacterium_A 5
 c__Actinomycetia 6
+o__Propionibacteriales 7
+o__Mycobacteriales 6
+o__Actinomycetales 6
