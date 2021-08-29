@@ -2740,3 +2740,9 @@ g__Ruminococcus_D 6
 g__Ruminococcus 4
 g__RUG714 4
 g__RUG806 4
+g__UBA1081 5
+g__CAG-964 5
+g__RUG762 4
+g__RUG420 4
+g__CAG-180 4
+g__RUG592 4

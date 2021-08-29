@@ -1467,3 +1467,4 @@ g__Ruminococcus_D 17
 g__Ruminococcus 7
 g__CAG-115 8
 g__Ruminiclostridium_E 6
+g__Ruminococcus_C 7
