@@ -282,3 +282,4 @@ f__Erysipelatoclostridiaceae 81
 g__Dysosmobacter 126
 g__Erysipelatoclostridium 7
 g__Faecalibacillus 17
+g__Streptococcus 158
