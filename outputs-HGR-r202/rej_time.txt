@@ -144,3 +144,5 @@ f__Veillonellaceae 28
 g__CAG-1427 229
 g__Alistipes 227
 g__Dialister 139
+f__Bacteroidaceae 192
+g__F0040 0
