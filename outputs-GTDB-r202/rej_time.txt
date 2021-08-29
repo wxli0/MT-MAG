@@ -65,3 +65,5 @@ g__CAG-110 0
 f__Acutalibacteraceae 0
 g__Ruminococcus_D 0
 g__Ruminococcus 0
+g__RUG714 0
+g__RUG806 0

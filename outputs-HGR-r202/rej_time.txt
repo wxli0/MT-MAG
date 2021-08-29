@@ -253,3 +253,8 @@ g__UBA4951 13
 g__UBA1409 11
 g__Staphylococcus 14
 g__UBA1394 11
+g__Anaerotruncus 11
+g__Ruminococcus_D 30
+g__Ruminococcus 14
+g__CAG-115 16
+g__Ruminiclostridium_E 17

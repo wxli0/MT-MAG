@@ -2737,3 +2737,6 @@ g__CAG-83 6
 g__CAG-110 4
 f__Acutalibacteraceae 9
 g__Ruminococcus_D 6
+g__Ruminococcus 4
+g__RUG714 4
+g__RUG806 4
