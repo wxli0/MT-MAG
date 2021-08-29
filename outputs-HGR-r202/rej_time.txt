@@ -104,3 +104,7 @@ g__QAMI01 8
 o__Selenomonadales 12
 f__Coriobacteriaceae 4
 f__Selenomonadaceae 22
+g__Selenomonas_C 0
+f__Acidaminococcaceae 41
+g__Mitsuokella 14
+o__Bacteroidales 417
