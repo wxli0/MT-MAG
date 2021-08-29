@@ -150,3 +150,7 @@ g__Veillonella 170
 g__Prevotellamassilia 103
 g__Parabacteroides 393
 c__Clostridia 826
+o__UBA1212 0
+o__Eubacteriales 11
+o__Tissierellales 42
+o__Peptostreptococcales 30
