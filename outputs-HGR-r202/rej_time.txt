@@ -108,3 +108,12 @@ g__Selenomonas_C 0
 f__Acidaminococcaceae 41
 g__Mitsuokella 14
 o__Bacteroidales 417
+f__Barnesiellaceae 0
+f__Tannerellaceae 0
+f__UBA11471 0
+f__Dysgonomonadaceae 5
+f__Porphyromonadaceae 18
+f__Eggerthellaceae 243
+g__Succiniclasticum 16
+g__Acidaminococcus 21
+g__Collinsella 126
