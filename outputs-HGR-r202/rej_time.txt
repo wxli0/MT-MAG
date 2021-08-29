@@ -263,3 +263,6 @@ g__Faecalibacterium 107
 g__F23-B02 31
 o__Erysipelotrichales 47
 o__Lactobacillales 72
+g__UBA1777 57
+g__Gemmiger 108
+g__ER4 36
