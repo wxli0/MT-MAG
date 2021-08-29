@@ -1344,3 +1344,7 @@ g__Tidjanibacter 5
 g__UMGS915 5
 g__Caecibacter 6
 g__Butyricimonas 5
+f__Dialisteraceae 10
+g__Alistipes_A 7
+g__UBA1822 5
+g__Megasphaera 6
