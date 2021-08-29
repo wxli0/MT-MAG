@@ -61,3 +61,7 @@ g__UBA11549 0
 p__Actinobacteriota 2
 f__Fusobacteriaceae 42
 f__CAG-239 22
+c__Bacteroidia 3
+c__Coriobacteriia 0
+g__51-20 10
+g__CAG-495 23
