@@ -1283,3 +1283,10 @@ f__Mycobacteriaceae 12
 f__Dermabacteraceae 13
 f__Bifidobacteriaceae 13
 f__Propionibacteriaceae 8
+c__Gammaproteobacteria 7
+f__Actinomycetaceae 8
+g__Propionibacterium 8
+g__Dermabacter 10
+g__Cutibacterium 5
+g__Corynebacterium 5
+g__Bifidobacterium 6

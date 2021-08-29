@@ -74,3 +74,10 @@ f__Bifidobacteriaceae 0
 f__Mycobacteriaceae 0
 f__Dermabacteraceae 0
 f__Propionibacteriaceae 11
+c__Gammaproteobacteria 105
+f__Actinomycetaceae 41
+g__Propionibacterium 0
+g__Dermabacter 0
+g__Cutibacterium 6
+g__Corynebacterium 24
+g__Bifidobacterium 65
