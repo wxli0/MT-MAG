@@ -1255,3 +1255,13 @@ f__Helicobacteraceae 12
 f__Victivallaceae 14
 f__Elusimicrobiaceae 6
 o__Fusobacteriales 9
+c__Alphaproteobacteria 6
+g__UBA9732 5
+g__Desulfitobacterium 6
+g__UMGS1590 11
+g__Helicobacter_D 11
+g__Akkermansia 5
+g__UBA1436 6
+o__RF32 6
+g__Treponema_D 5
+g__Victivallis 5
