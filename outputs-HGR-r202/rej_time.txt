@@ -259,3 +259,4 @@ g__Ruminococcus 14
 g__CAG-115 16
 g__Ruminiclostridium_E 17
 g__Ruminococcus_C 27
+g__Faecalibacterium 107
