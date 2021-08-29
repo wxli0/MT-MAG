@@ -7,3 +7,13 @@ d__Bacteria 0
  0
 g__UMGS1590 3
 d__Bacteria 4
+p__Firmicutes_A 0
+p__Bacteroidota 0
+p__Firmicutes_C 0
+p__Firmicutes 0
+p__Campylobacterota 0
+p__Elusimicrobiota 0
+p__Cyanobacteria 0
+p__Fusobacteriota 1
+p__Firmicutes_B 5
+p__Spirochaetota 5

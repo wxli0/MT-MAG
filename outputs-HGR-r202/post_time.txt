@@ -1216,3 +1216,13 @@ g__CAG-83 3
 g__Prevotella 7
 g__UMGS1590 3
 d__Bacteria 2
+p__Campylobacterota 10
+p__Elusimicrobiota 10
+p__Bacteroidota 11
+p__Fusobacteriota 8
+p__Firmicutes 10
+p__Firmicutes_C 11
+p__Cyanobacteria 10
+p__Firmicutes_A 14
+p__Firmicutes_B 3
+p__Spirochaetota 4
