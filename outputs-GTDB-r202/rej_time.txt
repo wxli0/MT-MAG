@@ -85,3 +85,4 @@ c__Gammaproteobacteria 0
 g__UBA1254 0
 g__RUG410 0
 g__Rs-D84 0
+c__Paceibacteria 0
