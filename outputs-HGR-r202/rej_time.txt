@@ -219,3 +219,7 @@ g__Ruminococcus_E 17
 g__Bacteroides 2210
 g__Eubacterium_R 315
 c__Bacilli 18
+o__RF39 0
+o__Acholeplasmatales 1
+o__ML615J-28 0
+o__Haloplasmatales_A 0
