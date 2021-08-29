@@ -1274,3 +1274,4 @@ c__Bacteroidia 2
 c__Coriobacteriia 6
 g__51-20 9
 g__CAG-495 6
+g__Fusobacterium_A 5
