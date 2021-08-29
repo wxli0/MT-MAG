@@ -1326,3 +1326,13 @@ f__Eggerthellaceae 7
 g__Succiniclasticum 9
 g__Acidaminococcus 7
 g__Collinsella 6
+g__Eggerthella 5
+g__UMGS1519 6
+f__UBA932 8
+g__UBA11471 9
+g__Dysgonomonas 11
+o__Veillonellales 11
+g__Senegalimassilia 9
+f__Marinifilaceae 6
+g__Barnesiella 5
+g__Slackia_A 6
