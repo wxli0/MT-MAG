@@ -2728,3 +2728,6 @@ g__NK3B98 5
 g__CAG-103 4
 g__ER4 4
 g__CAG-170 5
+p__Patescibacteria 4
+g__UBA1777 7
+g__UBA1409 5

@@ -1437,3 +1437,8 @@ o__Staphylococcales 6
 o__RFN20 8
 f__Turicibacteraceae 7
 f__CAG-631 12
+f__Staphylococcaceae 7
+f__Anaeroplasmataceae 8
+f__Amphibacillaceae 5
+f__CAG-288 13
+f__CAG-313 20
