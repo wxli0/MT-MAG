@@ -2706,3 +2706,4 @@ p__Patescibacteria 1
 c__Alphaproteobacteria 3
 c__Gammaproteobacteria 1
 c__Gammaproteobacteria 1
+c__Gammaproteobacteria 1
