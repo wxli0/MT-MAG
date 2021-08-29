@@ -187,3 +187,6 @@ g__Agathobaculum 32
 o__Lachnospirales 4
 f__CAG-274 9
 f__Anaerotignaceae 12
+g__Anaerotignum 6
+g__UMGS1441 7
+g__CAG-274 7
