@@ -70,3 +70,7 @@ c__Actinomycetia 41
 o__Propionibacteriales 7
 o__Mycobacteriales 6
 o__Actinomycetales 20
+f__Bifidobacteriaceae 0
+f__Mycobacteriaceae 0
+f__Dermabacteraceae 0
+f__Propionibacteriaceae 11
