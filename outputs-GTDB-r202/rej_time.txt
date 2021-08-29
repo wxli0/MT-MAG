@@ -58,3 +58,7 @@ g__CAG-170 0
 p__Patescibacteria 0
 g__UBA1777 0
 g__UBA1409 0
+g__UBA3855 0
+g__Ruminococcus_C 0
+g__CAG-83 0
+g__CAG-110 0
