@@ -1235,3 +1235,14 @@ c__Vampirovibrionia 5
 c__Spirochaetia 5
 c__Verrucomicrobiae 4
 c__Lentisphaeria 4
+o__Peptococcales 7
+o__Desulfitobacteriales 8
+o__Elusimicrobiales 8
+o__Verrucomicrobiales 8
+o__Sphaerochaetales 8
+o__Treponematales 8
+o__Gastranaerophilales 8
+c__Fusobacteriia 9
+o__Campylobacterales 4
+o__Victivallales 6
+p__Proteobacteria 8

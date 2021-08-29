@@ -26,3 +26,14 @@ c__Vampirovibrionia 0
 c__Spirochaetia 8
 c__Verrucomicrobiae 9
 c__Lentisphaeria 10
+c__Fusobacteriia 0
+o__Peptococcales 0
+o__Treponematales 0
+o__Verrucomicrobiales 0
+o__Desulfitobacteriales 0
+o__Sphaerochaetales 0
+o__Elusimicrobiales 0
+o__Gastranaerophilales 0
+o__Campylobacterales 8
+o__Victivallales 16
+p__Proteobacteria 57
