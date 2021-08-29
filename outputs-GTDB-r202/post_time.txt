@@ -2749,3 +2749,6 @@ g__RUG592 4
 g__Eubacterium_R 5
 g__UBA1213 5
 c__Alphaproteobacteria 6
+o__Rs-D84 4
+g__Ruminococcus_E 7
+o__RF32 4

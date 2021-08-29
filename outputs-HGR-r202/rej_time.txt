@@ -267,3 +267,13 @@ g__UBA1777 57
 g__Gemmiger 108
 g__ER4 36
 f__Enterococcaceae 25
+g__CAG-170 74
+f__Lactobacillaceae 71
+f__Streptococcaceae 0
+g__Enterococcus 0
+g__Pediococcus 0
+g__Enterococcus_D 8
+g__Ligilactobacillus 22
+g__Enterococcus_B 15
+g__Enterococcus_A 10
+g__Limosilactobacillus 14
