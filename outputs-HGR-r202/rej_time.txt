@@ -57,3 +57,7 @@ o__RF32 12
 g__Treponema_D 15
 g__Victivallis 24
 f__CAG-977 6
+g__UBA11549 0
+p__Actinobacteriota 2
+f__Fusobacteriaceae 42
+f__CAG-239 22
