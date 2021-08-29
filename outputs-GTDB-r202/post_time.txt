@@ -2752,3 +2752,5 @@ c__Alphaproteobacteria 6
 o__Rs-D84 4
 g__Ruminococcus_E 7
 o__RF32 4
+f__Rs-D84 4
+f__CAG-239 4
