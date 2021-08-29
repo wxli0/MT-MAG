@@ -279,3 +279,6 @@ g__Enterococcus_A 10
 g__Limosilactobacillus 14
 g__Lactobacillus 24
 f__Erysipelatoclostridiaceae 81
+g__Dysosmobacter 126
+g__Erysipelatoclostridium 7
+g__Faecalibacillus 17

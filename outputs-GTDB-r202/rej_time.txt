@@ -81,3 +81,6 @@ g__Ruminococcus_E 0
 o__RF32 0
 f__Rs-D84 0
 f__CAG-239 0
+c__Gammaproteobacteria 0
+g__UBA1254 0
+g__RUG410 0
