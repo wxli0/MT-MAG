@@ -67,3 +67,4 @@ g__Ruminococcus_D 0
 g__Ruminococcus 0
 g__RUG714 0
 g__RUG806 0
+g__UBA1081 0
