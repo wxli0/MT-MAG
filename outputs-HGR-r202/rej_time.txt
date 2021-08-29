@@ -164,3 +164,8 @@ g__UMGS1537 6
 g__Fenollaria 8
 g__Peptoniphilus_A 20
 g__CAG-279 35
+g__CAG-873 44
+f__Anaerovoracaceae 128
+g__VUNA01 0
+g__CAG-238 14
+g__CAG-145 18
