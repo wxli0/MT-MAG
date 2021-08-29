@@ -127,3 +127,7 @@ g__Senegalimassilia 16
 f__Marinifilaceae 23
 g__Barnesiella 26
 g__Slackia_A 19
+g__Porphyromonas 29
+g__Gabonibacter 7
+f__Rikenellaceae 41
+f__Megasphaeraceae 24
