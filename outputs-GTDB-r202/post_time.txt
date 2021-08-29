@@ -2735,3 +2735,5 @@ g__UBA3855 5
 g__Ruminococcus_C 5
 g__CAG-83 6
 g__CAG-110 4
+f__Acutalibacteraceae 9
+g__Ruminococcus_D 6
