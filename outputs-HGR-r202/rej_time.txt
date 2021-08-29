@@ -173,3 +173,7 @@ f__Peptostreptococcaceae 101
 g__CAG-485 205
 g__Romboutsia 10
 o__Oscillospirales 224
+f__QAMX01 0
+f__UMGS1783 0
+f__UBA644 0
+f__CAG-382 40
