@@ -182,3 +182,5 @@ g__UMGS1783 0
 g__UBA644 0
 g__UMGS1387 0
 f__Butyricicoccaceae 53
+g__Butyricicoccus 6
+g__Agathobaculum 32
