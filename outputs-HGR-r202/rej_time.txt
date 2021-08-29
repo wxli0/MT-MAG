@@ -37,3 +37,12 @@ o__Gastranaerophilales 0
 o__Campylobacterales 8
 o__Victivallales 16
 p__Proteobacteria 57
+f__Treponemataceae 0
+f__Akkermansiaceae 0
+f__Desulfitobacteriaceae 0
+f__Sphaerochaetaceae 0
+f__Peptococcaceae 20
+f__Helicobacteraceae 21
+f__Victivallaceae 24
+f__Elusimicrobiaceae 15
+o__Fusobacteriales 16

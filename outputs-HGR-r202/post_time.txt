@@ -1246,3 +1246,12 @@ c__Fusobacteriia 9
 o__Campylobacterales 4
 o__Victivallales 6
 p__Proteobacteria 8
+f__Desulfitobacteriaceae 14
+f__Akkermansiaceae 14
+f__Sphaerochaetaceae 14
+f__Treponemataceae 20
+f__Peptococcaceae 15
+f__Helicobacteraceae 12
+f__Victivallaceae 14
+f__Elusimicrobiaceae 6
+o__Fusobacteriales 9
