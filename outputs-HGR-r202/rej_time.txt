@@ -286,3 +286,9 @@ g__Streptococcus 158
 g__CAG-83 339
 g__CAG-110 361
 f__Erysipelotrichaceae 276
+g__Amedibacterium 0
+g__UBA636 0
+g__Faecalitalea 0
+g__NSJ-61 0
+g__Bulleidia 4
+g__Clostridium_AQ 9
