@@ -1528,3 +1528,12 @@ g__CAG-317 10
 g__UBA11774 8
 g__CAG-127 7
 g__Clostridium_Q 8
+g__Acetatifactor 7
+g__CAG-81 12
+g__Eubacterium_F 9
+g__CAG-590 5
+g__TF01-11 5
+g__CAG-882 6
+g__Butyrivibrio_A 4
+g__Mediterraneibacter 5
+g__UBA9502 5
