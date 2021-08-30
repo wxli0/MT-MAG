@@ -329,3 +329,4 @@ g__Butyrivibrio_A 15
 g__Mediterraneibacter 36
 g__UBA9502 29
 g__Coprococcus 29
+g__Lachnospira 66

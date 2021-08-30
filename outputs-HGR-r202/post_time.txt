@@ -1537,3 +1537,5 @@ g__CAG-882 6
 g__Butyrivibrio_A 4
 g__Mediterraneibacter 5
 g__UBA9502 5
+g__Coprococcus 5
+g__Lachnospira 7
