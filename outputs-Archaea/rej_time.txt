@@ -11,3 +11,4 @@ p__Thermoplasmatota 218
 c__Thermoplasmata 103
 o__Methanomassiliicoccales 16
 f__Methanomethylophilaceae 22
+g__Methanomethylophilus 9
