@@ -26,7 +26,7 @@ partial = False
 if 'partial' in metadata:
     partial = metadata['partial']
 
-check_folders(data_type, base_path, test_dir, pred_path, ranks)
+check_folders(data_type, base_path, test_dir, pred_path, ranks, root_taxon)
 
 i=0  
 pre_proc_num=0

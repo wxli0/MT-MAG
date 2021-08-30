@@ -108,13 +108,23 @@ def push_changes():
     os.system('git push')
 
 
-def check_folders(data_type, base_path, test_dir, pred_path, ranks):
+def check_folders(data_type, base_path, test_dir, pred_path, ranks, root_taxon):
     """
     Checks assuming folder structures for data_type presents. Creates missing \
         directories
 
     :param data_type: task data type
-    :type data_type:str
+    :type data_type: str
+    :param base_path: Directory of training and test datasets
+    :type base_path: str
+    :param test_dir: Directory of test dataset
+    :type test_dir: str
+    :param pred_path: file path of final classification result file
+    :type pred_path: str
+    :param ranks: Ranks in the tasks
+    :type ranks: List[str]
+    :param root_taxon: root taxon of the task
+    :type root_taxon: str
     """
     if not os.path.isdir(os.path.join(config.MLDSP_path, "outputs-"+data_type)):
         print("creating", os.path.join(config.MLDSP_path, "outputs-"+data_type))
@@ -128,7 +138,7 @@ def check_folders(data_type, base_path, test_dir, pred_path, ranks):
     if not os.path.exists(pred_path):
         print("creating", pred_path)
         df = pd.DataFrame(columns=ranks)
-        df['Row'] = os.listdir(os.path.join(base_path, test_dir))
+        df['Row'] = os.listdir(os.path.join(base_path, test_dir, root_taxon))
         df = df.set_index('Row')
         df.to_csv(pred_path, header=True, index=True)
     
