@@ -331,3 +331,7 @@ g__UBA9502 29
 g__Coprococcus 29
 g__Lachnospira 66
 g__Faecalimonas 70
+g__Eubacterium_G 52
+g__Blautia 123
+g__Enterocloster 222
+g__Blautia_A 422
