@@ -116,18 +116,14 @@ def check_folders(data_type, base_path, test_dir, pred_path, ranks):
     :param data_type: task data type
     :type data_type:str
     """
-    os.system("cd "+ config.MLDSP_path)
-    print("INFO: done cd "+ config.MLDSP_path)
-    if not os.path.isdir("outputs-"+data_type):
+    if not os.path.isdir(os.path.join(config.MLDSP_path, "outputs-"+data_type)):
         print("creating", os.path.join(config.MLDSP_path, "outputs-"+data_type))
-        os.mkdir("outputs-"+data_type)
-    os.system("cd "+config.MT_MAG_path)
-    print("INFO: done cd "+config.MT_MAG_path)
-    if not os.path.isdir("outputs-"+data_type):
-        os.mkdir("outputs-"+data_type)
+        os.mkdir(os.path.join(config.MLDSP_path, "outputs-"+data_type))
+    if not os.path.isdir(os.path.join(config.MT_MAG_path, "outputs-"+data_type)):
+        os.mkdir(os.path.join(config.MLDSP_path, "outputs-"+data_type))
         print("creating", os.path.join(config.MT_MAG_path, "outputs-"+data_type))
-    if not os.path.isdir("rejection-threshold-"+data_type):
-        os.mkdir("rejection-threshold-"+data_type)
+    if not os.path.isdir(os.path.join(config.MT_MAG_path, "rejection-threshold-"+data_type)):
+        os.mkdir(os.path.join(config.MT_MAG_path, "rejection-threshold-"+data_type))
         print("creating", os.path.join(config.MT_MAG_path, "rejection-threshold-"+data_type))
     if not os.path.exists(pred_path):
         print("creating", pred_path)
