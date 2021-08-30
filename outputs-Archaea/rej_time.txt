@@ -8,3 +8,4 @@ g__Methanobrevibacter 18
 g__Methanosphaera 35
 g__Methanobrevibacter_A 401
 p__Thermoplasmatota 218
+c__Thermoplasmata 103
