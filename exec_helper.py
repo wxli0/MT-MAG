@@ -25,11 +25,6 @@ def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
     """
 
     # create a clean result file if does not exist
-    if not os.path.exists(pred_path):
-        df = pd.DataFrame(columns=ranks)
-        df['Row'] = os.listdir(os.path.join(base_path, test_dir))
-        df = df.set_index('Row')
-        df.to_csv(pred_path, header=True, index=True)
     df = pd.read_csv(pred_path, index_col=0, header=0, dtype = str)
     first_rank_res = list(df[ranks[0]])
     first_rank_str_res = list(set([str(x) for x in first_rank_res]))
@@ -113,7 +108,7 @@ def push_changes():
     os.system('git push')
 
 
-def check_folders(data_type):
+def check_folders(data_type, base_path, test_dir, pred_path, ranks):
     """
     Checks assuming folder structures for data_type presents. Creates missing \
         directories
@@ -132,5 +127,11 @@ def check_folders(data_type):
     if not os.path.isdir("rejection-threshold-"+data_type):
         os.mkdir("rejection-threshold-"+data_type)
         print("creating", os.path.join(config.MT_MAG_path+"rejection-threshold-"+data_type))
+    if not os.path.exists(pred_path):
+        print("creating", pred_path)
+        df = pd.DataFrame(columns=ranks)
+        df['Row'] = os.listdir(os.path.join(base_path, test_dir))
+        df = df.set_index('Row')
+        df.to_csv(pred_path, header=True, index=True)
     
 
