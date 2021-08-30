@@ -6,3 +6,4 @@ f__Methanobacteriaceae 3
 g__Methanobrevibacter_B 3
 g__Methanobrevibacter 5
 g__Methanosphaera 3
+g__Methanobrevibacter_A 4
