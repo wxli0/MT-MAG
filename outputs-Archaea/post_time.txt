@@ -9,3 +9,4 @@ g__Methanosphaera 3
 g__Methanobrevibacter_A 4
 p__Thermoplasmatota 3
 c__Thermoplasmata 2
+o__Methanomassiliicoccales 2
