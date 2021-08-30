@@ -117,7 +117,7 @@ def check_folders(data_type, base_path, test_dir, pred_path, ranks):
     :type data_type:str
     """
     os.system("cd "+ config.MLDSP_path)
-    print("INFO: done cd "+ config.MLDSP_pat)
+    print("INFO: done cd "+ config.MLDSP_path)
     if not os.path.isdir("outputs-"+data_type):
         print("creating", os.path.join(config.MLDSP_path, "outputs-"+data_type))
         os.mkdir("outputs-"+data_type)
