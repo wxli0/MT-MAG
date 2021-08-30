@@ -3,3 +3,6 @@ p__Methanobacteriota 39
 c__Methanobacteria 0
 o__Methanobacteriales 26
 f__Methanobacteriaceae 55
+g__Methanobrevibacter_B 7
+g__Methanobrevibacter 18
+g__Methanosphaera 35
