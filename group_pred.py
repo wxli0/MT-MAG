@@ -4,11 +4,14 @@ from shutil import copyfile
 
 
 # e.g. python3 group_pred.py order
-
-def group_pred(pred_path, base_path, test_dir, all_test_dir, rank):
+"""
+Groups 
+"""
+def group_pred(pred_path, base_path, test_dir, root_taxon, rank):
     pred_df =  pd.read_csv(pred_path, index_col=0, header=0, dtype = str)
     print(pred_df)
 
+    all_test_dir = os.path.join(base_path, test_dir, root_taxon)
     for index, row in  pred_df.iterrows():
         label = row[rank]
         if not str(label) == 'nan':

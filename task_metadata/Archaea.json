@@ -1,0 +1,7 @@
+{
+    "ranks": ["phylum", "class",  "order", "family", "genus", "species"],
+    "data_type": "Archaea",
+    "base_path": "/mnt/sda/MLDSP-samples-r202",
+    "test_dir": "archaea_rumen_mags",
+    "root_taxon": "d__Archaea" 
+}

@@ -3,7 +3,6 @@
     "data_type": "HGR-r202",
     "base_path": "/mnt/sda/DeepMicrobes-data/labeled_genome-r202",
     "test_dir": "hgr_mags",
-    "all_test_dir": "/mnt/sda/DeepMicrobes-data/mag_reads_250bp_1w_200000",
     "root_taxon": "d__Bacteria",
     "partial": true
 }

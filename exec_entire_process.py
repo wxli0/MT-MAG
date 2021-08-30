@@ -11,7 +11,7 @@ from subprocess import Popen, PIPE
 import time
 
 from group_pred import group_pred_all_ranks
-from exec_helper import push_changes, check_missing, exec_phase
+from exec_helper import push_changes, check_missing, exec_phase, check_folders
 
 metadata_path = sys.argv[1]
 
@@ -19,13 +19,14 @@ metadata = json.load(open(metadata_path))
 ranks = metadata['ranks']
 root_taxon = metadata['root_taxon']
 data_type = metadata['data_type']
-all_test_dir = metadata['all_test_dir']
 test_dir = metadata['test_dir']
 base_path = metadata['base_path']
 pred_path = './outputs-'+data_type+"/"+data_type+"-prediction-full-path.csv"
 partial = False
 if 'partial' in metadata:
     partial = metadata['partial']
+
+check_folders(data_type)
 
 i=0  
 pre_proc_num=0
@@ -39,7 +40,7 @@ while True:
         print("==== git commit ====")
         push_changes()
         print("==== begin group_pred ====")
-        group_pred_all_ranks(pred_path, base_path, test_dir, all_test_dir, ranks[:-1])
+        group_pred_all_ranks(pred_path, base_path, test_dir, root_taxon, ranks[:-1])
         print("==== begin check_missing ====")
         missing_ranks = check_missing(pred_path, ranks, root_taxon, base_path, test_dir)
         print("missing_ranks are:", missing_ranks)

@@ -8,6 +8,10 @@ import getpass
 import os
 import pandas as pd 
 import subprocess
+import sys
+sys.path.insert(0, '.')
+import config
+
 
 def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
     """
@@ -54,7 +58,7 @@ def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
 
 def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
     """
-    Iterate over missing ranks (missing_ranks) for task with data type (data_type) 
+    Iterates over missing ranks (missing_ranks) for task with data type (data_type) 
     
     :param missing_ranks: missing ranks to be classified. Outputs from check_missing
     :type missing_ranks: List[str]
@@ -96,6 +100,9 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
                     print(c, "in " + data_type + " running process")
 
 def push_changes():
+    """
+    Pushes changes to MT-MAG and MLDSP
+    """
     os.system('cd ~/MLDSP')
     os.system('git add .')
     os.system('git commit -m "updated outputs"')
@@ -104,3 +111,23 @@ def push_changes():
     os.system('git add .')
     os.system('git commit -m "updated outputs"')
     os.system('git push')
+
+
+def check_folders(data_type):
+    """
+    Checks assuming folder structures for data_type presents. Creates missing \
+        directories
+
+    :param data_type: task data type
+    :type data_type:str
+    """
+    os.system("cd "+ config.MLDSP_path)
+    if not os.path.isdir("outputs-"+data_type):
+        os.mkdir("outputs-"+data_type)
+    os.system("cd "+config.MT_MAG_path)
+    if not os.path.isdir("outputs-"+data_type):
+        os.mkdir("outputs-"+data_type)
+    if not os.path.isdir("rejection-threshold-"+data_type):
+        os.mkdir("rejection-threshold-"+data_type)
+    
+
