@@ -116,3 +116,4 @@ f__Im1 0
 f__Stappiaceae 0
 g__Rhodoligotrophos 0
 g__Roseibium 0
+c__Gammaproteobacteria 0
