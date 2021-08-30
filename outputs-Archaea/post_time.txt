@@ -1,2 +1,3 @@
 d__Archaea 2
 p__Methanobacteriota 2
+c__Methanobacteria 5
