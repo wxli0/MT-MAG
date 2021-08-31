@@ -1,9 +1,0 @@
-{
-    "train_folder": "o__RFN20_train",
-    "test_folders": ["o__RFN20_eval/f__CAG-826_eval_wrapper",
-    "o__RFN20_eval/f__CAG-288_eval_wrapper"]
-}
-
-
-
-

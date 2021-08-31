@@ -1,8 +1,0 @@
-{
-    "train_folder": "p__Firmicutes_train",
-    "test_folders": ["p__Firmicutes_eval/c__Bacilli_eval_wrapper",  "p__Firmicutes_eval/c__Alicyclobacillia_eval_wrapper"]
-}
-
-
-
-
