@@ -22,3 +22,8 @@ o__Methanomassiliicoccales 14
 o__Methanobacteriales 19
 f__Methanomethylophilaceae 20
 f__Methanobacteriaceae 37
+g__Methanobrevibacter_B 4
+g__Methanomethylophilus 8
+g__Methanobrevibacter 9
+g__Methanosphaera 22
+g__Methanobrevibacter_A 271
