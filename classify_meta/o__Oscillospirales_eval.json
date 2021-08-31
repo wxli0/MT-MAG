@@ -1,9 +1,0 @@
-{
-    "train_folder": "o__Oscillospirales_train",
-    "test_folders": ["o__Oscillospirales_eval/f__Acutalibacteraceae_eval_wrapper",  "o__Oscillospirales_eval/f__Oscillospiraceae_eval_wrapper",
-        "o__Oscillospirales_eval/f__Ruminococcaceae_eval_wrapper"]
-}
-
-
-
-

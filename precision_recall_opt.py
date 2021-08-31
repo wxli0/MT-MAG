@@ -79,9 +79,9 @@ for i in range(len(existing_preds)):
 
 BK_path = "./rejection-threshold-"+data_type+"/"
 if platform.platform()[:5] == 'Linux':
-    BK_path = "./rejection-threshold-"+data_type+"-"+"/"
+    BK_path = "./rejection-threshold-"+data_type+"/"
 if platform.node() == 'q.vector.local' or platform.node().startswith('guppy'):
-    BK_path = "./rejection-threshold-"+data_type+"-"+"/"
+    BK_path = "./rejection-threshold-"+data_type+"/"
 
 rej_path = BK_path+parent+'.json'
 

@@ -1,10 +1,16 @@
----
-output:
-  pdf_document: default
----
-# MT-MAG commands to run Task 1: simulated/sparse dataset and Task 2: real/dense dataset to get full classification depth predictions
+# Installation
 
-To run Task 1: simulated/sparse
+git clone https://github.com/wxli0/MLDSP.git
+
+git clone https://github.com/wxli0/MT-MAG.git
+
+# MT-MAG commands to run existing tasks
+
+To run a small task
+
+- python exec_entire_process.sh task_metadata/Archaea.json
+
+To run Task 1 : simulated/sparse
 
 - python exec_entire_process.sh task_metadata/HGR-r202.json
 
