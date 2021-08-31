@@ -13,3 +13,4 @@ o__Methanomassiliicoccales 2
 f__Methanomethylophilaceae 2
 g__Methanomethylophilus 2
 f__Methanobacteriaceae 3
+d__Archaea 2
