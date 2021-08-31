@@ -18,3 +18,5 @@ p__Methanobacteriota 2
 p__Thermoplasmatota 3
 c__Methanobacteria 2
 c__Thermoplasmata 2
+o__Methanomassiliicoccales 2
+o__Methanobacteriales 2
