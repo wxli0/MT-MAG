@@ -16,3 +16,5 @@ f__Methanobacteriaceae 77
 d__Archaea 422
 p__Methanobacteriota 29
 p__Thermoplasmatota 185
+c__Methanobacteria 0
+c__Thermoplasmata 94
