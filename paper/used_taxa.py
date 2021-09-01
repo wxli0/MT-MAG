@@ -11,7 +11,7 @@ import json
 import os
 import sys
 
-def count_rank(dirs, start, base_path = None):
+def count_rank(dirs, start, suffix = "", base_path = None):
     """
     Count the number of directories in dirs that start with start
 
@@ -19,13 +19,15 @@ def count_rank(dirs, start, base_path = None):
     :type dirs: List[str]
     :param start: the characters to start with
     :type start: str
+    :param suffix: suffix of the used training directories
+    :type suffix: str
     :param base_path: presents if start captures the pattern of previous rank. Used \
         for ranks[-1]. Default None
     :type base_path: str
     """
     count = 0
     for dir in dirs:
-        if dir.startswith(start):
+        if dir.startswith(start) and dir.endswith(suffix):
             if base_path is None:
                 count += 1
             else:
@@ -40,13 +42,14 @@ rank = sys.argv[2]
 json_data = json.load(open(os.path.join('task_metadata', data_type+".json")))
 base_path = json_data['base_path']
 ranks = json_data['ranks']
+suffix = json_data['suffix']
 
 rank_count = 0
 dirs = os.listdir(os.path.join(base_path))
 if rank != ranks[-1]:
     rank_count = count_rank(dirs, rank[0]+'__')
 else:
-    rank_count = count_rank(dirs, ranks[-2][0]+'__', base_path)
+    rank_count = count_rank(dirs, ranks[-2][0]+'__', suffix = suffix, base_path=base_path)
 
 print(rank+":", rank_count)
 

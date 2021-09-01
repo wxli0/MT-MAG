@@ -4,5 +4,6 @@
     "base_path": "/mnt/sda/DeepMicrobes-data/labeled_genome-r202",
     "test_dir": "hgr_mags",
     "root_taxon": "d__Bacteria",
-    "partial": true
+    "partial": true,
+    "suffix": "_split_pruned"
 }

@@ -4,5 +4,6 @@
     "base_path": "/mnt/sda/MLDSP-samples-r202",
     "test_dir": "rumen_mags",
     "root_taxon": "root",
-    "partial": true
+    "partial": true,
+    "suffix": ""
 }
