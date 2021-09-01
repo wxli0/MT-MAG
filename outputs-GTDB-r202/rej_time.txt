@@ -146,3 +146,4 @@ o__Burkholderiales 0
 f__Burkholderiaceae 0
 g__Ottowia 0
 root 15
+d__Archaea 425
