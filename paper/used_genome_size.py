@@ -1,9 +1,18 @@
+"""
+Count the total genome size for task data_type
+
+Command line arguments:
+
+param sys.argv[1]: data_type. Task data type.
+
+"""
 from Bio import SeqIO
+import json
 import os
 import sys
 
 data_type = sys.argv[1]
-json_input = os.path.join('./task_metadata', data_type+'.json')
+json_input = json.load(open(os.path.join('task_metadata', data_type+".json")))
 base_path = json_input['base_path']
 suffix = json_input['suffix']
 
