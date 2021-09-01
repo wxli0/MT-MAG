@@ -19,10 +19,11 @@ suffix = json_input['suffix']
 size = 0
 for dir in os.listdir(base_path):
     if dir[1:3] == '__' and dir.endswith(suffix):
-        for file in os.listdir(os.path.join(base_path, dir)):
-            fasta_sequences = SeqIO.parse(open(os.path.join(base_path, dir, file)),'fasta') 
-            for fasta in fasta_sequences:
-                _, sequence = fasta.id, str(fasta.seq)
-                size += len(sequence)
+        for subdir in os.listdir(os.path.join(base_path, dir)):
+            for file in os.listdir(os.path.join(base_path, dir, subdir)):
+                fasta_sequences = SeqIO.parse(open(os.path.join(base_path, dir, subdir, file)),'fasta') 
+                for fasta in fasta_sequences:
+                    _, sequence = fasta.id, str(fasta.seq)
+                    size += len(sequence)
 
 print("total genome size for", data_type, "is:", size)
