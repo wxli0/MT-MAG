@@ -148,3 +148,4 @@ g__Ottowia 0
 root 15
 d__Archaea 425
 p__Methanobacteriota 29
+c__Methanobacteria 0
