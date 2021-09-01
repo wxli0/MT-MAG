@@ -79,16 +79,16 @@ def calc_stats(path, ranks, ignore_taxa =[], ignore_indices = []):
 
 
 
-print("====== GTDB result ======")
-path1 = "./outputs-GTDB-r202/GTDB-r202-prediction-full-path.csv"
-ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
-ignore_indices1 =  ['RUG013.fa', 'RUG014.fa', 'RUG023.fa', 'RUG024.fa', 'RUG032.fa', 'RUG033.fa', 'RUG035.fa', 'RUG038.fa', 'RUG039.fa', 'RUG040.fa', 'RUG065.fa', 'RUG066.fa', 'RUG068.fa', 'RUG077.fa', 'RUG089.fa', 'RUG100.fa', 'RUG114.fa', 'RUG118.fa', 'RUG129.fa', 'RUG130.fa', 'RUG141.fa', 'RUG146.fa', 'RUG147.fa', 'RUG162.fa', 'RUG163.fa', 'RUG171.fa', 'RUG188.fa', 'RUG190.fa', 'RUG208.fa', 'RUG238.fa', 'RUG239.fa', 'RUG240.fa', 'RUG243.fa', 'RUG255.fa', 'RUG258.fa', 'RUG260.fa', 'RUG284.fa', 'RUG287.fa', 'RUG293.fa', 'RUG298.fa', 'RUG314.fa', 'RUG334.fa', 'RUG347.fa', 'RUG350.fa', 'RUG351.fa', 'RUG353.fa', 'RUG361.fa', 'RUG369.fa', 'RUG399.fa', 'RUG400.fa', 'RUG408.fa', 'RUG420.fa', 'RUG428.fa', 'RUG444.fa', 'RUG466.fa', 'RUG479.fa', 'RUG486.fa', 'RUG491.fa', 'RUG508.fa', 'RUG513.fa', 'RUG517.fa', 'RUG520.fa', 'RUG524.fa', 'RUG540.fa', 'RUG555.fa', 'RUG567.fa', 'RUG570.fa', 'RUG574.fa', 'RUG596.fa', 'RUG612.fa', 'RUG621.fa', 'RUG630.fa', 'RUG635.fa', 'RUG636.fa', 'RUG642.fa', 'RUG650.fa', 'RUG652.fa', 'RUG658.fa', 'RUG661.fa', 'RUG663.fa', 'RUG664.fa', 'RUG666.fa', 'RUG675.fa', 'RUG677.fa', 'RUG678.fa', 'RUG684.fa', 'RUG686.fa', 'RUG687.fa', 'RUG701.fa', 'RUG702.fa', 'RUG703.fa', 'RUG708.fa', 'RUG714.fa', 'RUG728.fa', 'RUG730.fa', 'RUG731.fa', 'RUG732.fa', 'RUG752.fa', 'RUG754.fa', 'RUG761.fa', 'RUG767.fa', 'RUG770.fa', 'RUG789.fa', 'RUG797.fa', 'RUG803.fa', 'RUG807.fa', 'RUG808.fa', 'RUG817.fa', 'RUG820.fa', 'RUG841.fa', 'RUG844.fa', 'hRUG854.fa', 'hRUG855.fa', 'hRUG856.fa', 'hRUG862.fa', 'hRUG864.fa', 'hRUG865.fa', 'hRUG866.fa', 'hRUG881.fa', 'hRUG890.fa', 'hRUG891.fa', 'hRUG910.fa', 'hRUG911.fa']
-ignore_taxa1 = []
-precision1, recall1, incorrect_rate1, partial_recall1, rej_stats1 = calc_stats(path1, ranks1, ignore_indices=ignore_indices1, ignore_taxa=ignore_taxa1)
-print("precision is:", precision1, "recall is:", recall1, "incorrect rate is:", incorrect_rate1, "partial recall is:", partial_recall1)
-for r in rej_stats1:
-    print(rej_stats1[r], "rejects at ", r)
-print("total rejection rate is:", sum(rej_stats1.values()))
+# print("====== GTDB result ======")
+# path1 = "./outputs-GTDB-r202/GTDB-r202-prediction-full-path.csv"
+# ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
+# ignore_indices1 =  ['RUG013.fa', 'RUG014.fa', 'RUG023.fa', 'RUG024.fa', 'RUG032.fa', 'RUG033.fa', 'RUG035.fa', 'RUG038.fa', 'RUG039.fa', 'RUG040.fa', 'RUG065.fa', 'RUG066.fa', 'RUG068.fa', 'RUG077.fa', 'RUG089.fa', 'RUG100.fa', 'RUG114.fa', 'RUG118.fa', 'RUG129.fa', 'RUG130.fa', 'RUG141.fa', 'RUG146.fa', 'RUG147.fa', 'RUG162.fa', 'RUG163.fa', 'RUG171.fa', 'RUG188.fa', 'RUG190.fa', 'RUG208.fa', 'RUG238.fa', 'RUG239.fa', 'RUG240.fa', 'RUG243.fa', 'RUG255.fa', 'RUG258.fa', 'RUG260.fa', 'RUG284.fa', 'RUG287.fa', 'RUG293.fa', 'RUG298.fa', 'RUG314.fa', 'RUG334.fa', 'RUG347.fa', 'RUG350.fa', 'RUG351.fa', 'RUG353.fa', 'RUG361.fa', 'RUG369.fa', 'RUG399.fa', 'RUG400.fa', 'RUG408.fa', 'RUG420.fa', 'RUG428.fa', 'RUG444.fa', 'RUG466.fa', 'RUG479.fa', 'RUG486.fa', 'RUG491.fa', 'RUG508.fa', 'RUG513.fa', 'RUG517.fa', 'RUG520.fa', 'RUG524.fa', 'RUG540.fa', 'RUG555.fa', 'RUG567.fa', 'RUG570.fa', 'RUG574.fa', 'RUG596.fa', 'RUG612.fa', 'RUG621.fa', 'RUG630.fa', 'RUG635.fa', 'RUG636.fa', 'RUG642.fa', 'RUG650.fa', 'RUG652.fa', 'RUG658.fa', 'RUG661.fa', 'RUG663.fa', 'RUG664.fa', 'RUG666.fa', 'RUG675.fa', 'RUG677.fa', 'RUG678.fa', 'RUG684.fa', 'RUG686.fa', 'RUG687.fa', 'RUG701.fa', 'RUG702.fa', 'RUG703.fa', 'RUG708.fa', 'RUG714.fa', 'RUG728.fa', 'RUG730.fa', 'RUG731.fa', 'RUG732.fa', 'RUG752.fa', 'RUG754.fa', 'RUG761.fa', 'RUG767.fa', 'RUG770.fa', 'RUG789.fa', 'RUG797.fa', 'RUG803.fa', 'RUG807.fa', 'RUG808.fa', 'RUG817.fa', 'RUG820.fa', 'RUG841.fa', 'RUG844.fa', 'hRUG854.fa', 'hRUG855.fa', 'hRUG856.fa', 'hRUG862.fa', 'hRUG864.fa', 'hRUG865.fa', 'hRUG866.fa', 'hRUG881.fa', 'hRUG890.fa', 'hRUG891.fa', 'hRUG910.fa', 'hRUG911.fa']
+# ignore_taxa1 = []
+# precision1, recall1, incorrect_rate1, partial_recall1, rej_stats1 = calc_stats(path1, ranks1, ignore_indices=ignore_indices1, ignore_taxa=ignore_taxa1)
+# print("precision is:", precision1, "recall is:", recall1, "incorrect rate is:", incorrect_rate1, "partial recall is:", partial_recall1)
+# for r in rej_stats1:
+#     print(rej_stats1[r], "rejects at ", r)
+# print("total rejection rate is:", sum(rej_stats1.values()))
 
 print("====== HGR result ======")
 path2 = "./outputs-HGR-r202/HGR-r202-prediction-full-path.csv"
