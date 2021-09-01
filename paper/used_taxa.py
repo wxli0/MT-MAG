@@ -47,7 +47,7 @@ suffix = json_data['suffix']
 rank_count = 0
 dirs = os.listdir(os.path.join(base_path))
 if rank != ranks[-1]:
-    rank_count = count_rank(dirs, rank[0]+'__')
+    rank_count = count_rank(dirs, rank[0]+'__', suffix=suffix)
 else:
     rank_count = count_rank(dirs, ranks[-2][0]+'__', suffix = suffix, base_path=base_path)
 
