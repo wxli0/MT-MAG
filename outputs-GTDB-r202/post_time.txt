@@ -2820,3 +2820,4 @@ f__Burkholderiaceae 2
 g__Ottowia 2
 root 3
 d__Archaea 2
+p__Methanobacteriota 3
