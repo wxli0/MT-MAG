@@ -146,3 +146,11 @@ o__Burkholderiales 0
 f__Burkholderiaceae 0
 g__Ottowia 0
 root 15
+d__Archaea 425
+p__Methanobacteriota 29
+c__Methanobacteria 0
+o__Methanobacteriales 26
+f__Methanobacteriaceae 40
+g__Methanobrevibacter_B 5
+g__Methanobrevibacter 13
+g__Methanobrevibacter_A 318
