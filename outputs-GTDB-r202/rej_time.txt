@@ -150,3 +150,4 @@ d__Archaea 425
 p__Methanobacteriota 29
 c__Methanobacteria 0
 o__Methanobacteriales 26
+f__Methanobacteriaceae 40

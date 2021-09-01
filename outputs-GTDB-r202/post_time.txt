@@ -2823,3 +2823,4 @@ d__Archaea 2
 p__Methanobacteriota 3
 c__Methanobacteria 4
 o__Methanobacteriales 2
+f__Methanobacteriaceae 2
