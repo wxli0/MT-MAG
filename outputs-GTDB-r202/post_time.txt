@@ -2824,3 +2824,5 @@ p__Methanobacteriota 3
 c__Methanobacteria 4
 o__Methanobacteriales 2
 f__Methanobacteriaceae 2
+g__Methanobrevibacter_B 3
+g__Methanobrevibacter 4
