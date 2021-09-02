@@ -37,8 +37,8 @@ while True:
     print("cur_proc_num is:", cur_proc_num)
     print("pre_proc_num is:", pre_proc_num)
     if (cur_proc_num != pre_proc_num) or (i == 0):
-        print("==== git commit ====")
-        push_changes()
+        # print("==== git commit ====")
+        # push_changes()
         print("==== begin group_pred ====")
         group_pred_all_ranks(pred_path, base_path, test_dir, root_taxon, ranks[:-1])
         print("==== begin check_missing ====")
