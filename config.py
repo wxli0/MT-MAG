@@ -17,5 +17,3 @@ if platform.platform()[:5] == 'Linux':
 MLDSP_path = os.path.join(base_path, "MLDSP")
 DM_path = os.path.join(base_path, "DeepMicrobes")
 MT_MAG_path = os.path.join(base_path, "MT-MAG")
-
-GTDB_train_path = '/mnt/sda/MLDSP-samples-r202'
