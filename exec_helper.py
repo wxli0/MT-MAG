@@ -81,14 +81,14 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
                     if not partial:
                         os.system(\
-                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
                         print(\
-                            'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
                     else:
                         os.system(\
-                            'screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
+                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
                         print(\
-                            'done screen -dm bash -c "cd ~/MLDSP; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
+                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
