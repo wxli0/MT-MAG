@@ -17,15 +17,15 @@ if args.one_file:
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
         size += len(sequence)
-
-for file in os.listdir(base_path):
-    if args.onetwofa:
-        if not (file.endswith("_1.fa") or file.endswith('_2.fa')):
-            continue
-    fasta_sequences = SeqIO.parse(open(os.path.join(base_path, file)),'fasta') 
-    for fasta in fasta_sequences:
-        _, sequence = fasta.id, str(fasta.seq)
-        size += len(sequence)
+else:
+    for file in os.listdir(base_path):
+        if args.onetwofa:
+            if not (file.endswith("_1.fa") or file.endswith('_2.fa')):
+                continue
+        fasta_sequences = SeqIO.parse(open(os.path.join(base_path, file)),'fasta') 
+        for fasta in fasta_sequences:
+            _, sequence = fasta.id, str(fasta.seq)
+            size += len(sequence)
 
 
 print("base_path:", base_path, "size:", size)
