@@ -4,6 +4,8 @@ git clone https://github.com/wxli0/MLDSP.git
 
 git clone https://github.com/wxli0/MT-MAG.git
 
+Modify the paths in MT-MAG/config.py if MT-MAG and/or MLDSP are not cloned in the root directory.
+
 # MT-MAG commands to run existing tasks
 
 To run a small task
