@@ -1,3 +1,11 @@
+# Requirements
+
+Python 3.7.9
+
+Matlab 
+
+Bash 
+
 # Installation
 
 git clone https://github.com/wxli0/MLDSP.git
