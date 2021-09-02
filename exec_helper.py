@@ -130,7 +130,7 @@ def check_folders(data_type, base_path, test_dir, pred_path, ranks, root_taxon):
         print("creating", os.path.join(config.MLDSP_path, "outputs-"+data_type))
         os.mkdir(os.path.join(config.MLDSP_path, "outputs-"+data_type))
     if not os.path.isdir(os.path.join(config.MT_MAG_path, "outputs-"+data_type)):
-        os.mkdir(os.path.join(config.MLDSP_path, "outputs-"+data_type))
+        os.mkdir(os.path.join(config.MT_MAG_path, "outputs-"+data_type))
         print("creating", os.path.join(config.MT_MAG_path, "outputs-"+data_type))
     if not os.path.isdir(os.path.join(config.MT_MAG_path, "rejection-threshold-"+data_type)):
         os.mkdir(os.path.join(config.MT_MAG_path, "rejection-threshold-"+data_type))
