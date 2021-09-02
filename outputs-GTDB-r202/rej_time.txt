@@ -154,3 +154,4 @@ f__Methanobacteriaceae 40
 g__Methanobrevibacter_B 5
 g__Methanobrevibacter 13
 g__Methanobrevibacter_A 318
+d__Bacteria 47267

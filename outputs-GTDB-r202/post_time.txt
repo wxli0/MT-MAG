@@ -2827,3 +2827,4 @@ f__Methanobacteriaceae 2
 g__Methanobrevibacter_B 3
 g__Methanobrevibacter 4
 g__Methanobrevibacter_A 3
+d__Bacteria 37
