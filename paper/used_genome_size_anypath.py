@@ -5,8 +5,8 @@ import sys
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--base_path', default="", type=str, help='directories of the fasta files')
-parser.add_argument('--onetwofa', default=False, action="store_true", type=bool, help='check only for files with suffix _1.fa and _2.fa')
-parser.add_argument('--one_file', default=False, action="store_true", type=bool, help='check for a specific file')
+parser.add_argument('--onetwofa', default=False, action="store_true", help='check only for files with suffix _1.fa and _2.fa')
+parser.add_argument('--one_file', default=False, action="store_true", help='check for a specific file')
 args = parser.parse_args()
 
 base_path = args.base_path
