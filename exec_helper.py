@@ -94,18 +94,18 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
                 else:
                     print(c, "in " + data_type + " running process")
 
-# def push_changes():
-#     """
-#     Pushes changes to MT-MAG and MLDSP
-#     """
-#     os.system('cd ~/MLDSP')
-#     os.system('git add .')
-#     os.system('git commit -m "updated outputs"')
-#     os.system('git push')
-#     os.system('cd ~/MT-MAG')
-#     os.system('git add .')
-#     os.system('git commit -m "updated outputs"')
-#     os.system('git push')
+def push_changes():
+    """
+    Pushes changes to MT-MAG and MLDSP
+    """
+    os.system('cd ~/MLDSP')
+    os.system('git add .')
+    os.system('git commit -m "updated outputs"')
+    os.system('git push')
+    os.system('cd ~/MT-MAG')
+    os.system('git add .')
+    os.system('git commit -m "updated outputs"')
+    os.system('git push')
 
 
 def check_folders(data_type, base_path, test_dir, pred_path, ranks, root_taxon):
