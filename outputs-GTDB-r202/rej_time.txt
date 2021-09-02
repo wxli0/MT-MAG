@@ -155,3 +155,6 @@ g__Methanobrevibacter_B 5
 g__Methanobrevibacter 13
 g__Methanobrevibacter_A 318
 d__Bacteria 47267
+p__SAR324 0
+p__Riflebacteria 0
+p__RUG730 0
