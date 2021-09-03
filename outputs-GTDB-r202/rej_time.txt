@@ -218,3 +218,4 @@ g__UBA2897 8
 g__RUG643 9
 g__Caecibacter 11
 g__Selenomonas_C 17
+c__Gammaproteobacteria 3
