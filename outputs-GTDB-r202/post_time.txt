@@ -2909,3 +2909,5 @@ f__Bifidobacteriaceae 7
 c__Spirochaetia 6
 c__Coriobacteriia 5
 p__Myxococcota 5
+o__Treponematales 9
+p__Firmicutes_A 8
