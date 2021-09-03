@@ -2922,3 +2922,9 @@ o__Coriobacteriales 3
 f__RUG033 5
 o__Burkholderiales 6
 f__Atopobiaceae 5
+g__CADAUA01 6
+g__UBA7741 9
+g__RUG721 10
+g__Olegusella 4
+g__RUG440 8
+g__UBA1367 6
