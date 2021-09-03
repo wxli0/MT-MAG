@@ -2903,3 +2903,4 @@ f__Streptosporangiaceae 9
 g__Thermobifida 6
 o__RFP12 5
 f__UBA1067 7
+g__RUG572 6
