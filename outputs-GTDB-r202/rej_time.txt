@@ -158,3 +158,7 @@ d__Bacteria 47267
 p__SAR324 0
 p__Riflebacteria 0
 p__RUG730 0
+p__Fibrobacterota 16
+p__Elusimicrobiota 27
+c__Ozemobacteria 0
+c__SAR324 9
