@@ -194,3 +194,7 @@ g__CAG-484 14
 g__UBA6984 20
 g__UBA1221 33
 g__UBA2883 29
+g__UBA2813 86
+c__Desulfobaccia 0
+g__CAG-196 129
+c__Campylobacteria 70
