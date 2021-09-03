@@ -262,3 +262,4 @@ c__Alphaproteobacteria 15941
 o__Rs-D84 23
 f__Rs-D84 11
 o__RF32 52
+f__CAG-239 16
