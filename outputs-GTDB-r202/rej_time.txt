@@ -265,3 +265,5 @@ o__RF32 52
 f__CAG-239 16
 g__RUG410 44
 g__Rs-D84 442
+c__Bacilli 3085
+o__RF39 0
