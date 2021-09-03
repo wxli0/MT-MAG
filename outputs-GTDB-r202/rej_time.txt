@@ -183,3 +183,4 @@ p__Spirochaetota 4
 p__Campylobacterota 64
 o__Gastranaerophilales 31
 p__Firmicutes 103
+p__Actinobacteriota 6
