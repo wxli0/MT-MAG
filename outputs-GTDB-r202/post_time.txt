@@ -2860,3 +2860,10 @@ p__Actinobacteriota 8
 g__Fibrobacter 5
 f__Gastranaerophilaceae 10
 p__Desulfobacterota 5
+p__Bacteroidota 13
+c__Desulfovibrionia 9
+g__UMGS1477 9
+g__CAG-484 11
+g__UBA6984 11
+g__UBA1221 6
+g__UBA2883 6
