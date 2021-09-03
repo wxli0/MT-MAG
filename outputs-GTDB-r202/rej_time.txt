@@ -184,3 +184,6 @@ p__Campylobacterota 64
 o__Gastranaerophilales 31
 p__Firmicutes 103
 p__Actinobacteriota 6
+g__Fibrobacter 1024
+f__Gastranaerophilaceae 161
+p__Desulfobacterota 6
