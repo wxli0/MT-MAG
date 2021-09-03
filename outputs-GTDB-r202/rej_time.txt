@@ -234,3 +234,4 @@ g__RUG572 44
 o__Actinomycetales 522
 f__Bifidobacteriaceae 35
 c__Spirochaetia 1287
+c__Coriobacteriia 156
