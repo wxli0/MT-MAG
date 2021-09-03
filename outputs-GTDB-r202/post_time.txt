@@ -2928,3 +2928,6 @@ g__RUG721 10
 g__Olegusella 4
 g__RUG440 8
 g__UBA1367 6
+f__Eggerthellaceae 5
+g__Olsenella 6
+g__RUG013 4
