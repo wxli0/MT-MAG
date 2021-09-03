@@ -169,3 +169,8 @@ p__Firmicutes_C 35
 c__Elusimicrobia 39
 f__NAC60-12 10
 f__Ozemobacteraceae 17
+p__Cyanobacteria 37
+g__RUG334 0
+o__Fibrobacterales 13
+o__Elusimicrobiales 20
+g__Arctic96AD-7 52
