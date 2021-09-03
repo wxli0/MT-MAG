@@ -2908,3 +2908,4 @@ o__Actinomycetales 6
 f__Bifidobacteriaceae 7
 c__Spirochaetia 6
 c__Coriobacteriia 5
+p__Myxococcota 5
