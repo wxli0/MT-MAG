@@ -199,3 +199,4 @@ c__Desulfobaccia 0
 g__CAG-196 129
 c__Campylobacteria 70
 o__Desulfobaccales 10
+c__Negativicutes 440
