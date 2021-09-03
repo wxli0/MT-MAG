@@ -167,3 +167,5 @@ o__Ozemobacterales 0
 o__SAR324 6
 p__Firmicutes_C 35
 c__Elusimicrobia 39
+f__NAC60-12 10
+f__Ozemobacteraceae 17
