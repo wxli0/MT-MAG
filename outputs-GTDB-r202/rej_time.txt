@@ -181,3 +181,5 @@ g__UBA1436 145
 c__Vampirovibrionia 87
 p__Spirochaetota 4
 p__Campylobacterota 64
+o__Gastranaerophilales 31
+p__Firmicutes 103
