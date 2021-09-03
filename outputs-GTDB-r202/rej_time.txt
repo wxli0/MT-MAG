@@ -219,3 +219,5 @@ g__RUG643 9
 g__Caecibacter 11
 g__Selenomonas_C 17
 c__Gammaproteobacteria 3
+c__Lentisphaeria 67
+f__Desulfovibrionaceae 605
