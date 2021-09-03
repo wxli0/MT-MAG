@@ -229,3 +229,4 @@ c__Kiritimatiellae 312
 f__Streptosporangiaceae 1506
 g__Thermobifida 13
 o__RFP12 29
+f__UBA1067 55

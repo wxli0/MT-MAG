@@ -144,7 +144,7 @@ RUG480.fasta,d__Bacteria,p__Firmicutes_A,,,,,
 RUG389.fasta,d__Bacteria,p__Firmicutes_A,,,,,
 RUG077.fasta,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__Selenomonadales,f__Selenomonadaceae,g__Selenomonas_A(reject),
 RUG125.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
-RUG572.fasta,d__Bacteria,p__Verrucomicrobiota,c__Kiritimatiellae,o__RFP12,f__UBA1067,,
+RUG572.fasta,d__Bacteria,p__Verrucomicrobiota,c__Kiritimatiellae,o__RFP12,f__UBA1067,g__RUG572,
 RUG778.fasta,d__Bacteria,p__Actinobacteriota(reject),c__Coriobacteriia,,,,
 RUG437.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
 RUG179.fasta,d__Bacteria,p__Firmicutes_C,c__Negativicutes,o__Selenomonadales,f__Selenomonadaceae,g__UBA2897,s__UBA2897 sp900316275
