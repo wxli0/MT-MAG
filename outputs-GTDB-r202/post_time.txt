@@ -2900,3 +2900,5 @@ g__UBA1732 10
 g__Desulfovibrio 12
 c__Kiritimatiellae 7
 f__Streptosporangiaceae 9
+g__Thermobifida 6
+o__RFP12 5
