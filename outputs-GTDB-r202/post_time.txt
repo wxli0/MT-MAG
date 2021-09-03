@@ -2846,3 +2846,7 @@ p__Cyanobacteria 6
 g__RUG334 4
 o__Fibrobacterales 5
 o__Elusimicrobiales 4
+g__Arctic96AD-7 5
+f__Elusimicrobiaceae 8
+f__Fibrobacteraceae 4
+p__Proteobacteria 4

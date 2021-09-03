@@ -174,3 +174,6 @@ g__RUG334 0
 o__Fibrobacterales 13
 o__Elusimicrobiales 20
 g__Arctic96AD-7 52
+f__Elusimicrobiaceae 14
+f__Fibrobacteraceae 21
+p__Proteobacteria 46
