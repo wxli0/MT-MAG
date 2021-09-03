@@ -223,3 +223,5 @@ c__Lentisphaeria 67
 f__Desulfovibrionaceae 605
 o__Victivallales 73
 f__UBA1829 11
+g__UBA1732 21
+g__Desulfovibrio 449
