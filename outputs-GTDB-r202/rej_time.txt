@@ -162,3 +162,8 @@ p__Fibrobacterota 16
 p__Elusimicrobiota 27
 c__Ozemobacteria 0
 c__SAR324 9
+c__Fibrobacteria 22
+o__Ozemobacterales 0
+o__SAR324 6
+p__Firmicutes_C 35
+c__Elusimicrobia 39
