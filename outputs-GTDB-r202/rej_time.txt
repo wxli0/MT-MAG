@@ -232,3 +232,4 @@ o__RFP12 29
 f__UBA1067 55
 g__RUG572 44
 o__Actinomycetales 522
+f__Bifidobacteriaceae 35
