@@ -2851,3 +2851,6 @@ f__Elusimicrobiaceae 8
 f__Fibrobacteraceae 4
 p__Proteobacteria 4
 g__UBA1436 8
+c__Vampirovibrionia 19
+p__Spirochaetota 5
+p__Campylobacterota 4

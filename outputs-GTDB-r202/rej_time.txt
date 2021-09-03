@@ -178,3 +178,6 @@ f__Elusimicrobiaceae 14
 f__Fibrobacteraceae 21
 p__Proteobacteria 46
 g__UBA1436 145
+c__Vampirovibrionia 87
+p__Spirochaetota 4
+p__Campylobacterota 64
