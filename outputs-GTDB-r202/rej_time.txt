@@ -212,3 +212,9 @@ g__Acidaminococcus 66
 c__Bacteroidia 3
 p__Verrucomicrobiota 5
 f__Megasphaeraceae 13
+f__Selenomonadaceae 201
+o__Streptosporangiales 54
+g__UBA2897 8
+g__RUG643 9
+g__Caecibacter 11
+g__Selenomonas_C 17
