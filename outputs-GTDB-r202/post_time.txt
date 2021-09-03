@@ -2940,3 +2940,5 @@ g__RUG410 6
 g__Rs-D84 5
 c__Bacilli 10
 o__RF39 4
+o__Izemoplasmatales 3
+f__UBA1188 5

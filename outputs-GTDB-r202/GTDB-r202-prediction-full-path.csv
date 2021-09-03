@@ -655,7 +655,7 @@ RUG517.fasta,d__Bacteria,p__Spirochaetota,c__Spirochaetia,o__Treponematales,f__T
 RUG318.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
 RUG168.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
 RUG713.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
-RUG448.fasta,d__Bacteria,p__Firmicutes,c__Bacilli,o__Izemoplasmatales,,,
+RUG448.fasta,d__Bacteria,p__Firmicutes,c__Bacilli,o__Izemoplasmatales,f__UBA1188,g__UBA1188,
 RUG349.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,
 RUG167.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,
 RUG590.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
