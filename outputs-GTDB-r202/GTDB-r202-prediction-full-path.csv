@@ -895,7 +895,7 @@ RUG004.fasta,d__Bacteria,p__Actinobacteriota(reject),c__Coriobacteriia,o__Coriob
 hRUG880.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,
 RUG466.fasta,d__Bacteria,p__Bacteroidota(reject),c__Bacteroidia,o__Bacteroidales,,,
 RUG317.fasta,d__Bacteria(reject),p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
-RUG284.fasta,d__Bacteria,p__Myxococcota,c__Polyangia,,,,
+RUG284.fasta,d__Bacteria,p__Myxococcota,c__Polyangia,o__Palsa-1104(reject),,,
 RUG708.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,
 RUG699.fasta,d__Bacteria,p__Bacteroidota,c__Bacteroidia,o__Bacteroidales,,,
 RUG427.fasta,d__Bacteria,p__Firmicutes_A,c__Clostridia,,,,

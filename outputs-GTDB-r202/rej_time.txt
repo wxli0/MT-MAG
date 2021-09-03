@@ -240,3 +240,4 @@ o__Treponematales 98
 p__Firmicutes_A 389
 c__Clostridia_A 0
 f__Treponemataceae 59
+c__Polyangia 131
