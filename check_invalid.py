@@ -48,14 +48,14 @@ def check_invalid(data_dir, path):
     return index_species_not_exist, single_child_genus
 
 print("========== checking invalid entries in HGR ===============")
-HGR_path = './outputs-HGR-r202/HGR-prediction-full-path.csv'
+HGR_path = './outputs-HGR-r202/HGR-r202-prediction-full-path.csv'
 data_dir1 = '/mnt/sda/DeepMicrobes-data/labeled_genome-r202/'
 index_species_not_exist1, single_child_genus1 = check_invalid(data_dir1, HGR_path)
 print("index_species_not_exist1 length is:", len(index_species_not_exist1), index_species_not_exist1)
 print("single_child_genus1 length is:", len(single_child_genus1), single_child_genus1)
         
 print("========== checking invalid entries in GTDB ===============")
-MLDSP_path = './outputs-GTDB-r202/GTDB-prediction-full-path.csv'
+MLDSP_path = './outputs-GTDB-r202/GTDB-r202-prediction-full-path.csv'
 data_dir2 = '/mnt/sda/MLDSP-samples-r202/'
 index_species_not_exist2, single_child_genus2 = check_invalid(data_dir2, MLDSP_path)
 print("index_species_not_exist2 length is:", len(index_species_not_exist2), index_species_not_exist2)
