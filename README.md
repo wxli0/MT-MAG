@@ -22,7 +22,7 @@ In a json file, five mandatory attributes and two optional attributes are specif
 
 - ranks: List[str]. Mandatory. All ranks with increasing classification depth in the taxonomy.
 
-- data_type: str. Mandatory. Name of the task. Results per rank will be stored in outputs-${data_type}/*. Final results will be stored in ${data_type}-full-prediction-path.csv
+- data_type: str. Mandatory. Name of the task. Results per rank will be stored in outputs-data_type/*. Final results will be stored in data_type-full-prediction-path.csv
 
 - base_path: str. Mandatory. The path to the training and testing dataset directories. Training datasets are stored within base_path. Test datasets are stored within a subfolder (see next attribute test_dir) inside base_path. You are likely to modify this attribute in your json file.
 
