@@ -10,13 +10,16 @@ parser.add_argument('--one_file', default=False, action="store_true", help='chec
 args = parser.parse_args()
 
 base_path = args.base_path
-size = 0
+genome_size = 0
+contig_count = 0
+sample_count = 0
 
 if args.one_file:
     fasta_sequences = SeqIO.parse(open(os.path.join(base_path)),'fasta') 
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
-        size += len(sequence)
+        genome_size += len(sequence)
+        contig_count += 1
 else:
     for file in os.listdir(base_path):
         if args.onetwofa:
@@ -25,7 +28,9 @@ else:
         fasta_sequences = SeqIO.parse(open(os.path.join(base_path, file)),'fasta') 
         for fasta in fasta_sequences:
             _, sequence = fasta.id, str(fasta.seq)
-            size += len(sequence)
+            genome_size += len(sequence)
+            contig_count += 1
+        sample_count += 1
 
 
-print("base_path:", base_path, "size:", size)
+print("base_path:", base_path, "genome_size:", genome_size, "sample_count is:", sample_count, "contig_count is:", contig_count)
