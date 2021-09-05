@@ -401,3 +401,9 @@ g__Catonella 6
 g__RUG842 7
 g__RUG115 7
 g__UBA3633 9
+g__UBA629 27
+g__UBA2912 27
+g__RUG306 30
+g__UBA2882 28
+g__Clostridium_R 34
+g__Weimerbacter 45
