@@ -3070,3 +3070,7 @@ f__Burkholderiaceae 3
 g__RUG147 5
 g__UBA9722 6
 g__UBA2942 8
+g__Catonella 5
+g__RUG842 5
+g__RUG115 6
+g__UBA3633 9
