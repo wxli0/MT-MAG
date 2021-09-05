@@ -3066,3 +3066,7 @@ o__UBA9983_A 3
 f__Zambryskibacteraceae 3
 g__RC9 5
 f__Lachnospiraceae 10
+f__Burkholderiaceae 3
+g__RUG147 5
+g__UBA9722 6
+g__UBA2942 8
