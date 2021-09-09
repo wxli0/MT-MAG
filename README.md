@@ -18,7 +18,7 @@ Modify the paths in MT-MAG/config.py if MT-MAG and/or MLDSP are not cloned in th
 
 cd MT-MAG
 
-In a json file, five mandatory attributes and two optional attributes are specified:
+In a json file in task_metadata/, five mandatory attributes and two optional attributes are specified:
 
 - ranks: List[str]. Mandatory. All ranks with increasing classification depth in the taxonomy.
 
@@ -36,17 +36,17 @@ In a json file, five mandatory attributes and two optional attributes are specif
 
 To run a small task
 
-- python exec_entire_process.sh task_metadata/Archaea.json
+- python exec_entire_process.py task_metadata/Archaea.json
 
 The test dataset is at [d__Archaea.zip](https://drive.google.com/file/d/12QzHooVu7Pqzvd9DVq3FlYRw1f0tLrhz/view?usp=sharing). You need to download, unzip this file, and put it into base_path/test_dir/d__Archaea.
 
 To run Task 1 : simulated/sparse
 
-- python exec_entire_process.sh task_metadata/HGR-r202.json
+- python exec_entire_process.py task_metadata/HGR-r202.json
 
 To run Task 2: real/dense dataset
 
-- python exec_entire_process.sh task_metadata/GTDB-r202.json
+- python exec_entire_process.py task_metadata/GTDB-r202.json
 
 # commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset
 
