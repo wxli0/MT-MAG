@@ -4,7 +4,7 @@ Python 3.7.9
 
 Matlab 
 
-Bash 
+grep >= 3.1
 
 # Installation
 
