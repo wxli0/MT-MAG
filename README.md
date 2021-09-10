@@ -18,6 +18,8 @@ Modify the paths in MT-MAG/config.py if MT-MAG and/or MLDSP are not cloned in th
 
 cd MT-MAG
 
+screen -S new
+
 In a json file in task_metadata/, five mandatory attributes and two optional attributes are specified:
 
 - ranks: List[str]. Mandatory. All ranks with increasing classification depth in the taxonomy.
