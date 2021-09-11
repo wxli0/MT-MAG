@@ -77,7 +77,7 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
                     raise Exception("missing first taxon classification")
                 running_proc = str(subprocess.check_output(\
                     "ps aux|grep "+user_name+"|grep "+"'"+ "phase.sh -s "+c+" -d "+data_type+"'", shell=True))
-                proc_all =  str(subprocess.getoutput("screen -ls", shell=True))
+                proc_all =  str(subprocess.getoutput("screen -ls"))
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
                     if not partial:
                         os.system(\
