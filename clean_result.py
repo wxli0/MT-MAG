@@ -17,6 +17,7 @@ def clean_result(path, ranks):
                     df.at[index, r] = np.nan
                 break
             if r == ranks[-1] and str(cur_pred) == 'nan':
+                print(index)
                 if valid not in incomplete:
                     incomplete.append(valid)
     return df, incomplete
@@ -26,10 +27,10 @@ ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
 df1, incomplete1 = clean_result(path1, ranks1)
 print("incomplete1 is:", incomplete1)
-df1.to_csv(path1)
+# df1.to_csv(path1)
 
 path2 = "./outputs-HGR-r202/HGR-r202-prediction-full-path.csv"
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 df2, incomplete2 = clean_result(path2, ranks2)
 print("incomplete2 is:", incomplete2)
-df2.to_csv(path2)
+# df2.to_csv(path2)
