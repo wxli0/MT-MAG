@@ -1,7 +1,7 @@
 {
     "ranks": ["phylum", "class",  "order", "family", "genus", "species"],
     "data_type": "Archaea",
-    "base_path": "/Users/wanxinli/Desktop/project.nosync/MT-MAG/data",
+    "base_path": "/Users/wanxinli/Desktop/project.nosync/MT-MAG/data/Archaea",
     "test_dir": "archaea_rumen_mags",
     "root_taxon": "d__Archaea",
     "partial": true
