@@ -50,8 +50,10 @@ To run Task 2: real/dense dataset
 
 - python exec_entire_process.py task_metadata/GTDB-r202.json
 
- After "python exec_entire_process.py" command, "bash phase.sh -s …" will be running in another screen session. The first classification is the root taxon (root_taxon) classification. When it finishes, it will trigger phylum level classifications, followed by class, order, family, genus level classifications. When everything finishes, the missing_ranks should be empty and you can terminate the python process. It will take some time for classifications, and you should monitor if any screen sessions run into memory issues. The command to check other screen sessions is
+After "python exec_entire_process.py" command, "bash phase.sh -s …" will be running in another screen session. The first classification is the root taxon (root_taxon) classification. When it finishes, it will trigger phylum level classifications, followed by class, order, family, genus level classifications. When everything finishes, the missing_ranks should be empty and you can terminate the python process. It will take some time for classifications, and you should monitor if any screen sessions run into memory issues. The command to check other screen sessions is
+
 (1) To find the screen session ID: screen -ls 
+
 (2) Attach to the screen: screen -d -r <screenid>
 
 # commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset
