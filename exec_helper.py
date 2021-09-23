@@ -66,6 +66,7 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
     :param partial: enable partial classification or not
     :type partial: bool
     """
+    print("missing_ranks in exec_phase is:", missing_ranks)
     user_name = getpass.getuser()
     for rank in missing_ranks:
         classes = missing_ranks[rank]
