@@ -37,7 +37,7 @@ for index, row in df.iterrows():
     if row['prediction'] in threshold_dict:
         alpha = threshold_dict[row['prediction']]
     if row['max'] < alpha:
-        rejection_f.append(row['prediction']+'(reject)')
+        rejection_f.append(row['prediction']+'(uncertain)')
     else: # if we are just classifying the genomes without rejection threshods 
         rejection_f.append(row['prediction'])
 if 'rejection-f' in df.columns:

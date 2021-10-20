@@ -38,7 +38,7 @@ df_new = pd.read_excel(file, index_col=0, header=0, sheet_name=sheet) # read in 
 taxon = df_new.columns[0] # the only child taxon
 for index, row in df.iterrows():
     if float(row[taxon]) < 0:
-        rejection_f.append(row['prediction']+'(reject)')
+        rejection_f.append(row['prediction']+'(uncertain)')
     else:
         rejection_f.append(row['prediction'])
 if 'rejection-f' in df.columns:
