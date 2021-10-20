@@ -1,10 +1,15 @@
 # Requirements
 
-Python 3.7.9
+(1) Python >= 3.7.9, in addition to the standard packages in anaconda3, and the following packages are required:
+- biopython
+- bs4
+- openpyxl
+- xlrd == 1.2.0
 
-Matlab 
+(2) Matlab 
 
-grep >= 3.1
+(3) grep >= 3.1
+
 
 # Installation
 
