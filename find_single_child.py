@@ -23,7 +23,7 @@ def find_single_child(path, ranks, dir, suffix = ""):
     all_taxons = list(set(all_taxons))
     for taxon in all_taxons:
         taxon = str(taxon)
-        if 'reject' in taxon or taxon == 'nan':
+        if 'uncertain' in taxon or taxon == 'nan':
             continue
         children = os.listdir(dir+taxon+suffix)
         if len(children) == 1:
