@@ -30,7 +30,7 @@ for i in range(len(classes)-1):
 with pd.ExcelWriter(file, engine="openpyxl", mode='a') as writer: 
     df.to_excel(writer, sheet_name = file.split('/')[-1][:-5]+"_pred-t-p", index=True)
     writer.save()
-    writer.close()
+    # writer.close()
 
 wb = openpyxl.load_workbook(file)
 del wb["quadratic-svm-score"]

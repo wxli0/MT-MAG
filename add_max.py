@@ -53,8 +53,8 @@ if len(wb.sheetnames) == 0:
 print("mode is", mode)
 with pd.ExcelWriter(file_path, engine="openpyxl", mode=mode) as writer:  
     df_softmax.to_excel(writer, sheet_name = sheet, index=True)
-writer.save()
-writer.close()
+    writer.save()
+    # writer.close()
 
 
 

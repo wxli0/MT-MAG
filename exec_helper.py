@@ -40,7 +40,7 @@ def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
         pre_pred = None
         for r in ranks:
             cur_pred = str(df.loc[index][r])
-            if 'reject' in cur_pred:
+            if 'uncertain' in cur_pred:
                 break
             if cur_pred == 'nan':
                 if pre_pred not in missing_ranks[r]:
@@ -66,6 +66,7 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
     :param partial: enable partial classification or not
     :type partial: bool
     """
+    print("missing_ranks in exec_phase is:", missing_ranks)
     user_name = getpass.getuser()
     for rank in missing_ranks:
         classes = missing_ranks[rank]

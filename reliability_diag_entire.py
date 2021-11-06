@@ -15,7 +15,6 @@ import sys
 
 
 def write_to_file(vec, file_name):
-    print("file_name is:", file_name)
     if os.path.exists(file_name):
         append_write = 'a' # append if already exists
     else:
@@ -26,11 +25,11 @@ def write_to_file(vec, file_name):
     file.close()
 
 
-ver = 'r202'
-file_name = sys.argv[1]
-parent = file_name.split('/')[1][:-11]
+data_type = sys.argv[1]
+parent = sys.argv[2]
+file_name = os.path.join('outputs-'+data_type, parent+'_train.xlsx')
 xls = pd.ExcelFile(file_name)
-taxons = [x[:-4] for x in xls.sheet_names]
+taxons = [x[:-4] for x in xls.sheet_names] # remove '-b-p'
 print(taxons)
 
 # read sheets
@@ -38,30 +37,26 @@ for taxon in taxons:
     print("reading in sheet:", taxon)
     sheet = taxon + '-b-p'
     df = pd.read_excel(file_name, sheet_name=sheet, index_col=0, header=0)
-    for taxon_other in taxons:
-        file_X = 'outputs-'+ver+'/'+parent+'-'+taxon_other+'-rej-X.txt'
-        file_Y = 'outputs-'+ver+'/'+parent+'-'+taxon_other+'-rej-Y.txt'
-        write_to_file(df[taxon_other].tolist(), file_X)
-        if taxon_other == taxon:
-            write_to_file([1]*df.shape[0], file_Y)
-        else:
-            write_to_file([0]*df.shape[0], file_Y)
+    file_X = os.path.join('outputs-'+data_type, parent+'-rej-X.txt')
+    file_Y = os.path.join('outputs-'+data_type, parent+'-rej-Y.txt')
+    write_to_file(df['max'].tolist(), file_X)
+    df['positive'] = df.apply(lambda row: int(row['prediction'] == taxon), axis=1)
+    write_to_file(df['positive'], file_Y)
 
-for taxon in taxons:
-    print("generating reliablity diagram for", taxon)
-    os.system("Rscript reliability_diag_single.R '"+parent+"' "+"'"+taxon+"'")
 
-print("parent is:", parent)
-score_file_path = 'outputs-'+ver+'/'+parent+'-score.txt'
-score_file = open(score_file_path, 'r')
-score_file_lines = score_file.readlines()
+os.system("Rscript reliability_diag_single.R '"+data_type+"' "+"'"+parent+"'")
+
+# print("parent is:", parent)
+# score_file_path = 'outputs-'+ver+'/'+parent+'-score.txt'
+# score_file = open(score_file_path, 'r')
+# score_file_lines = score_file.readlines()
  
-print("plotting histogram of scores")
-scores = []
-for line in score_file_lines:
-    scores.append(float(line))
-plt.hist(scores)
-plt.savefig('outputs-'+ver+'/'+parent+'-score.png')
+# print("plotting histogram of scores")
+# scores = []
+# for line in score_file_lines:
+#     scores.append(float(line))
+# plt.hist(scores)
+# plt.savefig('outputs-'+ver+'/'+parent+'-score.png')
 
 
 

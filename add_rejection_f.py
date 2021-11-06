@@ -37,7 +37,7 @@ for index, row in df.iterrows():
     if row['prediction'] in threshold_dict:
         alpha = threshold_dict[row['prediction']]
     if row['max'] < alpha:
-        rejection_f.append(row['prediction']+'(reject)')
+        rejection_f.append(row['prediction']+'(uncertain)')
     else: # if we are just classifying the genomes without rejection threshods 
         rejection_f.append(row['prediction'])
 if 'rejection-f' in df.columns:
@@ -54,8 +54,8 @@ if len(wb.sheetnames) != 0:
 
 with pd.ExcelWriter(file_path, engine="openpyxl", mode=mode) as writer:  
     df.to_excel(writer, sheet_name = sheet, index=True)
-writer.save()
-writer.close()
+    writer.save()
+    # writer.close()
 
 
 

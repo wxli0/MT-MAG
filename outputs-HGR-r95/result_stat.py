@@ -14,7 +14,7 @@ def correct(df, rank, index, partial=False):
         total_count += 1
         if str(pred) == 'nan':
             nan_count += 1
-        elif 'reject' in pred:
+        elif 'uncertain' in pred:
             rej_count += 1
         elif pred.split('__')[-1] == true:
             correct_count += 1
@@ -38,7 +38,7 @@ def correct(df, rank, index, partial=False):
             genus_dict[cur_rank_true][2] += 1
         if cur_true == "Unassigned":
             continue
-        if  str(cur_pred) == 'nan' or 'reject' in cur_pred:
+        if  str(cur_pred) == 'nan' or 'uncertain' in cur_pred:
             if cur_rank == 'phylum':
                 rej_root_count += 1
             continue

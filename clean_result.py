@@ -11,7 +11,7 @@ def clean_result(path, ranks):
             cur_pred = df.loc[index][r]
             if str(cur_pred) != 'nan':
                 valid = cur_pred
-            if 'reject' in str(cur_pred):
+            if 'uncertain' in str(cur_pred):
                 for j in range(i+1, len(ranks)):
                     r = ranks[j]
                     df.at[index, r] = np.nan

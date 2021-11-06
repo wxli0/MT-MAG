@@ -25,7 +25,7 @@ for i in range(len(classes)-1):
 with pd.ExcelWriter(file, engine="openpyxl", mode='a') as writer: 
     df.to_excel(writer, sheet_name = file.split('/')[-1][:-5]+"_pred-t-p", index=True)
     writer.save()
-    writer.close()
+    # writer.close()
 
 wb = openpyxl.load_workbook(file)
 del wb["quadratic-svm-score"]
@@ -38,7 +38,7 @@ df_new = pd.read_excel(file, index_col=0, header=0, sheet_name=sheet) # read in 
 taxon = df_new.columns[0] # the only child taxon
 for index, row in df.iterrows():
     if float(row[taxon]) < 0:
-        rejection_f.append(row['prediction']+'(reject)')
+        rejection_f.append(row['prediction']+'(uncertain)')
     else:
         rejection_f.append(row['prediction'])
 if 'rejection-f' in df.columns:
@@ -55,6 +55,6 @@ if len(wb.sheetnames) != 0:
 
 with pd.ExcelWriter(file, engine="openpyxl", mode=mode) as writer:  
     df.to_excel(writer, sheet_name = sheet, index=True)
-writer.save()
-writer.close()
+    writer.save()
+# writer.close()
 

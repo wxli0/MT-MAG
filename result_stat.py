@@ -78,6 +78,11 @@ def calc_stats(path, ranks, ignore_taxa =[], ignore_indices = []):
                 break
 
     total = correct+incorrect+rejected    
+    for i in range(1, len(ranks)):
+        rank = ranks[i]
+        pre_rank = ranks[i-1]
+        rej_stats[rank] += rej_stats[pre_rank]
+
     for k in rej_stats:
         rej_stats[k] /= total
     classified_acc = correct/(correct+incorrect)
@@ -100,7 +105,6 @@ print("classified accuracy is:", classified_acc1, "absolute accuracy is:", \
     absolute_acc1, "adjusted accuracy is:", adjusted_acc1, "partial accuracy is:", partial_acc1)
 for r in rej_stats1:
     print(rej_stats1[r], "rejects at ", r)
-print("total rejection rate is:", sum(rej_stats1.values()))
 
 print("====== HGR result ======")
 path2 = "./outputs-HGR-r202/HGR-r202-prediction-full-path.csv"
@@ -114,7 +118,6 @@ print("classified accuracy is:", classified_acc2, "absolute accuracy is:", \
     absolute_acc2, "adjusted accuracy is:", adjusted_acc2, "partial accuracy is:", partial_acc2)
 for r in rej_stats2:
     print(rej_stats2[r], "rejects at ", r)
-print("total rejection rate is:", sum(rej_stats2.values()))
 
 
 

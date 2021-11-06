@@ -41,7 +41,7 @@ for i in range(len(classes)-2):
         df_subset = df_merged.loc[df_merged['actual'] == c]
         df_subset.to_excel(writer, sheet_name = c+"-b-p", index=True)
         writer.save()
-        writer.close()
+        # writer.close()
 
 
 
