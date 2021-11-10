@@ -44,6 +44,9 @@ while True:
         print("==== begin check_missing ====")
         missing_ranks = check_missing(pred_path, ranks, root_taxon, base_path, test_dir)
         print("missing_ranks are:", missing_ranks)
+        if missing_ranks is None:
+            print("==== DONE ====")
+            break
         print('==== begin exec_phase ====')
         exec_phase(missing_ranks, data_type, base_path, test_dir, partial)
     else:

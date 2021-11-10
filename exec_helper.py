@@ -15,7 +15,8 @@ import config
 
 def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
     """
-    Checks ranks with incomplete predictions in the classification result path
+    Checks ranks with incomplete predictions in the classification result path, \
+        return None if there is no rank missing predictions
     :param path: path of the classification result file
     :type path: str
     :param ranks: a list of ranks in the classification result file
@@ -33,6 +34,7 @@ def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
 
     # init missing_ranks
     missing_ranks = {}
+    missing_num = 0
     for r in ranks:
         missing_ranks[r] = []
 
@@ -45,8 +47,12 @@ def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
             if cur_pred == 'nan':
                 if pre_pred not in missing_ranks[r]:
                     missing_ranks[r].append(pre_pred)
+                    missing_num += len(pre_pred)
                 break
             pre_pred = cur_pred
+    if missing_num == 0:
+        missing_ranks = None
+    
 
     return missing_ranks
 
