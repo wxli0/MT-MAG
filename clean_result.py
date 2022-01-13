@@ -24,7 +24,6 @@ def clean_result(path, ranks):
 
 path1 = "./outputs-GTDB-r202/GTDB-r202-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
-
 df1, incomplete1 = clean_result(path1, ranks1)
 print("incomplete1 is:", incomplete1)
 df1.to_csv(path1)
