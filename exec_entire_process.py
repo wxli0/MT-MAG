@@ -27,10 +27,10 @@ if 'partial' in metadata:
     partial = metadata['partial']
 accepted_CA = 0.9
 if 'accepted_CA' in metadata:
-    accepted_CA = metadata[accepted_CA]
+    accepted_CA = metadata["accepted_CA"]
 variability = 0.2
 if 'variability' in metadata:
-    variability = metadata[variability]
+    variability = metadata["variability"]
 
 
 check_folders(data_type, base_path, test_dir, pred_path, ranks, root_taxon)
