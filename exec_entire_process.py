@@ -25,6 +25,13 @@ pred_path = './outputs-'+data_type+"/"+data_type+"-prediction-full-path.csv"
 partial = False
 if 'partial' in metadata:
     partial = metadata['partial']
+accepted_CA = 0.9
+if 'accepted_CA' in metadata:
+    accepted_CA = metadata[accepted_CA]
+variability = 0.2
+if 'variability' in metadata:
+    variability = metadata[variability]
+
 
 check_folders(data_type, base_path, test_dir, pred_path, ranks, root_taxon)
 
@@ -48,7 +55,7 @@ while True:
             print("==== DONE ====")
             break
         print('==== begin exec_phase ====')
-        exec_phase(missing_ranks, data_type, base_path, test_dir, partial)
+        exec_phase(missing_ranks, data_type, base_path, test_dir, partial, accepted_CA, variability)
     else:
         print("No processes finished.")
 

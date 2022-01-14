@@ -22,7 +22,7 @@ def clean_result(path, ranks):
                     incomplete.append(valid)
     return df, incomplete
 
-path1 = "./outputs-GTDB-r202/GTDB-r202-prediction-full-path.csv"
+path1 = "./outputs-GTDB-r202-archive1/GTDB-r202-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 df1, incomplete1 = clean_result(path1, ranks1)
 print("incomplete1 is:", incomplete1)
@@ -32,4 +32,4 @@ path2 = "./outputs-HGR-r202/HGR-r202-prediction-full-path.csv"
 ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 df2, incomplete2 = clean_result(path2, ranks2)
 print("incomplete2 is:", incomplete2)
-df2.to_csv(path2)
+# df2.to_csv(path2)

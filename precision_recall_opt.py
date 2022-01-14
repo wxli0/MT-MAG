@@ -43,7 +43,8 @@ if __name__ ==  '__main__':
     file_name = sys.argv[1]
     test_file = sys.argv[2]
     data_type = sys.argv[3]
-    accepted_precision = 0.9
+    accepted_CA = sys.argv[4]
+    variability = sys.argv[5]
 
     xls = pd.ExcelFile(file_name)
     precision = []
@@ -134,11 +135,11 @@ if __name__ ==  '__main__':
             precision = 1 # if we have rejected all instances, precision = 1
             if (total_count-reject_count) != 0: 
                 precision = correct_count/(total_count-reject_count)
-            if precision >= accepted_precision:
+            if precision >= accepted_CA:
                 thres_alpha = alpha
                 break
         if len(probs) != 0:
-            thres_alpha = max(statistics.mean(probs)-0.2, thres_alpha-0.2)
+            thres_alpha = max(statistics.mean(probs)-variability, thres_alpha-variability)
         print("finished rej_dict for:", taxon)
         return thres_alpha
 

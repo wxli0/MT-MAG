@@ -57,7 +57,7 @@ def check_missing(pred_path, ranks, root_taxon, base_path, test_dir):
     return missing_ranks
 
 
-def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
+def exec_phase(missing_ranks, data_type, base_path, test_dir, partial, accepted_CA, variability):
     """
     Iterates over missing ranks (missing_ranks) for task with data type (data_type) 
     
@@ -71,6 +71,10 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
     :type test_dir: str
     :param partial: enable partial classification or not
     :type partial: bool
+    :param accepted_CA: accepted constrained accuaracy when deciding stopping thresholds
+    :type accepted_CA: float
+    :param variability: variability to substract when deciding stopping thresholds
+    :type variability: float
     """
     print("missing_ranks in exec_phase is:", missing_ranks)
     user_name = getpass.getuser()
@@ -88,14 +92,14 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial):
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
                     if not partial:
                         os.system(\
-                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + '"')
                         print(\
-                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + '"')
+                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + '"')
                     else:
                         os.system(\
-                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
+                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + ' -p ''"')
                         print(\
-                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -p ''"')
+                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + ' -p ''"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
