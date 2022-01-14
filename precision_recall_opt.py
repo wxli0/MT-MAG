@@ -43,8 +43,8 @@ if __name__ ==  '__main__':
     file_name = sys.argv[1]
     test_file = sys.argv[2]
     data_type = sys.argv[3]
-    accepted_CA = sys.argv[4]
-    variability = sys.argv[5]
+    accepted_CA = float(sys.argv[4])
+    variability = float(sys.argv[5])
 
     xls = pd.ExcelFile(file_name)
     precision = []

@@ -92,14 +92,14 @@ def exec_phase(missing_ranks, data_type, base_path, test_dir, partial, accepted_
                 if running_proc.count('\\n') <= 2 and proc_all.count('\\n') <= 40:
                     if not partial:
                         os.system(\
-                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + '"')
+                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + str(accepted_CA) + ' -v ' + str(variability) + '"')
                         print(\
-                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + '"')
+                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + str(accepted_CA) + ' -v ' + str(variability) + '"')
                     else:
                         os.system(\
-                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + ' -p ''"')
+                            'screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + str(accepted_CA) + ' -v ' + str(variability) + ' -p ''"')
                         print(\
-                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + accepted_CA + ' -v ' + variability + ' -p ''"')
+                            'done screen -dm bash -c "cd ' + config.MLDSP_path + '; bash phase.sh -s '+c + ' -d ' +  data_type + ' -b ' +base_path + ' -t '+ test_dir + ' -a ' + str(accepted_CA) + ' -v ' + str(variability) + ' -p ''"')
                 elif proc_all.count('\\n') > 40:
                     print('too many processes running')
                 else:
