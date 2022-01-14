@@ -30,7 +30,7 @@ def create_hist(df, id, ylab = 'Number of genomes'):
     plt.figure(index)
     index += 1
     plt.hist(df['genome_size'], range=(0, 1.25*10**7), bins=100, color='green')
-    plt.xlabel('Genome size (max 1.25Gbp displayed)')
+    plt.xlabel('Genome size (max 1.25Mbp displayed)')
     plt.ylabel(ylab)
     plt.savefig(id+"_genome.png")
 
