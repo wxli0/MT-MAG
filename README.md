@@ -41,6 +41,8 @@ In a json file in task_metadata/, five mandatory attributes and two optional att
 
 - variability: float. Optional (default 0.2). Variability bewteen the training dataset and test dataset.
 
+- accepted_CA: float. Optional (default 0.9). Accepted constrained accuracy when deciding stopping thresholds.
+
 To run a small task
 
 - python exec_entire_process.py task_metadata/Archaea.json
