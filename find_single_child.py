@@ -25,8 +25,11 @@ def find_single_child(path, ranks, dir, suffix = ""):
         taxon = str(taxon)
         if 'uncertain' in taxon or taxon == 'nan':
             continue
-        children = os.listdir(dir+taxon+suffix)
+        children = os.listdir(os.path.join(dir,taxon+suffix))
         if len(children) == 1:
             single_child_taxons.append(taxon)
     return single_child_taxons
+
+find_single_child('~/MT-MAG/outputs-GTDB-r202-archive3/GTDB-r202-prediction-full-path.csv', \
+    ['domain', 'phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/MLDSP-samples-r202')
 
