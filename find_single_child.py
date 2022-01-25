@@ -45,4 +45,9 @@ GTDB_single_child = find_single_child('~/MT-MAG/outputs-GTDB-r202-archive3/GTDB-
 # print("GTDB single child are:", GTDB_single_child)
 update_single_child(GTDB_single_child, '~/MT-MAG/outputs-GTDB-r202-archive3')
 
+HGR_single_child = find_single_child('~/MT-MAG/outputs-HGR-r202-archive3/HGR-r202-prediction-full-path.csv', \
+    ['phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/DeepMicrobes-data/labeled_genome-r202')
+# print("GTDB single child are:", GTDB_single_child)
+update_single_child(HGR_single_child, '~/MT-MAG/outputs-HGR-r202-archive3')
+
 
