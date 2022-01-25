@@ -59,16 +59,20 @@ def update_single_child(single_child, output_dir):
             writer.save()
 
 
+print("HGR")
+HGR_single_child = find_single_child('~/MT-MAG/outputs-HGR-r202-archive3/HGR-r202-prediction-full-path.csv', \
+    ['phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/DeepMicrobes-data/labeled_genome-r202')
+print("HGR single child are:", HGR_single_child)
+# HGR_single_child = ['g__RUG678', 'g__RUG147', 'g__RUG013', 'g__UBA9722', 'f__RUG033', 'c__Methanobacteria', 'c__Clostridia_A', 'g__RUG714', 'f__UBA1188', 'c__Ozemobacteria', 'g__RUG334', 'o__Ozemobacterales', 'g__RUG100', 'f__UBA3663', 'p__RUG730', 'o__RF39', 'g__Kandleria', 'g__RUG708', 'g__UBA2942', 'f__RUG350', 'g__CADAUA01', 'c__Desulfovibrionia', 'p__Riflebacteria']
+# update_single_child(HGR_single_child, './outputs-HGR-r202-archive3')
+
+
 print("GTDB")
 GTDB_single_child = find_single_child('~/MT-MAG/outputs-GTDB-r202-archive3/GTDB-r202-prediction-full-path.csv', \
     ['domain', 'phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/MLDSP-samples-r202')
 print("GTDB single child are:", GTDB_single_child)
-# update_single_child(GTDB_single_child, '~/MT-MAG/outputs-GTDB-r202-archive3')
+# GTDB_single_child = ['g__RUG678', 'g__RUG147', 'g__RUG013', 'g__UBA9722', 'f__RUG033', 'c__Methanobacteria', 'c__Clostridia_A', 'g__RUG714', 'f__UBA1188', 'c__Ozemobacteria', 'g__RUG334', 'o__Ozemobacterales', 'g__RUG100', 'f__UBA3663', 'p__RUG730', 'o__RF39', 'g__Kandleria', 'g__RUG708', 'g__UBA2942', 'f__RUG350', 'g__CADAUA01', 'c__Desulfovibrionia', 'p__Riflebacteria']
+# update_single_child(GTDB_single_child, './outputs-GTDB-r202-archive3')
 
-print("HGR")
-HGR_single_child = find_single_child('~/MT-MAG/outputs-HGR-r202-archive3/HGR-r202-prediction-full-path.csv', \
-    ['phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/DeepMicrobes-data/labeled_genome-r202')
-print("GTDB single child are:", GTDB_single_child)
-# update_single_child(HGR_single_child, '~/MT-MAG/outputs-HGR-r202-archive3')
 
 
