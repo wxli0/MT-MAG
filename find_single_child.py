@@ -1,3 +1,4 @@
+import openpyxl
 import os
 import pandas as pd 
 
@@ -32,23 +33,42 @@ def find_single_child(path, ranks, dir, suffix = ""):
 
 def update_single_child(single_child, output_dir):
     for child in single_child:
-        child_file_path = os.path.join(output_dir, child+".xlsx")
-        df = pd.read_excel(child_file_path, index_col=0, header=0, sheet_name=child+"_pred-t-p")
-        max_list = df['max']
-        neg_filtered = list(filter(lambda score: score < 0, max_list))
-        if len(neg_filtered) > 0:
-            print(child, neg_filtered)
+        file = os.path.join(output_dir, child+".xlsx")
+        sheet = child+"_pred-t-p"
+        df = pd.read_excel(file, index_col=0, header=0, sheet_name=sheet)
+        rejection_f = []
+        for index, row in df.iterrows():
+            if float(row['max']) < 0:
+                rejection_f.append(row['prediction']+'(uncertain)')
+            else:
+                rejection_f.append(row['prediction'])
+        if 'rejection-f' in df.columns:
+            del df['rejection-f']
+        df['rejection-f'] = rejection_f
+
+        wb = openpyxl.load_workbook(file)
+        del wb[sheet]
+
+        mode = 'w'
+        if len(wb.sheetnames) != 0:
+            wb.save(file)
+            mode = 'a'
+
+        with pd.ExcelWriter(file, engine="openpyxl", mode=mode) as writer:  
+            df.to_excel(writer, sheet_name = sheet, index=True)
+            writer.save()
 
 
-
+print("GTDB")
 GTDB_single_child = find_single_child('~/MT-MAG/outputs-GTDB-r202-archive3/GTDB-r202-prediction-full-path.csv', \
     ['domain', 'phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/MLDSP-samples-r202')
-# print("GTDB single child are:", GTDB_single_child)
-update_single_child(GTDB_single_child, '~/MT-MAG/outputs-GTDB-r202-archive3')
+print("GTDB single child are:", GTDB_single_child)
+# update_single_child(GTDB_single_child, '~/MT-MAG/outputs-GTDB-r202-archive3')
 
+print("HGR")
 HGR_single_child = find_single_child('~/MT-MAG/outputs-HGR-r202-archive3/HGR-r202-prediction-full-path.csv', \
     ['phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/DeepMicrobes-data/labeled_genome-r202')
-# print("GTDB single child are:", GTDB_single_child)
-update_single_child(HGR_single_child, '~/MT-MAG/outputs-HGR-r202-archive3')
+print("GTDB single child are:", GTDB_single_child)
+# update_single_child(HGR_single_child, '~/MT-MAG/outputs-HGR-r202-archive3')
 
 
