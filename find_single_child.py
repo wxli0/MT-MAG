@@ -35,7 +35,7 @@ def update_single_child(single_child, output_dir):
         child_file_path = os.path.join(output_dir, child+".xlsx")
         df = pd.read_excel(child_file_path, index_col=0, header=0, sheet_name=child+"_pred-t-p")
         max_list = df['max']
-        neg_filtered = filter(lambda score: score >= 70, max_list)
+        neg_filtered = list(filter(lambda score: score < 0, max_list))
         print(child, neg_filtered)
 
 
