@@ -33,8 +33,8 @@ def check_invalid(data_dir, path):
                     single_child_genus.append(dir[:-13])
                 else:
                     single_child_genus.append(dir)
-            else:
-                all_species.extend(children)
+            
+            all_species.extend(children)
 
     index_species_not_exist = []
     index_genus_single_child = []
