@@ -1,6 +1,6 @@
 {
     "ranks": ["domain", "phylum", "class",  "order", "family", "genus", "species"],
-    "data_type": "GTDB-r202-archive3",
+    "data_type": "GTDB-r202",
     "base_path": "/mnt/sda/MLDSP-samples-r202",
     "test_dir": "rumen_mags",
     "root_taxon": "root",
