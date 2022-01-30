@@ -8,10 +8,9 @@
 # :type sys.argv[3]: List[str]
 # """
 
-import math
+import numpy as np
 import openpyxl
 import os
-import sys
 import pandas as pd 
 
 
@@ -64,7 +63,7 @@ def update_single_child(single_child, data_type):
         max_new = []
         neg_exists = False
         for index, row in df.iterrows():
-            max_new.append(1/(1+math.exp(-row['max'])))
+            max_new.append(1/(1+np.exp(-row['max'])))
             if float(row['max']) < 0:
                 neg_exists = True
                 print(index, row['max'])
