@@ -52,7 +52,7 @@ while True:
         missing_ranks = check_missing(pred_path, ranks, root_taxon, base_path, test_dir)
         print("missing_ranks are:", missing_ranks)
         if missing_ranks is None:
-            print("==== DONE ====")
+            print("==== done major steps ====")
             break
         print('==== begin exec_phase ====')
         exec_phase(missing_ranks, data_type, base_path, test_dir, partial, accepted_CA, variability)
@@ -64,3 +64,9 @@ while True:
     print("==== begin sleep 5 minutes at "+time.ctime()+" ====")
     time.sleep(300)
     i=i+1
+
+# Post-process single-child taxon output files
+print("===== Post-process single-child taxon output files ====")
+os.system("cd ~/MT-MAG")
+os.system("python3 find_single_child.py "+base_path+" "+base_path+" "+ranks)
+os.system("===== done MT-MAG entire process =====")
