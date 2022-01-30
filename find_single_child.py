@@ -30,7 +30,7 @@ def find_single_child(data_type, ranks, base_path, suffix = ""):
     """
     single_child_taxons = []
     ranks = ranks[:-1]
-    path = os.path.join(os.path.join("outputs-"+data_type, data_type+"-full-path.csv"))
+    path = os.path.join(os.path.join("outputs-"+data_type, data_type+"-prediction-full-path.csv"))
     df = pd.read_csv(path, index_col=0, header=0, dtype = str)
     all_taxons = []
     for rank in ranks:
