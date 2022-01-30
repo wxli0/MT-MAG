@@ -1,12 +1,12 @@
-"""
-Post-process classification results for single-child classifications 
-:param sys.argv[1]: data type. Data type for this task.
-:type sys.argv[1]: str
-:param sys.argv[2]: base path. base path of the training and testing sets.
-:type sys.argv[2]: str
-:params sys.argv[3]: all ranks of the tasks. 
-:type sys.argv[3]: List[str]
-"""
+# """
+# Post-process classification results for single-child classifications 
+# :param sys.argv[1]: data type. Data type for this task.
+# :type sys.argv[1]: str
+# :param sys.argv[2]: base path. base path of the training and testing sets.
+# :type sys.argv[2]: str
+# :params sys.argv[3]: all ranks of the tasks. 
+# :type sys.argv[3]: List[str]
+# """
 
 import math
 import openpyxl
@@ -94,12 +94,12 @@ def update_single_child(single_child, data_type):
         os.system("python3 add_pred.py " + file + " " + data_type)
 
 
-data_type = sys.argv[1]
-base_path = sys.argv[2]
-ranks = sys.argv[3]
+# data_type = sys.argv[1]
+# base_path = sys.argv[2]
+# ranks = sys.argv[3]
 
-single_child_taxa = find_single_child(data_type, ranks, base_path)
-update_single_child(single_child_taxa, data_type)
+# single_child_taxa = find_single_child(data_type, ranks, base_path)
+# update_single_child(single_child_taxa, data_type)
 
 # # HGR_single_child = find_single_child('~/MT-MAG/outputs-HGR-r202-archive3/HGR-r202-prediction-full-path.csv', \
 # #     ['phylum', 'class', 'order', 'family', 'genus'], '/mnt/sda/DeepMicrobes-data/labeled_genome-r202')

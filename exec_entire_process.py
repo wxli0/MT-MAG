@@ -3,6 +3,7 @@ Script for grouping test sequences, and calling check_missing_pred
 periodically
 """
 
+from find_single_child import *
 import json
 import sys
 sys.path.insert(0, '.')
@@ -68,5 +69,6 @@ while True:
 # Post-process single-child taxon output files
 print("===== Post-process single-child taxon output files ====")
 os.system("cd ~/MT-MAG")
-os.system("python3 find_single_child.py "+base_path+" "+base_path+" "+ranks)
+single_child_taxa = find_single_child(data_type, ranks, base_path)
+update_single_child(single_child_taxa, data_type)
 os.system("===== done MT-MAG entire process =====")
