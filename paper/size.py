@@ -4,24 +4,18 @@ import os
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_path', default="", type=str, help='path of the data')
-parser.add_argument('--one_nested_folder', default=False, action="store_true", help='check only for files within a nested folder')
-parser.add_argument('--one_file', default=False, action="store_true", help='check for a specific file')
+parser.add_argument('--task',  default = 0, type=int, help='task 1 or task 2')
+parser.add_argument('--tool', default="", type=str, help='DeepMicrobes or MT-MAG')
 args = parser.parse_args()
-data_path = args.data_path
+task = args.task
+tool = args.tool
 file_num = 0
 contig_num = 0
 genome_size = 0
 
-# calculate the size for one folder, folder structure as follows:
-# - d__Bacteria
-#   - p__Actinobacteriota
-#       - fasta
-#   - p__Spirochaetota
-#       - fasta
-#       - fasta
-# e.g. python3 paper/size.py --dir /mnt/sda/DeepMicrobes-data/labeled_genome-r202/d__Bacteria --one_nested_folder
-if args.one_nested_folder:
+
+if args.task == 1 and args.tool  == "MT-MAG":
+    data_path = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/d__Bacteria"
     for dir_nested in os.listdir(data_path):
         for fasta_file in os.listdir(os.path.join(data_path, dir_nested)):
             fasta_sequences = SeqIO.parse(open(os.path.join(data_path, dir_nested, fasta_file)),'fasta') 
@@ -30,13 +24,26 @@ if args.one_nested_folder:
                 genome_size += len(sequence)
                 contig_num += 1
             file_num += 1
-elif args.one_file:
+elif args.task == 1 and args.tool == "DeepMicrobes":
+    data_path = "/mnt/sda/DeepMicrobes-data/labeled_genome_train_species_reads/labeled_genome_train_species_reads_trimmed.fa"
     fasta_sequences = SeqIO.parse(open(data_path), 'fasta')
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
         genome_size += len(sequence)
         contig_num += 1
     file_num += 1
+elif args.task == 2 and args.tool == "MT-MAG":
+    data_path = "/mnt/sda/MLDSP-samples-r202"
+    for dir_nested1 in os.listdir(data_path):
+        for dir_nested2 in os.listdir(data_path, dir_nested1):
+            for fasta_file in os.listdir(os.path.join(data_path, dir_nested1, dir_nested2)):
+                fasta_sequences = SeqIO.parse(open(os.path.join(data_path, dir_nested1, dir_nested2, fasta_file)),'fasta') 
+                for fasta in fasta_sequences:
+                    _, sequence = fasta.id, str(fasta.seq)
+                    genome_size += len(sequence)
+                    contig_num += 1
+                file_num += 1  
+#elif args.task == 2 and args.tool == "DeepMicrobes":
 
 print("file_num is:", file_num)
 print("contig_num is:", contig_num)
