@@ -15,6 +15,7 @@ genome_size = 0
 
 
 if args.task == 1 and args.tool  == "MT-MAG":
+    # command python3 paper/size.py --task=1 --tool=MT-MAG
     data_path = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/d__Bacteria"
     for dir_nested in os.listdir(data_path):
         for fasta_file in os.listdir(os.path.join(data_path, dir_nested)):
@@ -25,8 +26,9 @@ if args.task == 1 and args.tool  == "MT-MAG":
                 contig_num += 1
             file_num += 1
 elif args.task == 1 and args.tool == "DeepMicrobes":
-    data_path = "/mnt/sda/DeepMicrobes-data/labeled_genome_train_species_reads/labeled_genome_train_species_reads_trimmed.fa"
-    folder_path = "/mnt/sda/DeepMicrobes-data/labeled_genome_train_species_reads"
+    # command: python3 paper/size.py --task=1 --tool=DeepMicrobes
+    data_path = "/mnt/sda/DeepMicrobes-data/HGR_species_label_reads/HGR_species_label_reads_train.fa"
+    folder_path = "/mnt/sda/DeepMicrobes-data/HGR_species_label_reads"
     fasta_sequences = SeqIO.parse(open(data_path), 'fasta')
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
