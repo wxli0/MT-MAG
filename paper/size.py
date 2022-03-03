@@ -26,12 +26,16 @@ if args.task == 1 and args.tool  == "MT-MAG":
             file_num += 1
 elif args.task == 1 and args.tool == "DeepMicrobes":
     data_path = "/mnt/sda/DeepMicrobes-data/labeled_genome_train_species_reads/labeled_genome_train_species_reads_trimmed.fa"
+    folder_path = "/mnt/sda/DeepMicrobes-data/labeled_genome_train_species_reads"
     fasta_sequences = SeqIO.parse(open(data_path), 'fasta')
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
         genome_size += len(sequence)
         contig_num += 1
-    file_num += 1
+    for fasta_file in os.listdir(folder_path):
+        if fasta_file.endswith("_trimmed.fa"):
+            file_num += 1
+    file_num -= 1 # to ignore labeled_genome_train_species_reads_trimmed.fa
 elif args.task == 2 and args.tool == "MT-MAG":
     data_path = "/mnt/sda/MLDSP-samples-r202"
     for dir_nested1 in os.listdir(data_path):
