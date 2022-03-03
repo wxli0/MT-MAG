@@ -31,7 +31,7 @@ if args.one_nested_folder:
                 contig_num += 1
             file_num += 1
 elif args.one_file:
-    fasta_sequences = SeqIO.parse(open(data_path,'fasta'))
+    fasta_sequences = SeqIO.parse(open(data_path), 'fasta')
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
         genome_size += len(sequence)
