@@ -22,7 +22,7 @@ genome_size = 0
 #       - fasta
 if args.one_nested_folder:
     for dir_nested in os.listdir(dir):
-        for fasta_file in os.listdir(dir_nested):
+        for fasta_file in os.listdir(os.path.join(dir, dir_nested)):
             fasta_sequences = SeqIO.parse(open(os.path.join(dir, dir_nested, fasta_file)),'fasta') 
             for fasta in fasta_sequences:
                 _, sequence = fasta.id, str(fasta.seq)
