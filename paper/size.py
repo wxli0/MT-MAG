@@ -5,7 +5,7 @@ import sys
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dir', default="", type=str, help='directories of the data')
-parser.add_argument('--one_nested_folder', default=False, action="store_false", help='check only for files within a nested folder')
+parser.add_argument('--one_nested_folder', default=False, action="store_true", help='check only for files within a nested folder')
 parser.add_argument('--one_file', default=False, action="store_true", help='check for a specific file')
 args = parser.parse_args()
 dir = args.dir
