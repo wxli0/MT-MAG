@@ -4,7 +4,7 @@ import os
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--task',  default = 0, type=int, help='task 1 or task 2')
+parser.add_argument('--task',  default = 0, type=int, help='1 or 2')
 parser.add_argument('--tool', default="", type=str, help='DeepMicrobes or MT-MAG')
 args = parser.parse_args()
 task = args.task
