@@ -13,6 +13,24 @@ file_num = 0
 contig_num = 0
 genome_size = 0
 
+def count(data_path, folder_path, suffix = "_trimmed.fa"):
+    """
+    Counts the genome size, contig number, file number in data_path within folder path
+    Assuming the fasta file ends with suffix
+    """
+    genome_size = 0
+    contig_num = 0
+    file_num = 0
+    fasta_sequences = SeqIO.parse(open(data_path), 'fasta')
+    for fasta in fasta_sequences:
+        _, sequence = fasta.id, str(fasta.seq)
+        genome_size += len(sequence)
+        contig_num += 1
+    for fasta_file in os.listdir(folder_path):
+        if fasta_file.endswith(suffix):
+            file_num += 1
+    return genome_size, contig_num, file_num
+
 
 if args.task == 1 and args.tool  == "MT-MAG":
     # command python3 paper/size.py --task=1 --tool=MT-MAG
@@ -27,17 +45,9 @@ if args.task == 1 and args.tool  == "MT-MAG":
             file_num += 1
 elif args.task == 1 and args.tool == "DeepMicrobes":
     # command: python3 paper/size.py --task=1 --tool=DeepMicrobes
-    data_path = "/mnt/sda/DeepMicrobes-data/HGR_species_label_reads/HGR_species_label_reads_train.fa"
-    folder_path = "/mnt/sda/DeepMicrobes-data/HGR_species_label_reads"
-    fasta_sequences = SeqIO.parse(open(data_path), 'fasta')
-    for fasta in fasta_sequences:
-        _, sequence = fasta.id, str(fasta.seq)
-        genome_size += len(sequence)
-        contig_num += 1
-    for fasta_file in os.listdir(folder_path):
-        if fasta_file.endswith("_trimmed.fa"):
-            file_num += 1
-    file_num -= 1 # to ignore labeled_genome_train_species_reads_trimmed.fa
+    data_path = "/mnt/sda/DeepMicrobes-data/labeled_genome_train_species_reads_author/author_train.fa"
+    folder_path = "/mnt/sda/DeepMicrobes-data/labeled_genome_train_species_reads_author"
+    genome_size, contig_num, file_num = count(data_path, folder_path)
 elif args.task == 2 and args.tool == "MT-MAG":
     data_path = "/mnt/sda/MLDSP-samples-r202"
     for dir_nested1 in os.listdir(data_path):
@@ -49,7 +59,20 @@ elif args.task == 2 and args.tool == "MT-MAG":
                     genome_size += len(sequence)
                     contig_num += 1
                 file_num += 1  
-#elif args.task == 2 and args.tool == "DeepMicrobes":
+elif args.task == 2 and args.tool == "DeepMicrobes":
+    # command: python3 paper/size.py --task=2 --tool=DeepMicrobes
+    data_path_11 = "/mnt/sda/MLDSP-samples-r202/GTDB_small_11_label_reads/Task2_small_11_all.fa"
+    folder_path_11 = "/mnt/sda/MLDSP-samples-r202/GTDB_small_11_label_reads/"
+    genome_size_11, contig_num_11, file_num_11 = count(data_path_11, folder_path_11)
+    data_path_1 = "/mnt/sda/MLDSP-samples-r202/GTDB_small_1_label_reads/Task2_small_1_all.fa"
+    folder_path_1 = "/mnt/sda/MLDSP-samples-r202/GTDB_small_1_label_reads/"
+    genome_size_1, contig_num_1, file_num_1 = count(data_path_11, folder_path_11)
+    data_path_2 = "/mnt/sda/MLDSP-samples-r202/GTDB_small_2_label_reads/Task2_small_2_all.fa"
+    folder_path_2 = "/mnt/sda/MLDSP-samples-r202/GTDB_small_2_label_reads/"
+    genome_size_2, contig_num_2, file_num_2 = count(data_path_11, folder_path_11)
+    genome_size = genome_size_11+genome_size_1+genome_size_2
+    contig_num = contig_num_11+contig_num_1+contig_num_2
+    file_num = file_num_11 # assume just use one file in the end
 
 print("file_num is:", file_num)
 print("contig_num is:", contig_num)

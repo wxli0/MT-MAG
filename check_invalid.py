@@ -52,3 +52,6 @@ data_dir2 = '/mnt/sda/MLDSP-samples-r202/'
 index_species_not_exist2 = check_invalid(data_dir2, MLDSP_path)
 print("index_species_not_exist2 length is:", len(index_species_not_exist2), index_species_not_exist2)
 # print("single_child_genus2 length is:", len(single_child_genus2), single_child_genus2)
+
+# invalid taxa for Task 2, DeepMicrobes due to no representative genomes
+# ['s__Streptococcus parasanguinis', 's__Prevotella oralis', 's__Oribacterium parvum', 's__Streptococcus macacae', 's__Streptococcus criceti', 's__Methanomethylophilus alvus', 's__Streptococcus ictaluri', 's__Blautia_A sp000285855', 's__Ruminococcus_D albus_C', 's__Olsenella sp001189515', 's__Ruminococcus_D albus', 's__Eubacterium_H cellulosolvens', 's__Catonella morbi', 's__Streptococcus urinalis', 's__Prevotella sp000163055', 's__Streptococcus sp000314795']
