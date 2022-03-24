@@ -44,8 +44,7 @@ def count_test(folder_path, suffix = "_trimmed.fa"):
     for fasta_file in os.listdir(folder_path):
         if fasta_file.endswith(suffix):
             file_num += 1
-            print("fasta_file is:", fasta_file)
-            fasta_sequences = SeqIO.parse(open(os.path.join(folder_path, fasta_file), 'fasta'))
+            fasta_sequences = SeqIO.parse(open(os.path.join(folder_path, fasta_file)), 'fasta')
             for fasta in fasta_sequences:
                 _, sequence = fasta.id, str(fasta.seq)
                 genome_size += len(sequence)
