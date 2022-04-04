@@ -49,7 +49,6 @@ def count_test(folder_path, suffix = "_trimmed.fa"):
                 _, sequence = fasta.id, str(fasta.seq)
                 genome_size += len(sequence)
                 contig_num += 1
-            file_num += 1
     return genome_size, contig_num, file_num
 
 if args.type == "training":

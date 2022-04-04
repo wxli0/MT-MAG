@@ -97,11 +97,72 @@ def calc_stats(path, path_true, ranks, ignore_taxa =[], ignore_indices = []):
     partial_acc = partial_correct/((correct+incorrect+rejected)*len(ranks))
     return classified_acc, absolute_acc, adjusted_acc, partial_acc, rej_stats
 
+def calc_WA_rank(path, path_true, rank, ranks, ignore_indices = []):
+    """
+    Calculates the weighted accuracy at rank for MT-MAG classificaton result, \
+        given all ranks 
+
+    :param path: path of the classification result file.
+    :type path: str
+    :param path_true: path of the ground-truth  result file.
+    :type path_trie: str
+    :param rank: the current rank
+    :type rank: str
+    :param ranks: ranks in the classification result file.
+    :type ranks: List[str]
+    :param ignore_indices: test indices to ignore in the calculation
+    :type ignore_indices: List[str]
+    """
+    df = pd.read_csv(path, header=0, index_col=0)
+    df_true = pd.read_csv(path_true, header=0, index_col=0)
+
+    WA = 0
+    total = 0
+    for index, row in df.iterrows():
+        if index in ignore_indices:
+            continue
+        rank_index = ranks.index(rank)
+        total += 1
+        for cur_index in range(rank_index+1):
+            cur_rank = ranks[cur_index]
+            predicted_label  = str(row[cur_rank])
+            row_true = df_true.loc[index]
+            true_label = str(row_true['gtdb-tk-'+cur_rank])
+            if 'uncertain' in predicted_label:
+                WA += cur_index/len(ranks)
+                break
+            if predicted_label != true_label:
+                WA += cur_index/len(ranks)
+                break
+            if cur_index == rank_index:
+                WA += 1
+    return WA/total
+
+def calc_WA_all_ranks(path, path_true, ranks, ignore_indices = []):
+    """
+    Calculates the weighted accuracy at all ranks
+
+    :param path: path of the classification result file.
+    :type path: str
+    :param path_true: path of the ground-truth  result file.
+    :type path_trie: str
+    :param ranks: ranks in the classification result file.
+    :type ranks: List[str]
+    :param ignore_indices: test indices to ignore in the calculation
+    :type ignore_indices: List[str]
+    """
+    WAs = []
+    for cur_rank in ranks:
+        WA = calc_WA_rank(path, path_true, cur_rank, ranks, ignore_indices)
+        WAs.append(WA)
+    return WAs
+
 
 def calc_stats_per_rank(path, path_true, ranks, ignore_taxa =[], ignore_indices = []):
     """
-    Calculates the constrained accuracy, absolate accuracy, weighted accuracy, \
+    Calculates the constrained accuracy, absolate accuracy, weighted_accuracy \
         partial rate at rank for MT-MAG classificaton result.
+        weighted accuracies are determined by calc_WA_per_rank individually
     
 
     :param path: path of the classification result file.
@@ -117,9 +178,9 @@ def calc_stats_per_rank(path, path_true, ranks, ignore_taxa =[], ignore_indices 
     df_true = pd.read_csv(path_true, header=0, index_col=0)
     CAs = []
     AAs = []
-    WAs = []
-    PRs = []
-    
+    # WAs = []
+    PRs = [] 
+    WAs = calc_WA_all_ranks(path, path_true, ranks, ignore_indices = ignore_indices)
     for rank in ranks:
         correct = 0
         rejected = 0
@@ -146,14 +207,15 @@ def calc_stats_per_rank(path, path_true, ranks, ignore_taxa =[], ignore_indices 
                 rejected += 1
         CA = correct/(total-rejected)
         AA = correct/total
-        WA = (correct+0.5*rejected)/total
+        # WA = (correct+0.5*rejected)/total
         PR = rejected/total
         CAs.append(CA)
         AAs.append(AA)
-        WAs.append(WA)
+        # WAs.append(WA)
         PRs.append(PR)
-        print("at", rank, "CA:", "{:.2%}".format(CA), "AA:", "{:.2%}".format(AA), \
-            "WA:", "{:.2%}".format(WA), "PCR:", "{:.2%}".format(PR), "1-PCR:", "{:.2%}".format(1-PR))
+    for i in range(len(WAs)):
+        print("at", ranks[i], "CA:", "{:.2%}".format(CAs[i]), "AA:", "{:.2%}".format(AAs[i]), \
+            "WA:", "{:.2%}".format(WAs[i]), "PCR:", "{:.2%}".format(PRs[i]), "1-PCR:", "{:.2%}".format(1-PRs[i]))
     print("avg CA:", "{:.2%}".format(stat.mean(CAs)), "avg AA:", "{:.2%}".format(stat.mean(AAs)), \
         "avg WA:", "{:.2%}".format(stat.mean(WAs)), "avg PCR:", "{:.2%}".format(stat.mean(PRs)))
 
@@ -171,19 +233,16 @@ ranks2 = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 ignore_indices2 = ['MAG-GUT10417.fa', 'MAG-GUT15880.fa', 'MAG-GUT1743.fa', 'MAG-GUT21953.fa', 'MAG-GUT22878.fa', 'MAG-GUT28136.fa', 'MAG-GUT29051.fa', 'MAG-GUT29076.fa', 'MAG-GUT33914.fa', 'MAG-GUT36027.fa', 'MAG-GUT40857.fa', 'MAG-GUT41924.fa', 'MAG-GUT42485.fa', 'MAG-GUT42494.fa', 'MAG-GUT42584.fa', 'MAG-GUT43216.fa', 'MAG-GUT43894.fa', 'MAG-GUT44111.fa', 'MAG-GUT44851.fa', 'MAG-GUT45331.fa', 'MAG-GUT46923.fa', 'MAG-GUT47106.fa', 'MAG-GUT47179.fa', 'MAG-GUT4902.fa', 'MAG-GUT52094.fa', 'MAG-GUT52107.fa', 'MAG-GUT52138.fa', 'MAG-GUT53617.fa', 'MAG-GUT54931.fa', 'MAG-GUT56425.fa', 'MAG-GUT5727.fa', 'MAG-GUT58014.fa', 'MAG-GUT58077.fa', 'MAG-GUT59039.fa', 'MAG-GUT60365.fa', 'MAG-GUT61159.fa', 'MAG-GUT61176.fa', 'MAG-GUT61959.fa', 'MAG-GUT70200.fa', 'MAG-GUT7064.fa', 'MAG-GUT7066.fa', 'MAG-GUT7291.fa', 'MAG-GUT76426.fa', 'MAG-GUT77982.fa', 'MAG-GUT78879.fa', 'MAG-GUT78908.fa', 'MAG-GUT78923.fa', 'MAG-GUT81671.fa', 'MAG-GUT82176.fa', 'MAG-GUT82203.fa', 'MAG-GUT83501.fa', 'MAG-GUT83507.fa', 'MAG-GUT83946.fa', 'MAG-GUT8428.fa', 'MAG-GUT84696.fa', 'MAG-GUT84793.fa', 'MAG-GUT8521.fa', 'MAG-GUT86514.fa', 'MAG-GUT86868.fa', 'MAG-GUT87091.fa', 'MAG-GUT87486.fa', 'MAG-GUT87573.fa', 'MAG-GUT87828.fa', 'MAG-GUT88085.fa', 'MAG-GUT88218.fa', 'MAG-GUT88257.fa', 'MAG-GUT88679.fa', 'MAG-GUT88862.fa', 'MAG-GUT89291.fa', 'MAG-GUT89323.fa', 'MAG-GUT90190.fa', 'MAG-GUT90947.fa', 'MAG-GUT91328.fa']
 # ignore_taxa2 = ['o__Lachnospirales', 'f__Ruminococcaceae', 'f__Oscillospiraceae', 'g__Prevotella']
 calc_stats_per_rank(path2, path_true2, ranks2, ignore_indices=ignore_indices2, ignore_taxa=[])
+calc_WA_all_ranks(path2, path_true2, ranks2, ignore_indices = ignore_indices2)
 
 
 print("====== GTDB result ======")
-true_path1 = "./outputs-GTDB-r202-archive1/GTDB-r202-prediction-full-path.csv"
+path_true1 = "./outputs-GTDB-r202-archive1/GTDB-r202-prediction-full-path.csv"
 path1 = "outputs-GTDB-r202-archive3/GTDB-r202-archive3-prediction-full-path.csv"
 ranks1 = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 ignore_indices1 =  ['RUG428.fasta', 'RUG635.fasta', 'RUG684.fasta', 'RUG687.fasta', 'RUG732.fasta', 'RUG752.fasta', 'RUG789.fasta', 'RUG820.fasta']
-ignore_taxa1 = []
-calc_stats_per_rank(path1, true_path1, ranks1, ignore_indices=ignore_indices1, ignore_taxa=ignore_taxa1)
-
-
-
-
+calc_stats_per_rank(path1, path_true1, ranks1, ignore_indices=ignore_indices1, ignore_taxa=[])
+calc_WA_all_ranks(path1, path_true1, ranks2, ignore_indices = ignore_indices2)
 
 
             
