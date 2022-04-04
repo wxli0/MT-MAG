@@ -31,6 +31,8 @@ In a json file in task_metadata/, five mandatory attributes and two optional att
 
 - data_type: str. Mandatory. Name of the task. Results per rank will be stored in outputs-data_type/*. Final results will be stored in data_type-full-prediction-path.csv
 
+- suffix: str. Optional (default empty string). Suffix of the names of training sets folder.
+
 - base_path: str. Mandatory. The path to the training and testing dataset directories. Training datasets are stored within base_path. Test datasets are stored within a subfolder (see next attribute test_dir) inside base_path. You are likely to modify this attribute in your json file.
 
 - test_dir:  str. Mandatory. The Name of the test datasets folder within base_path. That is, test genomes are stored in base_path/test_dir.
