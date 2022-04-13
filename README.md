@@ -19,6 +19,25 @@ git clone https://github.com/wxli0/MT-MAG.git
 
 Modify the paths in MT-MAG/config.py if MT-MAG and/or MLDSP are not cloned in the root directory.
 
+# Tasks
+
+The Tasks that we present in the paper are:
+
+- Task 1 (sparse): The dataset for Task  1 was specifically chosen so as to allow a direct comparison between the quantitative performance  of MT-MAG and that of [DeepMicrobes](https://github.com/MicrobeLab/DeepMicrobes). The genomes that the training sets for Task 1 were based on comprise only 2.4 \% of the GTDB at the Species level. The training set was prepared using 2,505 representative genomes of human gut microbial species, and the test set was prepared using 3,269 high-quality MAGs reconstructed from human gut microbiomes from  a European Nucleotide Archive study titled ``A new genomic blueprint of the human gut microbiota''.
+
+- Task 2 (dense): The training sets used in Task 2 were  based on  genomes comprising  7.7\% of GTDB taxonomy. The training set  was prepared using GTDB R06-RS202. The test set was prepared using 913 full microbial genomes from metagenomic 201
+sequencing of cow rumen, which were derived from 43 Scottish cattle
+
+# Data preparation for Task 1 (sparse) and Task 2 (dense)
+
+If you want to prepare data explictly, not using the pipeline in the following section, use the following commands
+
+cd MLDSP/data/preprocess
+
+- Task 1 (sparse): python3 select_sample_cluster.py non-clade-exclusion-r202/GTDB_small.json
+
+- Task 2 (dense): python3 select_sample_cluster.py non-clade-exclusion-r202/[all json files for Task 2]
+
 # MT-MAG commands to run existing tasks
 
 cd MT-MAG
