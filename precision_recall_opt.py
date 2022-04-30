@@ -27,7 +27,7 @@ import platform
 import statistics
 import sys
 
-# construct w_dfs
+# find all incorrect classifications, indexed by the order of taxon names
 def df_taxon(taxon):
     print("construct df for:", taxon)
     b_sheet = taxon + '-b-p'
@@ -111,19 +111,27 @@ if __name__ ==  '__main__':
 
         # compute correct_stat, reject_stat, total, probs
         probs = []
+        # iterate over all correct classifications
         for index, row in b_df.iterrows():
-            if row['prediction'] == taxon:
+            if row['prediction'] == taxon: 
+                # for a correct classification, it can be either inconfident, or confidently classified
                 total_count += 1
+                # modify reject_stat by incrementing indices of candidate thresholds that is greater than the classification confidence
+                # increments are in the form [0,..., 0,1,...,1]
                 reject_start = math.floor(row['max']*1/gap)/(1/gap)+gap
                 reject_incre = [0]*(int(reject_start*1/gap))
                 reject_incre.extend([1]*(int(alpha_num-reject_start*1/gap)))
+                # modify correct_stat by incrementing indices 
+                # increments are in the form [1,...,1,0,...,0]
                 correct_incre = [1]*(int(reject_start*1/gap))
                 correct_incre.extend([0]*(int(alpha_num-reject_start*1/gap)))
                 correct_stat = [sum(x) for x in zip(correct_stat, correct_incre)]
                 reject_stat = [sum(x) for x in zip(reject_stat, reject_incre)]
                 probs.append(row['max'])
-        for index, row in w_df.iterrows():
+        # iterate over all incorrect classifications
+        for index, row in w_df.iterrows(): 
             total_count += 1
+            # modify reject_stat by incrementing indices of candidate thresholds that is greater than the classification confidence
             reject_start = math.floor(row['max']*1/gap)/(1/gap)+gap
             reject_incre = [0]*(int(reject_start*1/gap))
             reject_incre.extend([1]*(int(alpha_num-reject_start*1/gap)))

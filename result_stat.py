@@ -1,6 +1,6 @@
 """
 Calculates the precision, recall, incorrect rate, partial recall, \
-    rejection rate at different levels for MT-MAG classificaton result \
+    rejection rate at different levels for MT-MAG classification result \
         in HGR/GTDB-prediction-full-path.csv.
 
 No command line arguments are required.
@@ -13,7 +13,7 @@ import statistics as stat
 def calc_stats(path, path_true, ranks, ignore_taxa =[], ignore_indices = []):
     """
     Calculates the precision, recall, incorrect rate, partial recall, \
-        rejection rate at different levels for MT-MAG classificaton result.
+        rejection rate at different levels for MT-MAG classification result.
     
     Not in use.
 
@@ -161,7 +161,7 @@ def calc_WA_all_ranks(path, path_true, ranks, ignore_indices = []):
 def calc_stats_per_rank(path, path_true, ranks, ignore_taxa =[], ignore_indices = []):
     """
     Calculates the constrained accuracy, absolate accuracy, weighted_accuracy \
-        partial rate at rank for MT-MAG classificaton result.
+        partial rate, complete classification rate at rank for MT-MAG classificaton result.
         weighted accuracies are determined by calc_WA_per_rank individually
     
 
@@ -180,6 +180,7 @@ def calc_stats_per_rank(path, path_true, ranks, ignore_taxa =[], ignore_indices 
     AAs = []
     # WAs = []
     PRs = [] 
+    CCRs = []
     WAs = calc_WA_all_ranks(path, path_true, ranks, ignore_indices = ignore_indices)
     for rank in ranks:
         correct = 0
@@ -213,11 +214,13 @@ def calc_stats_per_rank(path, path_true, ranks, ignore_taxa =[], ignore_indices 
         AAs.append(AA)
         # WAs.append(WA)
         PRs.append(PR)
+        CCRs.append(1-PR)
     for i in range(len(WAs)):
         print("at", ranks[i], "CA:", "{:.2%}".format(CAs[i]), "AA:", "{:.2%}".format(AAs[i]), \
-            "WA:", "{:.2%}".format(WAs[i]), "PCR:", "{:.2%}".format(PRs[i]), "1-PCR:", "{:.2%}".format(1-PRs[i]))
+            "WA:", "{:.2%}".format(WAs[i]), "PCR:", "{:.2%}".format(PRs[i]), "CCR:", "{:.2%}".format(CCRs[i]))
     print("avg CA:", "{:.2%}".format(stat.mean(CAs)), "avg AA:", "{:.2%}".format(stat.mean(AAs)), \
-        "avg WA:", "{:.2%}".format(stat.mean(WAs)), "avg PCR:", "{:.2%}".format(stat.mean(PRs)))
+        "avg WA:", "{:.2%}".format(stat.mean(WAs)), "avg PCR:", "{:.2%}".format(stat.mean(PRs)), \
+            "avg CCR:", "{:.2%}".format(stat.mean(CCRs)))
 
 
 
