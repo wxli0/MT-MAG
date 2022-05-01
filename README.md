@@ -88,6 +88,6 @@ After "python exec_entire_process.py" command, "bash phase.sh -s …" will be ru
 
 (2) Attach to the screen: screen -d -r <screenid>
 
-@REM # commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset
+<!-- # commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset -->
 
-@REM - python3 result_stat.py, you need to 
+<!-- python3 result_stat.py -->
