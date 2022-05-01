@@ -38,6 +38,10 @@ cd MLDSP/data/preprocess
 
 - Task 2 (dense): python3 select_sample_cluster.py non-clade-exclusion-r202/[all json files for Task 2]
 
+Or you can download datasets directly at [MT-MAG-data](https://www.dropbox.com/sh/v8zpsr2v4ytohb2/AABzlrlp6U0CTzAcQqyyQbI_a?dl=0)
+
+Note that the dataset for Task 2 (dense) is too large to be stored in one zip, after unzipping order_family_genus_rumen.zip and root_domain_phylum_class.zip, you need to put them into one folder, as the unzipped folder for Task 1 (sparse).
+
 # MT-MAG commands to run existing tasks
 
 cd MT-MAG
@@ -84,6 +88,6 @@ After "python exec_entire_process.py" command, "bash phase.sh -s …" will be ru
 
 (2) Attach to the screen: screen -d -r <screenid>
 
-# commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset
+@REM # commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset
 
-- python3 result_stat.py
+@REM - python3 result_stat.py, you need to 
