@@ -65,6 +65,7 @@ def count_test(folder_path, suffix = "_trimmed.fa"):
 
 len_min = float("inf")
 len_max = float("-inf")
+print("printing args parameter, type: ", args.type, " task: ", args.task, " tool: ", args.tool)
 if args.type == "training":
     if args.task == 1 and args.tool  == "MT-MAG":
         # command python3 paper/size.py --task=1 --tool=MT-MAG
