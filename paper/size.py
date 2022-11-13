@@ -122,6 +122,13 @@ if args.type == "test":
     elif args.task == 2 and args.tool == "DeepMicrobes":
         folder_path = "/mnt/sda/DeepMicrobes-data/rumen_mags_reads_Task2_small_all"
         genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path)
+    elif args.task == 1 and args.tool == "MT-MAG":
+        folder_path = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/d__Bacteria"
+        genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path)
+    elif args.task == 2 and args.tool == "MT-MAG":
+        folder_path = "/mnt/sda/MLDSP-samples-r202/rumen_mags/root"
+        genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path)
+
 
 print("file_num is:", file_num)
 print("contig_num is:", contig_num)
