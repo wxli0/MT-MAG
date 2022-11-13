@@ -117,6 +117,7 @@ if args.type == "training":
         len_min = min(len_min_1, len_min_11, len_min_2)
         len_max = max(len_max_1, len_max_11, len_max_2)
 if args.type == "test":
+    print("enter this")
     if args.task == 1 and args.tool == "DeepMicrobes":
         folder_path = "/mnt/sda/DeepMicrobes-data/mag_reads_150bp_1w_provided_split"
         genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path)
