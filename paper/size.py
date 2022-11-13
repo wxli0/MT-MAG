@@ -125,10 +125,10 @@ if args.type == "test":
         genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path)
     elif args.task == 1 and args.tool == "MT-MAG":
         folder_path = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/d__Bacteria"
-        genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fasta")
+        genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fa")
     elif args.task == 2 and args.tool == "MT-MAG":
         folder_path = "/mnt/sda/MLDSP-samples-r202/rumen_mags/root"
-        genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fa")
+        genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fasta")
 
 
 print("file_num is:", file_num)
