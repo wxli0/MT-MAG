@@ -6,7 +6,7 @@ import sys
 parser = argparse.ArgumentParser()
 parser.add_argument('--task',  default = 0, type=int, help='1 or 2')
 parser.add_argument('--type', default="", type=str, help='training or test')
-parser.add_argument('--tool', default="", type=str, help='DeepMicrobes or MT-MAG')
+parser.add_argument('--tool', default="", type=str, help='DeepMicrobes, MT-MAG or Kraken')
 args = parser.parse_args()
 task = args.task
 tool = args.tool
@@ -129,6 +129,9 @@ if args.type == "test":
     elif args.task == 2 and args.tool == "MT-MAG":
         folder_path = "/mnt/sda/MLDSP-samples-r202/rumen_mags/root"
         genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fasta")
+    elif args.task == 2 and args.tool == "Kraken":
+        folder_path = "/mnt/sda/MLDSP-samples-r202/rumen_mags/root_short_kraken"
+        genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fasta")
 
 
 print("file_num is:", file_num)
@@ -136,6 +139,3 @@ print("contig_num is:", contig_num)
 print("genome_size is:", genome_size)
 print("len_min is:", len_min)
 print("len_max is:", len_max)
-
-
-      
