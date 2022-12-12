@@ -130,7 +130,7 @@ if args.type == "test":
         folder_path = "/mnt/sda/MLDSP-samples-r202/rumen_mags/root"
         genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fasta")
     elif args.task == 2 and args.tool == "Kraken":
-        folder_path = "/mnt/sda/MLDSP-samples-r202/rumen_mags/root_short_kraken"
+        folder_path = "/mnt/sda/MLDSP-samples-r202/rumen_mags/root_kraken"
         genome_size, contig_num, file_num, len_min, len_max = count_test(folder_path, suffix=".fasta")
 
 

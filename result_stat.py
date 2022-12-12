@@ -123,19 +123,20 @@ def calc_WA_rank(path, path_true, rank, ranks, ignore_indices = []):
             continue
         rank_index = ranks.index(rank)
         total += 1
+        weight_incre = 0
         for cur_index in range(rank_index+1):
             cur_rank = ranks[cur_index]
             predicted_label  = str(row[cur_rank])
             row_true = df_true.loc[index]
             true_label = str(row_true['gtdb-tk-'+cur_rank])
-            if 'uncertain' in predicted_label:
-                WA += cur_index/len(ranks)
+            if predicted_label == true_label:
+                weight_incre += 1
+            elif 'uncertain' in predicted_label:
                 break
-            if predicted_label != true_label:
-                # WA += cur_index/len(ranks)
-                break
-            if cur_index == rank_index:
-                WA += 1
+            elif predicted_label != true_label:
+                weight_incre -= 1/2
+        WA += weight_incre/(rank_index+1)
+        
     return WA/total
 
 def calc_WA_all_ranks(path, path_true, ranks, ignore_indices = []):
