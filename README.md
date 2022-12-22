@@ -68,7 +68,7 @@ In a json file in task_metadata/, five mandatory attributes and two optional att
 
 - accepted_CA: float. Optional (default 0.9). Accepted constrained accuracy when deciding stopping thresholds.
 
-To run a small task
+To run a small example
 
 - python exec_entire_process.py task_metadata/Archaea.json
 
@@ -86,7 +86,7 @@ After "python exec_entire_process.py" command, "bash phase.sh -s …" will be ru
 
 (1) To find the screen session ID: screen -ls 
 
-(2) Attach to the screen: screen -d -r <screenid>
+(2) Attach to the screen: screen -d -r [screen ID]
 
 <!-- # commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset -->
 
