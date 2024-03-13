@@ -91,3 +91,18 @@ After "python exec_entire_process.py" command, "bash phase.sh -s …" will be ru
 <!-- # commands to see benchmark result for MT-MAG Task 1: simulated/sparse dataset) and Task 2: real/dense dataset -->
 
 <!-- python3 result_stat.py -->
+
+# Citation
+Please cite our work if you find it useful.
+```
+@article{li2023mt,
+  title={MT-MAG: Accurate and interpretable machine learning for complete or partial taxonomic assignments of metagenomeassembled genomes},
+  author={Li, Wanxin and Kari, Lila and Yu, Yaoliang and Hug, Laura A},
+  journal={PLoS ONE},
+  volume={18},
+  number={8},
+  pages={e0283536},
+  year={2023},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+```
